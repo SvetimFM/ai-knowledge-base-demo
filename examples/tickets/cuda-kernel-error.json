@@ -1,0 +1,15 @@
+{
+  "id": "TICKET-002",
+  "title": "CUDA kernel producing incorrect results for certain inputs",
+  "description": "Our custom CUDA kernel for matrix multiplication is producing incorrect results when the matrix dimensions are not multiples of 32. The kernel works perfectly for sizes like 1024x1024 or 2048x2048, but fails for odd sizes like 1023x1023 or 2047x2047. We've checked boundary conditions and added proper bounds checking, but the issue persists. The errors appear to be off-by-one issues in certain output elements. We're using CUDA 12.0 on Ubuntu 22.04 with RTX 4090 GPUs. The kernel uses shared memory tiling with 32x32 tile sizes.",
+  "email": "developer@example.com",
+  "timestamp": "2025-01-10T10:15:00Z",
+  "environment": {
+    "cuda_version": "12.0",
+    "gpu_model": "RTX 4090",
+    "os": "Ubuntu 22.04",
+    "compiler": "nvcc 12.0"
+  },
+  "priority": "medium",
+  "tags": ["cuda", "kernel", "bug", "matrix-multiplication"]
+}

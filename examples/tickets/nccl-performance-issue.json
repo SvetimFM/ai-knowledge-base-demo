@@ -1,0 +1,17 @@
+{
+  "id": "TICKET-001",
+  "title": "Slow NCCL AllReduce performance on multi-node cluster",
+  "description": "We are experiencing significantly slower than expected AllReduce performance when training a large language model across 16 nodes with 8 GPUs each (128 GPUs total). The training throughput is only 30% of what we see on a single node. We are using NCCL 2.18 on an InfiniBand network with 200 Gbps links. Each node has NVIDIA A100 GPUs connected via NVLink. Our batch size per GPU is 32, and we're using PyTorch 2.0 with DistributedDataParallel. The issue seems to worsen as we add more nodes.",
+  "email": "engineer@example.com",
+  "timestamp": "2025-01-10T14:30:00Z",
+  "environment": {
+    "nccl_version": "2.18",
+    "gpu_model": "NVIDIA A100",
+    "network": "InfiniBand 200Gbps",
+    "framework": "PyTorch 2.0",
+    "num_nodes": 16,
+    "gpus_per_node": 8
+  },
+  "priority": "high",
+  "tags": ["nccl", "performance", "multi-node", "allreduce"]
+}

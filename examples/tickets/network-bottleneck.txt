@@ -1,0 +1,18 @@
+Title: Suspected network bottleneck in distributed training
+
+We're experiencing what appears to be a network bottleneck during distributed training across our HPC cluster. The GPUs are underutilized (60-70% usage) during communication phases, and we see high latency spikes in our profiling tools.
+
+Environment:
+- 32 nodes with 8 H100 GPUs each
+- InfiniBand HDR (200 Gbps)
+- NCCL 2.19
+- PyTorch 2.1 with FSDP
+
+The issue is most noticeable during gradient synchronization in our transformer model training. CPU usage is normal, GPU compute is fast, but communication phases show significant delays.
+
+We've already tried:
+- Increasing NCCL buffer sizes
+- Enabling NCCL tree algorithms
+- Checking physical network connections
+
+Looking for advice on diagnosing and resolving HPC network performance issues.

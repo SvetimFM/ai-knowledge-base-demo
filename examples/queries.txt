@@ -1,0 +1,192 @@
+# Example Queries for HPC Knowledge Base
+
+This file contains example queries you can use with Amazon Q Developer CLI
+to test your HPC Knowledge Base deployment.
+
+## Getting Started
+
+1. Navigate to the project directory
+2. Start Amazon Q Developer CLI: `q`
+3. Trust the MCP server (first time only):
+   /tools trust awslabsbedrock_kb_retrieval_mcp_server___QueryKnowledgeBases
+4. Copy and paste any query below
+
+---
+
+## NCCL (NVIDIA Collective Communications Library)
+
+What are the key differences between NCCL and RCCL?
+
+How does NCCL implement the ring algorithm for AllReduce operations?
+
+What are the best practices for optimizing NCCL performance in multi-GPU training?
+
+Explain NCCL's topology awareness and how it impacts communication performance.
+
+How do I configure NCCL for multi-node communication across InfiniBand?
+
+What environment variables should I set to tune NCCL performance?
+
+How does NCCL handle communication between GPUs on different PCIe switches?
+
+---
+
+## RCCL (ROCm Collective Communications Library)
+
+What are the main features of RCCL and how does it integrate with AMD ROCm?
+
+How compatible is RCCL with NCCL APIs?
+
+What are the performance tuning strategies specific to AMD GPUs with RCCL?
+
+How do I install and configure RCCL for my AMD GPU cluster?
+
+What are the differences in collective operation implementations between NCCL and RCCL?
+
+How does RCCL leverage AMD Infinity Fabric for GPU-to-GPU communication?
+
+---
+
+## CUDA Testing
+
+What are the best practices for unit testing CUDA kernels?
+
+How do I use Google Test framework for testing CUDA code?
+
+What validation frameworks are available for CUDA applications?
+
+How should I handle floating-point comparison in CUDA tests?
+
+What debugging tools can I use for CUDA applications?
+
+How do I set up CI/CD pipelines for CUDA projects?
+
+What are common testing patterns and anti-patterns for CUDA development?
+
+How do I benchmark CUDA kernel performance effectively?
+
+---
+
+## HPC Communication Patterns
+
+Explain the different collective communication patterns used in HPC.
+
+When should I use AllReduce vs AllGather in distributed computing?
+
+What are the performance characteristics of broadcast operations?
+
+How do blocking and non-blocking communication differ in MPI?
+
+What is the time complexity of AllReduce on N nodes?
+
+How can I overlap computation with communication in HPC applications?
+
+What are the best practices for reducing communication overhead in distributed training?
+
+Explain the difference between scatter/gather and all-to-all communication patterns.
+
+---
+
+## HPC Networking and Topology
+
+What are the advantages of InfiniBand over Ethernet for HPC clusters?
+
+How does AWS Elastic Fabric Adapter (EFA) compare to InfiniBand?
+
+Explain the fat-tree network topology and its benefits for HPC.
+
+What is GPUDirect RDMA and how does it improve GPU communication performance?
+
+How do I configure RDMA for optimal performance in my cluster?
+
+What network topologies are best suited for large-scale deep learning training?
+
+How does network bandwidth affect the scalability of distributed applications?
+
+---
+
+## HPC Best Practices
+
+What is the difference between strong scaling and weak scaling?
+
+How do I identify and resolve load balancing issues in parallel applications?
+
+What are the most effective profiling tools for HPC applications?
+
+How can I optimize memory access patterns for better cache utilization?
+
+What are common pitfalls when developing distributed HPC applications?
+
+How do I measure and optimize GPU utilization in my HPC workload?
+
+What strategies can I use for hybrid MPI+OpenMP parallelization?
+
+How do I minimize false sharing in multi-threaded applications?
+
+---
+
+## Advanced Topics
+
+How do I optimize communication for model parallelism in deep learning?
+
+What are the trade-offs between data parallelism and pipeline parallelism?
+
+How can I reduce the memory footprint of distributed training workloads?
+
+What techniques can I use to overlap gradient communication with backward pass computation?
+
+How do I choose the optimal batch size for distributed training?
+
+What are the best practices for checkpointing in large-scale training jobs?
+
+How can I detect and debug gradient synchronization issues?
+
+---
+
+## Troubleshooting
+
+My NCCL AllReduce is slower than expected. What should I check?
+
+How do I diagnose network bottlenecks in my HPC cluster?
+
+What tools can I use to visualize communication patterns in distributed applications?
+
+My CUDA kernel produces incorrect results on certain inputs. How should I debug this?
+
+How can I identify which collective operation is causing a performance bottleneck?
+
+What are the common causes of deadlocks in MPI applications?
+
+---
+
+## Performance Optimization
+
+How can I improve the bandwidth utilization of my collective operations?
+
+What are the best practices for tuning message sizes in MPI communication?
+
+How do I minimize latency in point-to-point communication?
+
+What techniques can reduce the overhead of small message communication?
+
+How can I optimize GPU memory transfers for better performance?
+
+What are effective strategies for overlapping multiple collective operations?
+
+---
+
+## Integration Questions
+
+How do I integrate NCCL with PyTorch for distributed training?
+
+What are the steps to set up RCCL with TensorFlow on AMD GPUs?
+
+How can I use MPI alongside NCCL for hybrid parallelization?
+
+What are the best practices for using collective operations in Horovod?
+
+How do I configure my deep learning framework to use optimal communication patterns?
+
+---
+
+Feel free to modify these queries or create your own based on your specific needs!
