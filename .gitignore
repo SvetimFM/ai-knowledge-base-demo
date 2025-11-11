@@ -34,3 +34,13 @@ coverage/
 
 # Binary packages
 *.deb
+
+# Session artifacts
+SESSION_SUMMARY.md
+*_SUMMARY.md
+
+# Claude Code artifacts
+.claude/
+
+# POC document directories (large PDFs kept in S3)
+docs/presidio/

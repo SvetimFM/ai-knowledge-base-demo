@@ -8,8 +8,12 @@ import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as ses from 'aws-cdk-lib/aws-ses';
 import { bedrock } from '@cdklabs/generative-ai-cdk-constructs';
 
+export interface QTicketTriageStackProps extends cdk.StackProps {
+  presidioKbArn?: string;  // Optional: ARN of Presidio KB for Lambda permissions
+}
+
 export class QTicketTriageStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props?: QTicketTriageStackProps) {
     super(scope, id, props);
 
     // S3 Bucket for HPC documentation
@@ -31,7 +35,7 @@ export class QTicketTriageStack extends cdk.Stack {
     });
 
     // Tag the knowledge base for MCP server discovery
-    cdk.Tags.of(knowledgeBase).add('name', 'hpc-knowledge-base');
+    cdk.Tags.of(knowledgeBase).add('name', 'true');
 
     // Add S3 data source to knowledge base
     new bedrock.S3DataSource(this, 'HpcDataSource', {
@@ -312,7 +316,17 @@ This ticket has been automatically triaged using AI and HPC knowledge base.
     triageTable.grantWriteData(triageFunction);
     ticketsBucket.grantRead(triageFunction);
 
-    // Grant Lambda access to Bedrock
+    // Grant Lambda access to Bedrock Knowledge Bases
+    const bedrockResources = [
+      knowledgeBase.knowledgeBaseArn,  // HPC Knowledge Base
+      `arn:aws:bedrock:${this.region}::foundation-model/*`,
+    ];
+
+    // Add Presidio KB if provided (cross-stack reference)
+    if (props?.presidioKbArn) {
+      bedrockResources.push(props.presidioKbArn);
+    }
+
     triageFunction.addToRolePolicy(
       new iam.PolicyStatement({
         effect: iam.Effect.ALLOW,
@@ -321,10 +335,7 @@ This ticket has been automatically triaged using AI and HPC knowledge base.
           'bedrock:Retrieve',
           'bedrock:RetrieveAndGenerate',
         ],
-        resources: [
-          knowledgeBase.knowledgeBaseArn,
-          `arn:aws:bedrock:${this.region}::foundation-model/*`,
-        ],
+        resources: bedrockResources,
       })
     );
 
