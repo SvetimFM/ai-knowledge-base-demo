@@ -49,7 +49,7 @@ This demo showcases a modern AI-powered knowledge management system with two key
                  │               │
         ┌────────▼──────┐  ┌────▼──────────┐
         │   HPC KB      │  │  Presidio KB  │
-        │  MFULK64QPS   │  │  BXSQ7KURLO   │
+        │  {HPC_KB_ID}  │  │ {PRESIDIO_KB} │
         │  22 docs      │  │  25 docs      │
         │  NCCL/CUDA    │  │  Cloud/AI     │
         └───────────────┘  └───────────────┘

@@ -42,5 +42,9 @@ SESSION_SUMMARY.md
 # Claude Code artifacts
 .claude/
 
+# Amazon Q CLI local configuration
+.amazonq/
+!.amazonq/*.example
+
 # POC document directories (large PDFs kept in S3)
 docs/presidio/

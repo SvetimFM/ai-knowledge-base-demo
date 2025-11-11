@@ -4,10 +4,10 @@
       "command": "uvx",
       "args": ["awslabs.bedrock-kb-retrieval-mcp-server@latest"],
       "env": {
-        "AWS_PROFILE": "hyperadmin",
+        "AWS_PROFILE": "your-profile-name",
         "AWS_REGION": "us-east-1",
         "FASTMCP_LOG_LEVEL": "ERROR",
-        "KB_INCLUSION_TAG_KEY": "name=hpc-knowledge-base",
+        "KB_INCLUSION_TAG_KEY": "name",
         "BEDROCK_KB_RERANKING_ENABLED": "false"
       },
       "disabled": false,

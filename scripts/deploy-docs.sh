@@ -7,7 +7,7 @@
 set -e
 
 STACK_NAME="HpcKnowledgeBaseStack"
-AWS_PROFILE="hyperadmin"
+AWS_PROFILE="${AWS_PROFILE:-default}"
 
 echo "==================================="
 echo "HPC Documentation Deployment Script"

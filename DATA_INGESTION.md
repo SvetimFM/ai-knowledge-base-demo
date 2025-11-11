@@ -133,14 +133,14 @@ aws s3 cp presidio-case-study.pdf s3://presidio-knowledge-base-docs-{ACCOUNT_ID}
 ```bash
 # Get Data Source ID
 aws bedrock-agent list-data-sources \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --region us-east-1 \
   --query 'dataSourceSummaries[0].dataSourceId' \
   --output text
 
 # Start ingestion job
 aws bedrock-agent start-ingestion-job \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --data-source-id {DATA_SOURCE_ID} \
   --region us-east-1
 ```
@@ -157,7 +157,7 @@ aws bedrock-agent start-ingestion-job \
 ```bash
 # Check ingestion job status
 aws bedrock-agent get-ingestion-job \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --data-source-id {DATA_SOURCE_ID} \
   --ingestion-job-id {JOB_ID} \
   --region us-east-1 \
@@ -192,7 +192,7 @@ aws bedrock-agent-runtime retrieve-and-generate \
   --retrieve-and-generate-configuration "{
     \"type\": \"KNOWLEDGE_BASE\",
     \"knowledgeBaseConfiguration\": {
-      \"knowledgeBaseId\": \"MFULK64QPS\",
+      \"knowledgeBaseId\": \"{HPC_KB_ID}\",
       \"modelArn\": \"arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-haiku-20240307-v1:0\"
     }
   }" \
@@ -433,7 +433,7 @@ STARTING → IN_PROGRESS → COMPLETE
 **List recent jobs:**
 ```bash
 aws bedrock-agent list-ingestion-jobs \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --data-source-id {DATA_SOURCE_ID} \
   --region us-east-1 \
   --max-results 10
@@ -442,7 +442,7 @@ aws bedrock-agent list-ingestion-jobs \
 **Watch job progress (loop):**
 ```bash
 watch -n 10 "aws bedrock-agent get-ingestion-job \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --data-source-id {DATA_SOURCE_ID} \
   --ingestion-job-id {JOB_ID} \
   --region us-east-1 \
@@ -463,7 +463,7 @@ watch -n 10 "aws bedrock-agent get-ingestion-job \
 ```bash
 # Check failed job details
 aws bedrock-agent get-ingestion-job \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --data-source-id {DATA_SOURCE_ID} \
   --ingestion-job-id {FAILED_JOB_ID} \
   --region us-east-1 \
@@ -471,7 +471,7 @@ aws bedrock-agent get-ingestion-job \
 
 # Fix issues and retry
 aws bedrock-agent start-ingestion-job \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --data-source-id {DATA_SOURCE_ID} \
   --region us-east-1
 ```
@@ -616,7 +616,7 @@ bash scripts/download-presidio-docs.sh
 ### Ingestion Results
 
 ```bash
-$ aws bedrock-agent get-ingestion-job --knowledge-base-id BXSQ7KURLO ...
+$ aws bedrock-agent get-ingestion-job --knowledge-base-id {PRESIDIO_KB} ...
 
 Status: COMPLETE
 Scanned: 26 documents
@@ -641,7 +641,7 @@ aws s3 sync docs/presidio/ s3://presidio-knowledge-base-docs-{ACCOUNT_ID}/
 
 # Trigger ingestion
 aws bedrock-agent start-ingestion-job \
-  --knowledge-base-id BXSQ7KURLO \
+  --knowledge-base-id {PRESIDIO_KB} \
   --data-source-id 59TYDS4YOH \
   --region us-east-1
 ```
@@ -663,7 +663,7 @@ aws s3 ls s3://hpc-knowledge-base-docs-{ACCOUNT_ID}/ --recursive
 
 # Verify data source configuration
 aws bedrock-agent get-data-source \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --data-source-id {DATA_SOURCE_ID} \
   --region us-east-1
 ```
@@ -686,7 +686,7 @@ aws bedrock-agent get-data-source \
 ```bash
 # Test direct retrieval
 aws bedrock-agent-runtime retrieve \
-  --knowledge-base-id MFULK64QPS \
+  --knowledge-base-id {HPC_KB_ID} \
   --retrieval-query "{\"text\": \"test query\"}" \
   --region us-east-1
 ```

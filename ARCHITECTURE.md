@@ -55,7 +55,7 @@
 │                                                                           │
 │  ┌─────────────────────┐           ┌──────────────────────┐            │
 │  │  HPC KB             │           │  Presidio KB         │            │
-│  │  ID: MFULK64QPS     │           │  ID: BXSQ7KURLO      │            │
+│  │  ID: {HPC_KB_ID}    │           │  ID: {PRESIDIO_KB}   │            │
 │  │  Tag: name=true     │           │  Tag: name=true      │            │
 │  │                     │           │                      │            │
 │  │  ┌───────────────┐  │           │  ┌───────────────┐  │            │
@@ -94,14 +94,16 @@
 ### Amazon Bedrock Knowledge Base
 **Two Independent Instances:**
 
-**1. HPC Computing KB (MFULK64QPS)**
+**1. HPC Computing KB**
 - Stack: `HpcKnowledgeBaseStack`
+- KB ID: `{HPC_KB_ID}`
 - Purpose: Technical HPC documentation
 - Documents: 22 (NCCL, RCCL, CUDA, networking, best practices)
 - S3 Bucket: `s3://hpc-knowledge-base-docs-{account}/`
 - OpenSearch Collection: Auto-generated name
 
-**2. Presidio Solutions KB (BXSQ7KURLO)**
+**2. Presidio Solutions KB**
+- KB ID: `{PRESIDIO_KB}`
 - Stack: `PresidioKnowledgeBaseStack`
 - Purpose: Business and solutions content
 - Documents: 25 (case studies, cloud solutions, technical capabilities)
@@ -172,7 +174,7 @@
        │
        ▼
 ┌───────────────────────────────────────┐
-│  Returns: [MFULK64QPS, BXSQ7KURLO]   │
+│  Returns: [{HPC_KB_ID}, {PRESIDIO_KB}]│
 └──────┬────────────────────────────────┘
        │
        ▼
@@ -244,7 +246,7 @@
 │  Lambda calls                       │
 │  bedrock-agent-runtime:             │
 │  RetrieveAndGenerate()              │
-│  KB ID: MFULK64QPS (HPC KB)         │
+│  KB ID: {HPC_KB_ID} (HPC KB)        │
 └──────┬──────────────────────────────┘
        │
        ▼
@@ -593,8 +595,8 @@ if (props?.presidioKbArn) {
         "bedrock:InvokeModel"
       ],
       "Resource": [
-        "arn:aws:bedrock:us-east-1:{account}:knowledge-base/MFULK64QPS",
-        "arn:aws:bedrock:us-east-1:{account}:knowledge-base/BXSQ7KURLO",
+        "arn:aws:bedrock:us-east-1:{account}:knowledge-base/{HPC_KB_ID}",
+        "arn:aws:bedrock:us-east-1:{account}:knowledge-base/{PRESIDIO_KB}",
         "arn:aws:bedrock:us-east-1::foundation-model/*"
       ]
     },
