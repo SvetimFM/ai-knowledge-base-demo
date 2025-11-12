@@ -3,9 +3,11 @@ import { Construct } from 'constructs';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as logs from 'aws-cdk-lib/aws-logs';
+import * as cognito from 'aws-cdk-lib/aws-cognito';
 
 export interface ApiStackProps extends cdk.StackProps {
   ragQueryFunction: lambda.IFunction;
+  userPool: cognito.IUserPool;
 }
 
 export class ApiStack extends cdk.Stack {
@@ -41,6 +43,14 @@ export class ApiStack extends cdk.Stack {
       cloudWatchRole: true,
     });
 
+    // Cognito Authorizer for protected endpoints
+    const authorizer = new apigateway.CognitoUserPoolsAuthorizer(this, 'CognitoAuthorizer', {
+      cognitoUserPools: [props.userPool],
+      authorizerName: 'rag-cognito-authorizer',
+      identitySource: 'method.request.header.Authorization',
+      resultsCacheTtl: cdk.Duration.minutes(5),  // Cache authorization decisions
+    });
+
     // Lambda integration
     const lambdaIntegration = new apigateway.LambdaIntegration(
       props.ragQueryFunction,
@@ -57,12 +67,20 @@ export class ApiStack extends cdk.Stack {
       }
     );
 
-    // /query endpoint
+    // /query endpoint (PROTECTED - requires Cognito authentication)
     const query = this.api.root.addResource('query');
     query.addMethod('POST', lambdaIntegration, {
+      authorizer,
+      authorizationType: apigateway.AuthorizationType.COGNITO,
       methodResponses: [
         {
           statusCode: '200',
+          responseParameters: {
+            'method.response.header.Access-Control-Allow-Origin': true,
+          },
+        },
+        {
+          statusCode: '401',
           responseParameters: {
             'method.response.header.Access-Control-Allow-Origin': true,
           },
@@ -110,7 +128,17 @@ export class ApiStack extends cdk.Stack {
 
     new cdk.CfnOutput(this, 'HealthEndpoint', {
       value: `${this.api.url}health`,
-      description: 'GET endpoint for health checks',
+      description: 'GET endpoint for health checks (public)',
+    });
+
+    new cdk.CfnOutput(this, 'AuthenticationRequired', {
+      value: 'YES - All /query requests require Cognito JWT token',
+      description: 'API is protected by Cognito authentication',
+    });
+
+    new cdk.CfnOutput(this, 'AuthorizationHeader', {
+      value: 'Authorization: Bearer <IdToken>',
+      description: 'Required header format for authenticated requests',
     });
   }
 }

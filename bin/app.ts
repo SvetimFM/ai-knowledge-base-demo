@@ -4,6 +4,7 @@ import { MilvusStack } from '../lib/milvus-stack';
 import { EmbeddingsStack } from '../lib/embeddings-stack';
 import { IngestionStack } from '../lib/ingestion-stack';
 import { RagStack } from '../lib/rag-stack';
+import { AuthStack } from '../lib/auth-stack';
 import { ApiStack } from '../lib/api-stack';
 
 const app = new cdk.App();
@@ -44,11 +45,18 @@ const ragStack = new RagStack(app, 'RagStack', {
   description: 'RAG query pipeline with HyDE retrieval and Claude 3.5 Sonnet',
 });
 
-// API Gateway Stack (Public HTTP endpoint for RAG queries)
+// Authentication Stack (Cognito User Pool + SES)
+const authStack = new AuthStack(app, 'AuthStack', {
+  env,
+  description: 'Cognito user authentication with optional SES email',
+});
+
+// API Gateway Stack (Public HTTP endpoint with Cognito authentication)
 new ApiStack(app, 'ApiStack', {
   env,
   ragQueryFunction: ragStack.queryFunction,
-  description: 'Public API Gateway for RAG query access',
+  userPool: authStack.userPool,
+  description: 'Protected API Gateway for RAG query access',
 });
 
 // NOTE: Previous KB stacks (HPC, Presidio, TicketTriage) have been removed
