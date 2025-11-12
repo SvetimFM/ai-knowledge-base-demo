@@ -2,6 +2,7 @@
 import * as cdk from 'aws-cdk-lib';
 import { MilvusStack } from '../lib/milvus-stack';
 import { EmbeddingsStack } from '../lib/embeddings-stack';
+import { IngestionStack } from '../lib/ingestion-stack';
 
 const app = new cdk.App();
 
@@ -17,12 +18,19 @@ const milvusStack = new MilvusStack(app, 'MilvusStack', {
 });
 
 // Embeddings Generation Stack (Bedrock Titan v2 + Milvus insertion)
-new EmbeddingsStack(app, 'EmbeddingsStack', {
+const embeddingsStack = new EmbeddingsStack(app, 'EmbeddingsStack', {
   env,
   vpc: milvusStack.vpc,
   lambdaSecurityGroup: milvusStack.lambdaSecurityGroup,
   milvusHost: milvusStack.milvusEndpoint,
   description: 'Embeddings generation using Bedrock Titan v2 with Milvus storage',
+});
+
+// Document Ingestion Stack (S3 + SQS + DynamoDB + Lambda orchestration)
+new IngestionStack(app, 'IngestionStack', {
+  env,
+  embeddingsFunctionArn: embeddingsStack.embeddingsFunction.functionArn,
+  description: 'Document ingestion pipeline with S3, SQS, and state tracking',
 });
 
 // NOTE: Previous KB stacks (HPC, Presidio, TicketTriage) have been removed

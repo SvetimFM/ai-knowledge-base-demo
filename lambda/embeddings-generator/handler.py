@@ -7,9 +7,11 @@ import json
 import os
 import boto3
 import uuid
+import io
 from typing import Dict, Any, List
 from urllib.parse import urlparse
 from pymilvus import connections, Collection, FieldSchema, CollectionSchema, DataType, utility
+from PyPDF2 import PdfReader
 
 # Environment variables
 MILVUS_HOST = os.environ.get('MILVUS_HOST', 'localhost')
@@ -102,10 +104,20 @@ def download_from_s3(s3_uri: str) -> str:
         if key.endswith(('.txt', '.md')):
             return content.decode('utf-8')
 
-        # Handle PDFs
+        # Handle PDFs with PyPDF2
         elif key.endswith('.pdf'):
-            # For now, return placeholder - will add PyPDF2 in next iteration
-            return f"[PDF content from {key} - PDF parsing to be implemented]"
+            pdf_file = io.BytesIO(content)
+            pdf_reader = PdfReader(pdf_file)
+
+            text_parts = []
+            for page_num, page in enumerate(pdf_reader.pages):
+                page_text = page.extract_text()
+                if page_text.strip():  # Only add non-empty pages
+                    text_parts.append(page_text)
+
+            full_text = '\n\n'.join(text_parts)
+            print(f"Extracted {len(text_parts)} pages from PDF, total {len(full_text)} characters")
+            return full_text
 
         else:
             return content.decode('utf-8', errors='ignore')
