@@ -188,6 +188,20 @@ Business-focused content covering Presidio's service offerings:
 - **AWS CDK** installed: `npm install -g aws-cdk`
 - **Amazon Q Developer CLI** installed and configured
 
+### Setup Documentation
+
+**Documentation files are not included in the repository.** Download them first:
+
+```bash
+# Download Presidio documentation (26 files)
+bash scripts/download-presidio-docs.sh
+
+# For HPC documentation:
+# - Use your own HPC docs, or
+# - Contact repository owner for GigaIO/NVIDIA documentation
+# See docs/README.md for details
+```
+
 ### Deploy Infrastructure
 
 ```bash
@@ -197,11 +211,16 @@ npm install
 # 2. Set your AWS profile
 export AWS_PROFILE=your-profile-name
 
-# 3. Deploy both knowledge base stacks
-npx cdk deploy PresidioKnowledgeBaseStack --require-approval never
+# 3. Deploy all three stacks
 npx cdk deploy HpcKnowledgeBaseStack --require-approval never
+npx cdk deploy PresidioKnowledgeBaseStack --require-approval never
+npx cdk deploy TicketTriageStack --require-approval never
 
-# Deployment completes in ~5 minutes
+# Deployment completes in ~5 minutes per stack
+
+# 4. Upload documentation to S3 and trigger ingestion
+bash scripts/deploy-docs.sh   # HPC docs
+bash scripts/sync-kb.sh        # Trigger ingestion
 ```
 
 ### Configure Amazon Q Developer CLI

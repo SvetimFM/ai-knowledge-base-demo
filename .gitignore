@@ -47,5 +47,7 @@ SESSION_SUMMARY.md
 .amazonq/
 !.amazonq/*.example
 
-# POC document directories (large PDFs kept in S3)
-docs/presidio/
+# Documentation (download via scripts - see docs/README.md)
+docs/
+!docs/README.md
+!docs/.gitkeep
