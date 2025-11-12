@@ -121,6 +121,7 @@ export class IngestionStack extends cdk.Stack {
       code: lambda.Code.fromAsset('lambda/document-ingestor'),
       timeout: cdk.Duration.minutes(10), // Long timeout for large documents
       memorySize: 2048, // More memory for better performance
+      reservedConcurrentExecutions: 5, // Limit concurrent executions for cost control
       environment: {
         EMBEDDINGS_FUNCTION_ARN: props.embeddingsFunctionArn,
         DYNAMODB_TABLE_NAME: this.stateTable.tableName,

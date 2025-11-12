@@ -17,15 +17,29 @@ from PyPDF2 import PdfReader
 MILVUS_HOST = os.environ.get('MILVUS_HOST', 'localhost')
 MILVUS_PORT = os.environ.get('MILVUS_PORT', '19530')
 BEDROCK_REGION = os.environ.get('AWS_REGION', 'us-east-1')
+DOCUMENTS_BUCKET_NAME = os.environ.get('DOCUMENTS_BUCKET_NAME', '')
 
 # Constants
 COLLECTION_NAME = "knowledge_base_vectors"
 EMBEDDING_MODEL = "amazon.titan-embed-text-v2:0"
 EMBEDDING_DIM = 1024
 
-# AWS clients
-s3_client = boto3.client('s3')
-bedrock_client = boto3.client('bedrock-runtime', region_name=BEDROCK_REGION)
+# Security limits
+MAX_FILE_SIZE = 100 * 1024 * 1024  # 100 MB
+MAX_CHUNKS = 1000  # Limit total chunks per document
+
+# AWS clients with retry configuration
+from botocore.config import Config
+
+retry_config = Config(
+    retries={
+        'max_attempts': 3,
+        'mode': 'adaptive'  # Exponential backoff for throttling
+    }
+)
+
+s3_client = boto3.client('s3', config=retry_config)
+bedrock_client = boto3.client('bedrock-runtime', region_name=BEDROCK_REGION, config=retry_config)
 
 # Global Milvus connection
 _is_connected = False
@@ -88,8 +102,31 @@ def ensure_collection_exists():
     print(f"Created collection '{COLLECTION_NAME}' with partition key 'knowledge_base'")
 
 
+def validate_s3_uri(s3_uri: str) -> None:
+    """
+    Validate S3 URI format and bucket access
+    Security: Prevents SSRF and unauthorized bucket access
+    """
+    parsed = urlparse(s3_uri)
+
+    # Check scheme
+    if parsed.scheme != 's3':
+        raise ValueError(f"Invalid S3 URI scheme: {parsed.scheme}")
+
+    # Check bucket matches allowed bucket
+    if DOCUMENTS_BUCKET_NAME and parsed.netloc != DOCUMENTS_BUCKET_NAME:
+        raise ValueError(f"Access denied: bucket {parsed.netloc} not allowed")
+
+    # Check key is not empty
+    if not parsed.path or parsed.path == '/':
+        raise ValueError("S3 key cannot be empty")
+
+
 def download_from_s3(s3_uri: str) -> str:
-    """Download file from S3 and return content"""
+    """Download file from S3 and return content with size validation"""
+    # Validate S3 URI
+    validate_s3_uri(s3_uri)
+
     parsed = urlparse(s3_uri)
     bucket = parsed.netloc
     key = parsed.path.lstrip('/')
@@ -97,6 +134,18 @@ def download_from_s3(s3_uri: str) -> str:
     print(f"Downloading {key} from bucket {bucket}")
 
     try:
+        # Check file size before downloading
+        head_response = s3_client.head_object(Bucket=bucket, Key=key)
+        file_size = head_response['ContentLength']
+
+        if file_size > MAX_FILE_SIZE:
+            raise ValueError(
+                f"File too large: {file_size} bytes (max {MAX_FILE_SIZE})"
+            )
+
+        print(f"File size: {file_size} bytes")
+
+        # Download file
         response = s3_client.get_object(Bucket=bucket, Key=key)
         content = response['Body'].read()
 
@@ -160,6 +209,14 @@ def chunk_text(text: str, strategy: Dict[str, Any]) -> List[str]:
         i += words_per_chunk - overlap_words
 
     print(f"Created {len(chunks)} chunks from text ({len(words)} words)")
+
+    # Security: Limit total chunks
+    if len(chunks) > MAX_CHUNKS:
+        raise ValueError(
+            f"Too many chunks: {len(chunks)}, max {MAX_CHUNKS}. "
+            f"Consider increasing chunk size or splitting document."
+        )
+
     return chunks
 
 

@@ -7,6 +7,7 @@ import json
 import os
 import boto3
 import time
+import re
 from typing import Dict, Any, Optional
 from decimal import Decimal
 
@@ -86,16 +87,25 @@ def update_document_state(
 
 def extract_knowledge_base_from_key(key: str) -> str:
     """
-    Extract knowledge base name from S3 key
+    Extract knowledge base name from S3 key with validation
     Expects format: {knowledge_base}/path/to/file.pdf
     Examples:
       - hpc/doc.pdf → hpc
       - presidio/guides/setup.md → presidio
       - raw/test.pdf → raw
+
+    Security: Only allows alphanumeric, underscore, hyphen (1-50 chars)
+    Prevents: Path traversal, injection attacks
     """
     parts = key.split('/')
     if len(parts) > 1:
-        return parts[0]
+        kb_candidate = parts[0]
+        # Validate: only alphanumeric, underscore, hyphen, 1-50 chars
+        if re.match(r'^[a-zA-Z0-9_-]{1,50}$', kb_candidate):
+            return kb_candidate
+        else:
+            print(f"Invalid KB name: {kb_candidate}, using 'default'")
+            return 'default'
     return 'default'
 
 

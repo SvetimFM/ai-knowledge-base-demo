@@ -24,6 +24,7 @@ export class EmbeddingsStack extends cdk.Stack {
       code: lambda.Code.fromAsset('lambda/embeddings-generator'),
       timeout: cdk.Duration.minutes(5), // Large documents may take time
       memorySize: 1024, // More memory for PDF processing
+      reservedConcurrentExecutions: 10, // Limit concurrent executions for cost control
       vpc: props.vpc,
       vpcSubnets: {
         subnetType: ec2.SubnetType.PRIVATE_WITH_EGRESS,
@@ -32,6 +33,7 @@ export class EmbeddingsStack extends cdk.Stack {
       environment: {
         MILVUS_HOST: props.milvusHost,
         MILVUS_PORT: '19530',
+        DOCUMENTS_BUCKET_NAME: `kb-documents-${this.account}`,
       },
       logRetention: logs.RetentionDays.ONE_WEEK,
     });
@@ -45,14 +47,18 @@ export class EmbeddingsStack extends cdk.Stack {
       ],
     }));
 
-    // S3 read permissions for document downloads
+    // S3 read permissions for document downloads (restricted to documents bucket)
+    const documentsBucketArn = `arn:aws:s3:::kb-documents-${this.account}`;
     this.embeddingsFunction.addToRolePolicy(new iam.PolicyStatement({
       effect: iam.Effect.ALLOW,
       actions: [
         's3:GetObject',
         's3:ListBucket',
       ],
-      resources: ['*'], // TODO: Restrict to specific buckets when known
+      resources: [
+        documentsBucketArn,
+        `${documentsBucketArn}/*`,
+      ],
     }));
 
     // Outputs
