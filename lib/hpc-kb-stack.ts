@@ -5,6 +5,7 @@ import { bedrock } from '@cdklabs/generative-ai-cdk-constructs';
 
 export class HpcKnowledgeBaseStack extends cdk.Stack {
   public readonly hpcKbArn: string;
+  public readonly hpcDataSourceId: string;
 
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -31,7 +32,7 @@ export class HpcKnowledgeBaseStack extends cdk.Stack {
     cdk.Tags.of(knowledgeBase).add('name', 'true');
 
     // Add S3 data source to knowledge base
-    new bedrock.S3DataSource(this, 'HpcDataSource', {
+    const dataSource = new bedrock.S3DataSource(this, 'HpcDataSource', {
       bucket: docsBucket,
       knowledgeBase: knowledgeBase,
       dataSourceName: 'hpc-docs-s3-source',
@@ -60,7 +61,14 @@ export class HpcKnowledgeBaseStack extends cdk.Stack {
       exportName: 'HpcKnowledgeBaseArn',
     });
 
+    new cdk.CfnOutput(this, 'DataSourceId', {
+      value: dataSource.dataSourceId,
+      description: 'Bedrock Knowledge Base Data Source ID',
+      exportName: 'HpcDataSourceId',
+    });
+
     // Export for cross-stack reference
     this.hpcKbArn = knowledgeBase.knowledgeBaseArn;
+    this.hpcDataSourceId = dataSource.dataSourceId;
   }
 }

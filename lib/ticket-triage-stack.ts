@@ -17,7 +17,7 @@ export class TicketTriageStack extends cdk.Stack {
 
     // S3 Bucket for ticket submissions
     const ticketsBucket = new s3.Bucket(this, 'TicketsBucket', {
-      bucketName: `hpc-tickets-${this.account}`,
+      bucketName: `ticket-triage-${this.account}`,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       autoDeleteObjects: true,
       encryption: s3.BucketEncryption.S3_MANAGED,
@@ -26,7 +26,7 @@ export class TicketTriageStack extends cdk.Stack {
 
     // DynamoDB table for triage results
     const triageTable = new dynamodb.Table(this, 'TriageResultsTable', {
-      tableName: 'hpc-ticket-triage-results',
+      tableName: 'ticket-triage-results',
       partitionKey: { name: 'ticketId', type: dynamodb.AttributeType.STRING },
       sortKey: { name: 'timestamp', type: dynamodb.AttributeType.NUMBER },
       billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
@@ -45,7 +45,7 @@ export class TicketTriageStack extends cdk.Stack {
     const triageFunction = new lambda.Function(this, 'TicketTriageFunction', {
       runtime: lambda.Runtime.PYTHON_3_12,
       handler: 'index.handler',
-      functionName: 'hpc-ticket-triage-processor',
+      functionName: 'ticket-triage-processor',
       code: lambda.Code.fromInline(`
 import json
 import boto3
@@ -250,7 +250,7 @@ This ticket has been automatically triaged using AI and HPC knowledge base.
       timeout: cdk.Duration.minutes(5),
       memorySize: 512,
       environment: {
-        KNOWLEDGE_BASE_ID: cdk.Fn.select(5, cdk.Fn.split('/', props.hpcKbArn)), // Extract KB ID from ARN
+        KNOWLEDGE_BASE_ID: cdk.Fn.select(1, cdk.Fn.split('/', props.hpcKbArn)), // Extract KB ID from ARN (format: arn:aws:bedrock:region:account:knowledge-base/{KB_ID})
         TABLE_NAME: triageTable.tableName,
         SES_FROM_EMAIL: 'noreply@example.com', // Update with your verified SES email
       },
