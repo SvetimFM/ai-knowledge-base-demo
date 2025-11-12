@@ -5,71 +5,15 @@ import * as s3n from 'aws-cdk-lib/aws-s3-notifications';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
-import * as ses from 'aws-cdk-lib/aws-ses';
-import { bedrock } from '@cdklabs/generative-ai-cdk-constructs';
 
-export interface QTicketTriageStackProps extends cdk.StackProps {
-  presidioKbArn?: string;  // Optional: ARN of Presidio KB for Lambda permissions
+export interface TicketTriageStackProps extends cdk.StackProps {
+  hpcKbArn: string;         // ARN of HPC Knowledge Base
+  presidioKbArn?: string;   // Optional ARN of Presidio Knowledge Base
 }
 
-export class QTicketTriageStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: QTicketTriageStackProps) {
+export class TicketTriageStack extends cdk.Stack {
+  constructor(scope: Construct, id: string, props: TicketTriageStackProps) {
     super(scope, id, props);
-
-    // S3 Bucket for HPC documentation
-    const docsBucket = new s3.Bucket(this, 'HpcDocsBucket', {
-      bucketName: `hpc-knowledge-base-docs-${this.account}`,
-      removalPolicy: cdk.RemovalPolicy.DESTROY,
-      autoDeleteObjects: true,
-      versioned: true,
-      encryption: s3.BucketEncryption.S3_MANAGED,
-      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
-    });
-
-    // Create Bedrock Knowledge Base with AWS Labs construct (handles OpenSearch automatically)
-    const knowledgeBase = new bedrock.VectorKnowledgeBase(this, 'HpcKnowledgeBase', {
-      name: 'hpc-computing-knowledge-base',
-      description: 'Knowledge base for HPC computing topics: NCCL, RCCL, CUDA testing, and communication patterns',
-      embeddingsModel: bedrock.BedrockFoundationModel.TITAN_EMBED_TEXT_V2_1024,
-      instruction: 'Use this knowledge base to answer questions about HPC computing, including NCCL, RCCL, CUDA testing, communication patterns, and performance optimization.',
-    });
-
-    // Tag the knowledge base for MCP server discovery
-    cdk.Tags.of(knowledgeBase).add('name', 'true');
-
-    // Add S3 data source to knowledge base
-    new bedrock.S3DataSource(this, 'HpcDataSource', {
-      bucket: docsBucket,
-      knowledgeBase: knowledgeBase,
-      dataSourceName: 'hpc-docs-s3-source',
-      chunkingStrategy: bedrock.ChunkingStrategy.fixedSize({
-        maxTokens: 512,
-        overlapPercentage: 20,
-      }),
-    });
-
-    // CloudFormation Outputs for Knowledge Base
-    new cdk.CfnOutput(this, 'DocsBucketName', {
-      value: docsBucket.bucketName,
-      description: 'S3 bucket for HPC documentation',
-      exportName: 'HpcDocsBucketName',
-    });
-
-    new cdk.CfnOutput(this, 'KnowledgeBaseId', {
-      value: knowledgeBase.knowledgeBaseId,
-      description: 'Bedrock Knowledge Base ID',
-      exportName: 'HpcKnowledgeBaseId',
-    });
-
-    new cdk.CfnOutput(this, 'KnowledgeBaseArn', {
-      value: knowledgeBase.knowledgeBaseArn,
-      description: 'Bedrock Knowledge Base ARN',
-      exportName: 'HpcKnowledgeBaseArn',
-    });
-
-    // ==========================================
-    // Ticket Triage System Resources
-    // ==========================================
 
     // S3 Bucket for ticket submissions
     const ticketsBucket = new s3.Bucket(this, 'TicketsBucket', {
@@ -160,7 +104,7 @@ def handler(event, context):
                 'priority': triage_result['priority'],
                 'suggestedActions': triage_result['actions'],
                 'kbResponse': triage_result['kb_response'][:1000],
-                's3Key': key
+'s3Key': key
             }
             table.put_item(Item=item)
 
@@ -306,7 +250,7 @@ This ticket has been automatically triaged using AI and HPC knowledge base.
       timeout: cdk.Duration.minutes(5),
       memorySize: 512,
       environment: {
-        KNOWLEDGE_BASE_ID: knowledgeBase.knowledgeBaseId,
+        KNOWLEDGE_BASE_ID: cdk.Fn.select(5, cdk.Fn.split('/', props.hpcKbArn)), // Extract KB ID from ARN
         TABLE_NAME: triageTable.tableName,
         SES_FROM_EMAIL: 'noreply@example.com', // Update with your verified SES email
       },
@@ -318,12 +262,12 @@ This ticket has been automatically triaged using AI and HPC knowledge base.
 
     // Grant Lambda access to Bedrock Knowledge Bases
     const bedrockResources = [
-      knowledgeBase.knowledgeBaseArn,  // HPC Knowledge Base
+      props.hpcKbArn,  // HPC Knowledge Base (required)
       `arn:aws:bedrock:${this.region}::foundation-model/*`,
     ];
 
-    // Add Presidio KB if provided (cross-stack reference)
-    if (props?.presidioKbArn) {
+    // Add Presidio KB if provided (optional cross-stack reference)
+    if (props.presidioKbArn) {
       bedrockResources.push(props.presidioKbArn);
     }
 

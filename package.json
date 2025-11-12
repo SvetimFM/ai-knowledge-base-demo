@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "AI-Powered Knowledge Base Demo: Amazon Q Developer + Amazon Bedrock + AWS CDK. Dual KB architecture with automated ticket triage system.",
   "bin": {
-    "q_ticket_triage": "bin/q_ticket_triage.js"
+    "q_ticket_triage": "bin/app.js"
   },
   "scripts": {
     "build": "tsc",
