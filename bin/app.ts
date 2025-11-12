@@ -4,6 +4,7 @@ import { MilvusStack } from '../lib/milvus-stack';
 import { EmbeddingsStack } from '../lib/embeddings-stack';
 import { IngestionStack } from '../lib/ingestion-stack';
 import { RagStack } from '../lib/rag-stack';
+import { ApiStack } from '../lib/api-stack';
 
 const app = new cdk.App();
 
@@ -35,12 +36,19 @@ new IngestionStack(app, 'IngestionStack', {
 });
 
 // RAG Query Stack (Question answering with HyDE + LLM)
-new RagStack(app, 'RagStack', {
+const ragStack = new RagStack(app, 'RagStack', {
   env,
   vpc: milvusStack.vpc,
   lambdaSecurityGroup: milvusStack.lambdaSecurityGroup,
   milvusEndpoint: milvusStack.milvusEndpoint,
   description: 'RAG query pipeline with HyDE retrieval and Claude 3.5 Sonnet',
+});
+
+// API Gateway Stack (Public HTTP endpoint for RAG queries)
+new ApiStack(app, 'ApiStack', {
+  env,
+  ragQueryFunction: ragStack.queryFunction,
+  description: 'Public API Gateway for RAG query access',
 });
 
 // NOTE: Previous KB stacks (HPC, Presidio, TicketTriage) have been removed
