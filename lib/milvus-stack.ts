@@ -9,6 +9,8 @@ import * as logs from 'aws-cdk-lib/aws-logs';
 export class MilvusStack extends cdk.Stack {
   public readonly queryFunction: lambda.Function;
   public readonly milvusEndpoint: string;
+  public readonly vpc: ec2.IVpc;
+  public readonly lambdaSecurityGroup: ec2.ISecurityGroup;
 
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -200,5 +202,9 @@ export class MilvusStack extends cdk.Stack {
       value: this.milvusEndpoint,
       description: 'Milvus connection endpoint for Lambda',
     });
+
+    // Export for embeddings stack
+    this.vpc = vpc;
+    this.lambdaSecurityGroup = lambdaSg;
   }
 }
