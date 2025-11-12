@@ -91,9 +91,9 @@ def ensure_collection_exists():
     # Create collection with auto-partitioning
     collection = Collection(name=COLLECTION_NAME, schema=schema)
 
-    # Create index for vector search
+    # Create index for vector search (IP for normalized Titan embeddings)
     index_params = {
-        "metric_type": "L2",
+        "metric_type": "IP",  # Inner Product for normalized embeddings
         "index_type": "IVF_FLAT",
         "params": {"nlist": 128}
     }

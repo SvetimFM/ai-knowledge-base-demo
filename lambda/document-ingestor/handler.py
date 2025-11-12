@@ -10,6 +10,7 @@ import time
 import re
 from typing import Dict, Any, Optional
 from decimal import Decimal
+from botocore.exceptions import ClientError
 
 # Environment variables
 EMBEDDINGS_FUNCTION_ARN = os.environ.get('EMBEDDINGS_FUNCTION_ARN')
@@ -81,8 +82,29 @@ def update_document_state(
     if error_message:
         item['error_message'] = error_message
 
-    table.put_item(Item=item)
-    print(f"Updated state: {s3_uri} → {status}")
+    # Atomic write with conditional expression to prevent race conditions
+    # Only set to PROCESSING if item doesn't exist OR status is not COMPLETED
+    try:
+        if status == 'PROCESSING':
+            # Prevent overwriting COMPLETED documents (race condition protection)
+            table.put_item(
+                Item=item,
+                ConditionExpression='attribute_not_exists(s3_uri) OR #status <> :completed',
+                ExpressionAttributeNames={'#status': 'status'},
+                ExpressionAttributeValues={':completed': 'COMPLETED'}
+            )
+        else:
+            # COMPLETED or FAILED status - allow overwrite
+            table.put_item(Item=item)
+
+        print(f"Updated state: {s3_uri} → {status}")
+    except ClientError as e:
+        if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
+            print(f"Document already completed, skipping update: {s3_uri}")
+            raise  # Re-raise to signal caller
+        else:
+            print(f"DynamoDB error: {str(e)}")
+            raise
 
 
 def extract_knowledge_base_from_key(key: str) -> str:
@@ -187,15 +209,29 @@ def process_s3_event(s3_event: Dict[str, Any]) -> Dict[str, Any]:
         print(f"Error getting S3 metadata: {str(e)}")
         content_type = 'unknown'
 
-    # Update state: PROCESSING
-    update_document_state(
-        s3_uri=s3_uri,
-        version_id=version_id,
-        status='PROCESSING',
-        knowledge_base=knowledge_base,
-        file_size_bytes=file_size,
-        content_type=content_type
-    )
+    # Update state: PROCESSING (atomic operation to prevent race conditions)
+    try:
+        update_document_state(
+            s3_uri=s3_uri,
+            version_id=version_id,
+            status='PROCESSING',
+            knowledge_base=knowledge_base,
+            file_size_bytes=file_size,
+            content_type=content_type
+        )
+    except ClientError as e:
+        if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
+            # Another Lambda already completed this document
+            print(f"Document already completed by another process: {s3_uri}")
+            return {
+                'statusCode': 200,
+                'body': json.dumps({
+                    'message': 'Document already processed by concurrent invocation',
+                    's3_uri': s3_uri,
+                    'status': 'SKIPPED'
+                })
+            }
+        raise
 
     try:
         # Invoke embeddings Lambda

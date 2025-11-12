@@ -3,6 +3,7 @@ import * as cdk from 'aws-cdk-lib';
 import { MilvusStack } from '../lib/milvus-stack';
 import { EmbeddingsStack } from '../lib/embeddings-stack';
 import { IngestionStack } from '../lib/ingestion-stack';
+import { RagStack } from '../lib/rag-stack';
 
 const app = new cdk.App();
 
@@ -31,6 +32,15 @@ new IngestionStack(app, 'IngestionStack', {
   env,
   embeddingsFunctionArn: embeddingsStack.embeddingsFunction.functionArn,
   description: 'Document ingestion pipeline with S3, SQS, and state tracking',
+});
+
+// RAG Query Stack (Question answering with HyDE + LLM)
+new RagStack(app, 'RagStack', {
+  env,
+  vpc: milvusStack.vpc,
+  lambdaSecurityGroup: milvusStack.lambdaSecurityGroup,
+  milvusEndpoint: milvusStack.milvusEndpoint,
+  description: 'RAG query pipeline with HyDE retrieval and Claude 3.5 Sonnet',
 });
 
 // NOTE: Previous KB stacks (HPC, Presidio, TicketTriage) have been removed

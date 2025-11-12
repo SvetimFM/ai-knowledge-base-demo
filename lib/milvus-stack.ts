@@ -5,6 +5,7 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as efs from 'aws-cdk-lib/aws-efs';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as logs from 'aws-cdk-lib/aws-logs';
+import * as servicediscovery from 'aws-cdk-lib/aws-servicediscovery';
 
 export class MilvusStack extends cdk.Stack {
   public readonly queryFunction: lambda.Function;
@@ -141,7 +142,14 @@ export class MilvusStack extends cdk.Stack {
       readOnly: false,
     });
 
-    // ECS Fargate Service
+    // AWS Cloud Map - Private DNS Namespace for service discovery
+    const namespace = new servicediscovery.PrivateDnsNamespace(this, 'MilvusNamespace', {
+      vpc,
+      name: 'milvus.local',
+      description: 'Private DNS namespace for Milvus service discovery',
+    });
+
+    // ECS Fargate Service with Cloud Map integration
     const service = new ecs.FargateService(this, 'MilvusService', {
       cluster,
       taskDefinition,
@@ -152,11 +160,16 @@ export class MilvusStack extends cdk.Stack {
       },
       securityGroups: [ecsSg],
       enableExecuteCommand: true, // For debugging
+      cloudMapOptions: {
+        name: 'milvus',
+        cloudMapNamespace: namespace,
+        dnsRecordType: servicediscovery.DnsRecordType.A,
+        dnsTtl: cdk.Duration.seconds(10),
+      },
     });
 
-    // Service Discovery for Lambda to find Milvus
-    const milvusEndpoint = `${service.taskDefinition.defaultContainer!.containerName}.${cluster.clusterName}.local`;
-    this.milvusEndpoint = milvusEndpoint;
+    // Resolvable DNS endpoint for Lambda (now actually works!)
+    this.milvusEndpoint = 'milvus.milvus.local';
 
     // Lambda function to query Milvus
     this.queryFunction = new lambda.Function(this, 'MilvusQueryFunction', {
@@ -171,7 +184,7 @@ export class MilvusStack extends cdk.Stack {
       },
       securityGroups: [lambdaSg],
       environment: {
-        MILVUS_HOST: service.taskDefinition.defaultContainer!.containerName,
+        MILVUS_HOST: this.milvusEndpoint,
         MILVUS_PORT: '19530',
       },
       logRetention: logs.RetentionDays.ONE_WEEK,
