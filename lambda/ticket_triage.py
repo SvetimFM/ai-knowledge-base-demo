@@ -5,47 +5,35 @@ from datetime import datetime
 import uuid
 
 bedrock_agent = boto3.client('bedrock-agent-runtime')
+bedrock_runtime = boto3.client('bedrock-runtime')
 dynamodb = boto3.resource('dynamodb')
 ses = boto3.client('ses')
 s3 = boto3.client('s3')
 
-KB_ID = os.environ.get('KNOWLEDGE_BASE_ID', 'test-kb-id')
-TABLE_NAME = os.environ.get('TABLE_NAME', 'test-table')
-SES_FROM_EMAIL = os.environ.get('SES_FROM_EMAIL', 'noreply@example.com')
+KB_ID = os.environ.get('KNOWLEDGE_BASE_ID')
+TABLE_NAME = os.environ.get('TABLE_NAME')
+SES_FROM_EMAIL = os.environ.get('SES_FROM_EMAIL')
+MODEL_ID = 'anthropic.claude-3-haiku-20240307-v1:0'
 
 def handler(event, context):
-    """
-    Process incoming tickets from S3 and perform triage using Bedrock KB.
-    """
     try:
-        # Get ticket from S3
         for record in event['Records']:
             bucket = record['s3']['bucket']['name']
             key = record['s3']['object']['key']
 
-            # Read ticket content
             response = s3.get_object(Bucket=bucket, Key=key)
             ticket_content = response['Body'].read().decode('utf-8')
 
-            # Parse ticket (assume JSON format)
             try:
                 ticket = json.loads(ticket_content)
             except json.JSONDecodeError:
-                # If not JSON, treat as plain text
-                ticket = {
-                    'description': ticket_content,
-                    'title': 'Untitled Ticket'
-                }
+                ticket = {'description': ticket_content, 'title': 'Untitled Ticket'}
 
-            # Generate ticket ID if not present
             ticket_id = ticket.get('id', str(uuid.uuid4()))
-
-            # Query knowledge base for triage
             triage_result = perform_triage(ticket)
 
-            # Store result in DynamoDB
             table = dynamodb.Table(TABLE_NAME)
-            item = {
+            table.put_item(Item={
                 'ticketId': ticket_id,
                 'timestamp': int(datetime.utcnow().timestamp()),
                 'status': 'triaged',
@@ -56,122 +44,109 @@ def handler(event, context):
                 'suggestedActions': triage_result['actions'],
                 'kbResponse': triage_result['kb_response'][:1000],
                 's3Key': key
-            }
-            table.put_item(Item=item)
+            })
 
-            # Send email notification if email provided
             if ticket.get('email'):
                 send_email_notification(ticket, triage_result)
 
-        return {
-            'statusCode': 200,
-            'body': json.dumps('Triage completed successfully')
-        }
+        return {'statusCode': 200, 'body': json.dumps('Triage completed')}
 
     except Exception as e:
-        print(f'Error processing ticket: {str(e)}')
-        return {
-            'statusCode': 500,
-            'body': json.dumps(f'Error: {str(e)}')
-        }
+        print(f'Error: {str(e)}')
+        return {'statusCode': 500, 'body': json.dumps(f'Error: {str(e)}')}
 
 def perform_triage(ticket):
-    """
-    Use Bedrock Knowledge Base to triage the ticket.
-    """
-    # Construct query for knowledge base
-    query = f"""
-    Analyze this HPC-related support ticket and provide triage information:
+    query = f"""Analyze this HPC support ticket:
 
-    Title: {ticket.get('title', 'N/A')}
-    Description: {ticket.get('description', 'N/A')}
+Title: {ticket.get('title', 'N/A')}
+Description: {ticket.get('description', 'N/A')}
 
-    Please provide:
-    1. Category (e.g., NCCL, RCCL, CUDA, Networking, Performance, Other)
-    2. Priority (High, Medium, Low)
-    3. Suggested actions or troubleshooting steps
-    """
+Provide triage information including category, priority, and suggested actions."""
 
     try:
-        # Query knowledge base
-        response = bedrock_agent.retrieve_and_generate(
+        kb_response = bedrock_agent.retrieve_and_generate(
             input={'text': query},
             retrieveAndGenerateConfiguration={
                 'type': 'KNOWLEDGE_BASE',
                 'knowledgeBaseConfiguration': {
                     'knowledgeBaseId': KB_ID,
-                    'modelArn': f'arn:aws:bedrock:{os.environ.get("AWS_REGION", "us-east-1")}::foundation-model/anthropic.claude-3-haiku-20240307-v1:0'
+                    'modelArn': f'arn:aws:bedrock:{os.environ.get("AWS_REGION", "us-east-1")}::foundation-model/{MODEL_ID}'
                 }
             }
         )
 
-        kb_response = response['output']['text']
+        kb_text = kb_response['output']['text']
 
-        # Parse response to extract triage info
-        triage = parse_triage_response(kb_response)
-        triage['kb_response'] = kb_response
+        triage_tool = {
+            "toolSpec": {
+                "name": "ticket_triage",
+                "description": "Extract structured triage data from ticket analysis",
+                "inputSchema": {
+                    "json": {
+                        "type": "object",
+                        "properties": {
+                            "category": {
+                                "type": "string",
+                                "enum": ["NCCL", "RCCL", "CUDA", "NETWORKING", "PERFORMANCE", "OTHER"],
+                                "description": "The primary category of the ticket"
+                            },
+                            "priority": {
+                                "type": "string",
+                                "enum": ["HIGH", "MEDIUM", "LOW"],
+                                "description": "The priority level"
+                            },
+                            "actions": {
+                                "type": "array",
+                                "items": {"type": "string"},
+                                "description": "List of suggested troubleshooting steps"
+                            }
+                        },
+                        "required": ["category", "priority", "actions"]
+                    }
+                }
+            }
+        }
 
-        return triage
+        structured_response = bedrock_runtime.converse(
+            modelId=MODEL_ID,
+            messages=[{
+                "role": "user",
+                "content": [{
+                    "text": f"Based on this analysis:\n\n{kb_text}\n\nExtract the category, priority, and suggested actions. Use the ticket_triage tool to provide structured output."
+                }]
+            }],
+            toolConfig={"tools": [triage_tool]}
+        )
+
+        if 'toolUse' in structured_response['output']['message']['content'][0]:
+            tool_result = structured_response['output']['message']['content'][0]['toolUse']['input']
+            return {
+                'category': tool_result['category'],
+                'priority': tool_result['priority'],
+                'actions': tool_result['actions'][:5],
+                'kb_response': kb_text
+            }
+
+        return {
+            'category': 'OTHER',
+            'priority': 'MEDIUM',
+            'actions': ['Manual review required'],
+            'kb_response': kb_text
+        }
 
     except Exception as e:
-        print(f'Error querying knowledge base: {str(e)}')
-        # Return default triage if KB query fails
+        print(f'Error in triage: {str(e)}')
         return {
-            'category': 'Other',
-            'priority': 'Medium',
+            'category': 'OTHER',
+            'priority': 'MEDIUM',
             'actions': ['Manual review required'],
             'kb_response': f'Error: {str(e)}'
         }
 
-def parse_triage_response(response):
-    """
-    Parse the KB response to extract category, priority, and actions.
-    """
-    # Simple parsing - in production, use more robust NLP
-    response_lower = response.lower()
-
-    # Determine category
-    categories = ['nccl', 'rccl', 'cuda', 'networking', 'performance']
-    category = 'Other'
-    for cat in categories:
-        if cat in response_lower:
-            category = cat.upper()
-            break
-
-    # Determine priority
-    if 'high priority' in response_lower or 'critical' in response_lower:
-        priority = 'High'
-    elif 'low priority' in response_lower:
-        priority = 'Low'
-    else:
-        priority = 'Medium'
-
-    # Extract actions (look for numbered lists or bullet points)
-    actions = []
-    lines = response.split('\n')
-    for line in lines:
-        line = line.strip()
-        if line and (line[0].isdigit() or line.startswith('-') or line.startswith('•')):
-            actions.append(line)
-
-    if not actions:
-        actions = ['Review ticket and knowledge base response']
-
-    return {
-        'category': category,
-        'priority': priority,
-        'actions': actions[:5]  # Limit to 5 actions
-    }
-
 def send_email_notification(ticket, triage_result):
-    """
-    Send email notification with triage results.
-    """
     try:
         subject = f"Ticket Triage: {ticket.get('title', 'Untitled')}"
-
-        body = f"""
-Ticket Triage Results
+        body = f"""Ticket Triage Results
 
 Title: {ticket.get('title', 'Untitled')}
 Category: {triage_result['category']}
@@ -183,8 +158,7 @@ Suggested Actions:
 AI Analysis:
 {triage_result['kb_response'][:500]}...
 
-This ticket has been automatically triaged using AI and HPC knowledge base.
-        """
+This ticket has been automatically triaged using AI."""
 
         ses.send_email(
             Source=SES_FROM_EMAIL,

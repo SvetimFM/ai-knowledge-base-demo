@@ -1,384 +1,166 @@
-# AI-Powered Knowledge Base Demo
+# AI Knowledge Base Demo
 
-**Amazon Q Developer + Amazon Bedrock + AWS CDK**
+Amazon Bedrock Knowledge Base demo with Amazon Q Developer CLI integration and automated ticket triage.
 
-A production-ready demonstration of scalable AI knowledge retrieval using Amazon Q Developer CLI with dual knowledge bases, automated ticket triage, and infrastructure as code.
+## What This Does
 
----
+**Knowledge Retrieval**: Query technical documentation via Amazon Q Developer CLI using Model Context Protocol (MCP)
+**Ticket Triage**: Automated support ticket categorization using AI
 
-## Executive Summary
+## Architecture
 
-This demo showcases a modern AI-powered knowledge management system with two key capabilities:
+- **2 Knowledge Bases**: HPC Computing + Presidio IT Solutions
+- **Vector Storage**: OpenSearch Serverless with Titan embeddings
+- **AI Model**: Claude 3 Haiku for generation
+- **Automation**: Lambda-based ticket processing with DynamoDB storage
 
-1. **Natural Language Knowledge Retrieval** - Query technical documentation using Amazon Q Developer CLI
-2. **Automated Ticket Triage** - AI-powered categorization and routing of support tickets
+## Prerequisites
 
-### What Makes This Special
-
-- **Dual Knowledge Base Architecture** - Separate domains (HPC Computing + Presidio IT Solutions) discoverable through a single interface
-- **Model Context Protocol (MCP) Integration** - Amazon Q Developer CLI automatically discovers and queries multiple knowledge bases via tag-based routing
-- **Fully Automated Infrastructure** - Complete deployment in ~5 minutes using AWS CDK
-- **Scalable Design** - Add new knowledge bases without reconfiguring the client
-
-### Technologies Demonstrated
-
-- **Amazon Bedrock Knowledge Base** - Vector-based RAG system with Claude 3 Haiku
-- **Amazon Q Developer CLI** - Natural language interface with MCP integration
-- **OpenSearch Serverless** - Managed vector storage for embeddings
-- **AWS Lambda** - Event-driven ticket processing
-- **AWS CDK (TypeScript)** - Infrastructure as code with cross-stack references
-
----
-
-## System Architecture
-
-```
-┌─────────────────────────────────────────────────────────┐
-│         Amazon Q Developer CLI (User Interface)         │
-│                                                           │
-│  "What cloud migration services does Presidio offer?"   │
-│  "How do I optimize NCCL performance?"                   │
-└────────────────────────┬─────────────────────────────────┘
-                         │
-                         ▼
-        ┌────────────────────────────────┐
-        │  Model Context Protocol (MCP)  │
-        │  Tag-Based KB Discovery        │
-        │  Filter: name=true             │
-        └────────┬───────────────┬───────┘
-                 │               │
-        ┌────────▼──────┐  ┌────▼──────────┐
-        │   HPC KB      │  │  Presidio KB  │
-        │  {HPC_KB_ID}  │  │ {PRESIDIO_KB} │
-        │  22 docs      │  │  25 docs      │
-        │  NCCL/CUDA    │  │  Cloud/AI     │
-        └───────────────┘  └───────────────┘
-             │                    │
-             └────────┬───────────┘
-                      ▼
-         ┌────────────────────────────┐
-         │  OpenSearch Serverless     │
-         │  Vector Storage            │
-         │  Titan Embeddings v2       │
-         └────────────────────────────┘
-
-┌──────────────────────────────────────────────────────┐
-│          Automated Ticket Triage System              │
-│                                                        │
-│  S3 Upload → Lambda Trigger → Bedrock KB Query      │
-│  → AI Analysis → DynamoDB Storage → Email Alert      │
-└──────────────────────────────────────────────────────┘
-```
-
----
-
-## Use Case 1: Amazon Q CLI with Knowledge Base
-
-Query technical documentation using natural language through Amazon Q Developer CLI.
-
-### How It Works
-
-1. **User asks a question** in Q Developer CLI
-2. **MCP server** discovers all knowledge bases tagged with `name=true`
-3. **Bedrock retrieves** relevant chunks from OpenSearch vector store
-4. **Claude 3 Haiku** generates answer with citations
-5. **User receives** contextual response in seconds
-
-### Example Queries
-
-**HPC Knowledge Base:**
-```
-> What is NCCL and how does it work?
-> How do I troubleshoot NCCL bandwidth issues?
-> What are the best practices for GPU collective operations?
-```
-
-**Presidio Knowledge Base:**
-```
-> What cloud migration services does Presidio offer?
-> Tell me about Presidio's AWS partnership
-> What are Presidio's AI and ML capabilities?
-```
-
-### Key Features
-
-- **Multi-KB Discovery** - Single Q CLI session accesses both knowledge bases automatically
-- **Semantic Search** - Vector embeddings enable conceptual matching, not just keywords
-- **Source Citations** - Responses include document references
-- **Fast Retrieval** - Sub-second query response times
-
----
-
-## Use Case 2: Automated Ticket Triage
-
-AI-powered analysis and categorization of support tickets with zero manual intervention.
-
-### How It Works
-
-1. **Ticket submitted** - JSON or text file uploaded to S3 bucket
-2. **Lambda triggered** - S3 event automatically invokes processing function
-3. **AI analysis** - Bedrock queries knowledge base for relevant context
-4. **Smart triage** - System extracts category, priority, and recommended actions
-5. **Results stored** - DynamoDB table maintains triage history
-6. **Notification sent** - SES email with AI-generated analysis
-
-### Ticket Processing Flow
-
-```
-┌─────────────┐     ┌──────────────┐     ┌────────────────┐
-│  S3 Bucket  │────▶│    Lambda    │────▶│  Bedrock KB    │
-│  (Upload)   │     │  (Processor) │     │  (AI Query)    │
-└─────────────┘     └──────┬───────┘     └────────────────┘
-                           │
-                    ┌──────▼───────┐     ┌────────────────┐
-                    │   DynamoDB   │     │   SES Email    │
-                    │   (Storage)  │     │ (Notification) │
-                    └──────────────┘     └────────────────┘
-```
-
-### AI-Powered Features
-
-- **Automatic categorization** (NCCL, RCCL, CUDA, Networking, Performance, etc.)
-- **Priority assignment** (High, Medium, Low) based on keywords and context
-- **Action recommendations** extracted from knowledge base
-- **Full audit trail** in DynamoDB with timestamps
-
----
-
-## Knowledge Base Content
-
-### HPC Computing Knowledge Base (22 documents)
-
-Comprehensive documentation on high-performance computing topics:
-
-- **NCCL** - NVIDIA Collective Communications Library (6 docs)
-  - API reference, collectives, environment variables
-  - Troubleshooting guides, performance tuning
-- **RCCL** - ROCm Collective Communications Library
-- **CUDA Testing** - Testing frameworks and methodologies
-- **HPC Communication Patterns** - AllReduce, AllGather, Broadcast patterns
-- **HPC Networking** - InfiniBand, EFA, topology optimization
-- **HPC Best Practices** - Scaling strategies, profiling techniques
-- **Research Papers** - Networks for High-Performance Computing survey
-
-### Presidio IT Solutions Knowledge Base (25 documents)
-
-Business-focused content covering Presidio's service offerings:
-
-- **Cloud Solutions** (7 docs)
-  - AWS partnership, cloud migration, FinOps
-  - VMware on AWS integration
-- **Case Studies** (9 docs)
-  - Q2 Holdings, NHL, DraftKings, OrthoCarolina
-  - Higher education, healthcare, sports & gaming
-- **Technical Capabilities** (9 docs)
-  - Cybersecurity, AI/ML platforms, DevOps automation
-  - Data center modernization, managed services
-  - Zero trust security, disaster recovery
-
----
+- AWS Account with Bedrock access in `us-east-1`
+- AWS CLI configured
+- Node.js 18+ and npm
+- (Optional) SES verified email for ticket notifications
 
 ## Quick Start
 
-### Prerequisites
-
-- **AWS Account** with Bedrock access
-- **AWS CLI** configured with appropriate profile
-- **Node.js** 18.x or later
-- **AWS CDK** installed: `npm install -g aws-cdk`
-- **Amazon Q Developer CLI** installed and configured
-
-### Setup Documentation
-
-**Documentation files are not included in the repository.** Download them first:
+### 1. Install Dependencies
 
 ```bash
-# Download Presidio documentation (26 files)
-bash scripts/download-presidio-docs.sh
-
-# For HPC documentation:
-# - Use your own HPC docs, or
-# - Contact repository owner for GigaIO/NVIDIA documentation
-# See docs/README.md for details
-```
-
-### Deploy Infrastructure
-
-```bash
-# 1. Install dependencies
 npm install
-
-# 2. Set your AWS profile
-export AWS_PROFILE=your-profile-name
-
-# 3. Deploy all three stacks
-npx cdk deploy HpcKnowledgeBaseStack --require-approval never
-npx cdk deploy PresidioKnowledgeBaseStack --require-approval never
-npx cdk deploy TicketTriageStack --require-approval never
-
-# Deployment completes in ~5 minutes per stack
-
-# 4. Upload documentation to S3 and trigger ingestion
-bash scripts/deploy-docs.sh   # HPC docs
-bash scripts/sync-kb.sh        # Trigger ingestion
 ```
 
-### Configure Amazon Q Developer CLI
+### 2. Configure Email (Optional)
 
-The MCP configuration file at `~/.aws/amazonq/mcp.json` enables automatic knowledge base discovery:
+For ticket triage email notifications:
+
+```bash
+export SES_FROM_EMAIL=your-verified-email@example.com
+```
+
+### 3. Deploy Infrastructure
+
+```bash
+npx cdk deploy --all --require-approval never
+```
+
+This creates:
+- HpcKnowledgeBaseStack
+- PresidioKnowledgeBaseStack
+- TicketTriageStack
+
+### 4. Add Documentation
+
+Download sample docs (not included in repo):
+
+```bash
+bash scripts/download-presidio-docs.sh
+# Add your HPC docs to docs/ directory
+```
+
+Upload to S3:
+
+```bash
+bash scripts/deploy-docs.sh
+```
+
+Sync knowledge bases:
+
+```bash
+bash scripts/sync-kb.sh
+```
+
+### 5. Configure Amazon Q CLI
+
+Install [Amazon Q Developer CLI](https://aws.amazon.com/developer/generative-ai/q-developer/)
+
+Add MCP server to `~/.aws/amazonq/mcp.json`:
 
 ```json
 {
   "mcpServers": {
-    "awslabs.bedrock-kb-retrieval-mcp-server": {
-      "command": "uvx",
-      "args": ["awslabs.bedrock-kb-retrieval-mcp-server@latest"],
-      "env": {
-        "AWS_PROFILE": "your-profile-name",
-        "AWS_REGION": "us-east-1",
-        "KB_INCLUSION_TAG_KEY": "name"
-      }
+    "bedrock-kb": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/mcp-server-bedrock-kb-retrieval",
+        "--filter",
+        "name=true"
+      ]
     }
   }
 }
 ```
 
-### Test the System
+Restart Q CLI and query your knowledge bases.
 
-**1. Test Q CLI Knowledge Retrieval:**
+## Usage Examples
+
+### Knowledge Base Queries
+
+```
+What is NCCL and how does it work?
+What cloud migration services does Presidio offer?
+How do I troubleshoot CUDA performance issues?
+```
+
+### Ticket Triage
+
+Upload a ticket to S3:
+
 ```bash
-q
-
-> what knowledge bases do you have access to?
-# Should list: hpc-computing-knowledge-base and presidio-solutions-knowledge-base
-
-> What cloud services does Presidio offer?
-# AI-generated response with Presidio KB citations
-
-> How do I optimize NCCL performance?
-# AI-generated response with HPC KB citations
+aws s3 cp examples/ticket-1.json s3://ticket-triage-{ACCOUNT_ID}/
 ```
 
-**2. Test Ticket Triage:**
+View triage results in DynamoDB table `ticket-triage-results`
+
+## Project Structure
+
+```
+lib/
+  knowledge-base-construct.ts  # Reusable KB construct
+  hpc-kb-stack.ts             # HPC knowledge base
+  presidio-kb-stack.ts        # Presidio knowledge base
+  ticket-triage-stack.ts      # Ticket processing system
+lambda/
+  ticket_triage.py            # Ticket processor with structured output
+scripts/
+  deploy-docs.sh              # Upload docs to S3
+  sync-kb.sh                  # Trigger KB sync
+examples/
+  ticket-1.json               # Sample ticket
+```
+
+## Cleanup
+
 ```bash
-# Create a test ticket
-cat > test-ticket.json << EOF
-{
-  "title": "NCCL performance degradation",
-  "description": "Experiencing slow all-reduce operations on 8 GPU cluster",
-  "email": "user@example.com"
-}
-EOF
-
-# Upload to trigger processing
-aws s3 cp test-ticket.json s3://hpc-tickets-{ACCOUNT_ID}/test-ticket.json
-
-# Check DynamoDB for triage results
-aws dynamodb scan --table-name hpc-ticket-triage
+npx cdk destroy --all
 ```
 
----
+## Key Features
 
-## Repository Structure
+- **Reusable Infrastructure**: Single `KnowledgeBaseConstruct` for multiple domains
+- **Structured AI Output**: Uses Bedrock Converse API with tool use for reliable parsing
+- **Tag-Based Discovery**: MCP automatically finds KBs tagged with `name=true`
+- **Event-Driven**: S3 uploads trigger automatic ticket processing
+- **Environment-Based Config**: SES email via environment variable
 
-```
-.
-├── README.md                          # This file
-├── ARCHITECTURE.md                    # Technical architecture deep-dive
-├── DATA_INGESTION.md                  # Knowledge base ingestion strategy
-│
-├── bin/
-│   └── q_ticket_triage.ts             # CDK app entry point (instantiates both stacks)
-│
-├── lib/
-│   ├── q_ticket_triage-stack.ts       # HPC KB + Ticket Triage stack
-│   └── presidio-kb-stack.ts           # Presidio KB stack (separate lifecycle)
-│
-├── lambda/
-│   └── ticket-triage-processor/       # Python Lambda for ticket processing
-│
-├── docs/
-│   ├── nvidia/                        # NCCL official documentation (6 files)
-│   ├── *.md                           # HPC topic documentation (6 files)
-│   ├── *.pdf                          # Research papers (1 file)
-│   └── presidio/                      # Presidio docs (26 files, gitignored)
-│
-├── scripts/
-│   └── download-presidio-docs.sh      # Automated doc collection script
-│
-└── examples/
-    └── README.md                       # Demo scenarios and sample tickets
+## Development
+
+```bash
+npm install        # Install dependencies
+npm run build      # Compile TypeScript
+npm test           # Run tests (requires Docker)
+npx cdk synth      # Synthesize CloudFormation
 ```
 
----
+## Troubleshooting
 
-## Key Design Decisions
+**Deployment fails**: Ensure Bedrock model access is enabled in `us-east-1`
+**Q CLI can't find KBs**: Check MCP config and verify KB tags
+**Email not sending**: Verify SES email address and check Lambda logs
+**KB queries return no results**: Run sync script after uploading docs
+**Tests fail**: Tests require Docker for CDK bundling. Build still validates TypeScript compilation.
 
-### Why Separate CDK Stacks?
+## License
 
-- **Independent lifecycle** - Deploy, update, or destroy KBs independently
-- **Resource isolation** - Separate S3 buckets, OpenSearch collections, IAM roles
-- **Cross-stack references** - Ticket triage Lambda can still access both KBs via ARN exports
-
-### Why Tag-Based Discovery?
-
-- **Scalability** - Add new KBs by tagging `name=true`, no MCP config changes needed
-- **Flexibility** - Different teams can manage different KBs independently
-- **Single interface** - Users don't need to know which KB to query
-
-### Why Two Knowledge Bases?
-
-- **Domain separation** - HPC technical content vs. business/solutions content
-- **Different audiences** - Engineers query HPC KB, sales/executives query Presidio KB
-- **Proof of concept** - Demonstrates multi-KB architecture for enterprise scenarios
-
----
-
-## Business Value
-
-### For Technical Teams
-- **Instant expertise** - Query complex HPC topics without searching documentation
-- **Reduced resolution time** - Automated ticket triage accelerates support workflows
-- **Knowledge preservation** - Institutional knowledge captured in queryable form
-
-### For Business Teams
-- **Sales enablement** - Quick answers to customer questions about Presidio capabilities
-- **Consistent messaging** - AI-generated responses based on official documentation
-- **Competitive intelligence** - Easy access to case studies and solution briefs
-
-### For IT Leadership
-- **Scalable architecture** - Add knowledge bases as organization grows
-- **Cost-effective** - Serverless design scales to zero when not in use
-- **Modern stack** - Demonstrates latest AWS AI/ML capabilities
-
----
-
-## Next Steps
-
-1. **Add More Knowledge Bases** - Follow the Presidio KB pattern (see `DATA_INGESTION.md`)
-2. **Customize Ticket Triage** - Modify Lambda logic for your workflow
-3. **Enhance UI** - Build web interface on top of Bedrock APIs
-4. **Add Feedback Loop** - Track query quality and refine chunking strategy
-5. **Integrate with Tools** - Connect to Jira, ServiceNow, Slack
-
----
-
-## Technical Details
-
-**Embeddings Model:** Amazon Titan Embed Text v2 (1024 dimensions)
-**Generation Model:** Anthropic Claude 3 Haiku
-**Vector Store:** OpenSearch Serverless (auto-managed)
-**Chunking Strategy:** Fixed size, 512 tokens, 20% overlap
-**Region:** us-east-1
-**Cost:** ~$5/month for demo workloads (mostly OpenSearch Serverless)
-
-For detailed architecture information, see [ARCHITECTURE.md](./ARCHITECTURE.md).
-For data ingestion guidelines, see [DATA_INGESTION.md](./DATA_INGESTION.md).
-
----
-
-## Support
-
-For questions or issues with this demo, please open a GitHub issue.
-
-Built with AWS CDK, Amazon Bedrock, and Amazon Q Developer.
+MIT-0

@@ -1,66 +1,35 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import * as s3 from 'aws-cdk-lib/aws-s3';
-import { bedrock } from '@cdklabs/generative-ai-cdk-constructs';
+import { KnowledgeBaseConstruct } from './knowledge-base-construct';
 
 export class PresidioKnowledgeBaseStack extends cdk.Stack {
-  public readonly presidioKbArn: string;
+  public readonly kbArn: string;
 
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // S3 Bucket for Presidio documentation
-    const presidioDocsBucket = new s3.Bucket(this, 'PresidioDocsBucket', {
-      bucketName: `presidio-knowledge-base-docs-${this.account}`,
-      removalPolicy: cdk.RemovalPolicy.DESTROY,
-      autoDeleteObjects: true,
-      versioned: true,
-      encryption: s3.BucketEncryption.S3_MANAGED,
-      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
-    });
-
-    // Create Presidio Bedrock Knowledge Base
-    const presidioKnowledgeBase = new bedrock.VectorKnowledgeBase(this, 'PresidioKnowledgeBase', {
+    const kb = new KnowledgeBaseConstruct(this, 'PresidioKB', {
       name: 'presidio-solutions-knowledge-base',
       description: 'Knowledge base for Presidio IT solutions: cloud, security, AI, data center modernization, networking, and managed services',
-      embeddingsModel: bedrock.BedrockFoundationModel.TITAN_EMBED_TEXT_V2_1024,
       instruction: 'Use this knowledge base to answer questions about Presidio IT solutions and services, including cloud migration, cybersecurity, AI/ML platforms, data center modernization, networking, collaboration, managed services, and industry-specific implementations.',
+      bucketPrefix: 'presidio-kb-docs',
     });
 
-    // Tag the Presidio knowledge base for MCP server discovery (same tag as HPC KB)
-    cdk.Tags.of(presidioKnowledgeBase).add('name', 'true');
-
-    // Add S3 data source to Presidio knowledge base
-    new bedrock.S3DataSource(this, 'PresidioDataSource', {
-      bucket: presidioDocsBucket,
-      knowledgeBase: presidioKnowledgeBase,
-      dataSourceName: 'presidio-docs-s3-source',
-      chunkingStrategy: bedrock.ChunkingStrategy.fixedSize({
-        maxTokens: 512,
-        overlapPercentage: 20,
-      }),
-    });
-
-    // CloudFormation Outputs for Presidio Knowledge Base
-    new cdk.CfnOutput(this, 'PresidioDocsBucketName', {
-      value: presidioDocsBucket.bucketName,
-      description: 'S3 bucket for Presidio documentation',
+    new cdk.CfnOutput(this, 'BucketName', {
+      value: kb.bucket.bucketName,
       exportName: 'PresidioDocsBucketName',
     });
 
-    new cdk.CfnOutput(this, 'PresidioKnowledgeBaseId', {
-      value: presidioKnowledgeBase.knowledgeBaseId,
-      description: 'Presidio Bedrock Knowledge Base ID',
+    new cdk.CfnOutput(this, 'KnowledgeBaseId', {
+      value: kb.knowledgeBase.knowledgeBaseId,
       exportName: 'PresidioKnowledgeBaseId',
     });
 
-    new cdk.CfnOutput(this, 'PresidioKnowledgeBaseArn', {
-      value: presidioKnowledgeBase.knowledgeBaseArn,
-      description: 'Presidio Bedrock Knowledge Base ARN',
+    new cdk.CfnOutput(this, 'KnowledgeBaseArn', {
+      value: kb.knowledgeBase.knowledgeBaseArn,
       exportName: 'PresidioKnowledgeBaseArn',
     });
 
-    // Export for cross-stack reference
-    this.presidioKbArn = presidioKnowledgeBase.knowledgeBaseArn;
+    this.kbArn = kb.knowledgeBase.knowledgeBaseArn;
   }
 }
