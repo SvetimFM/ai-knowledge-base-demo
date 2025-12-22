@@ -1,0 +1,522 @@
+{
+  "entities": [
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "doc_count": 619,
+      "aliases": [
+        "jeffrey epstein",
+        "epstein",
+        "j. epstein",
+        "jeffrey"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/epstein_network.html"
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "doc_count": 317,
+      "aliases": [
+        "andrew",
+        "duke of york",
+        "prince andrew"
+      ],
+      "is_key_player": true,
+      "viz_file": null
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "doc_count": 301,
+      "aliases": [
+        "g. maxwell",
+        "ghislaine",
+        "ghislaine maxwell",
+        "maxwell"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/maxwell_network.html"
+    },
+    {
+      "id": "person:clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "doc_count": 192,
+      "aliases": [
+        "bill",
+        "president clinton",
+        "bill clinton",
+        "clinton"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/clinton_network.html"
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "doc_count": 103,
+      "aliases": [
+        "alan dershowitz",
+        "alan",
+        "dershowitz"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/dershowitz_network.html"
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "doc_count": 101,
+      "aliases": [
+        "wexner",
+        "les",
+        "les wexner",
+        "leslie"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/wexner_network.html"
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "doc_count": 94,
+      "aliases": [
+        "virginia giuffre",
+        "giuffre",
+        "roberts",
+        "virginia"
+      ],
+      "is_key_player": true,
+      "viz_file": null
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "doc_count": 8,
+      "aliases": [
+        "donald",
+        "trump",
+        "donald trump"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/trump_network.html"
+    },
+    {
+      "id": "person:brunel",
+      "name": "Jean-Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "doc_count": 6,
+      "aliases": [
+        "brunel",
+        "jean-luc",
+        "jean-luc brunel"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/brunel_network.html"
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "doc_count": 1455,
+      "aliases": [
+        "new york"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "doc_count": 791,
+      "aliases": [
+        "paris"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "doc_count": 746,
+      "aliases": [
+        "black"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "doc_count": 688,
+      "aliases": [
+        "palm beach"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "doc_count": 563,
+      "aliases": [
+        "jeffrey"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "doc_count": 429,
+      "aliases": [
+        "little saint james"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "doc_count": 356,
+      "aliases": [
+        "london"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "doc_count": 265,
+      "aliases": [
+        "ghislaine"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "doc_count": 265,
+      "aliases": [
+        "alfredo"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:nadia",
+      "name": "Nadia",
+      "short_name": "nadia",
+      "type": "person",
+      "doc_count": 194,
+      "aliases": [
+        "nadia"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "doc_count": 170,
+      "aliases": [
+        "rodriguez"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "doc_count": 160,
+      "aliases": [
+        "zorro ranch"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:leon",
+      "name": "Leon",
+      "short_name": "leon",
+      "type": "person",
+      "doc_count": 101,
+      "aliases": [
+        "leon"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "location:virgin islands",
+      "name": "Virgin Islands",
+      "short_name": "virgin islands",
+      "type": "location",
+      "doc_count": 74,
+      "aliases": [
+        "virgin islands"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "doc_count": 72,
+      "aliases": [
+        "new mexico"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "location:manhattan",
+      "name": "Manhattan",
+      "short_name": "manhattan",
+      "type": "location",
+      "doc_count": 28,
+      "aliases": [
+        "manhattan"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "doc_count": 24,
+      "aliases": [
+        "roberts"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:glenn",
+      "name": "Glenn",
+      "short_name": "glenn",
+      "type": "person",
+      "doc_count": 8,
+      "aliases": [
+        "glenn"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:dubin",
+      "name": "Dubin",
+      "short_name": "dubin",
+      "type": "person",
+      "doc_count": 7,
+      "aliases": [
+        "dubin"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "doc_count": 6,
+      "aliases": [
+        "mitchell"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    },
+    {
+      "id": "person:kellen",
+      "name": "Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "doc_count": 5,
+      "aliases": [
+        "kellen"
+      ],
+      "is_key_player": false,
+      "viz_file": null
+    }
+  ],
+  "total": 30,
+  "key_players": [
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "doc_count": 619,
+      "aliases": [
+        "jeffrey epstein",
+        "epstein",
+        "j. epstein",
+        "jeffrey"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/epstein_network.html"
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "doc_count": 317,
+      "aliases": [
+        "andrew",
+        "duke of york",
+        "prince andrew"
+      ],
+      "is_key_player": true,
+      "viz_file": null
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "doc_count": 301,
+      "aliases": [
+        "g. maxwell",
+        "ghislaine",
+        "ghislaine maxwell",
+        "maxwell"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/maxwell_network.html"
+    },
+    {
+      "id": "person:clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "doc_count": 192,
+      "aliases": [
+        "bill",
+        "president clinton",
+        "bill clinton",
+        "clinton"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/clinton_network.html"
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "doc_count": 103,
+      "aliases": [
+        "alan dershowitz",
+        "alan",
+        "dershowitz"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/dershowitz_network.html"
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "doc_count": 101,
+      "aliases": [
+        "wexner",
+        "les",
+        "les wexner",
+        "leslie"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/wexner_network.html"
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "doc_count": 94,
+      "aliases": [
+        "virginia giuffre",
+        "giuffre",
+        "roberts",
+        "virginia"
+      ],
+      "is_key_player": true,
+      "viz_file": null
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "doc_count": 8,
+      "aliases": [
+        "donald",
+        "trump",
+        "donald trump"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/trump_network.html"
+    },
+    {
+      "id": "person:brunel",
+      "name": "Jean-Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "doc_count": 6,
+      "aliases": [
+        "brunel",
+        "jean-luc",
+        "jean-luc brunel"
+      ],
+      "is_key_player": true,
+      "viz_file": "data/viz/players/brunel_network.html"
+    }
+  ],
+  "generated_at": "2025-12-22T14:46:20.912018"
+}

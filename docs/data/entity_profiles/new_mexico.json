@@ -1,0 +1,462 @@
+{
+  "id": "location:new mexico",
+  "name": "New Mexico",
+  "short_name": "new mexico",
+  "type": "location",
+  "doc_count": 72,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 72,
+      "strength": 1.0
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 69,
+      "strength": 0.958
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 69,
+      "strength": 0.958
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 66,
+      "strength": 0.917
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 65,
+      "strength": 0.903
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 65,
+      "strength": 0.903
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 65,
+      "strength": 0.903
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 65,
+      "strength": 0.903
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 65,
+      "strength": 0.903
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 64,
+      "strength": 0.889
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 64,
+      "strength": 0.889
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 63,
+      "strength": 0.875
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 63,
+      "strength": 0.875
+    },
+    {
+      "id": "location:manhattan",
+      "name": "Manhattan",
+      "short_name": "manhattan",
+      "type": "location",
+      "shared_docs": 5,
+      "strength": 0.069
+    },
+    {
+      "id": "person:kellen",
+      "name": "Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.028
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.028
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.028
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.028
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.028
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.028
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00007944",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007947",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00001932",
+      "snippet": "=== Page 1 ===\near Jeffrey;\nI hope you had a wonderful holi-\nday season.\nI receved the necklace you sent me. It was beautiful, thank\nyou sister very and much. I Christmas went well with my family. My"
+    },
+    {
+      "id": "EFTA00001927",
+      "snippet": "=== Page 1 ===\near Jeffrey;\nI hope you had a wonderful holi-\nday season.\nI receved the subblace you sent me. It was beautiful, thank\nyou \u0161ister very and much I Christmas went well with my family. My\ns"
+    },
+    {
+      "id": "EFTA00007949",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007931",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007911",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007948",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007922",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007921",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007917",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007909",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007950",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007954",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007897",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00001928",
+      "snippet": "=== Page 1 ===\near Jeffrey:\nI hope you had a wonderful holi-\nday season.\nI received the netblace you sent me. It was beautiful, thank\nyou sister very and much I Christmas went well with my family. My"
+    },
+    {
+      "id": "EFTA00003148",
+      "snippet": "=== Page 1 ===\nPrincipal Residence\nLSJE, LLC\n6100 Red Hook Quarters Suite B3\nSt. Thomas, VI 00802-1348\nPhone /\nFax\nNew York Estate\n9 East 71st Street\nNew York, New 10021\nPhone /\nFax\nZorro Ranch\n49 Zor"
+    },
+    {
+      "id": "EFTA00007937",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007946",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007934",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007941",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007939",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007942",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007945",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007900",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007932",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007935",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007938",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "C. Contact Book_Redacted_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007916",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007912",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007919",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007893",
+      "snippet": "=== Page 1 ===\n023876\nTown of Palm Beach\n(FLORIDA)\nPolice Department\nPOLICE\nEVIDENCE\nCASE # 05-368 PROPERTY # 06-24\nCONTENTS 129532\nItem\nQuantity\nDescription\n/\nfreen folder\nSuspect: Epstien, Jeff\nOffi"
+    },
+    {
+      "id": "EFTA00007901",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007951",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007910",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007943",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007896",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007936",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007927",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007904",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00001929",
+      "snippet": "=== Page 1 ===\near gettrey;\nI hope you had a wonderful holi-\nday season\nrecesved the actione you sent me. Ifwas beautiful, thank\nyou sister very and much Christinas were well with my family My\nspent i"
+    },
+    {
+      "id": "EFTA00001926",
+      "snippet": "=== Page 1 ===\near Jeffrey;\nI hope you had a wonderful holi-\nday season.\nI receved the recluace you sent me. It beautiful, thank\non new spent it in Arizona with our dad. my I performed\nyou sister very"
+    },
+    {
+      "id": "EFTA00007906",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007926",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007903",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007902",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007918",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007923",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007955",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007914",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007924",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007895",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007930",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007894",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007953",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007928",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007929",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007898",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007899",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00001930",
+      "snippet": "=== Page 1 ===\near gettrey;\nI hope you had a wonderful holt-\nday Season\nIreceved the problace you sent me. Ifwas beau\u0163iful, thank\nsister very and much Christinas were well with my family. My\nbeen year"
+    },
+    {
+      "id": "EFTA00007915",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007952",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007908",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007907",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007925",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007905",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "C. Contact Book (Redacted)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007940",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007933",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007920",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007913",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    }
+  ],
+  "total_documents": 72
+}

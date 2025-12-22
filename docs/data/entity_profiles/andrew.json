@@ -1,0 +1,574 @@
+{
+  "id": "person:andrew",
+  "name": "Prince Andrew",
+  "short_name": "andrew",
+  "type": "person",
+  "doc_count": 317,
+  "is_key_player": true,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 313,
+      "strength": 0.987
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 294,
+      "strength": 0.927
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 293,
+      "strength": 0.924
+    },
+    {
+      "id": "person:nadia",
+      "name": "Nadia",
+      "short_name": "nadia",
+      "type": "person",
+      "shared_docs": 191,
+      "strength": 0.603
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 100,
+      "strength": 0.315
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 97,
+      "strength": 0.306
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 95,
+      "strength": 0.3
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "shared_docs": 92,
+      "strength": 0.29
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 91,
+      "strength": 0.287
+    },
+    {
+      "id": "location:manhattan",
+      "name": "Manhattan",
+      "short_name": "manhattan",
+      "type": "location",
+      "shared_docs": 22,
+      "strength": 0.069
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.019
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.016
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.016
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.016
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.016
+    },
+    {
+      "id": "person:brunel",
+      "name": "Jean-Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.016
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.016
+    },
+    {
+      "id": "person:dubin",
+      "name": "Dubin",
+      "short_name": "dubin",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.016
+    },
+    {
+      "id": "person:kellen",
+      "name": "Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.013
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.013
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00008301",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008113",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008046",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008312",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008223",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008317",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008370",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008246",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008023",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008323",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008402",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008397",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005925",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00008337",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008041",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008274",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008330",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008102",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00008093",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008265",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008400",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008281",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008360",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008363",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008303",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008407",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008117",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008074",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008389",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008342",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008088",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008326",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005730",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00008343",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008104",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008056",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008321",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005724",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00008324",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008045",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008103",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008267",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00005740",
+      "snippet": "=== Page 1 ===\nno\ngood\nEFTA00005740\n\n=== Page 2 ===\nPatrick Lawton\nGeneral Manager\nNew York, NY 10003\nCell:\n\n=== Page 3 ===\nPage 1 of 1\nfile:///C:/Users/\nAppData/Local/Microsoft/Windows/Temporary%20In"
+    },
+    {
+      "id": "EFTA00008226",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008334",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008052",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008327",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008254",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008293",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008072",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008361",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008371",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008333",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008262",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008026",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008080",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008388",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008106",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008021",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008390",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005721",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00008297",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008273",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008395",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008316",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008064",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008310",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008073",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008094",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008282",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008065",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008101",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008383",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008379",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005931",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00008318",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008091",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008341",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008263",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008251",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008399",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008393",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008408",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008362",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005726",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00008335",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008235",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part1_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00008394",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008271",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008075",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008050",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008406",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008322",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008225",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008355",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008090",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008364",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005928",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    }
+  ],
+  "total_documents": 317
+}

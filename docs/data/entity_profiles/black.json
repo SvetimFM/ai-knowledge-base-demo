@@ -1,0 +1,574 @@
+{
+  "id": "person:black",
+  "name": "Black",
+  "short_name": "black",
+  "type": "person",
+  "doc_count": 746,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 602,
+      "strength": 0.807
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 554,
+      "strength": 0.743
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 351,
+      "strength": 0.471
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 302,
+      "strength": 0.405
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 293,
+      "strength": 0.393
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 259,
+      "strength": 0.347
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 255,
+      "strength": 0.342
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 244,
+      "strength": 0.327
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 216,
+      "strength": 0.29
+    },
+    {
+      "id": "person:nadia",
+      "name": "Nadia",
+      "short_name": "nadia",
+      "type": "person",
+      "shared_docs": 191,
+      "strength": 0.256
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 164,
+      "strength": 0.22
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 159,
+      "strength": 0.213
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 159,
+      "strength": 0.213
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.135
+    },
+    {
+      "id": "person:clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.135
+    },
+    {
+      "id": "person:leon",
+      "name": "Leon",
+      "short_name": "leon",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.135
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 100,
+      "strength": 0.134
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "shared_docs": 91,
+      "strength": 0.122
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 69,
+      "strength": 0.092
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "shared_docs": 65,
+      "strength": 0.087
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00007272",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008127",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00000476",
+      "snippet": "=== Page 1 ===\nJEFFREY E. EPSTEIN\nCASH DISBURSEMENTS\nFOR THE PERIOD SEP 1. 2006 SEP 30, 2006\n* Report\nCurrent Events\nCalendar\nSelect a View\nRunning\n= Events\nDate\nNum\nName\nAmount\nBalance\nRelates to\n09/"
+    },
+    {
+      "id": "EFTA00008214",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008218",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008301",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008113",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008046",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007200",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00004197",
+      "snippet": "=== Page 1 ===\n1A12\nFD-340c(4-11-03)\n316-NU-3027571\nFile Number_\nNyo\nField Office Acquiring Evidence\n\n21\nSerial # of Originating Document _\n\n5/2/\nDate Received _\nFrom\n(Name of Contributor/Interviewee)"
+    },
+    {
+      "id": "EFTA00008312",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00007186",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005349",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008223",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008317",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008370",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008140",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007281",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008246",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008023",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00005350",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008323",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007170",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008402",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007944",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007278",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008397",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007207",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007097",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT\nSOUTHERN DISTRICT OF FLORIDA\nIN RE FEDERAL GRAND JURY SUBPOENA\nOLY-71 ADDRESSED TO\nBEAR STEARNS COMPANIES, INC.\n/\nCERTIFICATION REGARDING DOMESTIC RECORDS\nO"
+    },
+    {
+      "id": "EFTA00007292",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00005284",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.02\nVANITY FAIR\nCRACK WHOLE PROPOSAL\nHAWAII\nISC IMAGES\nJ\nDANNY HILLIS-ZORRO\nTEDCONVENLEON 02\nALHAMBRA SPAIN 03\n727\nJE 50TH BD\nZORRO\nJE GLASSES WALLSTREET JOURNAL\nBOOK 5\nEFTA0"
+    },
+    {
+      "id": "EFTA00008208",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005327",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00007287",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008337",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008041",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00005313",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00007267",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008274",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00007195",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008211",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007159",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005378",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00005355",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00007251",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008128",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008330",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008181",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007178",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008102",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00008197",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007947",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00004189",
+      "snippet": "=== Page 1 ===\n1A12\nFD-340c(4-11-03)\n316-NU-3027571\nFile Number_\nNyo\nField Office Acquiring Evidence\n\n21\nSerial # of Originating Document _\n\n5/2/\nDate Received _\nFrom\n(Name of Contributor/Interviewee)"
+    },
+    {
+      "id": "EFTA00008122",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007264",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00007220",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00001898",
+      "snippet": "=== Page 1 ===\n# Switch - state/passe buties [10] and the working indicator(7) Egin The\nTime - of energy of - - He If - -\ncorresponding intitity indicator lights.\n- below of - - reserve froling - for"
+    },
+    {
+      "id": "EFTA00005380",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00007210",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008093",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008265",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008200",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005288",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008196",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005340",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008400",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008281",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008360",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007242",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005374",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00005354",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008363",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008303",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008130",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008407",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005368",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00007262",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008117",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008074",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008193",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008132",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007271",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008389",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005370",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008342",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008088",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008326",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007269",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00005373",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00007211",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007949",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00005377",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008204",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008343",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00004209",
+      "snippet": "=== Page 1 ===\n1A12\nFD-340c(4-11-03)\n316-NU-3027571\nFile Number_\nNyo\nField Office Acquiring Evidence\n\n21\nSerial # of Originating Document _\n\n5/2/\nDate Received _\nFrom\n(Name of Contributor/Interviewee)"
+    },
+    {
+      "id": "EFTA00008206",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007931",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00005328",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008104",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    }
+  ],
+  "total_documents": 746
+}

@@ -1,0 +1,574 @@
+{
+  "id": "person:dershowitz",
+  "name": "Alan Dershowitz",
+  "short_name": "dershowitz",
+  "type": "person",
+  "doc_count": 103,
+  "is_key_player": true,
+  "viz_file": "data/viz/players/dershowitz_network.html",
+  "connected_entities": [
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 103,
+      "strength": 1.0
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.981
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.981
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.981
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 101,
+      "strength": 0.981
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 100,
+      "strength": 0.971
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 100,
+      "strength": 0.971
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 98,
+      "strength": 0.951
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 96,
+      "strength": 0.932
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 96,
+      "strength": 0.932
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 96,
+      "strength": 0.932
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 96,
+      "strength": 0.932
+    },
+    {
+      "id": "person:dubin",
+      "name": "Dubin",
+      "short_name": "dubin",
+      "type": "person",
+      "shared_docs": 7,
+      "strength": 0.068
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.058
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.049
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.049
+    },
+    {
+      "id": "person:brunel",
+      "name": "Jean-Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.049
+    },
+    {
+      "id": "person:kellen",
+      "name": "Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.039
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.039
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 3,
+      "strength": 0.029
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00007200",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007186",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007170",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007207",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007195",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007159",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007251",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007178",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007220",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007210",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007242",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007211",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007204",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007167",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007224",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007163",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007202",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007215",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007248",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part3_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007247",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007192",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007241",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007199",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007169",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007161",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007206",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007188",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007222",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007193",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007227",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007217",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007174",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007179",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007231",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007219",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007212",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007208",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007232",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007238",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007250",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007185",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007171",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "C. Contact Book_Redacted_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007249",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007183",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part6_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007240",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007190",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007180",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007216",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part4_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007173",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007239",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007218",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007176",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007164",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007252",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007221",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007158",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007223",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007168",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007230",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007181",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007157",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06\nPALM BEACH *POLICE DEPARTMENT\nPage:\n1\nTime: 8:47:53\nIncident Report\nProgram: CMS3Q1L\nCase No\n:\n1-05-000368\nSPECIAL NOTES : DO NOT RELEASE\nOccur From Date: 1/27/05 0000\nOcc"
+    },
+    {
+      "id": "EFTA00007228",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007214",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007235",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007229",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007234",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007244",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007201",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007236",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007189",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007196",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007162",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007203",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007213",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007172",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007243",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007160",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007187",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007165",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007233",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007175",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007194",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007245",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007205",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007209",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007237",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007225",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007177",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007184",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "C. Contact Book (Redacted)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007166",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007182",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007191",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007246",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    }
+  ],
+  "total_documents": 103
+}

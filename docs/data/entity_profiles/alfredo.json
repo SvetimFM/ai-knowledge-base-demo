@@ -1,0 +1,550 @@
+{
+  "id": "person:alfredo",
+  "name": "Alfredo",
+  "short_name": "alfredo",
+  "type": "person",
+  "doc_count": 265,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 259,
+      "strength": 0.977
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 259,
+      "strength": 0.977
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 259,
+      "strength": 0.977
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 165,
+      "strength": 0.623
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 162,
+      "strength": 0.611
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 160,
+      "strength": 0.604
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 159,
+      "strength": 0.6
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 159,
+      "strength": 0.6
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 159,
+      "strength": 0.6
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 159,
+      "strength": 0.6
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 100,
+      "strength": 0.377
+    },
+    {
+      "id": "person:nadia",
+      "name": "Nadia",
+      "short_name": "nadia",
+      "type": "person",
+      "shared_docs": 100,
+      "strength": 0.377
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 96,
+      "strength": 0.362
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 96,
+      "strength": 0.362
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 63,
+      "strength": 0.238
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "shared_docs": 63,
+      "strength": 0.238
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 63,
+      "strength": 0.238
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00008113",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008046",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007200",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007186",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008023",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007170",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007944",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007207",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008041",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007195",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007159",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007251",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007178",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008102",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007947",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007220",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007210",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008093",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007242",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008485",
+      "snippet": "=== Page 1 ===\nChain of Custody-ELSUR Evidence Envelope\nFD-504b (Rev. 8-17-01)\n75\nDENCE\nEnclosure:\nOriginal\nDuplicate\nEnhanced Original\nMedium:\nMagnetic Tape\nComputer Disk\nPrinted Material\nCase File#:"
+    },
+    {
+      "id": "EFTA00008117",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008074",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008088",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007211",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007949",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007931",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008104",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008056",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007204",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007911",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007167",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008045",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008103",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007224",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008052",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007948",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007163",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008072",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007922",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007202",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007215",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007248",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008026",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008080",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007247",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008106",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008021",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007921",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007917",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007909",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007192",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007241",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007950",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007199",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008064",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007169",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007161",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007206",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007188",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007222",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008073",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008094",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007954",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007193",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007227",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008065",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008101",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008091",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007897",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007937",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008075",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008050",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007946",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008486",
+      "snippet": "=== Page 1 ===\nChain of Custody-ELSUR Evidence Envelope\nFD-504b (Rev. 8-17-01)\nEnclosure:\nOriginal\nDuplicate\nEnhanced Original\nMedium:\nMagnetic Tape\nComputer Disk\nPrinted Material\nCase File# 72-MM-113"
+    },
+    {
+      "id": "EFTA00007217",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007934",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008090",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007941",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007939",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007174",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007179",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008032",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008096",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008034",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007942",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007231",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008036",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007945",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008031",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008058",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008115",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007219",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007212",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008484",
+      "snippet": "=== Page 1 ===\nChain of Custody-ELSUR Evidence Envelope\nFD-504b (Rev. 8-17-01)\nEnclosure:\nOriginal\nDuplicate\nEnhanced Original\nMedium:\nMagnetic Tape\nComputer Disk\nPrinted Material\nCase File#: 72-MM-11"
+    },
+    {
+      "id": "EFTA00008081",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008110",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007208",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007900",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008043",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007232",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    }
+  ],
+  "total_documents": 265
+}

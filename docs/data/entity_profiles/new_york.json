@@ -1,0 +1,574 @@
+{
+  "id": "location:new york",
+  "name": "New York",
+  "short_name": "new york",
+  "type": "location",
+  "doc_count": 1455,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 602,
+      "strength": 0.414
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 555,
+      "strength": 0.381
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 425,
+      "strength": 0.292
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 324,
+      "strength": 0.223
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 321,
+      "strength": 0.221
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 313,
+      "strength": 0.215
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 280,
+      "strength": 0.192
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 259,
+      "strength": 0.178
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 257,
+      "strength": 0.177
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 249,
+      "strength": 0.171
+    },
+    {
+      "id": "person:nadia",
+      "name": "Nadia",
+      "short_name": "nadia",
+      "type": "person",
+      "shared_docs": 191,
+      "strength": 0.131
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 160,
+      "strength": 0.11
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 159,
+      "strength": 0.109
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 98,
+      "strength": 0.067
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 98,
+      "strength": 0.067
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "shared_docs": 90,
+      "strength": 0.062
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "shared_docs": 72,
+      "strength": 0.049
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 71,
+      "strength": 0.049
+    },
+    {
+      "id": "location:virgin islands",
+      "name": "Virgin Islands",
+      "short_name": "virgin islands",
+      "type": "location",
+      "shared_docs": 66,
+      "strength": 0.045
+    },
+    {
+      "id": "location:manhattan",
+      "name": "Manhattan",
+      "short_name": "manhattan",
+      "type": "location",
+      "shared_docs": 27,
+      "strength": 0.019
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00007301",
+      "snippet": "=== Page 1 ===\nMobile\nGetunare\nfromility\nT-Mobile USA\nLaw Enforcement Relations\n4 Sylvan, Parsippany, NJ 07054\nTel: 866-537-0911 Fax: 973 292-8697\nMarch 23, 2007\nFBI\nWest Palm Beach, FL 33401\nDear SA"
+    },
+    {
+      "id": "EFTA00007339",
+      "snippet": "=== Page 1 ===\n* 2 \nMob \nBel \n(St:A s\u2022lc-sY. ffos:\u2018 \nT-Moteas USA \nLaw Enforcement Relations \n4 Sykart Parsippany, NJ 07054 \nTet 866-5374911 Fax 973 2924697 \nMarch 23, 2007 \nDear SA \nThis is in respon"
+    },
+    {
+      "id": "EFTA00007418",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00007591",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007272",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008127",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00006733",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00008214",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00006420",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00008218",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00006502",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nAug 21, 2006 \nPap \n33 of \n75 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00007383",
+      "snippet": "=== Page 1 ===\n* 2 \nMob \nBel \n(St:A s\u2022lc-sY. ffos:\u2018 \nT-Moteas USA \nLaw Enforcement Relations \n4 Sykart Parsippany, NJ 07054 \nTet 866-5374911 Fax 973 2924697 \nMarch 23, 2007 \nDear SA \nThis is in respon"
+    },
+    {
+      "id": "EFTA00007417",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00008301",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008113",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008046",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00006456",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00007200",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00006487",
+      "snippet": "=== Page 1 ===\nItemized Details For:\nAccount Number:\nCustomer Service Number\n1-800-937-8997\nAug 21, 2006\nPage 33 of 75\nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued)\nDate\nCall\nTi"
+    },
+    {
+      "id": "EFTA00008312",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00006070",
+      "snippet": "=== Page 1 ===\nsislesteses \nEFTA00006069\n\n\n=== Page 2 ===\n\u2022 \nir04iii \n1310.01 \nv \n2005 W-2 and E \nza rce-\ncts.* \n14004\n-1.' \nafiV-2 \n^'r 184,807.7.1 \n515.* \nN/A \n115;i23.09 \n3- Employee:eV/4 Profile."
+    },
+    {
+      "id": "EFTA00007486",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00007186",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008223",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008317",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008370",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007534",
+      "snippet": "=== Page 1 ===\nitemized Deals For: \nAccount Number: \nCustomer Service Number \n'1.800.937.8997 \nAug 20, 2006 \nPage \n7 of \n19 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00008140",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007281",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00006451",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00006549",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nAug 21, 2006 \nPap \n33 of \n75 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00006450",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00007519",
+      "snippet": "=== Page 1 ===\nitemized Deals For: \nAccount Number: \nCustomer Service Number \n'1.800.937.8997 \nAug 20, 2006 \nPage \n7 of \n19 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00008246",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00006614",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number. \nCustomer Service Number \n1-800-937-8997 \nSep 21) 2006 \nPage \n43 of \n76 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDat"
+    },
+    {
+      "id": "EFTA00008023",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00006716",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00006441",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00008323",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007141",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007478",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00007170",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008402",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00006447",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00007944",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007411",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00007278",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00006760",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00008397",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007207",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007097",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT\nSOUTHERN DISTRICT OF FLORIDA\nIN RE FEDERAL GRAND JURY SUBPOENA\nOLY-71 ADDRESSED TO\nBEAR STEARNS COMPANIES, INC.\n/\nCERTIFICATION REGARDING DOMESTIC RECORDS\nO"
+    },
+    {
+      "id": "EFTA00006449",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00006421",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00007344",
+      "snippet": "=== Page 1 ===\n* 2 \nMob \nBel \n(St:A s\u2022lc-sY. ffos:\u2018 \nT-Moteas USA \nLaw Enforcement Relations \n4 Sykart Parsippany, NJ 07054 \nTet 866-5374911 Fax 973 2924697 \nMarch 23, 2007 \nDear SA \nThis is in respon"
+    },
+    {
+      "id": "EFTA00007292",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00005925",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00007439",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00008208",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007287",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008337",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00006426",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00008041",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00006427",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00005781",
+      "snippet": "=== Page 1 ===\nNys c 22r Atanny \nve.4 \n1-117\u2018 \nat-f-\nAimecss-\ne7y) \n/A17/ \nN s \n.5SAL' \na\num\n. \nEFTA00005774\n\n\n=== Page 2 ===\nDMV Photo \nSubject Information \nName: \nClientiD: \nCase Number: \nSI \nDMV Tr"
+    },
+    {
+      "id": "EFTA00006702",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00007267",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00008274",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00006436",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00005579",
+      "snippet": "=== Page 1 ===\nGrand Jury-NY \nEFTA00005578\n\n\n=== Page 2 ===\nUnited States v. Ghislaine Maxwell \n07/08/20 \n1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10 \n11 \n12 \n13 \n14 \n15 \n16 \n17 \n18 \n19 \n20 \n21 \n22 \n23 \n24 \n25 \nPRO"
+    },
+    {
+      "id": "EFTA00007100",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00006681",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number. \nCustomer Service Number \n1-800-937-8997 \nSep 21) 2006 \nPage \n43 of \n76 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDat"
+    },
+    {
+      "id": "EFTA00006423",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00007195",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00006694",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00006739",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00008211",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007159",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007467",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00007414",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00007473",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nSep 21, 2004 \nPage \n6 or \n21 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00006404",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00006708",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00006617",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number. \nCustomer Service Number \n1-800-937-8997 \nSep 21) 2006 \nPage \n43 of \n76 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDat"
+    },
+    {
+      "id": "EFTA00006717",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00006028",
+      "snippet": "=== Page 1 ===\nEFTA00006025\n\n\n=== Page 2 ===\nAttendence List \nCheck in \nVictim Full Name (SORT) \nAttorney \nGuest Name \nVictim \nVictim pending \nAttorney \nEFTA00006026\n\n\n=== Page 3 ===\nContact Informati"
+    },
+    {
+      "id": "EFTA00007251",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005932",
+      "snippet": "=== Page 1 ===\nPossibly living abroad\nEFTA00005932\n\n=== Page 2 ===\nPossible Cell\nADDRESS:\nNotin service\nASTORIA, NY 11106\nFB:\nEFTA00005933\n\n=== Page 3 ===\nPerson Encounter Detail\nEncounter Person Deta"
+    },
+    {
+      "id": "EFTA00006439",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00001931",
+      "snippet": "=== Page 1 ===\nZinta Brau his\nLA CA 90065\nB\n37USA\nJeffrey Epstein\n457 Madison Ave. 4fl\nNew York, New York\n10022\n10022+6843\nEFTA00001931"
+    },
+    {
+      "id": "EFTA00006438",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00006658",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number. \nCustomer Service Number \n1-800-937-8997 \nSep 21) 2006 \nPage \n43 of \n76 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDat"
+    },
+    {
+      "id": "EFTA00006471",
+      "snippet": "=== Page 1 ===\nItemized Details For. \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nJun 21, 2006 \nPage \n43 of \n111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDa"
+    },
+    {
+      "id": "EFTA00006546",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \nAug 21, 2006 \nPap \n33 of \n75 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate"
+    },
+    {
+      "id": "EFTA00008128",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008330",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008181",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007178",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00006683",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number. \nCustomer Service Number \n1-800-937-8997 \nSep 21) 2006 \nPage \n43 of \n76 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDat"
+    },
+    {
+      "id": "EFTA00006711",
+      "snippet": "=== Page 1 ===\nItemized Details For: \nAccount Number: \nCustomer Service Number \n1-800-937-8997 \ntyny 21 2C,0n \nPage \n<4 r \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate \nC"
+    },
+    {
+      "id": "EFTA00008102",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    }
+  ],
+  "total_documents": 1455
+}

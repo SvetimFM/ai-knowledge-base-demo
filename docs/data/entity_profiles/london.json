@@ -1,0 +1,574 @@
+{
+  "id": "location:london",
+  "name": "London",
+  "short_name": "london",
+  "type": "location",
+  "doc_count": 356,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 351,
+      "strength": 0.986
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 258,
+      "strength": 0.725
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 257,
+      "strength": 0.722
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 154,
+      "strength": 0.433
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 154,
+      "strength": 0.433
+    },
+    {
+      "id": "person:leon",
+      "name": "Leon",
+      "short_name": "leon",
+      "type": "person",
+      "shared_docs": 99,
+      "strength": 0.278
+    },
+    {
+      "id": "person:clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 98,
+      "strength": 0.275
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 91,
+      "strength": 0.256
+    },
+    {
+      "id": "person:nadia",
+      "name": "Nadia",
+      "short_name": "nadia",
+      "type": "person",
+      "shared_docs": 91,
+      "strength": 0.256
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "shared_docs": 89,
+      "strength": 0.25
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 67,
+      "strength": 0.188
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 66,
+      "strength": 0.185
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 65,
+      "strength": 0.183
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "shared_docs": 65,
+      "strength": 0.183
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 64,
+      "strength": 0.18
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 63,
+      "strength": 0.177
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 63,
+      "strength": 0.177
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 63,
+      "strength": 0.177
+    },
+    {
+      "id": "person:kellen",
+      "name": "Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.006
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.006
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00008127",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008214",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008218",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005349",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008370",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008140",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005350",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008323",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008402",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007944",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008397",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005284",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.02\nVANITY FAIR\nCRACK WHOLE PROPOSAL\nHAWAII\nISC IMAGES\nJ\nDANNY HILLIS-ZORRO\nTEDCONVENLEON 02\nALHAMBRA SPAIN 03\n727\nJE 50TH BD\nZORRO\nJE GLASSES WALLSTREET JOURNAL\nBOOK 5\nEFTA0"
+    },
+    {
+      "id": "EFTA00008208",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005327",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008337",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005313",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008211",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005378",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00005355",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008128",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008330",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008181",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008197",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007947",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008122",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005380",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008200",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005288",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008196",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005340",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00004250",
+      "snippet": "=== Page 1 ===\nZORRO/VEGAS\nGAY JEAN LUC\nLSJ AERIALS\nCLOUDS\nPRAGUE\nPARIS\nAINTING\nMISC 6/04\n\n=== Page 2 ===\nLSJ Aerials,\njet ski\nphoto\n: AVERY\u00ae\nDSCF0022_1.TIF\nDSCF0023_1.TIF\nDSCF0024_1.TIF\nDSCF0025_1.TI"
+    },
+    {
+      "id": "EFTA00008400",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008360",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005374",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00005354",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008363",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008130",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008407",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005368",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008193",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008132",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008389",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005370",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008342",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008326",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005373",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00007949",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00005377",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008204",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008343",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008206",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007931",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00005328",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008166",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005316",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008170",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008321",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008324",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007911",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00005319",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00005306",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00005292",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008334",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005351",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008327",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007948",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008182",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007922",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008191",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008361",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005333",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008371",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008333",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005372",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008171",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008388",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005332",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008390",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005359",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00005357",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00007921",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008177",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007917",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007909",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008395",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005290",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008125",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007950",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00005302",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008183",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007954",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008383",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008379",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008341",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007897",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00005286",
+      "snippet": "=== Page 1 ===\nAFRICA SEPT.O \nVANITY FAI \nCRACK WHOLE PROPOSAL \nHAWAII \n>O IMAGES\nDANNY HILLIS-ZORRO \nTEDCONVENLEON 02 \nALHAMBRA SPAIN 03 \n727 \nE 50TH BD \nI=M-ZORRO \nJE GLASSES WALLSTREET JOURNAL \nBOO"
+    },
+    {
+      "id": "EFTA00008399",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008393",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008155",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008408",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    }
+  ],
+  "total_documents": 356
+}

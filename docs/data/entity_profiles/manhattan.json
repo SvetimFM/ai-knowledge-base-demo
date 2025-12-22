@@ -1,0 +1,166 @@
+{
+  "id": "location:manhattan",
+  "name": "Manhattan",
+  "short_name": "manhattan",
+  "type": "location",
+  "doc_count": 28,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 27,
+      "strength": 0.964
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.786
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 13,
+      "strength": 0.464
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "shared_docs": 5,
+      "strength": 0.179
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.143
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00005925",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00001932",
+      "snippet": "=== Page 1 ===\near Jeffrey;\nI hope you had a wonderful holi-\nday season.\nI receved the necklace you sent me. It was beautiful, thank\nyou sister very and much. I Christmas went well with my family. My"
+    },
+    {
+      "id": "EFTA00001927",
+      "snippet": "=== Page 1 ===\near Jeffrey;\nI hope you had a wonderful holi-\nday season.\nI receved the subblace you sent me. It was beautiful, thank\nyou \u0161ister very and much I Christmas went well with my family. My\ns"
+    },
+    {
+      "id": "EFTA00005730",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005724",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005740",
+      "snippet": "=== Page 1 ===\nno\ngood\nEFTA00005740\n\n=== Page 2 ===\nPatrick Lawton\nGeneral Manager\nNew York, NY 10003\nCell:\n\n=== Page 3 ===\nPage 1 of 1\nfile:///C:/Users/\nAppData/Local/Microsoft/Windows/Temporary%20In"
+    },
+    {
+      "id": "EFTA00005721",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005931",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00001928",
+      "snippet": "=== Page 1 ===\near Jeffrey:\nI hope you had a wonderful holi-\nday season.\nI received the netblace you sent me. It was beautiful, thank\nyou sister very and much I Christmas went well with my family. My"
+    },
+    {
+      "id": "EFTA00005726",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005763",
+      "snippet": "=== Page 1 ===\nNYSPID\nStay at home\n11am 7/31/2019\nStarbacks 43rd$ 8th AVE\nEFTA00005763\n\n=== Page 2 ===\nNYSDID\nQueens\nManhattan\nMa\nSSN:\n*\nMINOR ARRESTS-\nADDRESS:\n?\nCell\nON NYSOL\nMAYbe AT:\nEFTA00005764"
+    },
+    {
+      "id": "EFTA00005928",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00005718",
+      "snippet": "=== Page 1 ===\nAstonia, Queens\nCell\nADDRESS:\nASTORIA NY 11106\nEFTA00005718\n\n=== Page 10 ===\nU.S. Department of Justice\nUnited States Attorney\nSouthern District of New York\nThe Silvio J. Mollo Building"
+    },
+    {
+      "id": "EFTA00005728",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005723",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00001926",
+      "snippet": "=== Page 1 ===\near Jeffrey;\nI hope you had a wonderful holi-\nday season.\nI receved the recluace you sent me. It beautiful, thank\non new spent it in Arizona with our dad. my I performed\nyou sister very"
+    },
+    {
+      "id": "EFTA00005729",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005927",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00005924",
+      "snippet": "=== Page 2 ===\nNJP Response\nPage 1 of 1\nUnauthorized access, reproduction, or dissemination is prohibited.\nRECEIVED AT 07/02/2019 19:37:08\nDR.\n19:37 07/02/2019 24038\n19:37 07/02/2019 00336 NY10100T2\n*"
+    },
+    {
+      "id": "EFTA00005719",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005926",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00005727",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005722",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005929",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00001930",
+      "snippet": "=== Page 1 ===\near gettrey;\nI hope you had a wonderful holt-\nday Season\nIreceved the problace you sent me. Ifwas beau\u0163iful, thank\nsister very and much Christinas were well with my family. My\nbeen year"
+    },
+    {
+      "id": "EFTA00005930",
+      "snippet": "=== Page 1 ===\n*d e\nEFTA00005924\n\n\n=== Page 2 ===\nNJP Response \nPage 1 ct 1 \nUnouthorfrod scan. reproduction, or dlonnilnotlor is prot\u2022lb.ted. \nRECEIVED AT 07/02/2019 19:27:08 10 \nDR. \n19:1,91,2019 24"
+    },
+    {
+      "id": "EFTA00005720",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    },
+    {
+      "id": "EFTA00005725",
+      "snippet": "=== Page 1 ===\n^C. \nAmeen-\n..41x727,e/sof \n///d4 \nEFTA00005718\n\n\n=== Page 2 ===\nEFTA00005719\n\n\n=== Page 3 ===\nEFTA00005720\n\n\n=== Page 4 ===\nEFTA00005721\n\n\n=== Page 5 ===\nEFTA00005722\n\n\n=== Page 6 ==="
+    }
+  ],
+  "total_documents": 28
+}

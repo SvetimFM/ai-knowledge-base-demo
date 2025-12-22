@@ -1,0 +1,270 @@
+{
+  "id": "person:roberts",
+  "name": "Roberts",
+  "short_name": "roberts",
+  "type": "person",
+  "doc_count": 24,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 23,
+      "strength": 0.958
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 21,
+      "strength": 0.875
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 21,
+      "strength": 0.875
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 19,
+      "strength": 0.792
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 17,
+      "strength": 0.708
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 15,
+      "strength": 0.625
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.25
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.25
+    },
+    {
+      "id": "person:brunel",
+      "name": "Jean-Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.25
+    },
+    {
+      "id": "person:dubin",
+      "name": "Dubin",
+      "short_name": "dubin",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.25
+    },
+    {
+      "id": "person:kellen",
+      "name": "Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.208
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.208
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.208
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 5,
+      "strength": 0.208
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.167
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.167
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.167
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 3,
+      "strength": 0.125
+    },
+    {
+      "id": "person:clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.125
+    },
+    {
+      "id": "person:glenn",
+      "name": "Glenn",
+      "short_name": "glenn",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.125
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00007591",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00001911",
+      "snippet": "=== Page 1 ===\nDates 11/16/11 1/24/12\n11/16\n4601\nBrautigam Land Surveyor\nField House\n1,600.00\n11/17\n4602\nStabenow for US Senate\nPolitical Contribution\n1,500.00\n11/22\n4603\nBank of America\nVisa\n2,066.45"
+    },
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007596",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007587",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part5_0",
+      "snippet": ""
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part3_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007598",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007597",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "C. Contact Book_Redacted_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007590",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part4_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007595",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007589",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007594",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007592",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007593",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007588",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part2_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007599",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "C. Contact Book (Redacted)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007586",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007585",
+      "snippet": "=== Page 1 ===\nZeH\nBamis\nE\nprint. - 300 3\ncheall sty nots\nFlagil\nCrim\nGhislaine Maxwell\nEFTA00007585\n\n=== Page 2 ===\nCarpenter & Company, Inc.\nCharles Square\n20 University Road\nCambridge, MA 02138\n617"
+    }
+  ],
+  "total_documents": 24
+}

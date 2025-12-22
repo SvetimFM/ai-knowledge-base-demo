@@ -11,6 +11,7 @@
         <h1><a href="index.html">FBI Document Explorer</a></h1>
         <nav>
             <a href="index.html" class="active">Dashboard</a>
+            <a href="entities.html">Entities</a>
             <a href="browse.html">Browse</a>
             <a href="search.html">Search</a>
             <a href="visualizations.html">Visualizations</a>
@@ -35,6 +36,11 @@
                 <span class="number" id="searchable-docs">--</span>
                 <span class="label">Searchable</span>
             </div>
+        </section>
+
+        <h2 style="margin-bottom: 1.5rem;">Key Players</h2>
+        <section class="card-grid" id="key-players-grid" style="margin-bottom: 2rem;">
+            <!-- Populated by JavaScript -->
         </section>
 
         <h2 style="margin-bottom: 1.5rem;">Browse by Category</h2>
@@ -104,6 +110,37 @@
                     document.getElementById('searchable-docs').textContent = '--';
                 }
 
+                // Load and render key players
+                try {
+                    const entitiesResp = await fetch('data/entities.json');
+                    const entitiesData = await entitiesResp.json();
+                    const keyPlayers = entitiesData.key_players.slice(0, 6); // Top 6
+
+                    const keyPlayersGrid = document.getElementById('key-players-grid');
+                    keyPlayersGrid.innerHTML = keyPlayers.map(player => `
+                        <a href="entity.html?id=${player.short_name}" class="card category-card">
+                            <div class="icon">&#128100;</div>
+                            <div class="name">${player.name}</div>
+                            <div class="count">${app.formatNumber(player.doc_count)} documents</div>
+                        </a>
+                    `).join('') + `
+                        <a href="entities.html" class="card category-card" style="background: var(--bg);">
+                            <div class="icon">&#128269;</div>
+                            <div class="name">View All Entities</div>
+                            <div class="count">${entitiesData.total} total</div>
+                        </a>
+                    `;
+                } catch (e) {
+                    console.error('Failed to load entities:', e);
+                    document.getElementById('key-players-grid').innerHTML = `
+                        <a href="entities.html" class="card category-card">
+                            <div class="icon">&#128100;</div>
+                            <div class="name">Browse Entities</div>
+                            <div class="count">View all people & places</div>
+                        </a>
+                    `;
+                }
+
                 // Update category counts
                 for (const [category, count] of Object.entries(stats.byCategory)) {
                     const el = document.getElementById(`count-${category}`);
@@ -117,7 +154,7 @@
 
                 volumeCards.innerHTML = volumeEntries.map(([vol, count]) => `
                     <a href="browse.html?volume=${vol}" class="card category-card">
-                        <div class="icon">📁</div>
+                        <div class="icon">&#128193;</div>
                         <div class="name">Volume ${vol}</div>
                         <div class="count">${app.formatNumber(count)} documents</div>
                     </a>

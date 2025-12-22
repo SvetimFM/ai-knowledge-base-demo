@@ -1,0 +1,574 @@
+{
+  "id": "person:ghislaine",
+  "name": "Ghislaine",
+  "short_name": "ghislaine",
+  "type": "person",
+  "doc_count": 265,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 262,
+      "strength": 0.989
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 260,
+      "strength": 0.981
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 249,
+      "strength": 0.94
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 242,
+      "strength": 0.913
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 202,
+      "strength": 0.762
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 164,
+      "strength": 0.619
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 164,
+      "strength": 0.619
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 159,
+      "strength": 0.6
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 159,
+      "strength": 0.6
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 159,
+      "strength": 0.6
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.381
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 100,
+      "strength": 0.377
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 67,
+      "strength": 0.253
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "shared_docs": 65,
+      "strength": 0.245
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 65,
+      "strength": 0.245
+    },
+    {
+      "id": "location:virgin islands",
+      "name": "Virgin Islands",
+      "short_name": "virgin islands",
+      "type": "location",
+      "shared_docs": 60,
+      "strength": 0.226
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "shared_docs": 19,
+      "strength": 0.072
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.019
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.019
+    },
+    {
+      "id": "person:clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.019
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00007591",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007200",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007186",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007141",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007170",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007944",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007207",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007097",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT\nSOUTHERN DISTRICT OF FLORIDA\nIN RE FEDERAL GRAND JURY SUBPOENA\nOLY-71 ADDRESSED TO\nBEAR STEARNS COMPANIES, INC.\n/\nCERTIFICATION REGARDING DOMESTIC RECORDS\nO"
+    },
+    {
+      "id": "EFTA00005579",
+      "snippet": "=== Page 1 ===\nGrand Jury-NY \nEFTA00005578\n\n\n=== Page 2 ===\nUnited States v. Ghislaine Maxwell \n07/08/20 \n1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10 \n11 \n12 \n13 \n14 \n15 \n16 \n17 \n18 \n19 \n20 \n21 \n22 \n23 \n24 \n25 \nPRO"
+    },
+    {
+      "id": "EFTA00007100",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007195",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007159",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007251",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007178",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007947",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00006037",
+      "snippet": "=== Page 1 ===\nfi\nts)O5/eyo \nEFTA00006036\n\n\n=== Page 2 ===\n_Pat' \nill y,\n & Xsiesta \nReed tuna\n dge. Wmci 1111,9 \nMID-ISLAND NY 117 \nAB XI 21.$2D Phi 5 L \n-United-States-Atterney's-office-\nThe Silvio"
+    },
+    {
+      "id": "EFTA00007220",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007210",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007128",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007108",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007242",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005584",
+      "snippet": "=== Page 1 ===\nGrand Jury-NY \nEFTA00005578\n\n\n=== Page 2 ===\nUnited States v. Ghislaine Maxwell \n07/08/20 \n1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10 \n11 \n12 \n13 \n14 \n15 \n16 \n17 \n18 \n19 \n20 \n21 \n22 \n23 \n24 \n25 \nPRO"
+    },
+    {
+      "id": "EFTA00007112",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007211",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007949",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007118",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007931",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007114",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00004070",
+      "snippet": "=== Page 1 ===\nFD-340c(4-11-03)\nFile Number\n318-N4-3027571\nField Office Acquiring Evidence\nN40\nSerial # of Originating Document\nDate Received\n7/31/19\nFrom\n(Name of Contributor/Interviewee)\n(Address)\n("
+    },
+    {
+      "id": "EFTA00007596",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007121",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007204",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007911",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007131",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007167",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007587",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007146",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007224",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007948",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007163",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007152",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007922",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007202",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007215",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007248",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007247",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005580",
+      "snippet": "=== Page 1 ===\nGrand Jury-NY \nEFTA00005578\n\n\n=== Page 2 ===\nUnited States v. Ghislaine Maxwell \n07/08/20 \n1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10 \n11 \n12 \n13 \n14 \n15 \n16 \n17 \n18 \n19 \n20 \n21 \n22 \n23 \n24 \n25 \nPRO"
+    },
+    {
+      "id": "EFTA00007129",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007921",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007917",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007909",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007192",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007241",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007950",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007199",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007149",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007169",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007161",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007135",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007206",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007188",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007222",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007954",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007137",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007193",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007227",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007897",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007685",
+      "snippet": "=== Page 1 ===\n2005\nMSN Hotmail - Message\np://by12fd.bay12.hotmail.msn.com/cgi-bin/getmsg?msg=MSCI1111\nMSN Home I My MSN I Hotmail I Shopping I Money I People & Chat Sign Out Web Search:\nGo\nmatch.com"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part1_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00006036",
+      "snippet": "=== Page 1 ===\nEpstein\n\n=== Page 2 ===\n/\n4\nLaw Offices of Lombardino & Nektalov\nMID-ISLAND NY 117\n/\n/\n18 JUL 2020 PMSL\nRichmond Hill, New York 11419\nFOREVER / USA\n622\nUnited States Attorney's Office\nT"
+    },
+    {
+      "id": "EFTA00007937",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007946",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007598",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007138",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007115",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007136",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007107",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007217",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007934",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007941",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007939",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007174",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007179",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007150",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00005583",
+      "snippet": "=== Page 1 ===\nGrand Jury-NY \nEFTA00005578\n\n\n=== Page 2 ===\nUnited States v. Ghislaine Maxwell \n07/08/20 \n1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10 \n11 \n12 \n13 \n14 \n15 \n16 \n17 \n18 \n19 \n20 \n21 \n22 \n23 \n24 \n25 \nPRO"
+    },
+    {
+      "id": "EFTA00007942",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007231",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007945",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007219",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007212",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007654",
+      "snippet": "=== Page 1 ===\n119-22\n\n=== Page 2 ===\n023482\n05-941\n129542\n33\n1B6\n22\nEFTA00007655\n\n=== Page 3 ===\nJeffrey E. Epstein\nEFTA000076\n\n=== Page 4 ===\nJeffrey E. Epstein\n\n=== Page 5 ===\n- Aite Facto familie"
+    },
+    {
+      "id": "EFTA00007109",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007111",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007597",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007208",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007900",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007232",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007238",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007932",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    }
+  ],
+  "total_documents": 265
+}

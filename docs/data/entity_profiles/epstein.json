@@ -1,0 +1,574 @@
+{
+  "id": "person:epstein",
+  "name": "Jeffrey Epstein",
+  "short_name": "epstein",
+  "type": "person",
+  "doc_count": 619,
+  "is_key_player": true,
+  "viz_file": "data/viz/players/epstein_network.html",
+  "connected_entities": [
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 479,
+      "strength": 0.774
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 469,
+      "strength": 0.758
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 324,
+      "strength": 0.523
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 260,
+      "strength": 0.42
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 216,
+      "strength": 0.349
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 204,
+      "strength": 0.33
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 167,
+      "strength": 0.27
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 161,
+      "strength": 0.26
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 160,
+      "strength": 0.258
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 159,
+      "strength": 0.257
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.163
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.163
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 70,
+      "strength": 0.113
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 66,
+      "strength": 0.107
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "shared_docs": 65,
+      "strength": 0.105
+    },
+    {
+      "id": "location:virgin islands",
+      "name": "Virgin Islands",
+      "short_name": "virgin islands",
+      "type": "location",
+      "shared_docs": 63,
+      "strength": 0.102
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "shared_docs": 21,
+      "strength": 0.034
+    },
+    {
+      "id": "person:glenn",
+      "name": "Glenn",
+      "short_name": "glenn",
+      "type": "person",
+      "shared_docs": 8,
+      "strength": 0.013
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.01
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.01
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00007591",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007272",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00000476",
+      "snippet": "=== Page 1 ===\nJEFFREY E. EPSTEIN\nCASH DISBURSEMENTS\nFOR THE PERIOD SEP 1. 2006 SEP 30, 2006\n* Report\nCurrent Events\nCalendar\nSelect a View\nRunning\n= Events\nDate\nNum\nName\nAmount\nBalance\nRelates to\n09/"
+    },
+    {
+      "id": "EFTA00003881",
+      "snippet": "=== Page 1 ===\n\\--t\u2022 Ukv\u2022R_Th \nIIIMEMIImmiName \n1 \nEFTA00003868\n\n\n=== Page 2 ===\nLIAR_ \nKw \nEFTA00003869\n\n\n=== Page 3 ===\nInvestigating \nOfficer \nCase Number: \nFile Name: \nagt \nNotes: \nPALM BEACH SHER"
+    },
+    {
+      "id": "EFTA00006779",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007200",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007094",
+      "snippet": "=== Page 1 ===\nOne Cleadake Centre, Suite 1400 \n250Austratian Avenue South West Pain, Beach. FL 33401 \ne eral Bureau of Investigation \nest a m Beach, FL 33401 \n\u2022 \nKEST PUN SE0tIl \n* \nCoAe \n33401 \n* \n*"
+    },
+    {
+      "id": "EFTA00007186",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007801",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007793",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007846",
+      "snippet": "=== Page 1 ===\nII \n' III \n1,1 1 1 1 1 \n/0Q5--\n1 \nz \nEFTA00007824\n\n\n=== Page 2 ===\n18E \n10 0018 \nJEFFREY E. EPSTEIN \n358 EL BRILLO WAY \nPALM BEACH, FL 33480 \nEmployee Number. \nDepartment Number. \nSocal"
+    },
+    {
+      "id": "EFTA00007281",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00007141",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007170",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00003884",
+      "snippet": "=== Page 1 ===\n\\--t\u2022 Ukv\u2022R_Th \nIIIMEMIImmiName \n1 \nEFTA00003868\n\n\n=== Page 2 ===\nLIAR_ \nKw \nEFTA00003869\n\n\n=== Page 3 ===\nInvestigating \nOfficer \nCase Number: \nFile Name: \nagt \nNotes: \nPALM BEACH SHER"
+    },
+    {
+      "id": "EFTA00007944",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007278",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00007207",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007097",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT\nSOUTHERN DISTRICT OF FLORIDA\nIN RE FEDERAL GRAND JURY SUBPOENA\nOLY-71 ADDRESSED TO\nBEAR STEARNS COMPANIES, INC.\n/\nCERTIFICATION REGARDING DOMESTIC RECORDS\nO"
+    },
+    {
+      "id": "EFTA00007292",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00007287",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00003896",
+      "snippet": "=== Page 1 ===\n\\--t\u2022 Ukv\u2022R_Th \nIIIMEMIImmiName \n1 \nEFTA00003868\n\n\n=== Page 2 ===\nLIAR_ \nKw \nEFTA00003869\n\n\n=== Page 3 ===\nInvestigating \nOfficer \nCase Number: \nFile Name: \nagt \nNotes: \nPALM BEACH SHER"
+    },
+    {
+      "id": "EFTA00006840",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00006802",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007267",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00005579",
+      "snippet": "=== Page 1 ===\nGrand Jury-NY \nEFTA00005578\n\n\n=== Page 2 ===\nUnited States v. Ghislaine Maxwell \n07/08/20 \n1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10 \n11 \n12 \n13 \n14 \n15 \n16 \n17 \n18 \n19 \n20 \n21 \n22 \n23 \n24 \n25 \nPRO"
+    },
+    {
+      "id": "EFTA00006806",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007100",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007195",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00006819",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007159",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007576",
+      "snippet": "=== Page 1 ===\n1B3-5\n\n=== Page 2 ===\nITEM\nWAS NOT\nSCANNED\nDESCRIPTION\nEvidence bAg\nOfficial DocLab Instruction(s) - Revised July 27, 2020\nEFTA00007577\n\n=== Page 3 ===\n5\n\n=== Page 4 ===\n022624\nENTORCEM"
+    },
+    {
+      "id": "EFTA00007787",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007812",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00000019",
+      "snippet": "=== Page 1 ===\nJob Code\nClient Name\nJob Type\nService Description\nSpecial Instructions\nStart Date\n5135\nMerwin Dela Cruz - Epstein\nWater Treatment\nCooling Tower - Monthly Maintenance\nperform water treat"
+    },
+    {
+      "id": "EFTA00007251",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00001931",
+      "snippet": "=== Page 1 ===\nZinta Brau his\nLA CA 90065\nB\n37USA\nJeffrey Epstein\n457 Madison Ave. 4fl\nNew York, New York\n10022\n10022+6843\nEFTA00001931"
+    },
+    {
+      "id": "EFTA00007178",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00000467",
+      "snippet": "=== Page 1 ===\nA lot OF these girls who you dealt WITH is\non WAS RUNAWAYS in the First Place.\nAM Pulling For you NOW And in the Future to\nTAke CANE of Self your health And watch out\nFor People coming"
+    },
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007947",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00006037",
+      "snippet": "=== Page 1 ===\nfi\nts)O5/eyo \nEFTA00006036\n\n\n=== Page 2 ===\n_Pat' \nill y,\n & Xsiesta \nReed tuna\n dge. Wmci 1111,9 \nMID-ISLAND NY 117 \nAB XI 21.$2D Phi 5 L \n-United-States-Atterney's-office-\nThe Silvio"
+    },
+    {
+      "id": "EFTA00007264",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00007785",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007220",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007822",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007210",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00006853",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007128",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007847",
+      "snippet": "=== Page 1 ===\nII \n' III \n1,1 1 1 1 1 \n/0Q5--\n1 \nz \nEFTA00007824\n\n\n=== Page 2 ===\n18E \n10 0018 \nJEFFREY E. EPSTEIN \n358 EL BRILLO WAY \nPALM BEACH, FL 33480 \nEmployee Number. \nDepartment Number. \nSocal"
+    },
+    {
+      "id": "EFTA00006816",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007108",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007242",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007824",
+      "snippet": "=== Page 1 ===\n129442\n4\n\n=== Page 2 ===\n18E\n10 0018\n18E\nEarnings Statement\nADP.\nJEFFREY E. EPSTEIN\nEASYPAY\n358 EL BRILLO WAY\nPALM BEACH, FL 33480\nPay Period: 5/14/2005 to 5/27/2005\nPay Date: 5/26/2005"
+    },
+    {
+      "id": "EFTA00005712",
+      "snippet": "=== Page 1 ===\nThis document contains neither recommendations nor conclusions of the FBI. \nIt is the property of the FBI \nand is loaned to your agency; it and its contents are not to be distributed ou"
+    },
+    {
+      "id": "EFTA00003895",
+      "snippet": "=== Page 1 ===\n\\--t\u2022 Ukv\u2022R_Th \nIIIMEMIImmiName \n1 \nEFTA00003868\n\n\n=== Page 2 ===\nLIAR_ \nKw \nEFTA00003869\n\n\n=== Page 3 ===\nInvestigating \nOfficer \nCase Number: \nFile Name: \nagt \nNotes: \nPALM BEACH SHER"
+    },
+    {
+      "id": "EFTA00007262",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00005584",
+      "snippet": "=== Page 1 ===\nGrand Jury-NY \nEFTA00005578\n\n\n=== Page 2 ===\nUnited States v. Ghislaine Maxwell \n07/08/20 \n1 \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n9 \n10 \n11 \n12 \n13 \n14 \n15 \n16 \n17 \n18 \n19 \n20 \n21 \n22 \n23 \n24 \n25 \nPRO"
+    },
+    {
+      "id": "EFTA00007814",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007112",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00008512",
+      "snippet": "=== Page 1 ===\nVALINE\n13 x 12\n13312\nLINE\n/\n0-298-5010\n-\n1\nEpstein\nEFTA00008512"
+    },
+    {
+      "id": "EFTA00006863",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007692",
+      "snippet": "=== Page 1 ===\n04-15-2005\nJeffrey E. Epstein\nEFTA00007692"
+    },
+    {
+      "id": "EFTA00007271",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00007269",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00007697",
+      "snippet": "=== Page 1 ===\nDriving Directions from 358 El Grillo Way, Palm Beach, FL to \nhttp://www mapquest.comidirectionsimain.adp?go\u2014li&dor-mvitrrnm= \n-:11AAPIWIEST. \nWa 358 El Brillo Way \nPalm Beach, FL \n3348"
+    },
+    {
+      "id": "EFTA00007607",
+      "snippet": "=== Page 1 ===\nEFTA00007606\n\n\n=== Page 2 ===\namazon.com. \nBilling Address: \nJeffrey Epstein \n358 El Brillo Way \nPalm Beach, Florida 33480 \nUSA \nAmazon.coni \namazon.com. 1850 Mercer Rd. \nLexington, KY"
+    },
+    {
+      "id": "EFTA00006778",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007782",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007211",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00003916",
+      "snippet": "=== Page 1 ===\n\\--t\u2022 Ukv\u2022R_Th \nIIIMEMIImmiName \n1 \nEFTA00003868\n\n\n=== Page 2 ===\nLIAR_ \nKw \nEFTA00003869\n\n\n=== Page 3 ===\nInvestigating \nOfficer \nCase Number: \nFile Name: \nagt \nNotes: \nPALM BEACH SHER"
+    },
+    {
+      "id": "EFTA00007949",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00006857",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007118",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00007806",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007931",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00006848",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007820",
+      "snippet": "=== Page 1 ===\n:DER LBW \notv. \na \nDEF1 LIN \nil BF INVESTIGATIO \nFEDERAL BUREAU OF INVESMATION \nFEDfiR \nEFTA00007781\n\n\n=== Page 2 ===\n1B7-4 \nEFTA00007782\n\n\n=== Page 3 ===\nIVY \n. .-JEFF\" \nElbsTEIN \n.10."
+    },
+    {
+      "id": "EFTA00007699",
+      "snippet": "=== Page 1 ===\nDriving Directions from 358 El Grillo Way, Palm Beach, FL to \nhttp://www mapquest.comidirectionsimain.adp?go\u2014li&dor-mvitrrnm= \n-:11AAPIWIEST. \nWa 358 El Brillo Way \nPalm Beach, FL \n3348"
+    },
+    {
+      "id": "EFTA00006837",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00003902",
+      "snippet": "=== Page 1 ===\n\\--t\u2022 Ukv\u2022R_Th \nIIIMEMIImmiName \n1 \nEFTA00003868\n\n\n=== Page 2 ===\nLIAR_ \nKw \nEFTA00003869\n\n\n=== Page 3 ===\nInvestigating \nOfficer \nCase Number: \nFile Name: \nagt \nNotes: \nPALM BEACH SHER"
+    },
+    {
+      "id": "A. Evidence List from US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00007114",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00004070",
+      "snippet": "=== Page 1 ===\nFD-340c(4-11-03)\nFile Number\n318-N4-3027571\nField Office Acquiring Evidence\nN40\nSerial # of Originating Document\nDate Received\n7/31/19\nFrom\n(Name of Contributor/Interviewee)\n(Address)\n("
+    },
+    {
+      "id": "EFTA00006828",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007596",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00007121",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00006851",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00007299",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00007204",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007286",
+      "snippet": "=== Page 1 ===\nt 9Mobile,sc \nT-Mobile USA \nLaw Enforcement Relations \n4 Sylvan* Parsippany, NJ 07054 \n'lei: 866-537-0911 Fax 973 2924697 \nMarch 23, 2007 \nSA \nFBI \nWest Palm Reach, Fl. 33401 \nDear \nout"
+    },
+    {
+      "id": "EFTA00003888",
+      "snippet": "=== Page 1 ===\n\\--t\u2022 Ukv\u2022R_Th \nIIIMEMIImmiName \n1 \nEFTA00003868\n\n\n=== Page 2 ===\nLIAR_ \nKw \nEFTA00003869\n\n\n=== Page 3 ===\nInvestigating \nOfficer \nCase Number: \nFile Name: \nagt \nNotes: \nPALM BEACH SHER"
+    },
+    {
+      "id": "EFTA00007911",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00007131",
+      "snippet": "=== Page 1 ===\nUNITED STATES DISTRICT COURT \nSOUTHER& DISTRICT OF FLORIDA \nIN RE FEDERAL GRAND JURY SUBPOENA \nOLY-71 ADDRESSED TO \nBEAR STEARNS COMPANIES, INC. \nCERTIFICATION REGARDING DOMESTIC RECORD"
+    },
+    {
+      "id": "EFTA00001908",
+      "snippet": "=== Page 1 ===\nstatesy - eft.\nBlaine\n/\nJP\nPlant\nNY - St# bym\nChart\nLinan\nKA\nDeyt\nRusnD\nmahr\nLong\nJed\nFx Redente\nmainten\nmichal\nCallen\nI\nGlazatet of\n$\nL55. Bank -\nLaon\nKwok\nHK\nJulm Rpry\nA44\nHard\nAcct\nK"
+    },
+    {
+      "id": "EFTA00007167",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00003905",
+      "snippet": "=== Page 1 ===\n\\--t\u2022 Ukv\u2022R_Th \nIIIMEMIImmiName \n1 \nEFTA00003868\n\n\n=== Page 2 ===\nLIAR_ \nKw \nEFTA00003869\n\n\n=== Page 3 ===\nInvestigating \nOfficer \nCase Number: \nFile Name: \nagt \nNotes: \nPALM BEACH SHER"
+    },
+    {
+      "id": "EFTA00007587",
+      "snippet": "=== Page 1 ===\ne6fr?\n) \nCO\n\u2022\u2022\u2022\u2022\u2022\u2022\u202200-\u2022 - \nCiAlh. \n-I \nGhislaine Maxwell \nEFTA00007585\n\n\n=== Page 2 ===\nCarpenter & Company, Inc. \nCharles Square \n20 Univentiry Rnad \nCambridge, MA 02138 \n617 864-2800"
+    },
+    {
+      "id": "EFTA00006798",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    },
+    {
+      "id": "EFTA00006800",
+      "snippet": "=== Page 1 ===\nEFTA00006770\n\n\n=== Page 2 ===\nlA Envelope \nCase ID: 31E-MM-108062 \nMM \n11 \nRESULTS FROM CINGULAR RE #S III \nADMINISTRATIVE SUBPOENA \nMM \n12 .ADMIN SUBPOENA RESULTS FROM CINGULAR RE III"
+    }
+  ],
+  "total_documents": 619
+}

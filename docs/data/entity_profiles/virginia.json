@@ -1,0 +1,550 @@
+{
+  "id": "person:virginia",
+  "name": "Virginia Giuffre",
+  "short_name": "virginia",
+  "type": "person",
+  "doc_count": 94,
+  "is_key_player": true,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 93,
+      "strength": 0.989
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 92,
+      "strength": 0.979
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 92,
+      "strength": 0.979
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 91,
+      "strength": 0.968
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 90,
+      "strength": 0.957
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 89,
+      "strength": 0.947
+    },
+    {
+      "id": "person:nadia",
+      "name": "Nadia",
+      "short_name": "nadia",
+      "type": "person",
+      "shared_docs": 89,
+      "strength": 0.947
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 89,
+      "strength": 0.947
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.043
+    },
+    {
+      "id": "person:brunel",
+      "name": "Jean-Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.043
+    },
+    {
+      "id": "person:kellen",
+      "name": "Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.032
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.032
+    },
+    {
+      "id": "person:clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.032
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.032
+    },
+    {
+      "id": "person:dubin",
+      "name": "Dubin",
+      "short_name": "dubin",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.032
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.021
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 2,
+      "strength": 0.021
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.021
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.021
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.021
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00008370",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008323",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008402",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008397",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008337",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008330",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00008400",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008360",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008363",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008407",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008389",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008342",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008326",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008343",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008321",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008324",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008334",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008327",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008361",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008371",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008333",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part5_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00008388",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008390",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008395",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008383",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008379",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008341",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008399",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008393",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008408",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008362",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008335",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008394",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008406",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008322",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008355",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008364",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008320",
+      "snippet": "=== Page 1 ===\n272\nPart V: Living the Good Life: Massage for Every Body\nUse massage as a reward for children who complete their homework.\nOffer the family chef a massage in return for preparing a spec"
+    },
+    {
+      "id": "EFTA00008382",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008396",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008369",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008340",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008346",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008375",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008365",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008325",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008354",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008372",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part4_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00008398",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008339",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008349",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008358",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008377",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008345",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008328",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008380",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008357",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008384",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008338",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008404",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008403",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008376",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008344",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005959",
+      "snippet": "=== Page 2 ===\nNJP Response\nPage 1 of 2\nUnauthorized access, reproduction, or dissemination is prohibited.\nRECEIVED AT 07/02/2019 18:40:28\n0040\nDR.\n18:40 07/02/2019 23479\n18:40 07/02/2019 00209 NY1010"
+    },
+    {
+      "id": "EFTA00008386",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008401",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008387",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008331",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008356",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008347",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008385",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008329",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008366",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008352",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008405",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008368",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008392",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00008391",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008373",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008351",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008381",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008374",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008348",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008332",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008353",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008336",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008367",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008378",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008359",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008350",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    }
+  ],
+  "total_documents": 94
+}

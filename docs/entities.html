@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity Search | FBI Document Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .search-hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            margin: -2rem -2rem 2rem -2rem;
+            border-radius: 0 0 8px 8px;
+        }
+        .search-hero h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .search-hero p {
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .entity-search-box {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .entity-search-box input {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            font-size: 1.125rem;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .entity-search-box input:focus {
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .search-suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            margin-top: 0.5rem;
+            max-height: 400px;
+            overflow-y: auto;
+            display: none;
+            z-index: 100;
+        }
+        .search-suggestions.active { display: block; }
+        .suggestion-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+        }
+        .suggestion-item:hover {
+            background: var(--bg);
+        }
+        .suggestion-item:last-child {
+            border-bottom: none;
+        }
+        .suggestion-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        .suggestion-icon.person { background: #e2e8f0; }
+        .suggestion-icon.location { background: #feebc8; }
+        .suggestion-info { flex: 1; }
+        .suggestion-name {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .suggestion-name .key-player {
+            color: var(--accent);
+            font-size: 0.875rem;
+        }
+        .suggestion-meta {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        .key-players-section {
+            margin-bottom: 3rem;
+        }
+        .key-players-section h2 {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .key-player-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .key-player-card {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .key-player-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: var(--primary);
+            text-decoration: none;
+        }
+        .key-player-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .key-player-info { flex: 1; }
+        .key-player-name {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+        }
+        .key-player-docs {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        .all-entities-section h2 {
+            margin-bottom: 1.5rem;
+        }
+        .entity-type-toggle {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .entity-type-toggle button {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: var(--card-bg);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .entity-type-toggle button:hover {
+            border-color: var(--primary);
+        }
+        .entity-type-toggle button.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        .entity-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .entity-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .entity-item:hover {
+            border-color: var(--primary);
+            text-decoration: none;
+        }
+        .entity-item-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+        .entity-item-name {
+            flex: 1;
+            font-weight: 500;
+            color: var(--text);
+        }
+        .entity-item-count {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">FBI Document Explorer</a></h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="entities.html" class="active">Entities</a>
+            <a href="browse.html">Browse</a>
+            <a href="search.html">Search</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-hero">
+            <h1>Entity Search</h1>
+            <p>Explore connections between people and places mentioned in the FBI documents.</p>
+            <div class="entity-search-box">
+                <input type="text" id="entity-search" placeholder="Search for a person or location..." autocomplete="off">
+                <div class="search-suggestions" id="suggestions"></div>
+            </div>
+        </div>
+
+        <section class="key-players-section">
+            <h2>&#11088; Key Players</h2>
+            <div class="key-player-grid" id="key-players">
+                <div class="loading">Loading key players...</div>
+            </div>
+        </section>
+
+        <section class="all-entities-section">
+            <h2>All Entities</h2>
+            <div class="entity-type-toggle">
+                <button class="active" data-type="all">All</button>
+                <button data-type="person">People</button>
+                <button data-type="location">Locations</button>
+            </div>
+            <div class="entity-list" id="entity-list">
+                <div class="loading">Loading entities...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>FBI Document Explorer | Data from FBI Vault Release</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        let entitiesData = null;
+        let currentFilter = 'all';
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('data/entities.json');
+                entitiesData = await response.json();
+
+                // Render key players
+                renderKeyPlayers(entitiesData.key_players);
+
+                // Render all entities
+                renderEntities(entitiesData.entities, 'all');
+
+                // Setup search
+                setupSearch();
+
+                // Setup filter toggles
+                setupFilters();
+
+            } catch (error) {
+                console.error('Failed to load entities:', error);
+                document.getElementById('key-players').innerHTML = `
+                    <div class="card" style="grid-column: 1/-1; text-align: center;">
+                        <p style="color: var(--danger);">Failed to load entity data.</p>
+                    </div>
+                `;
+            }
+        });
+
+        function renderKeyPlayers(players) {
+            const container = document.getElementById('key-players');
+            container.innerHTML = players.map(player => `
+                <a href="entity.html?id=${player.short_name}" class="key-player-card">
+                    <div class="key-player-icon">&#128100;</div>
+                    <div class="key-player-info">
+                        <div class="key-player-name">${player.name}</div>
+                        <div class="key-player-docs">${player.doc_count.toLocaleString()} documents</div>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        function renderEntities(entities, type) {
+            const container = document.getElementById('entity-list');
+            const filtered = type === 'all'
+                ? entities
+                : entities.filter(e => e.type === type);
+
+            container.innerHTML = filtered.map(entity => {
+                const icon = entity.type === 'person' ? '&#128100;' : '&#128205;';
+                return `
+                    <a href="entity.html?id=${entity.short_name}" class="entity-item">
+                        <div class="entity-item-icon">${icon}</div>
+                        <div class="entity-item-name">${entity.name}</div>
+                        <div class="entity-item-count">${entity.doc_count.toLocaleString()}</div>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        function setupSearch() {
+            const input = document.getElementById('entity-search');
+            const suggestions = document.getElementById('suggestions');
+
+            input.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+
+                if (query.length < 2) {
+                    suggestions.classList.remove('active');
+                    return;
+                }
+
+                // Filter entities by query
+                const matches = entitiesData.entities.filter(entity => {
+                    const nameMatch = entity.name.toLowerCase().includes(query);
+                    const aliasMatch = entity.aliases.some(a => a.includes(query));
+                    return nameMatch || aliasMatch;
+                }).slice(0, 8);
+
+                if (matches.length === 0) {
+                    suggestions.classList.remove('active');
+                    return;
+                }
+
+                suggestions.innerHTML = matches.map(entity => {
+                    const icon = entity.type === 'person' ? '&#128100;' : '&#128205;';
+                    const iconClass = entity.type;
+                    return `
+                        <div class="suggestion-item" data-id="${entity.short_name}">
+                            <div class="suggestion-icon ${iconClass}">${icon}</div>
+                            <div class="suggestion-info">
+                                <div class="suggestion-name">
+                                    ${entity.name}
+                                    ${entity.is_key_player ? '<span class="key-player">&#11088;</span>' : ''}
+                                </div>
+                                <div class="suggestion-meta">
+                                    ${entity.type} &bull; ${entity.doc_count.toLocaleString()} documents
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                suggestions.classList.add('active');
+            });
+
+            // Handle suggestion clicks
+            suggestions.addEventListener('click', (e) => {
+                const item = e.target.closest('.suggestion-item');
+                if (item) {
+                    window.location.href = `entity.html?id=${item.dataset.id}`;
+                }
+            });
+
+            // Hide suggestions on outside click
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.entity-search-box')) {
+                    suggestions.classList.remove('active');
+                }
+            });
+
+            // Handle keyboard navigation
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    suggestions.classList.remove('active');
+                }
+            });
+        }
+
+        function setupFilters() {
+            const buttons = document.querySelectorAll('.entity-type-toggle button');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.type;
+                    renderEntities(entitiesData.entities, currentFilter);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

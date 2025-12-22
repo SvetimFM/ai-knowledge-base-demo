@@ -1,0 +1,202 @@
+{
+  "id": "person:dubin",
+  "name": "Dubin",
+  "short_name": "dubin",
+  "type": "person",
+  "doc_count": 7,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 7,
+      "strength": 1.0
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 7,
+      "strength": 1.0
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "shared_docs": 6,
+      "strength": 0.857
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.714
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.714
+    },
+    {
+      "id": "person:mitchell",
+      "name": "Mitchell",
+      "short_name": "mitchell",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.714
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.714
+    },
+    {
+      "id": "person:brunel",
+      "name": "Jean-Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.714
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.714
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "shared_docs": 5,
+      "strength": 0.714
+    },
+    {
+      "id": "person:kellen",
+      "name": "Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.571
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.571
+    },
+    {
+      "id": "person:trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.571
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 4,
+      "strength": 0.571
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 3,
+      "strength": 0.429
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.429
+    },
+    {
+      "id": "person:clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.429
+    },
+    {
+      "id": "person:glenn",
+      "name": "Glenn",
+      "short_name": "glenn",
+      "type": "person",
+      "shared_docs": 3,
+      "strength": 0.429
+    },
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 2,
+      "strength": 0.286
+    },
+    {
+      "id": "person:leon",
+      "name": "Leon",
+      "short_name": "leon",
+      "type": "person",
+      "shared_docs": 2,
+      "strength": 0.286
+    }
+  ],
+  "documents": [
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part3_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "C. Contact Book_Redacted_0",
+      "snippet": ""
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part6_0",
+      "snippet": ""
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_Part4_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "B. Flight Log_Released in U.S. v. Maxwell_0_0_0_0",
+      "snippet": ""
+    },
+    {
+      "id": "C. Contact Book (Redacted)",
+      "snippet": ""
+    }
+  ],
+  "total_documents": 7
+}

@@ -1,0 +1,574 @@
+{
+  "id": "location:paris",
+  "name": "Paris",
+  "short_name": "paris",
+  "type": "location",
+  "doc_count": 791,
+  "is_key_player": false,
+  "viz_file": null,
+  "connected_entities": [
+    {
+      "id": "location:new york",
+      "name": "New York",
+      "short_name": "new york",
+      "type": "location",
+      "shared_docs": 555,
+      "strength": 0.702
+    },
+    {
+      "id": "person:black",
+      "name": "Black",
+      "short_name": "black",
+      "type": "person",
+      "shared_docs": 554,
+      "strength": 0.7
+    },
+    {
+      "id": "person:andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 294,
+      "strength": 0.372
+    },
+    {
+      "id": "location:little saint james",
+      "name": "Little Saint James",
+      "short_name": "little saint james",
+      "type": "location",
+      "shared_docs": 263,
+      "strength": 0.332
+    },
+    {
+      "id": "person:alfredo",
+      "name": "Alfredo",
+      "short_name": "alfredo",
+      "type": "person",
+      "shared_docs": 259,
+      "strength": 0.327
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "shared_docs": 258,
+      "strength": 0.326
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 253,
+      "strength": 0.32
+    },
+    {
+      "id": "location:palm beach",
+      "name": "Palm Beach",
+      "short_name": "palm beach",
+      "type": "location",
+      "shared_docs": 252,
+      "strength": 0.319
+    },
+    {
+      "id": "person:nadia",
+      "name": "Nadia",
+      "short_name": "nadia",
+      "type": "person",
+      "shared_docs": 191,
+      "strength": 0.241
+    },
+    {
+      "id": "person:jeffrey",
+      "name": "Jeffrey",
+      "short_name": "jeffrey",
+      "type": "person",
+      "shared_docs": 168,
+      "strength": 0.212
+    },
+    {
+      "id": "person:epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 167,
+      "strength": 0.211
+    },
+    {
+      "id": "person:ghislaine",
+      "name": "Ghislaine",
+      "short_name": "ghislaine",
+      "type": "person",
+      "shared_docs": 164,
+      "strength": 0.207
+    },
+    {
+      "id": "location:zorro ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro ranch",
+      "type": "location",
+      "shared_docs": 160,
+      "strength": 0.202
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "shared_docs": 159,
+      "strength": 0.201
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 101,
+      "strength": 0.128
+    },
+    {
+      "id": "person:wexner",
+      "name": "Les Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 100,
+      "strength": 0.126
+    },
+    {
+      "id": "person:virginia",
+      "name": "Virginia Giuffre",
+      "short_name": "virginia",
+      "type": "person",
+      "shared_docs": 92,
+      "strength": 0.116
+    },
+    {
+      "id": "location:new mexico",
+      "name": "New Mexico",
+      "short_name": "new mexico",
+      "type": "location",
+      "shared_docs": 66,
+      "strength": 0.083
+    },
+    {
+      "id": "person:roberts",
+      "name": "Roberts",
+      "short_name": "roberts",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.006
+    },
+    {
+      "id": "person:brunel",
+      "name": "Jean-Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 5,
+      "strength": 0.006
+    }
+  ],
+  "documents": [
+    {
+      "id": "EFTA00008127",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00000476",
+      "snippet": "=== Page 1 ===\nJEFFREY E. EPSTEIN\nCASH DISBURSEMENTS\nFOR THE PERIOD SEP 1. 2006 SEP 30, 2006\n* Report\nCurrent Events\nCalendar\nSelect a View\nRunning\n= Events\nDate\nNum\nName\nAmount\nBalance\nRelates to\n09/"
+    },
+    {
+      "id": "EFTA00008214",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008218",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00004084",
+      "snippet": "=== Page 1 ===\nBy \nToBe Returned K \nYes \nerNo \nReceipt Given K \nYes \n0No \nGrand Jury Material \u2022 Disseminate Only Pursuant to Rule 6 (e) \nFederal Rules of Criminal Procedure \nEFTA00004070\n\n\n=== Page 2"
+    },
+    {
+      "id": "EFTA00008301",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00005241",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00008113",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00005132",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00008046",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00007200",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008312",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00005160",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00007186",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008223",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008317",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008370",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008140",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005163",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00008246",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008023",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008323",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007170",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008402",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005097",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00004080",
+      "snippet": "=== Page 1 ===\nBy \nToBe Returned K \nYes \nerNo \nReceipt Given K \nYes \n0No \nGrand Jury Material \u2022 Disseminate Only Pursuant to Rule 6 (e) \nFederal Rules of Criminal Procedure \nEFTA00004070\n\n\n=== Page 2"
+    },
+    {
+      "id": "EFTA00007944",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008397",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00007207",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005227",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00008208",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008337",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008041",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008274",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00007195",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005149",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00005114",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00008211",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007159",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005246",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00005213",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00007251",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00005212",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00008128",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008330",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008181",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007178",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008102",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "snippet": ""
+    },
+    {
+      "id": "EFTA00008197",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007947",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00005216",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00008122",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007220",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007210",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008093",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008265",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008200",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005155",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00008196",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00004250",
+      "snippet": "=== Page 1 ===\nZORRO/VEGAS\nGAY JEAN LUC\nLSJ AERIALS\nCLOUDS\nPRAGUE\nPARIS\nAINTING\nMISC 6/04\n\n=== Page 2 ===\nLSJ Aerials,\njet ski\nphoto\n: AVERY\u00ae\nDSCF0022_1.TIF\nDSCF0023_1.TIF\nDSCF0024_1.TIF\nDSCF0025_1.TI"
+    },
+    {
+      "id": "EFTA00008400",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005148",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00008281",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008360",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005101",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00005277",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00007242",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00008363",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008303",
+      "snippet": "=== Page 1 ===\nEFTA00008220\n\n\n=== Page 2 ===\n \nChapter 11: Putting the Moves Together 173 \na \n7. With your thumbs atop the shoulders and your fingers up on your part-\nner's back, knead thetops of the"
+    },
+    {
+      "id": "EFTA00008130",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008407",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008117",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008074",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00008193",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00008132",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005199",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00008389",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00004074",
+      "snippet": "=== Page 1 ===\nBy \nToBe Returned K \nYes \nerNo \nReceipt Given K \nYes \n0No \nGrand Jury Material \u2022 Disseminate Only Pursuant to Rule 6 (e) \nFederal Rules of Criminal Procedure \nEFTA00004070\n\n\n=== Page 2"
+    },
+    {
+      "id": "EFTA00008342",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008088",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    },
+    {
+      "id": "EFTA00005113",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00008326",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00005226",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00005222",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00005168",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00005234",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00007211",
+      "snippet": "=== Page 1 ===\nDate: 7/25/06 \nTime: 8:47:53 \nPALM BEACH -POLICE DEPARTMENT \n\u2022 \nIncident Report \nPage: \nNI \n11 1I \nProgram: CS3 C: \n1L \nCase No \n 1-05-000368 \nSPECIAL NOTES : DO NOT RELEASE \nOccur From"
+    },
+    {
+      "id": "EFTA00007949",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008204",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00005104",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00005111",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00005161",
+      "snippet": "=== Page 1 ===\nLSJ WATER \n\u2022 \n29 BOAT I= \nLSJ XMAS0S DISKS \nLSJ XMAS05-DISK2 \nLSJ XMAS05-DISK1 \nLSJ XMAS05 SUTON \nLSJ XMAS. WITH I= \nLSJIPUERTO RICO/GUANA \nPINTO HOUSE PICS \n\u25a0 CLOUDS 01106 \nBRAZIL, \nMI"
+    },
+    {
+      "id": "EFTA00005265",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00005281",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00005259",
+      "snippet": "=== Page 1 ===\nChateau Vilette \nD + + + + + \nIMG_0166.JPG \nD + + + + + \nIMG_01'69.JPG \n+ + + + + \nIMG_0172.JPG \nD + + + + + \nIMG_0167.JPG \nE] + + + + + \nIMG_0170.JPG \n\u2751+ + + + + \nIMG_0173.JPG \n+ + + +"
+    },
+    {
+      "id": "EFTA00008343",
+      "snippet": "=== Page 1 ===\nMassaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u0013 Use massage as a reward for children who complete their homework. \n\u0013 Offer the family chef a massage In"
+    },
+    {
+      "id": "EFTA00008206",
+      "snippet": "=== Page 1 ===\n74 \nPart II: The Art of Receiving Massage  \nMassage is all about making you feel comfortable in your own skin, and the \nlast thing you want is to have a language barrier make you feel u"
+    },
+    {
+      "id": "EFTA00007931",
+      "snippet": "=== Page 1 ===\n- \n1 \n\u2022\nj \nORS \n023076\n Town of Palm Beach efklcsA \nPolice Department \nEVIDENCE \nCASE i/0 5\n.3(02\n PROPERTY # O \n2cRlt\u2014\nCONTENTS \n/ \nS3 2\nSuspect: ips 4- teen ji \nOfficer: 'yet\n... \nLab"
+    },
+    {
+      "id": "EFTA00008104",
+      "snippet": "=== Page 1 ===\n\"One of the great masters of massage.\" _ Rot, Leach, from the foreword \nSteve Capellini, LMT \nMichel Van Welden, PT, NT \nk4 \n*reword by Robin Leach \nEFTA00008020\n\n\n=== Page 2 ===\nOTWG"
+    }
+  ],
+  "total_documents": 791
+}
