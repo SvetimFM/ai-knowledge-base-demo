@@ -7,6 +7,9 @@ node_modules
 .cdk.staging
 cdk.out
 
+# CDK context (contains account-specific AZ cache - should be regenerated per deployment)
+cdk.context.json
+
 # IDE
 .vscode/
 .idea/
@@ -48,6 +51,22 @@ SESSION_SUMMARY.md
 !.amazonq/*.example
 
 # Documentation (download via scripts - see docs/README.md)
-docs/
-!docs/README.md
-!docs/.gitkeep
+# Note: docs/ folder is now used for GitHub Pages, so we include it
+# but exclude large files (>100MB GitHub limit) - these are on HuggingFace
+docs/data/viz/webgl_graph.json
+
+# Exclude unrelated HPC docs for the Epstein files release
+docs/amd/
+docs/nvidia/
+docs/community/
+docs/github-repos/
+docs/benchmarking/
+docs/llm-benchmarking/
+docs/hpc-docs-README.md
+docs/nvidia-hpc-documentation-links.md
+
+# MCP RSA keys (NEVER commit private keys!)
+mcp-keys/
+
+# MCP configuration (contains auth tokens!)
+.mcp.json

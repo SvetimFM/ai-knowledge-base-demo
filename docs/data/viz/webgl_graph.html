@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FBI Epstein Files - Full Network Graph (WebGL)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #1a1a2e;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+        #container { width: 100vw; height: 100vh; }
+        #info {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 100;
+            max-width: 300px;
+        }
+        #info h1 { font-size: 14px; margin-bottom: 10px; }
+        #info p { font-size: 12px; opacity: 0.8; margin-bottom: 5px; }
+        #hover-info {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 100;
+            display: none;
+        }
+        #legend {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 100;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        #legend h3 { font-size: 12px; margin-bottom: 10px; }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 11px;
+        }
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        #controls {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 100;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 2px;
+            font-size: 11px;
+        }
+        button:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+
+    <div id="info">
+        <h1>FBI Epstein Files - Network Graph</h1>
+        <p id="stats">Loading...</p>
+        <p>Scroll to zoom, drag to pan</p>
+        <p>Click nodes to see connections</p>
+    </div>
+
+    <div id="hover-info"></div>
+
+    <div id="legend">
+        <h3>Clusters (by primary entity)</h3>
+        <div id="legend-items"></div>
+    </div>
+
+    <div id="controls">
+        <button onclick="resetZoom()">Reset View</button>
+        <button onclick="toggleEdges()">Toggle Edges</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sigma@2.4.0/build/sigma.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/graphology@0.25.4/dist/graphology.umd.min.js"></script>
+
+    <script>
+        let renderer;
+        let graph;
+        let edgesVisible = true;
+
+        async function init() {
+            // Load graph data
+            const response = await fetch('webgl_graph.json');
+            const data = await response.json();
+
+            // Create graphology graph
+            graph = new graphology.Graph();
+
+            // Add nodes
+            data.nodes.forEach(node => {
+                graph.addNode(node.id, {
+                    x: node.x,
+                    y: node.y,
+                    size: node.size,
+                    color: node.color,
+                    label: node.label,
+                    cluster: node.cluster,
+                    volume: node.volume,
+                    degree: node.degree
+                });
+            });
+
+            // Add edges
+            data.edges.forEach(edge => {
+                graph.addEdge(edge.source, edge.target, {
+                    weight: edge.weight,
+                    color: edge.color
+                });
+            });
+
+            // Update stats
+            document.getElementById('stats').textContent =
+                `${data.nodes.length} documents, ${data.edges.length} connections`;
+
+            // Build legend
+            const clusters = [...new Set(data.nodes.map(n => n.cluster))];
+            const clusterCounts = {};
+            data.nodes.forEach(n => {
+                clusterCounts[n.cluster] = (clusterCounts[n.cluster] || 0) + 1;
+            });
+
+            const legendHTML = clusters
+                .sort((a, b) => (clusterCounts[b] || 0) - (clusterCounts[a] || 0))
+                .slice(0, 15)
+                .map(c => {
+                    const node = data.nodes.find(n => n.cluster === c);
+                    return `<div class="legend-item">
+                        <div class="legend-color" style="background:${node.color}"></div>
+                        ${c} (${clusterCounts[c]})
+                    </div>`;
+                }).join('');
+            document.getElementById('legend-items').innerHTML = legendHTML;
+
+            // Create Sigma renderer
+            renderer = new Sigma(graph, document.getElementById('container'), {
+                renderEdgeLabels: false,
+                enableEdgeClickEvents: false,
+                labelFont: 'Arial',
+                labelSize: 12,
+                labelColor: { color: '#fff' },
+                defaultEdgeColor: '#333',
+                edgeReducer: (edge, data) => {
+                    return { ...data, hidden: !edgesVisible };
+                }
+            });
+
+            // Hover events
+            renderer.on('enterNode', ({ node }) => {
+                const attrs = graph.getNodeAttributes(node);
+                document.getElementById('hover-info').style.display = 'block';
+                document.getElementById('hover-info').innerHTML = `
+                    <strong>${node}</strong><br>
+                    Volume: ${attrs.volume}<br>
+                    Cluster: ${attrs.cluster}<br>
+                    Connections: ${attrs.degree}
+                `;
+            });
+
+            renderer.on('leaveNode', () => {
+                document.getElementById('hover-info').style.display = 'none';
+            });
+
+            // Click to highlight neighbors
+            renderer.on('clickNode', ({ node }) => {
+                const neighbors = graph.neighbors(node);
+                graph.forEachNode((n, attrs) => {
+                    if (n === node || neighbors.includes(n)) {
+                        graph.setNodeAttribute(n, 'highlighted', true);
+                        graph.setNodeAttribute(n, 'color', attrs.originalColor || attrs.color);
+                    } else {
+                        if (!attrs.originalColor) {
+                            graph.setNodeAttribute(n, 'originalColor', attrs.color);
+                        }
+                        graph.setNodeAttribute(n, 'color', '#333');
+                    }
+                });
+                renderer.refresh();
+            });
+
+            renderer.on('clickStage', () => {
+                graph.forEachNode((n, attrs) => {
+                    if (attrs.originalColor) {
+                        graph.setNodeAttribute(n, 'color', attrs.originalColor);
+                        graph.removeNodeAttribute(n, 'originalColor');
+                    }
+                });
+                renderer.refresh();
+            });
+        }
+
+        function resetZoom() {
+            renderer.getCamera().setState({ x: 0.5, y: 0.5, ratio: 1, angle: 0 });
+        }
+
+        function toggleEdges() {
+            edgesVisible = !edgesVisible;
+            renderer.refresh();
+        }
+
+        init();
+    </script>
+</body>
+</html>

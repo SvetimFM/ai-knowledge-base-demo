@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Viewer - FBI Document Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">FBI Document Explorer</a></h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="browse.html">Browse</a>
+            <a href="search.html">Search</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="loading" class="loading">Loading document...</div>
+
+        <div id="doc-view" class="doc-layout" style="display: none;">
+            <aside class="doc-info">
+                <h2 id="doc-id">--</h2>
+                <dl>
+                    <dt>Volume</dt>
+                    <dd id="doc-volume">--</dd>
+
+                    <dt>Category</dt>
+                    <dd id="doc-category">--</dd>
+
+                    <dt>Pages</dt>
+                    <dd id="doc-pages">--</dd>
+
+                    <dt>Confidence</dt>
+                    <dd id="doc-confidence">--</dd>
+                </dl>
+
+                <div class="actions">
+                    <a id="download-link" href="#" class="btn" target="_blank" rel="noopener">
+                        Download PDF
+                    </a>
+                    <a id="open-new-tab" href="#" class="btn btn-outline" target="_blank" rel="noopener">
+                        Open in New Tab
+                    </a>
+                </div>
+
+                <div style="margin-top: 2rem; display: flex; gap: 0.5rem;">
+                    <a id="prev-doc" href="#" class="btn btn-outline" style="flex: 1; text-align: center;">&larr; Prev</a>
+                    <a id="next-doc" href="#" class="btn btn-outline" style="flex: 1; text-align: center;">Next &rarr;</a>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <a href="browse.html" style="color: var(--text-muted);">&larr; Back to Browse</a>
+                </div>
+            </aside>
+
+            <div class="pdf-container">
+                <iframe id="pdf-iframe" title="PDF Viewer"></iframe>
+            </div>
+        </div>
+
+        <div id="not-found" class="empty-state" style="display: none;">
+            <h3>Document Not Found</h3>
+            <p>The requested document could not be found.</p>
+            <a href="browse.html" class="btn" style="margin-top: 1rem;">Browse All Documents</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>FBI Document Explorer | Data from FBI Vault Release</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        let allDocs = [];
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const docId = app.getUrlParam('id');
+
+            if (!docId) {
+                showNotFound();
+                return;
+            }
+
+            try {
+                const manifest = await app.loadManifest();
+                allDocs = manifest.documents;
+
+                // Sort for consistent navigation
+                allDocs.sort((a, b) => a.id.localeCompare(b.id));
+
+                // Find the document
+                const docIndex = allDocs.findIndex(d => d.id === docId);
+                if (docIndex === -1) {
+                    showNotFound();
+                    return;
+                }
+
+                const doc = allDocs[docIndex];
+                renderDocument(doc, docIndex);
+
+            } catch (error) {
+                console.error('Failed to load document:', error);
+                document.getElementById('loading').innerHTML =
+                    '<p style="color: var(--danger);">Failed to load document data.</p>';
+            }
+        });
+
+        function renderDocument(doc, index) {
+            // Update page title
+            document.title = `${doc.id} - FBI Document Explorer`;
+
+            // Update metadata
+            document.getElementById('doc-id').textContent = doc.id;
+            document.getElementById('doc-volume').textContent = `Volume ${doc.vol}`;
+            document.getElementById('doc-category').innerHTML = app.getCategoryBadge(doc.cat);
+            document.getElementById('doc-pages').textContent = doc.pages;
+            document.getElementById('doc-confidence').textContent = `${Math.round(doc.conf * 100)}%`;
+
+            // PDF URL
+            const pdfUrl = app.getPdfUrl(doc);
+            document.getElementById('pdf-iframe').src = pdfUrl;
+            document.getElementById('download-link').href = pdfUrl;
+            document.getElementById('open-new-tab').href = pdfUrl;
+
+            // Navigation
+            const prevBtn = document.getElementById('prev-doc');
+            const nextBtn = document.getElementById('next-doc');
+
+            if (index > 0) {
+                prevBtn.href = `document.html?id=${allDocs[index - 1].id}`;
+                prevBtn.style.visibility = 'visible';
+            } else {
+                prevBtn.style.visibility = 'hidden';
+            }
+
+            if (index < allDocs.length - 1) {
+                nextBtn.href = `document.html?id=${allDocs[index + 1].id}`;
+                nextBtn.style.visibility = 'visible';
+            } else {
+                nextBtn.style.visibility = 'hidden';
+            }
+
+            // Show the viewer
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('doc-view').style.display = 'grid';
+        }
+
+        function showNotFound() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('not-found').style.display = 'block';
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                const prevLink = document.getElementById('prev-doc');
+                if (prevLink.style.visibility !== 'hidden') {
+                    window.location.href = prevLink.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextLink = document.getElementById('next-doc');
+                if (nextLink.style.visibility !== 'hidden') {
+                    window.location.href = nextLink.href;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

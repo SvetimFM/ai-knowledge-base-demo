@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FBI Epstein Files - Full Network Graph (GPU Accelerated)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #1a1a2e;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+        #container { width: 100vw; height: 100vh; }
+        #info {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 100;
+            max-width: 350px;
+        }
+        #info h1 { font-size: 16px; margin-bottom: 10px; color: #3498db; }
+        #info p { font-size: 12px; opacity: 0.8; margin-bottom: 5px; }
+        #stats { font-size: 14px; color: #2ecc71; margin: 10px 0; }
+        #loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.9);
+            padding: 30px 50px;
+            border-radius: 10px;
+            z-index: 200;
+            text-align: center;
+        }
+        #loading h2 { margin-bottom: 15px; }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #333;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        #hover-info {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.9);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 100;
+            display: none;
+            border-left: 3px solid #3498db;
+        }
+        #legend {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 100;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        #legend h3 { font-size: 12px; margin-bottom: 10px; color: #f1c40f; }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 11px;
+        }
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        #controls {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 100;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 2px;
+            font-size: 11px;
+            transition: background 0.2s;
+        }
+        button:hover { background: #2980b9; }
+        button:active { background: #1a5276; }
+        #search-box {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+        #search-box input {
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid #444;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            width: 300px;
+            font-size: 14px;
+        }
+        #search-box input::placeholder { color: #888; }
+        #search-box input:focus { outline: none; border-color: #3498db; }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <h2>Loading Graph...</h2>
+        <div class="spinner"></div>
+        <p id="load-status">Fetching data...</p>
+    </div>
+
+    <div id="container"></div>
+
+    <div id="info">
+        <h1>🔍 FBI Epstein Files Network</h1>
+        <p id="stats">Loading...</p>
+        <p><strong>Controls:</strong></p>
+        <p>• Scroll to zoom</p>
+        <p>• Drag to pan</p>
+        <p>• Click node for details</p>
+        <p>• Hover for preview</p>
+    </div>
+
+    <div id="search-box">
+        <input type="text" id="search" placeholder="Search documents..." />
+    </div>
+
+    <div id="hover-info"></div>
+
+    <div id="legend">
+        <h3>Clusters (by primary entity)</h3>
+        <div id="legend-items"></div>
+    </div>
+
+    <div id="controls">
+        <button onclick="resetView()">Reset View</button>
+        <button onclick="toggleSimulation()">Pause/Play</button>
+        <button onclick="zoomIn()">Zoom +</button>
+        <button onclick="zoomOut()">Zoom -</button>
+    </div>
+
+    <script type="module">
+        import { Cosmograph } from 'https://unpkg.com/@cosmograph/cosmograph@2.3.0/dist/index.js';
+
+        let cosmograph;
+        let graphData;
+        let isSimulationRunning = true;
+
+        async function init() {
+            const loadStatus = document.getElementById('load-status');
+
+            try {
+                loadStatus.textContent = 'Fetching graph data (155MB) from HuggingFace...';
+                // Large file hosted on HuggingFace to bypass GitHub 100MB limit
+                const response = await fetch('https://huggingface.co/datasets/svetfm/epstein-fbi-files/resolve/main/viz/webgl_graph.json');
+
+                loadStatus.textContent = 'Parsing JSON...';
+                graphData = await response.json();
+
+                loadStatus.textContent = 'Initializing GPU renderer...';
+
+                // Convert data format for Cosmograph
+                const nodes = graphData.nodes.map(n => ({
+                    id: n.id,
+                    x: n.x,
+                    y: n.y,
+                    color: n.color,
+                    size: n.size || 3,
+                    label: n.label || n.id,
+                    cluster: n.cluster,
+                    volume: n.volume,
+                    degree: n.degree
+                }));
+
+                const links = graphData.edges.map(e => ({
+                    source: e.source,
+                    target: e.target
+                }));
+
+                // Update stats
+                document.getElementById('stats').innerHTML = `
+                    <strong>${nodes.length.toLocaleString()}</strong> documents<br>
+                    <strong>${links.length.toLocaleString()}</strong> connections
+                `;
+
+                // Build legend
+                const clusters = [...new Set(nodes.map(n => n.cluster))];
+                const clusterCounts = {};
+                nodes.forEach(n => {
+                    clusterCounts[n.cluster] = (clusterCounts[n.cluster] || 0) + 1;
+                });
+
+                const legendHTML = clusters
+                    .sort((a, b) => (clusterCounts[b] || 0) - (clusterCounts[a] || 0))
+                    .slice(0, 15)
+                    .map(c => {
+                        const node = nodes.find(n => n.cluster === c);
+                        return `<div class="legend-item">
+                            <div class="legend-color" style="background:${node?.color || '#999'}"></div>
+                            ${c} (${clusterCounts[c]})
+                        </div>`;
+                    }).join('');
+                document.getElementById('legend-items').innerHTML = legendHTML;
+
+                // Initialize Cosmograph
+                const container = document.getElementById('container');
+
+                cosmograph = new Cosmograph(container, {
+                    backgroundColor: '#16213e',
+                    nodeColor: node => node.color || '#3498db',
+                    nodeSize: node => Math.min(20, (node.size || 3)),
+                    nodeLabelAccessor: node => node.label,
+                    nodeLabelColor: '#ffffff',
+                    linkColor: '#333333',
+                    linkWidth: 0.2,
+                    linkArrows: false,
+                    simulation: {
+                        linkDistance: 5,
+                        linkSpring: 0.3,
+                        repulsion: 0.5,
+                        gravity: 0.1,
+                        friction: 0.85,
+                        decay: 100
+                    },
+                    events: {
+                        onNodeMouseOver: (node) => {
+                            if (node) {
+                                const hoverInfo = document.getElementById('hover-info');
+                                hoverInfo.style.display = 'block';
+                                hoverInfo.innerHTML = `
+                                    <strong>${node.id}</strong><br>
+                                    Cluster: ${node.cluster}<br>
+                                    Volume: ${node.volume}<br>
+                                    Connections: ${node.degree}
+                                `;
+                            }
+                        },
+                        onNodeMouseOut: () => {
+                            document.getElementById('hover-info').style.display = 'none';
+                        },
+                        onClick: (node) => {
+                            if (node) {
+                                // Highlight node and neighbors
+                                cosmograph.selectNode(node);
+                            }
+                        }
+                    }
+                });
+
+                loadStatus.textContent = 'Rendering graph...';
+                cosmograph.setData(nodes, links);
+
+                // Hide loading screen
+                setTimeout(() => {
+                    document.getElementById('loading').style.display = 'none';
+                }, 1000);
+
+                // Search functionality
+                document.getElementById('search').addEventListener('input', (e) => {
+                    const query = e.target.value.toLowerCase();
+                    if (query.length > 2) {
+                        const matches = nodes.filter(n =>
+                            n.id.toLowerCase().includes(query) ||
+                            (n.cluster && n.cluster.toLowerCase().includes(query))
+                        );
+                        if (matches.length > 0 && matches.length < 100) {
+                            cosmograph.selectNodes(matches);
+                        }
+                    } else {
+                        cosmograph.unselectNodes();
+                    }
+                });
+
+            } catch (error) {
+                console.error('Error:', error);
+                loadStatus.textContent = `Error: ${error.message}`;
+            }
+        }
+
+        window.resetView = () => {
+            if (cosmograph) cosmograph.fitView();
+        };
+
+        window.toggleSimulation = () => {
+            if (cosmograph) {
+                isSimulationRunning = !isSimulationRunning;
+                if (isSimulationRunning) {
+                    cosmograph.restart();
+                } else {
+                    cosmograph.pause();
+                }
+            }
+        };
+
+        window.zoomIn = () => {
+            if (cosmograph) cosmograph.zoom(1.5);
+        };
+
+        window.zoomOut = () => {
+            if (cosmograph) cosmograph.zoom(0.67);
+        };
+
+        init();
+    </script>
+</body>
+</html>

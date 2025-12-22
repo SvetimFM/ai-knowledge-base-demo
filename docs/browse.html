@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Documents - FBI Document Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">FBI Document Explorer</a></h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="browse.html" class="active">Browse</a>
+            <a href="search.html">Search</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
+
+    <main class="layout-with-sidebar">
+        <aside class="sidebar">
+            <h3>Filters</h3>
+
+            <div class="filter-group">
+                <label for="filter-category">Category</label>
+                <select id="filter-category">
+                    <option value="">All Categories</option>
+                    <option value="typed_memo">Typed Memo</option>
+                    <option value="photograph">Photograph</option>
+                    <option value="digital_text">Digital Text</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="filter-volume">Volume</label>
+                <select id="filter-volume">
+                    <option value="">All Volumes</option>
+                    <!-- Populated by JS -->
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="filter-search">Search ID</label>
+                <input type="text" id="filter-search" placeholder="e.g. EFTA00000123">
+            </div>
+
+            <div class="filter-group">
+                <label>Results</label>
+                <div id="result-count" style="font-weight: 600; color: var(--primary);">--</div>
+            </div>
+
+            <button class="btn btn-outline" onclick="clearFilters()" style="width: 100%;">Clear Filters</button>
+        </aside>
+
+        <section class="content">
+            <div id="loading" class="loading">Loading documents...</div>
+
+            <div id="results-container" style="display: none;">
+                <div class="table-container">
+                    <table id="docs-table">
+                        <thead>
+                            <tr>
+                                <th data-sort="id" class="sortable">Bates Number <span class="sort-indicator"></span></th>
+                                <th data-sort="vol" class="sortable">Volume <span class="sort-indicator"></span></th>
+                                <th data-sort="cat" class="sortable">Category <span class="sort-indicator"></span></th>
+                                <th data-sort="pages" class="sortable">Pages <span class="sort-indicator"></span></th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="docs-tbody">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="pagination" class="pagination"></div>
+            </div>
+
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <h3>No documents found</h3>
+                <p>Try adjusting your filters or search criteria.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>FBI Document Explorer | Data from FBI Vault Release</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        // State
+        let allDocs = [];
+        let filteredDocs = [];
+        let currentPage = 1;
+        let currentSort = { field: 'id', dir: 'asc' };
+        const perPage = 50;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const manifest = await app.loadManifest();
+                allDocs = manifest.documents;
+
+                // Populate volume filter
+                const volumes = [...new Set(allDocs.map(d => d.vol))].sort((a, b) => a - b);
+                const volumeSelect = document.getElementById('filter-volume');
+                volumes.forEach(vol => {
+                    const option = document.createElement('option');
+                    option.value = vol;
+                    option.textContent = `Volume ${vol}`;
+                    volumeSelect.appendChild(option);
+                });
+
+                // Check URL params for initial filters
+                const urlCategory = app.getUrlParam('category');
+                const urlVolume = app.getUrlParam('volume');
+
+                if (urlCategory) document.getElementById('filter-category').value = urlCategory;
+                if (urlVolume) document.getElementById('filter-volume').value = urlVolume;
+
+                // Apply filters and render
+                applyFilters();
+
+                // Setup event listeners
+                document.getElementById('filter-category').addEventListener('change', applyFilters);
+                document.getElementById('filter-volume').addEventListener('change', applyFilters);
+                document.getElementById('filter-search').addEventListener('input', app.debounce(applyFilters, 300));
+
+                // Sortable headers
+                document.querySelectorAll('th.sortable').forEach(th => {
+                    th.style.cursor = 'pointer';
+                    th.addEventListener('click', () => {
+                        const field = th.dataset.sort;
+                        if (currentSort.field === field) {
+                            currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+                        } else {
+                            currentSort.field = field;
+                            currentSort.dir = 'asc';
+                        }
+                        updateSortIndicators();
+                        renderTable();
+                    });
+                });
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('results-container').style.display = 'block';
+
+            } catch (error) {
+                console.error('Failed to load documents:', error);
+                document.getElementById('loading').innerHTML =
+                    '<p style="color: var(--danger);">Failed to load documents. Please ensure data files exist.</p>';
+            }
+        });
+
+        function applyFilters() {
+            const category = document.getElementById('filter-category').value;
+            const volume = document.getElementById('filter-volume').value;
+            const search = document.getElementById('filter-search').value;
+
+            // Update URL params
+            app.setUrlParam('category', category);
+            app.setUrlParam('volume', volume);
+
+            filteredDocs = app.filterDocuments(allDocs, { category, volume, search });
+            currentPage = 1;
+
+            document.getElementById('result-count').textContent =
+                `${app.formatNumber(filteredDocs.length)} documents`;
+
+            renderTable();
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('docs-tbody');
+            const sorted = app.sortDocuments(filteredDocs, currentSort.field, currentSort.dir);
+            const pagination = app.paginate(sorted, currentPage, perPage);
+
+            if (pagination.items.length === 0) {
+                document.getElementById('results-container').style.display = 'none';
+                document.getElementById('empty-state').style.display = 'block';
+                return;
+            }
+
+            document.getElementById('results-container').style.display = 'block';
+            document.getElementById('empty-state').style.display = 'none';
+
+            tbody.innerHTML = pagination.items.map(doc => `
+                <tr>
+                    <td><a href="document.html?id=${doc.id}">${doc.id}</a></td>
+                    <td>Volume ${doc.vol}</td>
+                    <td>${app.getCategoryBadge(doc.cat)}</td>
+                    <td>${doc.pages}</td>
+                    <td>
+                        <a href="document.html?id=${doc.id}" class="btn" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">View</a>
+                    </td>
+                </tr>
+            `).join('');
+
+            app.renderPagination('pagination', pagination, (page) => {
+                currentPage = page;
+                renderTable();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        function updateSortIndicators() {
+            document.querySelectorAll('th.sortable').forEach(th => {
+                const indicator = th.querySelector('.sort-indicator');
+                if (th.dataset.sort === currentSort.field) {
+                    indicator.textContent = currentSort.dir === 'asc' ? ' ▲' : ' ▼';
+                } else {
+                    indicator.textContent = '';
+                }
+            });
+        }
+
+        function clearFilters() {
+            document.getElementById('filter-category').value = '';
+            document.getElementById('filter-volume').value = '';
+            document.getElementById('filter-search').value = '';
+            app.setUrlParam('category', '');
+            app.setUrlParam('volume', '');
+            applyFilters();
+        }
+    </script>
+
+    <style>
+        th.sortable:hover { background: var(--primary-light); }
+        .sort-indicator { font-size: 0.75rem; }
+    </style>
+</body>
+</html>

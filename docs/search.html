@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Documents - FBI Document Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">FBI Document Explorer</a></h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="browse.html">Browse</a>
+            <a href="search.html" class="active">Search</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <h2 style="margin-bottom: 1.5rem; text-align: center;">Full-Text Document Search</h2>
+
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search OCR text... (e.g., 'flight log', 'interview', 'confidential')"
+                    autocomplete="off"
+                >
+                <button class="btn" onclick="performSearch()">Search</button>
+            </div>
+
+            <div id="search-info" style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+                <span id="corpus-status">Loading search index...</span>
+            </div>
+
+            <div id="search-results" class="search-results">
+                <!-- Results populated by JS -->
+            </div>
+
+            <div id="no-results" class="empty-state" style="display: none;">
+                <h3>No results found</h3>
+                <p>Try different keywords or check your spelling.</p>
+            </div>
+
+            <div id="initial-state" style="text-align: center; padding: 3rem; color: var(--text-muted);">
+                <p>Enter search terms above to find documents.</p>
+                <p style="font-size: 0.875rem; margin-top: 1rem;">
+                    Search uses AND logic - all words must be present in the document.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>FBI Document Explorer | Data from FBI Vault Release</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        let corpus = null;
+        let manifest = null;
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // Load both manifest and search corpus
+                const [manifestData, corpusData] = await Promise.all([
+                    app.loadManifest(),
+                    app.loadSearchCorpus()
+                ]);
+
+                manifest = manifestData;
+                corpus = corpusData;
+
+                document.getElementById('corpus-status').textContent =
+                    `${app.formatNumber(corpus.length)} documents indexed`;
+
+                // Check URL for search query
+                const urlQuery = app.getUrlParam('q');
+                if (urlQuery) {
+                    document.getElementById('search-input').value = urlQuery;
+                    performSearch();
+                }
+
+            } catch (error) {
+                console.error('Failed to load search data:', error);
+                document.getElementById('corpus-status').textContent =
+                    'Failed to load search index';
+                document.getElementById('corpus-status').style.color = 'var(--danger)';
+            }
+
+            // Enter key to search
+            document.getElementById('search-input').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') performSearch();
+            });
+        });
+
+        function performSearch() {
+            const query = document.getElementById('search-input').value.trim();
+            const resultsContainer = document.getElementById('search-results');
+            const noResults = document.getElementById('no-results');
+            const initialState = document.getElementById('initial-state');
+
+            if (!query || query.length < 2) {
+                resultsContainer.innerHTML = '';
+                noResults.style.display = 'none';
+                initialState.style.display = 'block';
+                app.setUrlParam('q', '');
+                return;
+            }
+
+            // Update URL
+            app.setUrlParam('q', query);
+
+            initialState.style.display = 'none';
+
+            // Perform search
+            const results = app.searchDocuments(corpus, query, 100);
+
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+
+            // Get document details from manifest
+            const docLookup = {};
+            manifest.documents.forEach(d => docLookup[d.id] = d);
+
+            resultsContainer.innerHTML = `
+                <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+                    Found <strong>${results.length}</strong> results for "<strong>${escapeHtml(query)}</strong>"
+                </p>
+            ` + results.map(result => {
+                const doc = docLookup[result.id];
+                return `
+                    <div class="search-result">
+                        <h3>
+                            <a href="document.html?id=${result.id}">${result.id}</a>
+                        </h3>
+                        <div class="meta">
+                            Volume ${doc ? doc.vol : '?'} |
+                            ${doc ? app.getCategoryBadge(doc.cat) : ''} |
+                            ${doc ? doc.pages : '?'} pages
+                        </div>
+                        <div class="snippet">${result.snippet}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+
+    <style>
+        .search-box {
+            max-width: 700px;
+            margin: 0 auto 1rem;
+        }
+
+        .search-box input {
+            border-radius: 8px 0 0 8px;
+        }
+
+        .search-box button {
+            border-radius: 0 8px 8px 0;
+            padding: 1rem 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .search-box {
+                flex-direction: column;
+            }
+            .search-box input,
+            .search-box button {
+                border-radius: 8px;
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+</html>

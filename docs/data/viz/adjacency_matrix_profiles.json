@@ -1,0 +1,422 @@
+{
+  "1": {
+    "size": 690,
+    "top_entities": [
+      "new york",
+      "virginia"
+    ],
+    "entity_scores": [
+      1.0,
+      0.0014492753623188406
+    ],
+    "sample_docs": [
+      "EFTA00000001",
+      "EFTA00000433",
+      "EFTA00000745",
+      "EFTA00000771",
+      "EFTA00000773"
+    ]
+  },
+  "2": {
+    "size": 44,
+    "top_entities": [
+      "new york",
+      "manhattan",
+      "palm beach",
+      "andrew",
+      "new mexico"
+    ],
+    "entity_scores": [
+      0.9772727272727273,
+      0.6363636363636364,
+      0.5909090909090909,
+      0.5,
+      0.1590909090909091
+    ],
+    "sample_docs": [
+      "EFTA00001926",
+      "EFTA00001927",
+      "EFTA00001928",
+      "EFTA00001929",
+      "EFTA00001930"
+    ]
+  },
+  "3": {
+    "size": 10,
+    "top_entities": [
+      "little st. james"
+    ],
+    "entity_scores": [
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00001584",
+      "EFTA00001894",
+      "EFTA00002643",
+      "EFTA00002697",
+      "EFTA00002698"
+    ]
+  },
+  "4": {
+    "size": 11,
+    "top_entities": [
+      "virgin islands",
+      "new york",
+      "little st. james"
+    ],
+    "entity_scores": [
+      1.0,
+      0.45454545454545453,
+      0.2727272727272727
+    ],
+    "sample_docs": [
+      "EFTA00001500",
+      "EFTA00001885",
+      "EFTA00001886",
+      "EFTA00002066",
+      "EFTA00002067"
+    ]
+  },
+  "5": {
+    "size": 115,
+    "top_entities": [
+      "epstein"
+    ],
+    "entity_scores": [
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00000019",
+      "EFTA00000467",
+      "EFTA00000518",
+      "EFTA00006375",
+      "EFTA00006376"
+    ]
+  },
+  "6": {
+    "size": 102,
+    "top_entities": [
+      "palm beach"
+    ],
+    "entity_scores": [
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00003951",
+      "EFTA00004066",
+      "EFTA00004067",
+      "EFTA00004068",
+      "EFTA00004069"
+    ]
+  },
+  "7": {
+    "size": 56,
+    "top_entities": [
+      "maxwell",
+      "jeffrey",
+      "ghislaine",
+      "epstein",
+      "new york"
+    ],
+    "entity_scores": [
+      0.8928571428571429,
+      0.8035714285714286,
+      0.8035714285714286,
+      0.7678571428571429,
+      0.5357142857142857
+    ],
+    "sample_docs": [
+      "B. Flight Log Released in US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "B. Flight Log_Released in U.S. v. Maxwell_0_0_0_0",
+      "B. Flight Log_Released in U.S. v. Maxwell_Part1_0_0_0_0",
+      "B. Flight Log_Released in U.S. v. Maxwell_Part2_0_0_0_0",
+      "B. Flight Log_Released in U.S. v. Maxwell_Part3_0_0_0_0"
+    ]
+  },
+  "8": {
+    "size": 96,
+    "top_entities": [
+      "new york",
+      "paris",
+      "ghislaine",
+      "maxwell",
+      "palm beach"
+    ],
+    "entity_scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00007157",
+      "EFTA00007158",
+      "EFTA00007159",
+      "EFTA00007160",
+      "EFTA00007161"
+    ]
+  },
+  "9": {
+    "size": 63,
+    "top_entities": [
+      "new mexico",
+      "london",
+      "paris",
+      "new york",
+      "palm beach"
+    ],
+    "entity_scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00007893",
+      "EFTA00007894",
+      "EFTA00007895",
+      "EFTA00007896",
+      "EFTA00007897"
+    ]
+  },
+  "10": {
+    "size": 44,
+    "top_entities": [
+      "jeffrey"
+    ],
+    "entity_scores": [
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00001910",
+      "EFTA00003026",
+      "EFTA00004179",
+      "EFTA00004763",
+      "EFTA00004764"
+    ]
+  },
+  "11": {
+    "size": 42,
+    "top_entities": [
+      "black",
+      "jeffrey",
+      "leon",
+      "new york",
+      "palm beach"
+    ],
+    "entity_scores": [
+      1.0,
+      0.7142857142857143,
+      0.023809523809523808,
+      0.023809523809523808,
+      0.023809523809523808
+    ],
+    "sample_docs": [
+      "EFTA00001347",
+      "EFTA00001499",
+      "EFTA00001898",
+      "EFTA00002012",
+      "EFTA00004180"
+    ]
+  },
+  "12": {
+    "size": 164,
+    "top_entities": [
+      "epstein",
+      "palm beach",
+      "jeffrey",
+      "glenn",
+      "paris"
+    ],
+    "entity_scores": [
+      1.0,
+      0.9207317073170732,
+      0.9085365853658537,
+      0.018292682926829267,
+      0.012195121951219513
+    ],
+    "sample_docs": [
+      "EFTA00001357",
+      "EFTA00001884",
+      "EFTA00001907",
+      "EFTA00001908",
+      "EFTA00001913"
+    ]
+  },
+  "13": {
+    "size": 61,
+    "top_entities": [
+      "new york",
+      "palm beach",
+      "epstein",
+      "jeffrey",
+      "virgin islands"
+    ],
+    "entity_scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00007097",
+      "EFTA00007098",
+      "EFTA00007099",
+      "EFTA00007100",
+      "EFTA00007101"
+    ]
+  },
+  "14": {
+    "size": 77,
+    "top_entities": [
+      "epstein",
+      "palm beach",
+      "new york",
+      "jeffrey",
+      "black"
+    ],
+    "entity_scores": [
+      1.0,
+      0.974025974025974,
+      0.974025974025974,
+      0.8831168831168831,
+      0.6753246753246753
+    ],
+    "sample_docs": [
+      "A. Evidence List from US v. Maxwell, 1.20-cr-00330 (SDNY 2020)",
+      "A. Evidence List_0_0_0_0",
+      "EFTA00000466",
+      "EFTA00000473",
+      "EFTA00000476"
+    ]
+  },
+  "15": {
+    "size": 228,
+    "top_entities": [
+      "paris"
+    ],
+    "entity_scores": [
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00000028",
+      "EFTA00001184",
+      "EFTA00001187",
+      "EFTA00004071",
+      "EFTA00004072"
+    ]
+  },
+  "16": {
+    "size": 89,
+    "top_entities": [
+      "london",
+      "paris",
+      "andrew",
+      "new york",
+      "palm beach"
+    ],
+    "entity_scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00008320",
+      "EFTA00008321",
+      "EFTA00008322",
+      "EFTA00008323",
+      "EFTA00008324"
+    ]
+  },
+  "17": {
+    "size": 200,
+    "top_entities": [
+      "new york",
+      "paris",
+      "andrew",
+      "black"
+    ],
+    "entity_scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00008020",
+      "EFTA00008021",
+      "EFTA00008022",
+      "EFTA00008023",
+      "EFTA00008024"
+    ]
+  },
+  "18": {
+    "size": 103,
+    "top_entities": [
+      "london",
+      "paris",
+      "new york",
+      "black",
+      "palm beach"
+    ],
+    "entity_scores": [
+      1.0,
+      1.0,
+      0.9902912621359223,
+      0.970873786407767,
+      0.009708737864077669
+    ],
+    "sample_docs": [
+      "EFTA00004250",
+      "EFTA00005971",
+      "EFTA00006108",
+      "EFTA00008120",
+      "EFTA00008121"
+    ]
+  },
+  "19": {
+    "size": 85,
+    "top_entities": [
+      "clinton"
+    ],
+    "entity_scores": [
+      1.0
+    ],
+    "sample_docs": [
+      "EFTA00004578",
+      "EFTA00004579",
+      "EFTA00004580",
+      "EFTA00004581",
+      "EFTA00004582"
+    ]
+  },
+  "20": {
+    "size": 100,
+    "top_entities": [
+      "clinton",
+      "black",
+      "london",
+      "leon",
+      "dershowitz"
+    ],
+    "entity_scores": [
+      1.0,
+      0.99,
+      0.98,
+      0.97,
+      0.01
+    ],
+    "sample_docs": [
+      "B. Flight Log_Released in U.S. v. Maxwell_Part6_0",
+      "EFTA00004477",
+      "EFTA00005284",
+      "EFTA00005285",
+      "EFTA00005286"
+    ]
+  }
+}

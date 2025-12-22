@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations - FBI Epstein Files Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .viz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .viz-card {
+            background: var(--surface);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid var(--border);
+        }
+        .viz-card h3 {
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        .viz-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+        .viz-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .viz-link:hover {
+            background: var(--primary-dark);
+        }
+        .section-title {
+            color: var(--text);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .player-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .player-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .player-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">FBI Epstein Files Explorer</a></h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="browse.html">Browse</a>
+            <a href="search.html">Search</a>
+            <a href="visualizations.html" class="active">Visualizations</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="margin-bottom: 1rem;">Document Analysis Visualizations</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">
+            Interactive visualizations exploring 236K document chunks from 8,150 FBI documents.
+            Built with machine learning embeddings, network analysis, and entity extraction.
+        </p>
+
+        <h3 class="section-title">Embedding Analysis</h3>
+        <div class="viz-grid">
+            <div class="viz-card">
+                <h3>UMAP Embedding Clusters</h3>
+                <p>768-dimensional embeddings reduced to 2D. Documents with similar content cluster together. Color indicates document type.</p>
+                <a href="data/viz/umap_clusters.html" class="viz-link" target="_blank">Open Visualization</a>
+            </div>
+        </div>
+
+        <h3 class="section-title">Network Graphs</h3>
+        <div class="viz-grid">
+            <div class="viz-card">
+                <h3>Full Network Graph (GPU)</h3>
+                <p>All 6,600+ documents with 1.6M connections. GPU-accelerated with Cosmograph. May require good graphics card.</p>
+                <a href="data/viz/cosmograph_graph.html" class="viz-link" target="_blank">Open Visualization</a>
+            </div>
+            <div class="viz-card">
+                <h3>Bipartite Graph</h3>
+                <p>Documents linked to extracted entities (people, places, organizations). Shows actual connection structure.</p>
+                <a href="data/viz/bipartite_graph.html" class="viz-link" target="_blank">Open Visualization</a>
+            </div>
+            <div class="viz-card">
+                <h3>Adjacency Matrix</h3>
+                <p>Heatmap showing document clusters and connection density. Good for pattern discovery at scale.</p>
+                <a href="data/viz/adjacency_matrix.html" class="viz-link" target="_blank">Open Visualization</a>
+            </div>
+        </div>
+
+        <h3 class="section-title">Key Player Networks</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Focused network views for specific individuals. Each shows only documents mentioning that person and their co-occurring entities.
+        </p>
+        <div class="player-grid">
+            <div class="player-card">
+                <a href="data/viz/players/maxwell_network.html" target="_blank">Ghislaine Maxwell</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">401KB</p>
+            </div>
+            <div class="player-card">
+                <a href="data/viz/players/epstein_network.html" target="_blank">Jeffrey Epstein</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">313KB</p>
+            </div>
+            <div class="player-card">
+                <a href="data/viz/players/prince_andrew_network.html" target="_blank">Prince Andrew</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">241KB</p>
+            </div>
+            <div class="player-card">
+                <a href="data/viz/players/wexner_network.html" target="_blank">Les Wexner</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">168KB</p>
+            </div>
+            <div class="player-card">
+                <a href="data/viz/players/dershowitz_network.html" target="_blank">Alan Dershowitz</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">169KB</p>
+            </div>
+            <div class="player-card">
+                <a href="data/viz/players/clinton_network.html" target="_blank">Bill Clinton</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">104KB</p>
+            </div>
+            <div class="player-card">
+                <a href="data/viz/players/giuffre_network.html" target="_blank">Virginia Giuffre</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">112KB</p>
+            </div>
+            <div class="player-card">
+                <a href="data/viz/players/trump_network.html" target="_blank">Donald Trump</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">46KB</p>
+            </div>
+            <div class="player-card">
+                <a href="data/viz/players/brunel_network.html" target="_blank">Jean-Luc Brunel</a>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">46KB</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Timeline Analysis</h3>
+        <div class="viz-grid">
+            <div class="viz-card">
+                <h3>Document Timeline</h3>
+                <p>1,725 dated documents from 1990-2020. Scatter plot showing temporal distribution.</p>
+                <a href="data/viz/timeline.html" class="viz-link" target="_blank">Open Visualization</a>
+            </div>
+            <div class="viz-card">
+                <h3>Timeline Histogram</h3>
+                <p>Year-by-year document counts showing activity patterns over time.</p>
+                <a href="data/viz/timeline_histogram.html" class="viz-link" target="_blank">Open Visualization</a>
+            </div>
+        </div>
+
+        <section class="card" style="margin-top: 2rem;">
+            <h3 style="margin-bottom: 1rem;">Technical Details</h3>
+            <ul style="color: var(--text-muted); line-height: 2;">
+                <li><strong>Documents:</strong> 8,150 FBI documents, 236,174 text chunks</li>
+                <li><strong>OCR:</strong> AWS Textract + Surya for text extraction</li>
+                <li><strong>Embeddings:</strong> nomic-embed-text via Ollama (768 dimensions)</li>
+                <li><strong>Dimensionality Reduction:</strong> UMAP for 2D visualization</li>
+                <li><strong>Network Analysis:</strong> NetworkX with Louvain community detection</li>
+                <li><strong>GPU Rendering:</strong> Cosmograph for WebGL force-directed graphs</li>
+                <li><strong>Visualization:</strong> Plotly.js, Cosmograph, custom D3.js</li>
+            </ul>
+        </section>
+
+        <section class="card" style="margin-top: 2rem;">
+            <h3 style="margin-bottom: 1rem;">Resources</h3>
+            <ul style="color: var(--text-muted); line-height: 2;">
+                <li><strong>Dataset:</strong> <a href="https://huggingface.co/datasets/svetfm/epstein-fbi-files" target="_blank">HuggingFace - svetfm/epstein-fbi-files</a></li>
+                <li><strong>RAG API:</strong> <a href="https://huggingface.co/spaces/svetfm/epstein-fbi-rag" target="_blank">HuggingFace Space - Semantic Search</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>FBI Epstein Files Explorer | Public domain government documents</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "maxwell": {
+    "doc_count": 364,
+    "entity_count": 31,
+    "file": "players/maxwell_network.html"
+  },
+  "clinton": {
+    "doc_count": 194,
+    "entity_count": 25,
+    "file": "players/clinton_network.html"
+  },
+  "trump": {
+    "doc_count": 9,
+    "entity_count": 25,
+    "file": "players/trump_network.html"
+  },
+  "dershowitz": {
+    "doc_count": 103,
+    "entity_count": 29,
+    "file": "players/dershowitz_network.html"
+  },
+  "wexner": {
+    "doc_count": 101,
+    "entity_count": 29,
+    "file": "players/wexner_network.html"
+  },
+  "prince_andrew": {
+    "doc_count": 317,
+    "entity_count": 28,
+    "file": "players/prince_andrew_network.html"
+  },
+  "epstein": {
+    "doc_count": 703,
+    "entity_count": 32,
+    "file": "players/epstein_network.html"
+  },
+  "giuffre": {
+    "doc_count": 94,
+    "entity_count": 23,
+    "file": "players/giuffre_network.html"
+  },
+  "brunel": {
+    "doc_count": 6,
+    "entity_count": 25,
+    "file": "players/brunel_network.html"
+  }
+}

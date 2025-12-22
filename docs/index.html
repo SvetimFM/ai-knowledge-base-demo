@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBI Document Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">FBI Document Explorer</a></h1>
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="browse.html">Browse</a>
+            <a href="search.html">Search</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card-grid" id="stats-grid">
+            <div class="card stat-card">
+                <span class="number" id="total-docs">--</span>
+                <span class="label">Documents</span>
+            </div>
+            <div class="card stat-card">
+                <span class="number" id="total-pages">--</span>
+                <span class="label">Total Pages</span>
+            </div>
+            <div class="card stat-card">
+                <span class="number" id="total-volumes">--</span>
+                <span class="label">Volumes</span>
+            </div>
+            <div class="card stat-card">
+                <span class="number" id="searchable-docs">--</span>
+                <span class="label">Searchable</span>
+            </div>
+        </section>
+
+        <h2 style="margin-bottom: 1.5rem;">Browse by Category</h2>
+        <section class="card-grid" id="category-cards">
+            <a href="browse.html?category=typed_memo" class="card category-card">
+                <div class="icon">📝</div>
+                <div class="name">Typed Memos</div>
+                <div class="count" id="count-typed_memo">--</div>
+            </a>
+            <a href="browse.html?category=photograph" class="card category-card">
+                <div class="icon">📷</div>
+                <div class="name">Photographs</div>
+                <div class="count" id="count-photograph">--</div>
+            </a>
+            <a href="browse.html?category=digital_text" class="card category-card">
+                <div class="icon">💻</div>
+                <div class="name">Digital Text</div>
+                <div class="count" id="count-digital_text">--</div>
+            </a>
+        </section>
+
+        <h2 style="margin: 2rem 0 1.5rem;">Browse by Volume</h2>
+        <section class="card-grid" id="volume-cards">
+            <!-- Populated by JavaScript -->
+        </section>
+
+        <h2 style="margin: 2rem 0 1.5rem;">Quick Actions</h2>
+        <section class="card-grid">
+            <div class="card" style="text-align: center; padding: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Search Documents</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    Full-text search across all OCR'd documents
+                </p>
+                <a href="search.html" class="btn">Start Searching</a>
+            </div>
+            <div class="card" style="text-align: center; padding: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Visualizations</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    Explore document clusters and distributions
+                </p>
+                <a href="visualizations.html" class="btn btn-outline">View Charts</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>FBI Document Explorer | Data from FBI Vault Release</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const manifest = await app.loadManifest();
+                const stats = manifest.stats;
+
+                // Update stats
+                document.getElementById('total-docs').textContent = app.formatNumber(stats.total);
+                document.getElementById('total-pages').textContent = app.formatNumber(stats.totalPages);
+                document.getElementById('total-volumes').textContent = Object.keys(stats.byVolume).length;
+
+                // Load search corpus to get searchable count
+                try {
+                    const corpus = await app.loadSearchCorpus();
+                    document.getElementById('searchable-docs').textContent = app.formatNumber(corpus.length);
+                } catch (e) {
+                    document.getElementById('searchable-docs').textContent = '--';
+                }
+
+                // Update category counts
+                for (const [category, count] of Object.entries(stats.byCategory)) {
+                    const el = document.getElementById(`count-${category}`);
+                    if (el) el.textContent = app.formatNumber(count) + ' documents';
+                }
+
+                // Generate volume cards
+                const volumeCards = document.getElementById('volume-cards');
+                const volumeEntries = Object.entries(stats.byVolume)
+                    .sort((a, b) => parseInt(a[0]) - parseInt(b[0]));
+
+                volumeCards.innerHTML = volumeEntries.map(([vol, count]) => `
+                    <a href="browse.html?volume=${vol}" class="card category-card">
+                        <div class="icon">📁</div>
+                        <div class="name">Volume ${vol}</div>
+                        <div class="count">${app.formatNumber(count)} documents</div>
+                    </a>
+                `).join('');
+
+            } catch (error) {
+                console.error('Failed to load data:', error);
+                document.getElementById('stats-grid').innerHTML = `
+                    <div class="card" style="grid-column: 1/-1; text-align: center; padding: 2rem;">
+                        <p style="color: var(--danger);">Failed to load document data. Please ensure data files exist.</p>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
