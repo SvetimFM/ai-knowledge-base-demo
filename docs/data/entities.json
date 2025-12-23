@@ -7,9 +7,9 @@
       "type": "person",
       "doc_count": 619,
       "aliases": [
-        "jeffrey epstein",
         "epstein",
         "j. epstein",
+        "jeffrey epstein",
         "jeffrey"
       ],
       "is_key_player": true,
@@ -22,9 +22,9 @@
       "type": "person",
       "doc_count": 317,
       "aliases": [
+        "prince andrew",
         "andrew",
-        "duke of york",
-        "prince andrew"
+        "duke of york"
       ],
       "is_key_player": true,
       "viz_file": null
@@ -36,10 +36,10 @@
       "type": "person",
       "doc_count": 301,
       "aliases": [
+        "maxwell",
         "g. maxwell",
-        "ghislaine",
         "ghislaine maxwell",
-        "maxwell"
+        "ghislaine"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/maxwell_network.html"
@@ -51,10 +51,10 @@
       "type": "person",
       "doc_count": 192,
       "aliases": [
-        "bill",
-        "president clinton",
         "bill clinton",
-        "clinton"
+        "president clinton",
+        "clinton",
+        "bill"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/clinton_network.html"
@@ -66,9 +66,9 @@
       "type": "person",
       "doc_count": 103,
       "aliases": [
+        "dershowitz",
         "alan dershowitz",
-        "alan",
-        "dershowitz"
+        "alan"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/dershowitz_network.html"
@@ -80,10 +80,10 @@
       "type": "person",
       "doc_count": 101,
       "aliases": [
+        "leslie",
         "wexner",
         "les",
-        "les wexner",
-        "leslie"
+        "les wexner"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/wexner_network.html"
@@ -95,9 +95,9 @@
       "type": "person",
       "doc_count": 94,
       "aliases": [
-        "virginia giuffre",
         "giuffre",
         "roberts",
+        "virginia giuffre",
         "virginia"
       ],
       "is_key_player": true,
@@ -110,9 +110,9 @@
       "type": "person",
       "doc_count": 8,
       "aliases": [
-        "donald",
         "trump",
-        "donald trump"
+        "donald trump",
+        "donald"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/trump_network.html"
@@ -393,9 +393,9 @@
       "type": "person",
       "doc_count": 619,
       "aliases": [
-        "jeffrey epstein",
         "epstein",
         "j. epstein",
+        "jeffrey epstein",
         "jeffrey"
       ],
       "is_key_player": true,
@@ -408,9 +408,9 @@
       "type": "person",
       "doc_count": 317,
       "aliases": [
+        "prince andrew",
         "andrew",
-        "duke of york",
-        "prince andrew"
+        "duke of york"
       ],
       "is_key_player": true,
       "viz_file": null
@@ -422,10 +422,10 @@
       "type": "person",
       "doc_count": 301,
       "aliases": [
+        "maxwell",
         "g. maxwell",
-        "ghislaine",
         "ghislaine maxwell",
-        "maxwell"
+        "ghislaine"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/maxwell_network.html"
@@ -437,10 +437,10 @@
       "type": "person",
       "doc_count": 192,
       "aliases": [
-        "bill",
-        "president clinton",
         "bill clinton",
-        "clinton"
+        "president clinton",
+        "clinton",
+        "bill"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/clinton_network.html"
@@ -452,9 +452,9 @@
       "type": "person",
       "doc_count": 103,
       "aliases": [
+        "dershowitz",
         "alan dershowitz",
-        "alan",
-        "dershowitz"
+        "alan"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/dershowitz_network.html"
@@ -466,10 +466,10 @@
       "type": "person",
       "doc_count": 101,
       "aliases": [
+        "leslie",
         "wexner",
         "les",
-        "les wexner",
-        "leslie"
+        "les wexner"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/wexner_network.html"
@@ -481,9 +481,9 @@
       "type": "person",
       "doc_count": 94,
       "aliases": [
-        "virginia giuffre",
         "giuffre",
         "roberts",
+        "virginia giuffre",
         "virginia"
       ],
       "is_key_player": true,
@@ -496,9 +496,9 @@
       "type": "person",
       "doc_count": 8,
       "aliases": [
-        "donald",
         "trump",
-        "donald trump"
+        "donald trump",
+        "donald"
       ],
       "is_key_player": true,
       "viz_file": "data/viz/players/trump_network.html"
@@ -518,5 +518,5 @@
       "viz_file": "data/viz/players/brunel_network.html"
     }
   ],
-  "generated_at": "2025-12-22T14:46:20.912018"
+  "generated_at": "2025-12-23T15:27:28.161497"
 }
