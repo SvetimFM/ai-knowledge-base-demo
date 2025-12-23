@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigation Interface - FBI Document Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js"></script>
+    <style>
+        .investigate-layout {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 0;
+            height: calc(100vh - 64px);
+            overflow: hidden;
+        }
+
+        .network-panel {
+            position: relative;
+            background: var(--card-bg);
+            border-right: 1px solid var(--border);
+        }
+
+        #network-graph {
+            width: 100%;
+            height: 100%;
+        }
+
+        .network-controls {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .network-controls select,
+        .network-controls input {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            background: var(--card-bg);
+            font-size: 0.875rem;
+            min-width: 180px;
+        }
+
+        .network-legend {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            background: rgba(255,255,255,0.95);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .sidebar-panel {
+            display: flex;
+            flex-direction: column;
+            background: var(--bg);
+            overflow: hidden;
+        }
+
+        .sidebar-section {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--card-bg);
+        }
+
+        .sidebar-section h3 {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .entity-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .entity-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .entity-icon.person { background: #bee3f8; }
+        .entity-icon.location { background: #c6f6d5; }
+
+        .entity-details h2 {
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .entity-details .meta {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .connections-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .connection-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .connection-item:hover {
+            background: var(--bg);
+        }
+
+        .connection-strength {
+            width: 60px;
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .connection-strength-fill {
+            height: 100%;
+            background: var(--primary);
+            border-radius: 3px;
+        }
+
+        .connection-name {
+            flex: 1;
+            font-size: 0.875rem;
+        }
+
+        .connection-count {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .documents-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .documents-section .sidebar-section {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .document-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .document-item {
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.15s;
+            background: var(--card-bg);
+        }
+
+        .document-item:hover {
+            border-color: var(--primary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .document-item.active {
+            border-color: var(--primary);
+            background: #f0f7ff;
+        }
+
+        .document-item .doc-id {
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .document-item .doc-snippet {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .preview-section {
+            border-top: 1px solid var(--border);
+            max-height: 40%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            background: var(--primary);
+            color: white;
+        }
+
+        .preview-header h4 {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .preview-actions a {
+            color: white;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 3px;
+        }
+
+        .preview-actions a:hover {
+            background: rgba(255,255,255,0.1);
+            text-decoration: none;
+        }
+
+        .preview-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem;
+            background: var(--card-bg);
+            font-size: 0.8125rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            font-family: 'SF Mono', Monaco, 'Consolas', monospace;
+        }
+
+        .empty-state-small {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-muted);
+        }
+
+        .empty-state-small .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-small {
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            font-size: 0.875rem;
+            overflow-x: auto;
+        }
+
+        .breadcrumb-item {
+            color: var(--primary);
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .breadcrumb-item:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb-separator {
+            color: var(--text-muted);
+        }
+
+        .breadcrumb-item.current {
+            color: var(--text);
+            font-weight: 500;
+            cursor: default;
+        }
+
+        .breadcrumb-item.current:hover {
+            text-decoration: none;
+        }
+
+        @media (max-width: 1024px) {
+            .investigate-layout {
+                grid-template-columns: 1fr;
+                grid-template-rows: 50vh 1fr;
+            }
+
+            .network-panel {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">FBI Document Explorer</a></h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="entities.html">Entities</a>
+            <a href="browse.html">Browse</a>
+            <a href="search.html">Search</a>
+            <a href="investigate.html" class="active">Investigate</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
+
+    <div class="investigate-layout">
+        <div class="network-panel">
+            <div class="network-controls">
+                <select id="entity-filter">
+                    <option value="key_players">Key Players Only</option>
+                    <option value="all_people">All People</option>
+                    <option value="locations">Locations Only</option>
+                    <option value="all">All Entities</option>
+                </select>
+                <input type="range" id="strength-filter" min="0" max="100" value="10" title="Minimum connection strength">
+                <small style="color: var(--text-muted); background: white; padding: 2px 6px; border-radius: 3px;">
+                    Min strength: <span id="strength-value">10%</span>
+                </small>
+            </div>
+
+            <div id="network-graph"></div>
+
+            <div class="network-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #2c5282;"></div>
+                    <span>Key Player</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #63b3ed;"></div>
+                    <span>Person</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #48bb78;"></div>
+                    <span>Location</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-panel">
+            <div class="breadcrumb" id="breadcrumb">
+                <span class="breadcrumb-item current">Select an entity</span>
+            </div>
+
+            <div class="sidebar-section" id="entity-info">
+                <div class="empty-state-small">
+                    <div class="icon">&#128269;</div>
+                    <p>Click on a node in the network to see details</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Connections</h3>
+                <div class="connections-list" id="connections-list">
+                    <div class="empty-state-small">
+                        <p style="font-size: 0.875rem;">No entity selected</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="documents-section">
+                <div class="sidebar-section">
+                    <h3>Documents (<span id="doc-count">0</span>)</h3>
+                    <div class="document-list" id="document-list">
+                        <div class="empty-state-small">
+                            <p style="font-size: 0.875rem;">Select an entity to see documents</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-section" id="preview-section" style="display: none;">
+                <div class="preview-header">
+                    <h4 id="preview-title">Document Preview</h4>
+                    <div class="preview-actions">
+                        <a href="#" id="view-full-link" target="_blank">View Full</a>
+                    </div>
+                </div>
+                <div class="preview-content" id="preview-content">
+                    Select a document to preview
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        // State
+        let entities = [];
+        let networkData = { nodes: [], edges: [] };
+        let entityProfiles = {};
+        let network = null;
+        let selectedEntity = null;
+        let breadcrumbHistory = [];
+
+        // Colors
+        const COLORS = {
+            keyPlayer: '#2c5282',
+            person: '#63b3ed',
+            location: '#48bb78'
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadData();
+            setupControls();
+            buildNetwork();
+
+            // Check URL for initial entity
+            const params = new URLSearchParams(window.location.search);
+            const initialEntity = params.get('entity');
+            if (initialEntity) {
+                setTimeout(() => selectEntityByShortName(initialEntity), 500);
+            }
+        });
+
+        async function loadData() {
+            try {
+                // Load entities
+                const entitiesResp = await fetch('data/entities.json');
+                const entitiesData = await entitiesResp.json();
+                entities = entitiesData.entities;
+
+                // Load pre-computed network data
+                const networkResp = await fetch('data/network_data.json');
+                networkData = await networkResp.json();
+            } catch (e) {
+                console.error('Failed to load data:', e);
+            }
+        }
+
+        async function loadEntityProfile(shortName) {
+            if (entityProfiles[shortName]) return entityProfiles[shortName];
+
+            try {
+                const resp = await fetch(`data/entity_profiles/${shortName}.json`);
+                if (!resp.ok) return null;
+                const profile = await resp.json();
+                entityProfiles[shortName] = profile;
+                return profile;
+            } catch (e) {
+                console.error('Failed to load profile:', shortName, e);
+                return null;
+            }
+        }
+
+        function setupControls() {
+            document.getElementById('entity-filter').addEventListener('change', buildNetwork);
+
+            const strengthSlider = document.getElementById('strength-filter');
+            strengthSlider.addEventListener('input', (e) => {
+                document.getElementById('strength-value').textContent = e.target.value + '%';
+            });
+            strengthSlider.addEventListener('change', buildNetwork);
+        }
+
+        function buildNetwork() {
+            const filter = document.getElementById('entity-filter').value;
+            const minStrength = parseInt(document.getElementById('strength-filter').value) / 100;
+
+            // Filter entities based on selection
+            let filteredEntities = entities.filter(e => {
+                if (filter === 'key_players') return e.is_key_player;
+                if (filter === 'all_people') return e.type === 'person';
+                if (filter === 'locations') return e.type === 'location';
+                return true;
+            });
+
+            const filteredIds = new Set(filteredEntities.map(e => e.short_name));
+
+            // Create nodes
+            const nodes = filteredEntities.map(e => ({
+                id: e.short_name,
+                label: e.name,
+                title: `${e.name}\n${e.doc_count} documents`,
+                value: Math.sqrt(e.doc_count) * 2,
+                color: {
+                    background: e.is_key_player ? COLORS.keyPlayer :
+                               (e.type === 'location' ? COLORS.location : COLORS.person),
+                    border: e.is_key_player ? '#1a365d' :
+                           (e.type === 'location' ? '#276749' : '#2b6cb0'),
+                    highlight: {
+                        background: '#ed8936',
+                        border: '#c05621'
+                    }
+                },
+                font: {
+                    color: '#2d3748',
+                    size: e.is_key_player ? 14 : 11
+                },
+                entityData: e
+            }));
+
+            // Filter edges from pre-computed network data
+            const edges = networkData.edges
+                .filter(e => {
+                    // Both nodes must be in filtered set
+                    if (!filteredIds.has(e.from) || !filteredIds.has(e.to)) return false;
+                    // Must meet minimum strength
+                    if (e.strength < minStrength) return false;
+                    return true;
+                })
+                .map(e => ({
+                    from: e.from,
+                    to: e.to,
+                    value: e.strength * 5,
+                    title: `${e.shared_docs} shared docs (${Math.round(e.strength * 100)}%)`
+                }));
+
+            // Create network
+            const container = document.getElementById('network-graph');
+            const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+
+            const options = {
+                nodes: {
+                    shape: 'dot',
+                    scaling: {
+                        min: 10,
+                        max: 50,
+                        label: { enabled: true, min: 10, max: 18 }
+                    },
+                    borderWidth: 2,
+                    shadow: true
+                },
+                edges: {
+                    color: { color: '#cbd5e0', highlight: '#ed8936' },
+                    smooth: { type: 'continuous' },
+                    scaling: { min: 1, max: 8 }
+                },
+                physics: {
+                    stabilization: { iterations: 100 },
+                    barnesHut: {
+                        gravitationalConstant: -3000,
+                        springLength: 150,
+                        springConstant: 0.02
+                    }
+                },
+                interaction: {
+                    hover: true,
+                    tooltipDelay: 200
+                }
+            };
+
+            if (network) network.destroy();
+            network = new vis.Network(container, data, options);
+
+            // Click handler
+            network.on('click', async (params) => {
+                if (params.nodes.length > 0) {
+                    const nodeId = params.nodes[0];
+                    await selectEntityByShortName(nodeId);
+                }
+            });
+
+            // Double-click to focus
+            network.on('doubleClick', (params) => {
+                if (params.nodes.length > 0) {
+                    network.focus(params.nodes[0], {
+                        scale: 1.5,
+                        animation: { duration: 500, easingFunction: 'easeInOutQuad' }
+                    });
+                }
+            });
+        }
+
+        async function selectEntityByShortName(shortName) {
+            const entity = entities.find(e => e.short_name === shortName);
+            if (!entity) return;
+
+            selectedEntity = entity;
+
+            // Update URL
+            const url = new URL(window.location);
+            url.searchParams.set('entity', shortName);
+            window.history.replaceState({}, '', url);
+
+            // Update breadcrumb
+            updateBreadcrumb(entity);
+
+            // Load profile
+            const profile = await loadEntityProfile(shortName);
+
+            // Update sidebar
+            renderEntityInfo(entity, profile);
+            renderConnections(profile);
+            renderDocuments(profile);
+
+            // Highlight in network
+            if (network) {
+                network.selectNodes([shortName]);
+            }
+        }
+
+        function updateBreadcrumb(entity) {
+            // Add to history if not already last item
+            if (breadcrumbHistory.length === 0 ||
+                breadcrumbHistory[breadcrumbHistory.length - 1].short_name !== entity.short_name) {
+                breadcrumbHistory.push(entity);
+            }
+
+            // Keep last 5
+            if (breadcrumbHistory.length > 5) {
+                breadcrumbHistory = breadcrumbHistory.slice(-5);
+            }
+
+            const container = document.getElementById('breadcrumb');
+            container.innerHTML = breadcrumbHistory.map((e, i) => {
+                const isLast = i === breadcrumbHistory.length - 1;
+                const separator = i < breadcrumbHistory.length - 1 ?
+                    '<span class="breadcrumb-separator">&#8250;</span>' : '';
+
+                return `<span class="breadcrumb-item ${isLast ? 'current' : ''}"
+                              onclick="${isLast ? '' : `selectEntityByShortName('${e.short_name}')`}">
+                    ${e.name}
+                </span>${separator}`;
+            }).join('');
+        }
+
+        function renderEntityInfo(entity, profile) {
+            const container = document.getElementById('entity-info');
+            const icon = entity.type === 'location' ? '&#128205;' : '&#128100;';
+            const iconClass = entity.type === 'location' ? 'location' : 'person';
+
+            container.innerHTML = `
+                <div class="entity-header">
+                    <div class="entity-icon ${iconClass}">${icon}</div>
+                    <div class="entity-details">
+                        <h2>${entity.name}</h2>
+                        <div class="meta">
+                            ${entity.doc_count} documents
+                            ${entity.is_key_player ? ' &bull; Key Player' : ''}
+                        </div>
+                    </div>
+                </div>
+                ${entity.viz_file ? `
+                    <a href="${entity.viz_file}" class="btn btn-small btn-outline" style="margin-top: 1rem; display: inline-block;">
+                        View Network Viz
+                    </a>
+                ` : ''}
+            `;
+        }
+
+        function renderConnections(profile) {
+            const container = document.getElementById('connections-list');
+
+            if (!profile || !profile.connected_entities || profile.connected_entities.length === 0) {
+                container.innerHTML = `<div class="empty-state-small">
+                    <p style="font-size: 0.875rem;">No connections found</p>
+                </div>`;
+                return;
+            }
+
+            // Sort by strength
+            const connections = profile.connected_entities
+                .filter(c => c.strength > 0.05)
+                .sort((a, b) => b.strength - a.strength)
+                .slice(0, 15);
+
+            container.innerHTML = connections.map(conn => `
+                <div class="connection-item" onclick="selectEntityByShortName('${conn.short_name}')">
+                    <div class="connection-strength">
+                        <div class="connection-strength-fill" style="width: ${conn.strength * 100}%"></div>
+                    </div>
+                    <span class="connection-name">${conn.name}</span>
+                    <span class="connection-count">${conn.shared_docs}</span>
+                </div>
+            `).join('');
+        }
+
+        function renderDocuments(profile) {
+            const container = document.getElementById('document-list');
+            const countEl = document.getElementById('doc-count');
+
+            if (!profile || !profile.documents || profile.documents.length === 0) {
+                countEl.textContent = '0';
+                container.innerHTML = `<div class="empty-state-small">
+                    <p style="font-size: 0.875rem;">No documents found</p>
+                </div>`;
+                return;
+            }
+
+            countEl.textContent = profile.documents.length;
+
+            // Show first 50 docs
+            const docs = profile.documents.slice(0, 50);
+
+            container.innerHTML = docs.map(doc => {
+                const snippet = doc.snippet ? doc.snippet.substring(0, 120).replace(/\n/g, ' ') : 'No preview available';
+                return `
+                    <div class="document-item" onclick="selectDocument('${doc.id}')" data-doc-id="${doc.id}">
+                        <div class="doc-id">${doc.id}</div>
+                        <div class="doc-snippet">${snippet}...</div>
+                    </div>
+                `;
+            }).join('');
+
+            if (profile.documents.length > 50) {
+                container.innerHTML += `
+                    <div style="text-align: center; padding: 1rem; color: var(--text-muted); font-size: 0.875rem;">
+                        Showing 50 of ${profile.documents.length} documents
+                    </div>
+                `;
+            }
+        }
+
+        async function selectDocument(docId) {
+            // Highlight selected doc
+            document.querySelectorAll('.document-item').forEach(el => {
+                el.classList.toggle('active', el.dataset.docId === docId);
+            });
+
+            // Show preview section
+            const previewSection = document.getElementById('preview-section');
+            previewSection.style.display = 'flex';
+
+            // Update title and link
+            document.getElementById('preview-title').textContent = docId;
+            document.getElementById('view-full-link').href = `document.html?id=${docId}`;
+
+            // Get snippet from profile
+            let snippet = 'Loading...';
+            if (selectedEntity && entityProfiles[selectedEntity.short_name]) {
+                const doc = entityProfiles[selectedEntity.short_name].documents.find(d => d.id === docId);
+                if (doc && doc.snippet) {
+                    snippet = doc.snippet;
+                } else {
+                    snippet = 'Preview not available. Click "View Full" to see the document.';
+                }
+            }
+
+            document.getElementById('preview-content').textContent = snippet;
+        }
+    </script>
+</body>
+</html>
