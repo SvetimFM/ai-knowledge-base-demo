@@ -5,12 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Viewer - FBI Document Explorer</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .document-content {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .ocr-text-container {
+            padding: 2rem;
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
+        }
+        .ocr-text-container pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+        }
+        .ocr-text-container .page-break {
+            border-top: 2px dashed var(--border);
+            margin: 1.5rem 0;
+            padding-top: 1rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .no-ocr-text {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1><a href="index.html">FBI Document Explorer</a></h1>
         <nav>
             <a href="index.html">Dashboard</a>
+            <a href="entities.html">Entities</a>
             <a href="browse.html">Browse</a>
             <a href="search.html">Search</a>
             <a href="visualizations.html">Visualizations</a>
@@ -56,8 +91,10 @@
                 </div>
             </aside>
 
-            <div class="pdf-container">
-                <iframe id="pdf-iframe" title="PDF Viewer"></iframe>
+            <div class="document-content">
+                <div id="ocr-text" class="ocr-text-container">
+                    <div class="loading">Loading document text...</div>
+                </div>
             </div>
         </div>
 
@@ -108,7 +145,7 @@
             }
         });
 
-        function renderDocument(doc, index) {
+        async function renderDocument(doc, index) {
             // Update page title
             document.title = `${doc.id} - FBI Document Explorer`;
 
@@ -119,11 +156,28 @@
             document.getElementById('doc-pages').textContent = doc.pages;
             document.getElementById('doc-confidence').textContent = `${Math.round(doc.conf * 100)}%`;
 
-            // PDF URL
-            const pdfUrl = app.getPdfUrl(doc);
-            document.getElementById('pdf-iframe').src = pdfUrl;
-            document.getElementById('download-link').href = pdfUrl;
-            document.getElementById('open-new-tab').href = pdfUrl;
+            // Hide PDF download buttons (PDFs not hosted)
+            document.getElementById('download-link').style.display = 'none';
+            document.getElementById('open-new-tab').style.display = 'none';
+
+            // Load OCR text
+            const ocrText = await app.getOcrText(doc.id);
+            const ocrContainer = document.getElementById('ocr-text');
+
+            if (ocrText) {
+                // Format text with page breaks
+                const formattedText = ocrText
+                    .replace(/=== Page (\d+) ===/g, '<div class="page-break">Page $1</div>')
+                    .trim();
+                ocrContainer.innerHTML = `<pre>${formattedText}</pre>`;
+            } else {
+                ocrContainer.innerHTML = `
+                    <div class="no-ocr-text">
+                        <h3>No text available</h3>
+                        <p>OCR text for this document has not been processed yet.</p>
+                    </div>
+                `;
+            }
 
             // Navigation
             const prevBtn = document.getElementById('prev-doc');
