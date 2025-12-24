@@ -38,6 +38,24 @@
             padding: 3rem;
             color: var(--text-muted);
         }
+        .pdf-embed-container {
+            width: 100%;
+            height: calc(100vh - 200px);
+            min-height: 600px;
+        }
+        .pdf-embed-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .pdf-fallback {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+        .pdf-fallback .btn {
+            margin-top: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -93,6 +111,9 @@
             </aside>
 
             <div class="document-content">
+                <div id="pdf-embed" class="pdf-embed-container" style="display: none;">
+                    <!-- PDF iframe will be inserted here -->
+                </div>
                 <div id="ocr-text" class="ocr-text-container">
                     <div class="loading">Loading document text...</div>
                 </div>
@@ -157,27 +178,62 @@
             document.getElementById('doc-pages').textContent = doc.pages;
             document.getElementById('doc-confidence').textContent = `${Math.round(doc.conf * 100)}%`;
 
-            // Hide PDF download buttons (PDFs not hosted)
-            document.getElementById('download-link').style.display = 'none';
-            document.getElementById('open-new-tab').style.display = 'none';
-
-            // Load OCR text
-            const ocrText = await app.getOcrText(doc.id);
+            // Get PDF URL and containers
+            const pdfUrl = app.getPdfUrl(doc);
+            const pdfEmbed = document.getElementById('pdf-embed');
             const ocrContainer = document.getElementById('ocr-text');
+            const downloadLink = document.getElementById('download-link');
+            const openNewTab = document.getElementById('open-new-tab');
 
-            if (ocrText) {
-                // Format text with page breaks
-                const formattedText = ocrText
-                    .replace(/=== Page (\d+) ===/g, '<div class="page-break">Page $1</div>')
-                    .trim();
-                ocrContainer.innerHTML = `<pre>${formattedText}</pre>`;
-            } else {
-                ocrContainer.innerHTML = `
-                    <div class="no-ocr-text">
-                        <h3>No text available</h3>
-                        <p>OCR text for this document has not been processed yet.</p>
-                    </div>
+            // For photographs, show the PDF; for other types, show OCR text
+            if (doc.cat === 'photograph') {
+                // Show PDF embed for photographs
+                pdfEmbed.style.display = 'block';
+                ocrContainer.style.display = 'none';
+
+                // Show download buttons
+                downloadLink.href = pdfUrl;
+                downloadLink.style.display = 'inline-block';
+                openNewTab.href = pdfUrl;
+                openNewTab.style.display = 'inline-block';
+
+                // Try to embed PDF, with fallback for cross-origin issues
+                pdfEmbed.innerHTML = `
+                    <iframe src="${pdfUrl}" title="Document PDF">
+                        <div class="pdf-fallback">
+                            <p>Unable to embed PDF viewer.</p>
+                            <a href="${pdfUrl}" class="btn" target="_blank">Open PDF in New Tab</a>
+                        </div>
+                    </iframe>
                 `;
+            } else {
+                // Show OCR text for typed memos and other documents
+                pdfEmbed.style.display = 'none';
+                ocrContainer.style.display = 'block';
+
+                // Still provide download links for PDFs
+                downloadLink.href = pdfUrl;
+                downloadLink.style.display = 'inline-block';
+                openNewTab.href = pdfUrl;
+                openNewTab.style.display = 'inline-block';
+
+                // Load OCR text
+                const ocrText = await app.getOcrText(doc.id);
+
+                if (ocrText) {
+                    // Format text with page breaks
+                    const formattedText = ocrText
+                        .replace(/=== Page (\d+) ===/g, '<div class="page-break">Page $1</div>')
+                        .trim();
+                    ocrContainer.innerHTML = `<pre>${formattedText}</pre>`;
+                } else {
+                    ocrContainer.innerHTML = `
+                        <div class="no-ocr-text">
+                            <h3>No text available</h3>
+                            <p>OCR text for this document has not been processed yet.</p>
+                        </div>
+                    `;
+                }
             }
 
             // Navigation

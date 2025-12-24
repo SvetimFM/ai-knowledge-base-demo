@@ -208,8 +208,9 @@
             }
 
             try {
-                // Load entity profile
-                const response = await fetch(`data/entity_profiles/${entityId}.json`);
+                // Load entity profile - normalize spaces to underscores for filename
+                const profileId = entityId.replace(/\s+/g, '_');
+                const response = await fetch(`data/entity_profiles/${profileId}.json`);
                 if (!response.ok) throw new Error('Entity not found');
                 const profile = await response.json();
 
