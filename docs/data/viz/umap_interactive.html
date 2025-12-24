@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAP Embedding Clusters - FBI Epstein Files</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a1a;
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+
+        #canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        canvas {
+            display: block;
+            cursor: crosshair;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.8);
+            padding: 0.75rem 1.5rem;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .header h1 { font-size: 1.1rem; color: #e94560; }
+        .header a { color: #3498db; text-decoration: none; font-size: 0.9rem; }
+        .header a:hover { text-decoration: underline; }
+
+        .info-panel {
+            position: fixed;
+            top: 60px;
+            left: 15px;
+            background: rgba(20,20,40,0.95);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 320px;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            z-index: 100;
+        }
+        .info-panel h2 { color: #e94560; margin-bottom: 0.5rem; font-size: 1rem; }
+        .info-panel p { color: #888; font-size: 0.85rem; line-height: 1.5; margin-bottom: 0.75rem; }
+        .info-panel ul { color: #aaa; font-size: 0.8rem; line-height: 1.6; padding-left: 1.2rem; }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .stat {
+            background: rgba(0,0,0,0.3);
+            padding: 0.5rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .stat-value { color: #3498db; font-size: 1.2rem; font-weight: bold; }
+        .stat-label { color: #666; font-size: 0.7rem; }
+
+        .legend {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #333;
+        }
+        .legend h3 { color: #e94560; font-size: 0.85rem; margin-bottom: 0.5rem; }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        .legend-item:hover { color: #fff; }
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .legend-count { color: #666; margin-left: auto; }
+
+        .hover-panel {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            background: rgba(20,20,40,0.95);
+            border: 1px solid #3498db;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 350px;
+            z-index: 100;
+            display: none;
+        }
+        .hover-panel h3 { color: #3498db; font-size: 1rem; margin-bottom: 0.5rem; }
+        .hover-panel .doc-meta {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.75rem;
+        }
+        .hover-panel .badge {
+            background: rgba(255,255,255,0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+        }
+        .hover-panel .badge.cat { background: rgba(233,69,96,0.3); color: #e94560; }
+        .hover-panel .badge.vol { background: rgba(52,152,219,0.3); color: #3498db; }
+        .hover-panel .actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+        .hover-panel button {
+            flex: 1;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+        .hover-panel .btn-primary { background: #3498db; color: white; }
+        .hover-panel .btn-primary:hover { background: #2980b9; }
+        .hover-panel .btn-secondary { background: #333; color: #aaa; }
+        .hover-panel .btn-secondary:hover { background: #444; color: #fff; }
+
+        .controls {
+            position: fixed;
+            top: 60px;
+            right: 15px;
+            background: rgba(20,20,40,0.95);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 0.75rem;
+            z-index: 100;
+        }
+        .controls button {
+            display: block;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.5rem;
+            background: #333;
+            border: none;
+            border-radius: 4px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+        .controls button:last-child { margin-bottom: 0; }
+        .controls button:hover { background: #444; }
+        .controls button.active { background: #e94560; }
+
+        .search-box {
+            position: fixed;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+        .search-box input {
+            padding: 0.6rem 1rem;
+            width: 300px;
+            background: rgba(20,20,40,0.95);
+            border: 1px solid #333;
+            border-radius: 20px;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+        }
+        .search-box input::placeholder { color: #666; }
+        .search-box input:focus { outline: none; border-color: #3498db; }
+
+        .loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.9);
+            padding: 2rem 3rem;
+            border-radius: 8px;
+            text-align: center;
+            z-index: 200;
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #333;
+            border-top-color: #e94560;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div>Loading embedding data...</div>
+    </div>
+
+    <div class="header">
+        <h1>UMAP Embedding Clusters</h1>
+        <a href="../../../visualizations.html">Back to Visualizations</a>
+    </div>
+
+    <div id="canvas-container">
+        <canvas id="scatter"></canvas>
+    </div>
+
+    <div class="info-panel">
+        <h2>What is UMAP?</h2>
+        <p>
+            <strong>UMAP</strong> (Uniform Manifold Approximation and Projection) reduces 768-dimensional
+            document embeddings to 2D for visualization. Documents with similar content appear close together.
+        </p>
+        <p>
+            <strong>How to interpret:</strong> Clusters indicate thematically related documents.
+            Distance reflects semantic similarity - nearby points discuss similar topics.
+        </p>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value" id="total-docs">-</div>
+                <div class="stat-label">Documents</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="total-vols">-</div>
+                <div class="stat-label">Volumes</div>
+            </div>
+        </div>
+
+        <div class="legend" id="legend">
+            <h3>Color by Category</h3>
+            <!-- Populated by JS -->
+        </div>
+
+        <ul style="margin-top: 1rem;">
+            <li><strong>Click</strong> a point to view document</li>
+            <li><strong>Hover</strong> for document details</li>
+            <li><strong>Scroll</strong> to zoom in/out</li>
+            <li><strong>Drag</strong> to pan around</li>
+        </ul>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search by document ID...">
+    </div>
+
+    <div class="controls">
+        <button id="color-category" class="active">Color by Category</button>
+        <button id="color-volume">Color by Volume</button>
+        <button id="color-confidence">Color by OCR Quality</button>
+        <button id="reset-view">Reset View</button>
+    </div>
+
+    <div class="hover-panel" id="hover-panel">
+        <h3 id="hover-id">-</h3>
+        <div class="doc-meta">
+            <span class="badge cat" id="hover-cat">-</span>
+            <span class="badge vol" id="hover-vol">-</span>
+            <span class="badge" id="hover-pages">-</span>
+            <span class="badge" id="hover-conf">-</span>
+        </div>
+        <div class="actions">
+            <button class="btn-primary" id="view-doc">View Document</button>
+            <button class="btn-secondary" id="find-similar">Find Similar</button>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('scatter');
+        const ctx = canvas.getContext('2d');
+        const hoverPanel = document.getElementById('hover-panel');
+
+        let data = [];
+        let transform = { x: 0, y: 0, scale: 1 };
+        let isDragging = false;
+        let lastMouse = { x: 0, y: 0 };
+        let hoveredPoint = null;
+        let colorMode = 'category';
+        let highlightedIds = new Set();
+
+        // Color schemes
+        const categoryColors = {
+            'typed_memo': '#3498db',
+            'photograph': '#e94560',
+            'digital_text': '#2ecc71',
+            'unknown': '#95a5a6',
+            'document': '#f39c12'
+        };
+
+        const volumeColors = [
+            '#e94560', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
+            '#1abc9c', '#e67e22', '#34495e'
+        ];
+
+        async function init() {
+            try {
+                const response = await fetch('umap_clusters_coords.json');
+                const json = await response.json();
+                data = json.documents || json;
+
+                document.getElementById('total-docs').textContent = data.length.toLocaleString();
+                const volumes = new Set(data.map(d => d.volume));
+                document.getElementById('total-vols').textContent = volumes.size;
+
+                buildLegend();
+                setupCanvas();
+                fitToView();
+                render();
+
+                document.getElementById('loading').style.display = 'none';
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('loading').innerHTML = `Error: ${error.message}`;
+            }
+        }
+
+        function buildLegend() {
+            const legend = document.getElementById('legend');
+            const counts = {};
+            data.forEach(d => {
+                const cat = d.category || 'unknown';
+                counts[cat] = (counts[cat] || 0) + 1;
+            });
+
+            legend.innerHTML = '<h3>Color by Category</h3>';
+            Object.entries(counts)
+                .sort((a, b) => b[1] - a[1])
+                .forEach(([cat, count]) => {
+                    const color = categoryColors[cat] || '#666';
+                    legend.innerHTML += `
+                        <div class="legend-item" data-category="${cat}">
+                            <div class="legend-color" style="background: ${color}"></div>
+                            <span>${cat}</span>
+                            <span class="legend-count">${count.toLocaleString()}</span>
+                        </div>
+                    `;
+                });
+        }
+
+        function setupCanvas() {
+            const resize = () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                render();
+            };
+            window.addEventListener('resize', resize);
+            resize();
+
+            // Mouse events
+            canvas.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const rect = canvas.getBoundingClientRect();
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+
+                const zoom = e.deltaY > 0 ? 0.9 : 1.1;
+                const newScale = transform.scale * zoom;
+
+                // Zoom towards mouse position
+                transform.x = mouseX - (mouseX - transform.x) * zoom;
+                transform.y = mouseY - (mouseY - transform.y) * zoom;
+                transform.scale = newScale;
+
+                render();
+            });
+
+            canvas.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                lastMouse = { x: e.clientX, y: e.clientY };
+                canvas.style.cursor = 'grabbing';
+            });
+
+            canvas.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    transform.x += e.clientX - lastMouse.x;
+                    transform.y += e.clientY - lastMouse.y;
+                    lastMouse = { x: e.clientX, y: e.clientY };
+                    render();
+                } else {
+                    handleHover(e);
+                }
+            });
+
+            canvas.addEventListener('mouseup', () => {
+                isDragging = false;
+                canvas.style.cursor = 'crosshair';
+            });
+
+            canvas.addEventListener('mouseleave', () => {
+                isDragging = false;
+                hoveredPoint = null;
+                hoverPanel.style.display = 'none';
+                render();
+            });
+
+            canvas.addEventListener('click', (e) => {
+                if (hoveredPoint) {
+                    window.open(`../../../document.html?id=${hoveredPoint.bates}`, '_blank');
+                }
+            });
+
+            // Controls
+            document.getElementById('color-category').addEventListener('click', () => {
+                colorMode = 'category';
+                updateColorButtons();
+                render();
+            });
+
+            document.getElementById('color-volume').addEventListener('click', () => {
+                colorMode = 'volume';
+                updateColorButtons();
+                render();
+            });
+
+            document.getElementById('color-confidence').addEventListener('click', () => {
+                colorMode = 'confidence';
+                updateColorButtons();
+                render();
+            });
+
+            document.getElementById('reset-view').addEventListener('click', fitToView);
+
+            // Search
+            document.getElementById('search').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                highlightedIds.clear();
+                if (query.length > 2) {
+                    data.forEach(d => {
+                        if (d.bates.toLowerCase().includes(query)) {
+                            highlightedIds.add(d.bates);
+                        }
+                    });
+                }
+                render();
+            });
+
+            // View document button
+            document.getElementById('view-doc').addEventListener('click', () => {
+                if (hoveredPoint) {
+                    window.open(`../../../document.html?id=${hoveredPoint.bates}`, '_blank');
+                }
+            });
+
+            // Find similar button
+            document.getElementById('find-similar').addEventListener('click', () => {
+                if (hoveredPoint) {
+                    // Highlight nearby points
+                    const threshold = 2;
+                    highlightedIds.clear();
+                    data.forEach(d => {
+                        const dist = Math.sqrt(
+                            Math.pow(d.x - hoveredPoint.x, 2) +
+                            Math.pow(d.y - hoveredPoint.y, 2)
+                        );
+                        if (dist < threshold) {
+                            highlightedIds.add(d.bates);
+                        }
+                    });
+                    render();
+                }
+            });
+        }
+
+        function updateColorButtons() {
+            document.querySelectorAll('.controls button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`color-${colorMode}`).classList.add('active');
+        }
+
+        function fitToView() {
+            const padding = 50;
+            const xExtent = [Math.min(...data.map(d => d.x)), Math.max(...data.map(d => d.x))];
+            const yExtent = [Math.min(...data.map(d => d.y)), Math.max(...data.map(d => d.y))];
+
+            const dataWidth = xExtent[1] - xExtent[0];
+            const dataHeight = yExtent[1] - yExtent[0];
+
+            const scaleX = (canvas.width - padding * 2) / dataWidth;
+            const scaleY = (canvas.height - padding * 2) / dataHeight;
+            transform.scale = Math.min(scaleX, scaleY);
+
+            transform.x = canvas.width / 2 - ((xExtent[0] + xExtent[1]) / 2) * transform.scale;
+            transform.y = canvas.height / 2 - ((yExtent[0] + yExtent[1]) / 2) * transform.scale;
+
+            render();
+        }
+
+        function getColor(d) {
+            if (highlightedIds.size > 0 && !highlightedIds.has(d.bates)) {
+                return 'rgba(50,50,50,0.3)';
+            }
+
+            switch (colorMode) {
+                case 'category':
+                    return categoryColors[d.category] || '#666';
+                case 'volume':
+                    return volumeColors[d.volume % volumeColors.length];
+                case 'confidence':
+                    const conf = d.confidence || 0;
+                    if (conf > 0.8) return '#2ecc71';
+                    if (conf > 0.5) return '#f39c12';
+                    if (conf > 0.2) return '#e67e22';
+                    return '#e74c3c';
+                default:
+                    return '#3498db';
+            }
+        }
+
+        function render() {
+            ctx.fillStyle = '#0a0a1a';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            const pointSize = Math.max(2, Math.min(6, transform.scale * 0.3));
+
+            data.forEach(d => {
+                const x = d.x * transform.scale + transform.x;
+                const y = d.y * transform.scale + transform.y;
+
+                // Skip if off screen
+                if (x < -10 || x > canvas.width + 10 || y < -10 || y > canvas.height + 10) return;
+
+                ctx.beginPath();
+                ctx.arc(x, y, pointSize, 0, Math.PI * 2);
+                ctx.fillStyle = getColor(d);
+                ctx.fill();
+            });
+
+            // Draw hovered point larger
+            if (hoveredPoint) {
+                const x = hoveredPoint.x * transform.scale + transform.x;
+                const y = hoveredPoint.y * transform.scale + transform.y;
+                ctx.beginPath();
+                ctx.arc(x, y, pointSize * 2, 0, Math.PI * 2);
+                ctx.fillStyle = '#fff';
+                ctx.fill();
+                ctx.strokeStyle = '#e94560';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            }
+        }
+
+        function handleHover(e) {
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            const threshold = 10;
+            let closest = null;
+            let closestDist = Infinity;
+
+            data.forEach(d => {
+                const x = d.x * transform.scale + transform.x;
+                const y = d.y * transform.scale + transform.y;
+                const dist = Math.sqrt(Math.pow(x - mouseX, 2) + Math.pow(y - mouseY, 2));
+
+                if (dist < threshold && dist < closestDist) {
+                    closest = d;
+                    closestDist = dist;
+                }
+            });
+
+            if (closest !== hoveredPoint) {
+                hoveredPoint = closest;
+                render();
+
+                if (hoveredPoint) {
+                    document.getElementById('hover-id').textContent = hoveredPoint.bates;
+                    document.getElementById('hover-cat').textContent = hoveredPoint.category || 'unknown';
+                    document.getElementById('hover-vol').textContent = `Volume ${hoveredPoint.volume}`;
+                    document.getElementById('hover-pages').textContent = `${hoveredPoint.pages} page(s)`;
+                    document.getElementById('hover-conf').textContent =
+                        `${Math.round((hoveredPoint.confidence || 0) * 100)}% OCR quality`;
+                    hoverPanel.style.display = 'block';
+                } else {
+                    hoverPanel.style.display = 'none';
+                }
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>

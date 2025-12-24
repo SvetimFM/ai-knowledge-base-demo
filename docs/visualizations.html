@@ -92,17 +92,25 @@
         <h3 class="section-title">Embedding Analysis</h3>
         <div class="viz-grid">
             <div class="viz-card">
-                <h3>UMAP Embedding Clusters</h3>
-                <p>768-dimensional embeddings reduced to 2D. Documents with similar content cluster together. Color indicates document type.</p>
-                <a href="data/viz/umap_clusters.html" class="viz-link" target="_blank">Open Visualization</a>
+                <h3>UMAP Embedding Clusters (Interactive)</h3>
+                <p>768-dimensional embeddings reduced to 2D using UMAP. Click documents to view, hover for details. Color by category, volume, or OCR quality.</p>
+                <a href="data/viz/umap_interactive.html" class="viz-link" target="_blank">Open Interactive UMAP</a>
+            </div>
+            <div class="viz-card">
+                <h3>UMAP Clusters (Static)</h3>
+                <p>Original Plotly-based visualization. Faster to load but less interactive.</p>
+                <a href="data/viz/umap_clusters.html" class="viz-link" target="_blank">Open Static Version</a>
             </div>
         </div>
 
         <h3 class="section-title">Network Graphs</h3>
+        <p style="color: #e94560; font-size: 0.85rem; margin-bottom: 1rem;">
+            Note: The full network graph loads 155MB of data from HuggingFace. Initial load may take 30-60 seconds depending on connection speed.
+        </p>
         <div class="viz-grid">
             <div class="viz-card">
                 <h3>Full Network Graph (GPU)</h3>
-                <p>All 6,600+ documents with 1.6M connections. GPU-accelerated with Cosmograph. May require good graphics card.</p>
+                <p>All 6,600+ documents with 1.6M connections. GPU-accelerated with Cosmograph. Requires good graphics card and patience to load.</p>
                 <a href="data/viz/cosmograph_graph.html" class="viz-link" target="_blank">Open Visualization</a>
             </div>
             <div class="viz-card">
@@ -163,9 +171,14 @@
         <h3 class="section-title">Timeline Analysis</h3>
         <div class="viz-grid">
             <div class="viz-card">
-                <h3>Document Timeline</h3>
-                <p>1,725 dated documents from 1990-2020. Scatter plot showing temporal distribution.</p>
-                <a href="data/viz/timeline.html" class="viz-link" target="_blank">Open Visualization</a>
+                <h3>Interactive Timeline (New)</h3>
+                <p>Brush to select date ranges, click documents to view. 1,725 dated documents from 1990-2020 with D3.js interactivity.</p>
+                <a href="data/viz/timeline_interactive.html" class="viz-link" target="_blank">Open Interactive Timeline</a>
+            </div>
+            <div class="viz-card">
+                <h3>Document Timeline (Static)</h3>
+                <p>Original Plotly scatter plot showing temporal distribution of documents.</p>
+                <a href="data/viz/timeline.html" class="viz-link" target="_blank">Open Static Timeline</a>
             </div>
             <div class="viz-card">
                 <h3>Timeline Histogram</h3>

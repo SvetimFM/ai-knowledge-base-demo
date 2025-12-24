@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline - FBI Epstein Files</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        .header {
+            background: rgba(0,0,0,0.5);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 { font-size: 1.3rem; color: #e94560; }
+        .header a { color: #3498db; text-decoration: none; }
+        .header a:hover { text-decoration: underline; }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        .info-panel {
+            background: rgba(30,30,50,0.8);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .info-panel h2 { color: #e94560; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .info-panel p { color: #888; font-size: 0.9rem; line-height: 1.5; }
+
+        .stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .stat {
+            background: rgba(0,0,0,0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        .stat-value { color: #3498db; font-size: 1.5rem; font-weight: bold; }
+        .stat-label { color: #666; font-size: 0.8rem; }
+
+        .chart-container {
+            background: rgba(30,30,50,0.5);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .chart-title {
+            color: #e94560;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .chart-subtitle {
+            color: #666;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        #overview-chart, #detail-chart {
+            width: 100%;
+        }
+
+        .brush .selection {
+            fill: #e94560;
+            fill-opacity: 0.3;
+            stroke: #e94560;
+        }
+
+        .date-range {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(233,69,96,0.1);
+            border: 1px solid #e94560;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .date-range-label { color: #888; font-size: 0.8rem; }
+        .date-range-value { color: #e94560; font-size: 1.2rem; font-weight: bold; }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+        }
+        .search-box input::placeholder { color: #666; }
+        .search-box input:focus { outline: none; border-color: #3498db; }
+
+        .documents-panel {
+            background: rgba(30,30,50,0.5);
+            border: 1px solid #333;
+            border-radius: 8px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .documents-header {
+            position: sticky;
+            top: 0;
+            background: rgba(30,30,50,0.95);
+            padding: 1rem;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .documents-header h3 { color: #e94560; font-size: 1rem; }
+        .documents-count { color: #666; font-size: 0.9rem; }
+
+        .document-item {
+            padding: 1rem;
+            border-bottom: 1px solid #222;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .document-item:hover { background: rgba(52,152,219,0.1); }
+        .document-item:last-child { border-bottom: none; }
+
+        .doc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+        .doc-id {
+            color: #3498db;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .doc-date {
+            color: #888;
+            font-size: 0.85rem;
+        }
+        .doc-meta {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .doc-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            color: #888;
+        }
+        .doc-badge.year { background: rgba(233,69,96,0.2); color: #e94560; }
+        .doc-badge.volume { background: rgba(52,152,219,0.2); color: #3498db; }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            color: #666;
+        }
+        .spinner {
+            width: 30px;
+            height: 30px;
+            border: 3px solid #333;
+            border-top-color: #e94560;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 1rem;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+        .axis text { fill: #666; font-size: 11px; }
+        .axis line, .axis path { stroke: #333; }
+        .bar { fill: #3498db; transition: fill 0.2s; }
+        .bar:hover { fill: #e94560; }
+        .dot { fill: #3498db; opacity: 0.6; }
+        .dot:hover { fill: #e94560; opacity: 1; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Document Timeline</h1>
+        <a href="../../../visualizations.html">Back to Visualizations</a>
+    </div>
+
+    <div class="container">
+        <div class="info-panel">
+            <h2>Timeline Analysis</h2>
+            <p>
+                Explore FBI documents chronologically. Use the brush on the overview chart to select a date range.
+                Documents are dated based on extracted timestamps from OCR text. Click any document to view its full content.
+            </p>
+            <div class="stats" id="stats">
+                <div class="stat">
+                    <div class="stat-value" id="total-docs">-</div>
+                    <div class="stat-label">Dated Documents</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="date-span">-</div>
+                    <div class="stat-label">Year Span</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="peak-year">-</div>
+                    <div class="stat-label">Peak Year</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">Overview - Drag to Select Date Range</div>
+            <div class="chart-subtitle">Document density across the full timeline</div>
+            <svg id="overview-chart"></svg>
+        </div>
+
+        <div class="date-range">
+            <div class="date-range-label">Selected Range</div>
+            <div class="date-range-value" id="range-display">All Documents</div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">Detail View</div>
+            <div class="chart-subtitle">Individual documents in selected range</div>
+            <svg id="detail-chart"></svg>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Filter documents by ID...">
+            </div>
+        </div>
+
+        <div class="documents-panel" id="documents-panel">
+            <div class="documents-header">
+                <h3>Documents in Range</h3>
+                <span class="documents-count" id="doc-count">Loading...</span>
+            </div>
+            <div id="document-list">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading timeline data...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allData = [];
+        let filteredData = [];
+        let selectedRange = null;
+
+        // Dimensions
+        const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+        const overviewHeight = 100;
+        const detailHeight = 150;
+
+        async function init() {
+            try {
+                const response = await fetch('timeline_data.json');
+                allData = await response.json();
+
+                // Parse dates
+                allData = allData.map(d => ({
+                    ...d,
+                    dateObj: new Date(d.date)
+                })).filter(d => !isNaN(d.dateObj.getTime()));
+
+                // Sort by date
+                allData.sort((a, b) => a.dateObj - b.dateObj);
+                filteredData = allData;
+
+                updateStats();
+                renderCharts();
+                renderDocuments();
+
+                // Search functionality
+                document.getElementById('search').addEventListener('input', (e) => {
+                    const query = e.target.value.toLowerCase();
+                    if (selectedRange) {
+                        filteredData = allData.filter(d =>
+                            d.dateObj >= selectedRange[0] &&
+                            d.dateObj <= selectedRange[1] &&
+                            d.bates.toLowerCase().includes(query)
+                        );
+                    } else {
+                        filteredData = query ?
+                            allData.filter(d => d.bates.toLowerCase().includes(query)) :
+                            allData;
+                    }
+                    renderDocuments();
+                });
+
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('document-list').innerHTML =
+                    `<div class="loading">Error loading data: ${error.message}</div>`;
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('total-docs').textContent = allData.length.toLocaleString();
+
+            const years = allData.map(d => d.year);
+            const minYear = Math.min(...years);
+            const maxYear = Math.max(...years);
+            document.getElementById('date-span').textContent = `${minYear}-${maxYear}`;
+
+            // Find peak year
+            const yearCounts = {};
+            years.forEach(y => yearCounts[y] = (yearCounts[y] || 0) + 1);
+            const peakYear = Object.entries(yearCounts)
+                .sort((a, b) => b[1] - a[1])[0];
+            document.getElementById('peak-year').textContent = `${peakYear[0]} (${peakYear[1]})`;
+        }
+
+        function renderCharts() {
+            const containerWidth = document.querySelector('.chart-container').clientWidth - 32;
+            const width = containerWidth - margin.left - margin.right;
+
+            // Overview chart with histogram
+            const overviewSvg = d3.select('#overview-chart')
+                .attr('width', containerWidth)
+                .attr('height', overviewHeight + margin.top + margin.bottom);
+
+            const overviewG = overviewSvg.append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+
+            const xExtent = d3.extent(allData, d => d.dateObj);
+            const x = d3.scaleTime()
+                .domain(xExtent)
+                .range([0, width]);
+
+            // Create histogram bins by month
+            const histogram = d3.bin()
+                .value(d => d.dateObj)
+                .domain(x.domain())
+                .thresholds(x.ticks(d3.timeMonth));
+
+            const bins = histogram(allData);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(bins, d => d.length)])
+                .range([overviewHeight, 0]);
+
+            // Draw bars
+            overviewG.selectAll('.bar')
+                .data(bins)
+                .enter().append('rect')
+                .attr('class', 'bar')
+                .attr('x', d => x(d.x0))
+                .attr('width', d => Math.max(0, x(d.x1) - x(d.x0) - 1))
+                .attr('y', d => y(d.length))
+                .attr('height', d => overviewHeight - y(d.length));
+
+            // X axis
+            overviewG.append('g')
+                .attr('class', 'axis')
+                .attr('transform', `translate(0,${overviewHeight})`)
+                .call(d3.axisBottom(x).ticks(10));
+
+            // Brush
+            const brush = d3.brushX()
+                .extent([[0, 0], [width, overviewHeight]])
+                .on('brush end', brushed);
+
+            overviewG.append('g')
+                .attr('class', 'brush')
+                .call(brush);
+
+            function brushed(event) {
+                if (!event.selection) {
+                    selectedRange = null;
+                    filteredData = allData;
+                    document.getElementById('range-display').textContent = 'All Documents';
+                } else {
+                    const [x0, x1] = event.selection.map(x.invert);
+                    selectedRange = [x0, x1];
+                    filteredData = allData.filter(d =>
+                        d.dateObj >= x0 && d.dateObj <= x1
+                    );
+
+                    const format = d3.timeFormat('%b %d, %Y');
+                    document.getElementById('range-display').textContent =
+                        `${format(x0)} - ${format(x1)}`;
+                }
+
+                updateDetailChart(x, width);
+                renderDocuments();
+            }
+
+            // Initial detail chart
+            updateDetailChart(x, width);
+        }
+
+        function updateDetailChart(overviewX, width) {
+            const detailSvg = d3.select('#detail-chart')
+                .attr('width', width + margin.left + margin.right)
+                .attr('height', detailHeight + margin.top + margin.bottom);
+
+            detailSvg.selectAll('*').remove();
+
+            const detailG = detailSvg.append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+
+            const dataToShow = filteredData.slice(0, 500); // Limit for performance
+
+            const x = d3.scaleTime()
+                .domain(selectedRange || d3.extent(allData, d => d.dateObj))
+                .range([0, width]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(dataToShow, d => d.date_count) || 10])
+                .range([detailHeight, 0]);
+
+            // Dots
+            detailG.selectAll('.dot')
+                .data(dataToShow)
+                .enter().append('circle')
+                .attr('class', 'dot')
+                .attr('cx', d => x(d.dateObj))
+                .attr('cy', d => y(d.date_count))
+                .attr('r', 4)
+                .style('cursor', 'pointer')
+                .on('click', (event, d) => {
+                    window.open(`../../../document.html?id=${d.bates}`, '_blank');
+                })
+                .append('title')
+                .text(d => `${d.bates}\n${d3.timeFormat('%Y-%m-%d')(d.dateObj)}`);
+
+            // Axes
+            detailG.append('g')
+                .attr('class', 'axis')
+                .attr('transform', `translate(0,${detailHeight})`)
+                .call(d3.axisBottom(x));
+
+            detailG.append('g')
+                .attr('class', 'axis')
+                .call(d3.axisLeft(y).ticks(5));
+        }
+
+        function renderDocuments() {
+            const listEl = document.getElementById('document-list');
+            const countEl = document.getElementById('doc-count');
+
+            countEl.textContent = `${filteredData.length.toLocaleString()} documents`;
+
+            if (filteredData.length === 0) {
+                listEl.innerHTML = '<div class="loading">No documents match the current filter</div>';
+                return;
+            }
+
+            // Limit display for performance
+            const docsToShow = filteredData.slice(0, 100);
+
+            listEl.innerHTML = docsToShow.map(doc => `
+                <div class="document-item" onclick="window.open('../../../document.html?id=${doc.bates}', '_blank')">
+                    <div class="doc-header">
+                        <span class="doc-id">${doc.bates}</span>
+                        <span class="doc-date">${d3.timeFormat('%b %d, %Y')(doc.dateObj)}</span>
+                    </div>
+                    <div class="doc-meta">
+                        <span class="doc-badge year">${doc.year}</span>
+                        ${doc.volume !== 'unknown' ? `<span class="doc-badge volume">Vol ${doc.volume}</span>` : ''}
+                        ${doc.date_count > 1 ? `<span class="doc-badge">${doc.date_count} related</span>` : ''}
+                    </div>
+                </div>
+            `).join('');
+
+            if (filteredData.length > 100) {
+                listEl.innerHTML += `
+                    <div class="loading" style="height: 50px;">
+                        Showing first 100 of ${filteredData.length.toLocaleString()} documents
+                    </div>
+                `;
+            }
+        }
+
+        // Handle resize
+        window.addEventListener('resize', () => {
+            d3.select('#overview-chart').selectAll('*').remove();
+            d3.select('#detail-chart').selectAll('*').remove();
+            renderCharts();
+        });
+
+        init();
+    </script>
+</body>
+</html>
