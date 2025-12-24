@@ -2,521 +2,8229 @@
   "entities": [
     {
       "id": "person:epstein",
+      "name": "Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "mention_count": 4180,
+      "doc_count": 300,
+      "aliases": [
+        "epstein",
+        "dr. epstein",
+        "epsiein",
+        "epsteins"
+      ],
+      "roles": [
+        "host",
+        "employer of Rodgers",
+        "wealthy person offering to set up"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:jeffrey_epstein",
       "name": "Jeffrey Epstein",
       "short_name": "epstein",
       "type": "person",
-      "doc_count": 619,
+      "mention_count": 3991,
+      "doc_count": 300,
       "aliases": [
-        "epstein",
-        "j. epstein",
         "jeffrey epstein",
-        "jeffrey"
+        "jeffrty epstein",
+        "jeffrey epst",
+        "jeffrey stein"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/epstein_network.html"
+      "roles": [
+        "Mentioned in email",
+        "owner of the island and villas",
+        "subject of document"
+      ],
+      "is_key_player": true
     },
     {
-      "id": "person:andrew",
-      "name": "Prince Andrew",
-      "short_name": "andrew",
+      "id": "person:jeffrey_e",
+      "name": "jeffrey E.",
+      "short_name": "e.",
       "type": "person",
-      "doc_count": 317,
+      "mention_count": 2946,
+      "doc_count": 300,
       "aliases": [
-        "prince andrew",
-        "andrew",
-        "duke of york"
+        "jeffrey e.",
+        "jeffrey",
+        "jeffrey a",
+        "jeffrey cole"
       ],
-      "is_key_player": true,
-      "viz_file": null
+      "roles": [
+        "Mentioned in email",
+        "recipient of thank-you note",
+        "to meet with"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "person:maxwell",
-      "name": "Ghislaine Maxwell",
-      "short_name": "maxwell",
+      "id": "person:[victim_-_name_redacted]",
+      "name": "[VICTIM - NAME REDACTED]",
+      "short_name": "redacted]",
       "type": "person",
-      "doc_count": 301,
+      "mention_count": 2564,
+      "doc_count": 300,
       "aliases": [
-        "maxwell",
-        "g. maxwell",
-        "ghislaine maxwell",
-        "ghislaine"
+        "[victim - name redacted]"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/maxwell_network.html"
+      "roles": [
+        "character",
+        "girl, 17, who Epstein flew to Britain to meet Prince Andrew",
+        "store owner"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "person:clinton",
-      "name": "Bill Clinton",
-      "short_name": "clinton",
-      "type": "person",
-      "doc_count": 192,
-      "aliases": [
-        "bill clinton",
-        "president clinton",
-        "clinton",
-        "bill"
-      ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/clinton_network.html"
-    },
-    {
-      "id": "person:dershowitz",
-      "name": "Alan Dershowitz",
-      "short_name": "dershowitz",
-      "type": "person",
-      "doc_count": 103,
-      "aliases": [
-        "dershowitz",
-        "alan dershowitz",
-        "alan"
-      ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/dershowitz_network.html"
-    },
-    {
-      "id": "person:wexner",
-      "name": "Les Wexner",
-      "short_name": "wexner",
-      "type": "person",
-      "doc_count": 101,
-      "aliases": [
-        "leslie",
-        "wexner",
-        "les",
-        "les wexner"
-      ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/wexner_network.html"
-    },
-    {
-      "id": "person:virginia",
-      "name": "Virginia Giuffre",
-      "short_name": "virginia",
-      "type": "person",
-      "doc_count": 94,
-      "aliases": [
-        "giuffre",
-        "roberts",
-        "virginia giuffre",
-        "virginia"
-      ],
-      "is_key_player": true,
-      "viz_file": null
-    },
-    {
-      "id": "person:trump",
-      "name": "Donald Trump",
-      "short_name": "trump",
-      "type": "person",
-      "doc_count": 8,
-      "aliases": [
-        "trump",
-        "donald trump",
-        "donald"
-      ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/trump_network.html"
-    },
-    {
-      "id": "person:brunel",
-      "name": "Jean-Luc Brunel",
-      "short_name": "brunel",
-      "type": "person",
-      "doc_count": 6,
-      "aliases": [
-        "brunel",
-        "jean-luc",
-        "jean-luc brunel"
-      ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/brunel_network.html"
-    },
-    {
-      "id": "location:new york",
-      "name": "New York",
-      "short_name": "new york",
-      "type": "location",
-      "doc_count": 1455,
-      "aliases": [
-        "new york"
-      ],
-      "is_key_player": false,
-      "viz_file": null
-    },
-    {
-      "id": "location:paris",
-      "name": "Paris",
-      "short_name": "paris",
-      "type": "location",
-      "doc_count": 791,
-      "aliases": [
-        "paris"
-      ],
-      "is_key_player": false,
-      "viz_file": null
-    },
-    {
-      "id": "person:black",
-      "name": "Black",
-      "short_name": "black",
-      "type": "person",
-      "doc_count": 746,
-      "aliases": [
-        "black"
-      ],
-      "is_key_player": false,
-      "viz_file": null
-    },
-    {
-      "id": "location:palm beach",
+      "id": "location:palm_beach",
       "name": "Palm Beach",
-      "short_name": "palm beach",
+      "short_name": "palm_beach",
       "type": "location",
-      "doc_count": 688,
+      "mention_count": 946,
+      "doc_count": 500,
       "aliases": [
         "palm beach"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "is_key_player": false
     },
     {
-      "id": "person:jeffrey",
-      "name": "Jeffrey",
-      "short_name": "jeffrey",
+      "id": "person:donald_trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
       "type": "person",
-      "doc_count": 563,
+      "mention_count": 934,
+      "doc_count": 300,
       "aliases": [
-        "jeffrey"
+        "donald trump",
+        "the donald j, trump",
+        "donald j. trump",
+        "donald trump jr."
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "roles": [
+        "Mentioned in email",
+        "politician",
+        "Mentioned"
+      ],
+      "is_key_player": true
     },
     {
-      "id": "location:little saint james",
-      "name": "Little Saint James",
-      "short_name": "little saint james",
-      "type": "location",
-      "doc_count": 429,
+      "id": "person:trump",
+      "name": "Trump",
+      "short_name": "trump",
+      "type": "person",
+      "mention_count": 839,
+      "doc_count": 300,
       "aliases": [
-        "little saint james"
+        "trump",
+        "trump",
+        "trump",
+        "trum"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "roles": [
+        "Mentioned in email",
+        "politician",
+        "subject of document"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "location:new_york",
+      "name": "New York",
+      "short_name": "new_york",
+      "type": "location",
+      "mention_count": 738,
+      "doc_count": 500,
+      "aliases": [
+        "new york"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bill_clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "mention_count": 493,
+      "doc_count": 300,
+      "aliases": [
+        "bill clinton",
+        "bill clinton"
+      ],
+      "roles": [
+        "surprise appearance",
+        "politician",
+        "Seemingly impossible-to-reach person"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "location:united_states",
+      "name": "United States",
+      "short_name": "united_states",
+      "type": "location",
+      "mention_count": 491,
+      "doc_count": 491,
+      "aliases": [
+        "united states"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "mention_count": 434,
+      "doc_count": 300,
+      "aliases": [
+        "ghislaine maxwell",
+        "ghislaine n. maxwell",
+        "ghislane maxwell",
+        "ghislaine maxwell"
+      ],
+      "roles": [
+        "accused of recruiting Epstein's alleged victims",
+        "second-in-command of Jeffrey Epstein",
+        "daughter of the late British media baron Robert Maxwell"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:snowden",
+      "name": "Snowden",
+      "short_name": "snowden",
+      "type": "person",
+      "mention_count": 430,
+      "doc_count": 300,
+      "aliases": [
+        "snowden",
+        "mr. snowden"
+      ],
+      "roles": [
+        "subject of document",
+        "legal situation in America",
+        "focus of the document"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:nsa",
+      "name": "NSA",
+      "short_name": "nsa",
+      "type": "organization",
+      "mention_count": 414,
+      "doc_count": 414,
+      "aliases": [
+        "nsa"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:alan_dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "mention_count": 384,
+      "doc_count": 300,
+      "aliases": [
+        "alan dershowitz",
+        "alan dershowitz sn",
+        "alan dershovvitz",
+        "alan dershowtiz"
+      ],
+      "roles": [
+        "Accused of having sex with Virginia Roberts when she was underage",
+        "Mentioned in email",
+        "Discussed Israel with President Trump"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:prince_andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "mention_count": 358,
+      "doc_count": 300,
+      "aliases": [
+        "prince andrew",
+        "prince andrew",
+        "prince andrews",
+        "prince andrew"
+      ],
+      "roles": [
+        "social connection",
+        "former boyfriend of Caroline Stanbury",
+        "Attended Heidi Klum's 'Hookers and Pimps' party"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "location:china",
+      "name": "China",
+      "short_name": "china",
+      "type": "location",
+      "mention_count": 353,
+      "doc_count": 353,
+      "aliases": [
+        "china"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:michael_wolff",
+      "name": "Michael Wolff",
+      "short_name": "wolff",
+      "type": "person",
+      "mention_count": 349,
+      "doc_count": 300,
+      "aliases": [
+        "michael wolff",
+        "michael wolfe",
+        "michael wola",
+        "michael wol"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Mentioned in email",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:richard_kahn",
+      "name": "Richard Kahn",
+      "short_name": "kahn",
+      "type": "person",
+      "mention_count": 315,
+      "doc_count": 300,
+      "aliases": [
+        "richard kahn",
+        "richard kann",
+        "rich kahn",
+        "richard kah"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Mentioned in email",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:israel",
+      "name": "Israel",
+      "short_name": "israel",
+      "type": "location",
+      "mention_count": 307,
+      "doc_count": 307,
+      "aliases": [
+        "israel"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:kathy_ruemmler",
+      "name": "Kathy Ruemmler",
+      "short_name": "ruemmler",
+      "type": "person",
+      "mention_count": 297,
+      "doc_count": 297,
+      "aliases": [
+        "kathy ruemmler",
+        "kathy ruemm ler i",
+        "kathy ruemm",
+        "kathy ruemmle"
+      ],
+      "roles": [
+        "Recipient of email",
+        "emailer",
+        "former White House Counsel"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:israel",
+      "name": "Israel",
+      "short_name": "israel",
+      "type": "person",
+      "mention_count": 288,
+      "doc_count": 288,
+      "aliases": [
+        "israel",
+        "israelis",
+        "israeli",
+        "the israelis"
+      ],
+      "roles": [
+        "military",
+        "Sovereign state",
+        "regional hegemon"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:new_york_times",
+      "name": "New York Times",
+      "short_name": "new_york_times",
+      "type": "organization",
+      "mention_count": 286,
+      "doc_count": 286,
+      "aliases": [
+        "new york times"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:edwards",
+      "name": "Edwards",
+      "short_name": "edwards",
+      "type": "person",
+      "mention_count": 283,
+      "doc_count": 283,
+      "aliases": [
+        "edwards",
+        "edward",
+        "edward",
+        "mr. edwards"
+      ],
+      "roles": [
+        "Carola's client",
+        "one of the plaintiffs",
+        "unnamed"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "mention_count": 281,
+      "doc_count": 281,
+      "aliases": [
+        "dershowitz",
+        "dr. dershowitz",
+        "mr. dershowitz",
+        "dershowtiz"
+      ],
+      "roles": [
+        "Argument made",
+        "civil libertarian",
+        "person being questioned"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:edward_snowden",
+      "name": "Edward Snowden",
+      "short_name": "snowden",
+      "type": "person",
+      "mention_count": 277,
+      "doc_count": 277,
+      "aliases": [
+        "edward snowden",
+        "edward snow"
+      ],
+      "roles": [
+        "rogue system administrator",
+        "Discussed Russia",
+        "Subject of the story"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:darren_indyke",
+      "name": "Darren Indyke",
+      "short_name": "indyke",
+      "type": "person",
+      "mention_count": 269,
+      "doc_count": 269,
+      "aliases": [
+        "darren indyke",
+        "darren lndyke",
+        "darren indykc",
+        "darren indyke"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Attorney",
+        "Mentioned in email"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:barak",
+      "name": "Barak",
+      "short_name": "barak",
+      "type": "person",
+      "mention_count": 268,
+      "doc_count": 268,
+      "aliases": [
+        "barak",
+        "barrak",
+        "baraka",
+        "barak"
+      ],
+      "roles": [
+        "Unclear",
+        "referenced",
+        "None"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:florida",
+      "name": "Florida",
+      "short_name": "florida",
+      "type": "location",
+      "mention_count": 257,
+      "doc_count": 257,
+      "aliases": [
+        "florida"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:steve_bannon",
+      "name": "Steve Bannon",
+      "short_name": "bannon",
+      "type": "person",
+      "mention_count": 255,
+      "doc_count": 255,
+      "aliases": [
+        "steve bannon",
+        "steve bannor",
+        "steve banno",
+        "steve ban"
+      ],
+      "roles": [
+        "former White House official, former executive chairman of Breitbart News",
+        "Anti-establishment populist",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:hong_kong",
+      "name": "Hong Kong",
+      "short_name": "hong_kong",
+      "type": "location",
+      "mention_count": 249,
+      "doc_count": 249,
+      "aliases": [
+        "hong kong"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:china",
+      "name": "China",
+      "short_name": "china",
+      "type": "person",
+      "mention_count": 223,
+      "doc_count": 223,
+      "aliases": [
+        "china"
+      ],
+      "roles": [
+        "middle-class growth",
+        "location",
+        "current sovereign of Hong Kong"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:europe",
+      "name": "Europe",
+      "short_name": "europe",
+      "type": "location",
+      "mention_count": 220,
+      "doc_count": 220,
+      "aliases": [
+        "europe"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:fbi",
+      "name": "FBI",
+      "short_name": "fbi",
+      "type": "organization",
+      "mention_count": 216,
+      "doc_count": 216,
+      "aliases": [
+        "fbi"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:united_states",
+      "name": "United States",
+      "short_name": "states",
+      "type": "person",
+      "mention_count": 215,
+      "doc_count": 215,
+      "aliases": [
+        "united states",
+        "united states v.",
+        "the united stat",
+        "the united states"
+      ],
+      "roles": [
+        "location",
+        "Government entity",
+        "entity liable"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:syria",
+      "name": "Syria",
+      "short_name": "syria",
+      "type": "location",
+      "mention_count": 203,
+      "doc_count": 203,
+      "aliases": [
+        "syria"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:clinton",
+      "name": "Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "mention_count": 191,
+      "doc_count": 191,
+      "aliases": [
+        "clinton",
+        "mrs. clinton",
+        "mr. clinton",
+        "clintons"
+      ],
+      "roles": [
+        "politician",
+        "pal of Kevin Spacey",
+        "undisclosed"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:bannon",
+      "name": "Bannon",
+      "short_name": "bannon",
+      "type": "person",
+      "mention_count": 186,
+      "doc_count": 186,
+      "aliases": [
+        "bannon",
+        "banno",
+        "bannon",
+        "mr. bannon"
+      ],
+      "roles": [
+        "appointed",
+        "had an isolationist and apocalyptic worldview",
+        "took over the Trump campaign"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:lawrence_krauss",
+      "name": "Lawrence Krauss",
+      "short_name": "krauss",
+      "type": "person",
+      "mention_count": 184,
+      "doc_count": 184,
+      "aliases": [
+        "lawrence krauss",
+        "lawrence krause",
+        "lawrence kraus",
+        "lawrence krauss po"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Scientist",
+        "Assoc. Dir, Beyond Center"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:united_states",
+      "name": "United States",
+      "short_name": "united_states",
+      "type": "organization",
+      "mention_count": 184,
+      "doc_count": 184,
+      "aliases": [
+        "united states"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:weingarten,_reid",
+      "name": "Weingarten, Reid",
+      "short_name": "reid",
+      "type": "person",
+      "mention_count": 179,
+      "doc_count": 179,
+      "aliases": [
+        "weingarten, reid",
+        "weingarten, reii",
+        "weingarten, rec",
+        "weingarten, reid ee"
+      ],
+      "roles": [
+        "Email sender",
+        "Recipient of email",
+        "Unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:us",
+      "name": "US",
+      "short_name": "us",
+      "type": "location",
+      "mention_count": 175,
+      "doc_count": 175,
+      "aliases": [
+        "us"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:james_patterson",
+      "name": "James PATTERSON",
+      "short_name": "patterson",
+      "type": "person",
+      "mention_count": 174,
+      "doc_count": 174,
+      "aliases": [
+        "james patterson",
+        "james patterson",
+        "james a patterson",
+        "james patterson"
+      ],
+      "roles": [
+        "purported author",
+        "Perpetrator",
+        "owner"
+      ],
+      "is_key_player": false
     },
     {
       "id": "location:london",
       "name": "London",
       "short_name": "london",
       "type": "location",
-      "doc_count": 356,
+      "mention_count": 173,
+      "doc_count": 173,
       "aliases": [
         "london"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "is_key_player": false
+    },
+    {
+      "id": "person:obama",
+      "name": "Obama",
+      "short_name": "obama",
+      "type": "person",
+      "mention_count": 163,
+      "doc_count": 163,
+      "aliases": [
+        "obama",
+        "mr. obama",
+        "obama",
+        "obama"
+      ],
+      "roles": [
+        "referenced",
+        "Mentioned in email",
+        "politician"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:larry_summers",
+      "name": "Larry Summers",
+      "short_name": "summers",
+      "type": "person",
+      "mention_count": 161,
+      "doc_count": 161,
+      "aliases": [
+        "larry summers",
+        "larry summer",
+        "larry sunmers",
+        "larry summers iii."
+      ],
+      "roles": [
+        "Recipient of email",
+        "withdrew from Fed race",
+        "husband"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:miami",
+      "name": "Miami",
+      "short_name": "miami",
+      "type": "location",
+      "mention_count": 160,
+      "doc_count": 160,
+      "aliases": [
+        "miami"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:new_york_city",
+      "name": "New York City",
+      "short_name": "new_york_city",
+      "type": "location",
+      "mention_count": 155,
+      "doc_count": 155,
+      "aliases": [
+        "new york city"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:cooperative",
+      "name": "COOPERATIVE",
+      "short_name": "cooperative",
+      "type": "organization",
+      "mention_count": 154,
+      "doc_count": 154,
+      "aliases": [
+        "cooperative"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:arafat",
+      "name": "Arafat",
+      "short_name": "arafat",
+      "type": "person",
+      "mention_count": 152,
+      "doc_count": 152,
+      "aliases": [
+        "arafat"
+      ],
+      "roles": [
+        "not a target",
+        "Leader of Palestinian forces",
+        "offered a reply to the President"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:bofa_merrill_lynch",
+      "name": "BofA Merrill Lynch",
+      "short_name": "bofa_merrill_lynch",
+      "type": "organization",
+      "mention_count": 150,
+      "doc_count": 150,
+      "aliases": [
+        "bofa merrill lynch"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:russia",
+      "name": "Russia",
+      "short_name": "russia",
+      "type": "location",
+      "mention_count": 145,
+      "doc_count": 145,
+      "aliases": [
+        "russia"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:us",
+      "name": "U.S.",
+      "short_name": "u.s.",
+      "type": "location",
+      "mention_count": 139,
+      "doc_count": 139,
+      "aliases": [
+        "u.s."
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:palm_beach,_florida",
+      "name": "Palm Beach, Florida",
+      "short_name": "palm_beach,_florida",
+      "type": "location",
+      "mention_count": 139,
+      "doc_count": 139,
+      "aliases": [
+        "palm beach, florida"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:martin_weinberg",
+      "name": "Martin Weinberg",
+      "short_name": "weinberg",
+      "type": "person",
+      "mention_count": 136,
+      "doc_count": 136,
+      "aliases": [
+        "martin weinberg",
+        "martin weinberg esq",
+        "martin weinberger",
+        "martin weinber"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Attorney",
+        "Jeffrey Epstein's current attorney"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:us_department_of_justice",
+      "name": "U.S. Department of Justice",
+      "short_name": "u.s._department_of_justice",
+      "type": "organization",
+      "mention_count": 134,
+      "doc_count": 134,
+      "aliases": [
+        "u.s. department of justice"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:clinton_foundation",
+      "name": "Clinton Foundation",
+      "short_name": "clinton_foundation",
+      "type": "organization",
+      "mention_count": 131,
+      "doc_count": 131,
+      "aliases": [
+        "clinton foundation"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:nicholas_ribis",
+      "name": "Nicholas Ribis",
+      "short_name": "ribis",
+      "type": "person",
+      "mention_count": 130,
+      "doc_count": 130,
+      "aliases": [
+        "nicholas ribis",
+        "nicholas ribis pf",
+        "nicholas riis",
+        "nicholas ribi"
+      ],
+      "roles": [
+        "Email sender",
+        "Recipient of email",
+        "recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:cia",
+      "name": "CIA",
+      "short_name": "cia",
+      "type": "organization",
+      "mention_count": 129,
+      "doc_count": 129,
+      "aliases": [
+        "cia"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:federal_bureau_of_investigation",
+      "name": "Federal Bureau of Investigation",
+      "short_name": "federal_bureau_of_investigation",
+      "type": "organization",
+      "mention_count": 128,
+      "doc_count": 128,
+      "aliases": [
+        "federal bureau of investigation"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:saudi_arabia",
+      "name": "Saudi Arabia",
+      "short_name": "saudi_arabia",
+      "type": "location",
+      "mention_count": 128,
+      "doc_count": 128,
+      "aliases": [
+        "saudi arabia"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:moscow",
+      "name": "Moscow",
+      "short_name": "moscow",
+      "type": "location",
+      "mention_count": 127,
+      "doc_count": 127,
+      "aliases": [
+        "moscow"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:white_house",
+      "name": "White House",
+      "short_name": "white_house",
+      "type": "organization",
+      "mention_count": 125,
+      "doc_count": 125,
+      "aliases": [
+        "white house"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:united_kingdom",
+      "name": "United Kingdom",
+      "short_name": "united_kingdom",
+      "type": "location",
+      "mention_count": 125,
+      "doc_count": 125,
+      "aliases": [
+        "united kingdom"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:egypt",
+      "name": "Egypt",
+      "short_name": "egypt",
+      "type": "location",
+      "mention_count": 125,
+      "doc_count": 125,
+      "aliases": [
+        "egypt"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:cassell",
+      "name": "Cassell",
+      "short_name": "cassell",
+      "type": "person",
+      "mention_count": 124,
+      "doc_count": 124,
+      "aliases": [
+        "cassell",
+        "cassellp",
+        "mr. cassell",
+        "mr. cassell"
+      ],
+      "roles": [
+        "former federal judge",
+        "Attorney",
+        "one of the plaintiffs"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:washington",
+      "name": "Washington",
+      "short_name": "washington",
+      "type": "location",
+      "mention_count": 124,
+      "doc_count": 124,
+      "aliases": [
+        "washington"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:palm_beach_police_department",
+      "name": "Palm Beach Police Department",
+      "short_name": "palm_beach_police_department",
+      "type": "organization",
+      "mention_count": 123,
+      "doc_count": 123,
+      "aliases": [
+        "palm beach police department"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:america",
+      "name": "America",
+      "short_name": "america",
+      "type": "person",
+      "mention_count": 121,
+      "doc_count": 121,
+      "aliases": [
+        "america",
+        "americans",
+        "american",
+        "the american"
+      ],
+      "roles": [
+        "citizens",
+        "Relied on Medicare and Medicaid",
+        "ordinary"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:thomas_jr,_landon",
+      "name": "Thomas Jr., Landon",
+      "short_name": "landon",
+      "type": "person",
+      "mention_count": 119,
+      "doc_count": 119,
+      "aliases": [
+        "thomas jr., landon",
+        "thomas jr., landon i",
+        "thomas jr., landon'",
+        "thomas jr., landon po"
+      ],
+      "roles": [
+        "Email sender",
+        "Recipient of email",
+        "Unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:brad",
+      "name": "Brad",
+      "short_name": "brad",
+      "type": "person",
+      "mention_count": 118,
+      "doc_count": 118,
+      "aliases": [
+        "brad",
+        "bradl",
+        "the brads",
+        "bradl"
+      ],
+      "roles": [
+        "Finance department",
+        "not mentioned",
+        "can attest"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:barack_obama",
+      "name": "Barack Obama",
+      "short_name": "obama",
+      "type": "person",
+      "mention_count": 117,
+      "doc_count": 117,
+      "aliases": [
+        "barack obama",
+        "barak obama"
+      ],
+      "roles": [
+        "referenced",
+        "recipient of the Peace Prize award",
+        "author, politician"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:virgin_islands",
+      "name": "Virgin Islands",
+      "short_name": "virgin_islands",
+      "type": "location",
+      "mention_count": 117,
+      "doc_count": 117,
+      "aliases": [
+        "virgin islands"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:uk",
+      "name": "UK",
+      "short_name": "uk",
+      "type": "location",
+      "mention_count": 116,
+      "doc_count": 116,
+      "aliases": [
+        "uk"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bibi",
+      "name": "Bibi",
+      "short_name": "bibi",
+      "type": "person",
+      "mention_count": 115,
+      "doc_count": 115,
+      "aliases": [
+        "bibi",
+        "bibi"
+      ],
+      "roles": [
+        "radioed us",
+        "spent youth in America",
+        "politician"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mr_scarola",
+      "name": "MR. SCAROLA",
+      "short_name": "scarola",
+      "type": "person",
+      "mention_count": 115,
+      "doc_count": 115,
+      "aliases": [
+        "mr. scarola",
+        "mr. scarola",
+        "scarola",
+        "scarola"
+      ],
+      "roles": [
+        "Attorney",
+        "deponent",
+        "Interviewer"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:usa_inc",
+      "name": "USA Inc.",
+      "short_name": "usa_inc.",
+      "type": "organization",
+      "mention_count": 115,
+      "doc_count": 115,
+      "aliases": [
+        "usa inc."
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:iran",
+      "name": "Iran",
+      "short_name": "iran",
+      "type": "location",
+      "mention_count": 115,
+      "doc_count": 115,
+      "aliases": [
+        "iran"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "mention_count": 113,
+      "doc_count": 113,
+      "aliases": [
+        "paris"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:japan",
+      "name": "Japan",
+      "short_name": "japan",
+      "type": "location",
+      "mention_count": 112,
+      "doc_count": 112,
+      "aliases": [
+        "japan"
+      ],
+      "is_key_player": false
     },
     {
       "id": "person:ghislaine",
       "name": "Ghislaine",
       "short_name": "ghislaine",
       "type": "person",
-      "doc_count": 265,
+      "mention_count": 110,
+      "doc_count": 110,
       "aliases": [
-        "ghislaine"
+        "ghislaine",
+        "ghislane",
+        "ghislaine",
+        "ghislai"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "roles": [
+        "Associate of Epstein",
+        "Recipient of email",
+        "Epstein's friend"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "person:alfredo",
-      "name": "Alfredo",
-      "short_name": "alfredo",
-      "type": "person",
-      "doc_count": 265,
-      "aliases": [
-        "alfredo"
-      ],
-      "is_key_player": false,
-      "viz_file": null
-    },
-    {
-      "id": "person:nadia",
-      "name": "Nadia",
-      "short_name": "nadia",
-      "type": "person",
-      "doc_count": 194,
-      "aliases": [
-        "nadia"
-      ],
-      "is_key_player": false,
-      "viz_file": null
-    },
-    {
-      "id": "person:rodriguez",
-      "name": "Rodriguez",
-      "short_name": "rodriguez",
-      "type": "person",
-      "doc_count": 170,
-      "aliases": [
-        "rodriguez"
-      ],
-      "is_key_player": false,
-      "viz_file": null
-    },
-    {
-      "id": "location:zorro ranch",
-      "name": "Zorro Ranch",
-      "short_name": "zorro ranch",
+      "id": "location:usa",
+      "name": "USA",
+      "short_name": "usa",
       "type": "location",
-      "doc_count": 160,
+      "mention_count": 109,
+      "doc_count": 109,
       "aliases": [
-        "zorro ranch"
+        "usa"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "is_key_player": false
     },
     {
-      "id": "person:leon",
-      "name": "Leon",
-      "short_name": "leon",
+      "id": "person:iran",
+      "name": "Iran",
+      "short_name": "iran",
       "type": "person",
-      "doc_count": 101,
+      "mention_count": 108,
+      "doc_count": 108,
       "aliases": [
-        "leon"
+        "iran",
+        "ira",
+        "ira"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "roles": [
+        "victim of attack",
+        "Nation",
+        "soldier"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "location:virgin islands",
-      "name": "Virgin Islands",
-      "short_name": "virgin islands",
-      "type": "location",
-      "doc_count": 74,
+      "id": "person:thomas_jr",
+      "name": "Thomas Jr.",
+      "short_name": "jr.",
+      "type": "person",
+      "mention_count": 108,
+      "doc_count": 108,
       "aliases": [
-        "virgin islands"
+        "thomas jr.",
+        "thomas j"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "roles": [
+        "ex",
+        "Email sender",
+        "recipient"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "location:new mexico",
-      "name": "New Mexico",
-      "short_name": "new mexico",
-      "type": "location",
-      "doc_count": 72,
+      "id": "person:rabin",
+      "name": "Rabin",
+      "short_name": "rabin",
+      "type": "person",
+      "mention_count": 108,
+      "doc_count": 108,
       "aliases": [
-        "new mexico"
+        "rabin"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "roles": [
+        "referenced",
+        "Recently elevated chief-of-staff",
+        "approved the operation"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:germany",
+      "name": "Germany",
+      "short_name": "germany",
+      "type": "location",
+      "mention_count": 108,
+      "doc_count": 108,
+      "aliases": [
+        "germany"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:nsa",
+      "name": "NSA",
+      "short_name": "nsa",
+      "type": "person",
+      "mention_count": 107,
+      "doc_count": 107,
+      "aliases": [
+        "nsa",
+        "the nsa"
+      ],
+      "roles": [
+        "organization that would invite him to join",
+        "cyber security agency",
+        "source"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:france",
+      "name": "France",
+      "short_name": "france",
+      "type": "location",
+      "mention_count": 107,
+      "doc_count": 107,
+      "aliases": [
+        "france"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:china",
+      "name": "China",
+      "short_name": "china",
+      "type": "organization",
+      "mention_count": 106,
+      "doc_count": 106,
+      "aliases": [
+        "china"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:palestinians",
+      "name": "Palestinians",
+      "short_name": "palestinians",
+      "type": "person",
+      "mention_count": 105,
+      "doc_count": 105,
+      "aliases": [
+        "palestinians",
+        "palestinian",
+        "the palestinians",
+        "palestinian side"
+      ],
+      "roles": [
+        "ethnicity/nationality",
+        "party in search for peace",
+        "Autonomy sought by"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:israel",
+      "name": "Israel",
+      "short_name": "israel",
+      "type": "organization",
+      "mention_count": 104,
+      "doc_count": 104,
+      "aliases": [
+        "israel"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:us",
+      "name": "U.S.",
+      "short_name": "u.s.",
+      "type": "person",
+      "mention_count": 103,
+      "doc_count": 103,
+      "aliases": [
+        "u.s.",
+        "the u.s.",
+        "the u.s.",
+        "u.s"
+      ],
+      "roles": [
+        "unspecified",
+        "law criminalizes disclosure of communications intelligence",
+        "country North Korea is speaking about"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "mention_count": 102,
+      "doc_count": 102,
+      "aliases": [
+        "maxwell",
+        "ms. maxwel",
+        "ms. maxwell"
+      ],
+      "roles": [
+        "deposed",
+        "youngest and most favored child",
+        "deponent"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:lesley_groff",
+      "name": "Lesley Groff",
+      "short_name": "groff",
+      "type": "person",
+      "mention_count": 100,
+      "doc_count": 100,
+      "aliases": [
+        "lesley groff",
+        "lesley groft",
+        "lesley grof"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Epstein's assistant",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:west_bank",
+      "name": "West Bank",
+      "short_name": "west_bank",
+      "type": "location",
+      "mention_count": 100,
+      "doc_count": 100,
+      "aliases": [
+        "west bank"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:boris_nikolic",
+      "name": "Boris Nikolic",
+      "short_name": "nikolic",
+      "type": "person",
+      "mention_count": 99,
+      "doc_count": 99,
+      "aliases": [
+        "boris nikolic",
+        "boris niko",
+        "boris niko/ic",
+        "boris niko i"
+      ],
+      "roles": [
+        "Email sender",
+        "Recipient of email",
+        "recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:australia",
+      "name": "Australia",
+      "short_name": "australia",
+      "type": "location",
+      "mention_count": 99,
+      "doc_count": 99,
+      "aliases": [
+        "australia"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:harvard",
+      "name": "Harvard",
+      "short_name": "harvard",
+      "type": "organization",
+      "mention_count": 97,
+      "doc_count": 97,
+      "aliases": [
+        "harvard"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:middle_east",
+      "name": "Middle East",
+      "short_name": "middle_east",
+      "type": "location",
+      "mention_count": 96,
+      "doc_count": 96,
+      "aliases": [
+        "middle east"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:russia",
+      "name": "Russia",
+      "short_name": "russia",
+      "type": "person",
+      "mention_count": 94,
+      "doc_count": 94,
+      "aliases": [
+        "russia",
+        "the russians",
+        "russians",
+        "the russians"
+      ],
+      "roles": [
+        "superpower and a big country",
+        "parties fielding overtures and proposals",
+        "authoritarian power"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:arizona_state_university",
+      "name": "Arizona State University",
+      "short_name": "arizona_state_university",
+      "type": "organization",
+      "mention_count": 93,
+      "doc_count": 93,
+      "aliases": [
+        "arizona state university"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:landon_thomas,_jr",
+      "name": "Landon Thomas, Jr.",
+      "short_name": "jr.",
+      "type": "person",
+      "mention_count": 92,
+      "doc_count": 92,
+      "aliases": [
+        "landon thomas, jr.",
+        "landon thomas jr.",
+        "landon thomas jr",
+        "lando thomas jr."
+      ],
+      "roles": [
+        "writer of a profile on Jeffrey Epstein",
+        "email sender",
+        "sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bofa_merrill_lynch",
+      "name": "BofA Merrill Lynch",
+      "short_name": "lynch",
+      "type": "person",
+      "mention_count": 92,
+      "doc_count": 92,
+      "aliases": [
+        "bofa merrill lynch"
+      ],
+      "roles": [
+        "investment bank",
+        "entity taking responsibility",
+        "publisher"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:jerusalem",
+      "name": "Jerusalem",
+      "short_name": "jerusalem",
+      "type": "location",
+      "mention_count": 92,
+      "doc_count": 92,
+      "aliases": [
+        "jerusalem"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:reid_weingarten",
+      "name": "Reid Weingarten",
+      "short_name": "weingarten",
+      "type": "person",
+      "mention_count": 90,
+      "doc_count": 90,
+      "aliases": [
+        "reid weingarten",
+        "reid as weingarten",
+        "reid weingarten",
+        "reid i weingarten"
+      ],
+      "roles": [
+        "reviewer of MSNBC",
+        "White Collar Titan",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:google",
+      "name": "Google",
+      "short_name": "google",
+      "type": "organization",
+      "mention_count": 90,
+      "doc_count": 90,
+      "aliases": [
+        "google"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:washington,_dc",
+      "name": "Washington, DC",
+      "short_name": "washington,_dc",
+      "type": "location",
+      "mention_count": 90,
+      "doc_count": 90,
+      "aliases": [
+        "washington, dc"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:mar-a-lago",
+      "name": "Mar-a-Lago",
+      "short_name": "mar-a-lago",
+      "type": "location",
+      "mention_count": 90,
+      "doc_count": 90,
+      "aliases": [
+        "mar-a-lago"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:us",
+      "name": "US",
+      "short_name": "us",
+      "type": "organization",
+      "mention_count": 88,
+      "doc_count": 88,
+      "aliases": [
+        "us"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:paul_krassner",
+      "name": "paul krassner",
+      "short_name": "krassner",
+      "type": "person",
+      "mention_count": 87,
+      "doc_count": 87,
+      "aliases": [
+        "paul krassner",
+        "paul krassner",
+        "paul krassner ii",
+        "paul krassne"
+      ],
+      "roles": [
+        "email sender",
+        "publisher of The Realist",
+        "Forwarded the email"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:washington_post",
+      "name": "Washington Post",
+      "short_name": "washington_post",
+      "type": "organization",
+      "mention_count": 87,
+      "doc_count": 87,
+      "aliases": [
+        "washington post"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:us",
+      "name": "U.S.",
+      "short_name": "u.s.",
+      "type": "organization",
+      "mention_count": 87,
+      "doc_count": 87,
+      "aliases": [
+        "u.s."
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:ubs",
+      "name": "UBS",
+      "short_name": "ubs",
+      "type": "organization",
+      "mention_count": 87,
+      "doc_count": 87,
+      "aliases": [
+        "ubs"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:lebanon",
+      "name": "Lebanon",
+      "short_name": "lebanon",
+      "type": "location",
+      "mention_count": 87,
+      "doc_count": 87,
+      "aliases": [
+        "lebanon"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:leslie_wexner",
+      "name": "Leslie Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "mention_count": 86,
+      "doc_count": 86,
+      "aliases": [
+        "leslie wexner",
+        "leslie h. wexner",
+        "leslie wex",
+        "les wexner"
+      ],
+      "roles": [
+        "CEO of The Limited",
+        "Business Associate",
+        "chairman of Limited Brands"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:usa_inc",
+      "name": "USA Inc.",
+      "short_name": "inc.",
+      "type": "person",
+      "mention_count": 85,
+      "doc_count": 85,
+      "aliases": [
+        "usa inc.",
+        "usa ine.",
+        "usa ing"
+      ],
+      "roles": [
+        "subject of document",
+        "subject of discussion",
+        "business entity"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:congress",
+      "name": "Congress",
+      "short_name": "congress",
+      "type": "person",
+      "mention_count": 85,
+      "doc_count": 85,
+      "aliases": [
+        "congress",
+        "congress"
+      ],
+      "roles": [
+        "entity to lobby",
+        "intended to include victims",
+        "member of"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:larry_visoski",
+      "name": "Larry Visoski",
+      "short_name": "visoski",
+      "type": "person",
+      "mention_count": 85,
+      "doc_count": 85,
+      "aliases": [
+        "larry visoski",
+        "larry visoski me",
+        "larry visoskii",
+        "larry visosky"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Email sender",
+        "recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:canada",
+      "name": "Canada",
+      "short_name": "canada",
+      "type": "location",
+      "mention_count": 85,
+      "doc_count": 85,
+      "aliases": [
+        "canada"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:the_guardian",
+      "name": "The Guardian",
+      "short_name": "the_guardian",
+      "type": "organization",
+      "mention_count": 84,
+      "doc_count": 84,
+      "aliases": [
+        "the guardian"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:jp_morgan",
+      "name": "J.P. Morgan",
+      "short_name": "j.p._morgan",
+      "type": "organization",
+      "mention_count": 81,
+      "doc_count": 81,
+      "aliases": [
+        "j.p. morgan"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:melanie_spinella",
+      "name": "Melanie Spinella",
+      "short_name": "spinella",
+      "type": "person",
+      "mention_count": 80,
+      "doc_count": 80,
+      "aliases": [
+        "melanie spinella",
+        "melanie spinclla",
+        "melanie spine",
+        "melanie spina"
+      ],
+      "roles": [
+        "Email sender",
+        "recipient",
+        "Email recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:hillary_clinton",
+      "name": "Hillary Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "mention_count": 80,
+      "doc_count": 80,
+      "aliases": [
+        "hillary clinton",
+        "hilary clinton"
+      ],
+      "roles": [
+        "politician",
+        "Senate bid",
+        "supporter"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "location:turkey",
+      "name": "Turkey",
+      "short_name": "turkey",
+      "type": "location",
+      "mention_count": 80,
+      "doc_count": 80,
+      "aliases": [
+        "turkey"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jp_morgan",
+      "name": "J.P Morgan",
+      "short_name": "morgan",
+      "type": "person",
+      "mention_count": 79,
+      "doc_count": 79,
+      "aliases": [
+        "j.p morgan",
+        "j.p. morgan"
+      ],
+      "roles": [
+        "Author of document",
+        "Representative",
+        "investment manager"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:new_york,_ny",
+      "name": "New York, NY",
+      "short_name": "new_york,_ny",
+      "type": "location",
+      "mention_count": 79,
+      "doc_count": 79,
+      "aliases": [
+        "new york, ny"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:lisa_new",
+      "name": "Lisa New",
+      "short_name": "new",
+      "type": "person",
+      "mention_count": 78,
+      "doc_count": 78,
+      "aliases": [
+        "lisa new",
+        "lisa ne",
+        "lisa new a",
+        "lisa nw"
+      ],
+      "roles": [
+        "Email sender",
+        "Sender of forwarded email",
+        "Harvard Professor"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:sec",
+      "name": "SEC",
+      "short_name": "sec",
+      "type": "organization",
+      "mention_count": 78,
+      "doc_count": 78,
+      "aliases": [
+        "sec"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:california",
+      "name": "California",
+      "short_name": "california",
+      "type": "location",
+      "mention_count": 78,
+      "doc_count": 78,
+      "aliases": [
+        "california"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bill_gates",
+      "name": "Bill Gates",
+      "short_name": "gates",
+      "type": "person",
+      "mention_count": 77,
+      "doc_count": 77,
+      "aliases": [
+        "bill gates"
+      ],
+      "roles": [
+        "Acquaintance of Epstein",
+        "prodding Epstein to begin a process of public rehabilitation",
+        "not included in the prize committee"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "organization:congress",
+      "name": "Congress",
+      "short_name": "congress",
+      "type": "organization",
+      "mention_count": 75,
+      "doc_count": 75,
+      "aliases": [
+        "congress"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:n/a",
+      "name": "N/A",
+      "short_name": "n/a",
+      "type": "location",
+      "mention_count": 75,
+      "doc_count": 75,
+      "aliases": [
+        "n/a"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:gaza",
+      "name": "Gaza",
+      "short_name": "gaza",
+      "type": "location",
+      "mention_count": 75,
+      "doc_count": 75,
+      "aliases": [
+        "gaza"
+      ],
+      "is_key_player": false
     },
     {
       "id": "location:manhattan",
       "name": "Manhattan",
       "short_name": "manhattan",
       "type": "location",
-      "doc_count": 28,
+      "mention_count": 75,
+      "doc_count": 75,
       "aliases": [
         "manhattan"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "is_key_player": false
     },
     {
-      "id": "person:roberts",
-      "name": "Roberts",
-      "short_name": "roberts",
+      "id": "person:mr_simpson",
+      "name": "MR. SIMPSON",
+      "short_name": "simpson",
       "type": "person",
-      "doc_count": 24,
+      "mention_count": 73,
+      "doc_count": 73,
       "aliases": [
-        "roberts"
+        "mr. simpson",
+        "mr. simpson",
+        "simpson",
+        "simpson"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "roles": [
+        "Attorney",
+        "Interviewer",
+        "Interlocutor"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "person:glenn",
-      "name": "Glenn",
-      "short_name": "glenn",
-      "type": "person",
-      "doc_count": 8,
+      "id": "organization:fund",
+      "name": "Fund",
+      "short_name": "fund",
+      "type": "organization",
+      "mention_count": 73,
+      "doc_count": 73,
       "aliases": [
-        "glenn"
+        "fund"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "is_key_player": false
     },
     {
-      "id": "person:dubin",
-      "name": "Dubin",
-      "short_name": "dubin",
-      "type": "person",
-      "doc_count": 7,
+      "id": "organization:harvard_university",
+      "name": "Harvard University",
+      "short_name": "harvard_university",
+      "type": "organization",
+      "mention_count": 73,
+      "doc_count": 73,
       "aliases": [
-        "dubin"
+        "harvard university"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "is_key_player": false
     },
     {
-      "id": "person:mitchell",
-      "name": "Mitchell",
-      "short_name": "mitchell",
-      "type": "person",
-      "doc_count": 6,
+      "id": "organization:oge",
+      "name": "OGE",
+      "short_name": "oge",
+      "type": "organization",
+      "mention_count": 73,
+      "doc_count": 73,
       "aliases": [
-        "mitchell"
+        "oge"
       ],
-      "is_key_player": false,
-      "viz_file": null
+      "is_key_player": false
     },
     {
-      "id": "person:kellen",
-      "name": "Kellen",
-      "short_name": "kellen",
+      "id": "person:peggy_siegal",
+      "name": "Peggy Siegal",
+      "short_name": "siegal",
       "type": "person",
-      "doc_count": 5,
+      "mention_count": 72,
+      "doc_count": 72,
       "aliases": [
-        "kellen"
+        "peggy siegal",
+        "peggy siegalll",
+        "peggy sicga",
+        "peggy sicgal"
       ],
-      "is_key_player": false,
-      "viz_file": null
-    }
-  ],
-  "total": 30,
-  "key_players": [
-    {
-      "id": "person:epstein",
-      "name": "Jeffrey Epstein",
-      "short_name": "epstein",
-      "type": "person",
-      "doc_count": 619,
-      "aliases": [
-        "epstein",
-        "j. epstein",
-        "jeffrey epstein",
-        "jeffrey"
+      "roles": [
+        "Recipient of email",
+        "sender",
+        "Writer"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/epstein_network.html"
+      "is_key_player": false
     },
     {
-      "id": "person:andrew",
-      "name": "Prince Andrew",
-      "short_name": "andrew",
+      "id": "person:landon",
+      "name": "Landon",
+      "short_name": "landon",
       "type": "person",
-      "doc_count": 317,
+      "mention_count": 71,
+      "doc_count": 71,
       "aliases": [
-        "prince andrew",
-        "andrew",
-        "duke of york"
+        "landon",
+        "lando",
+        "landon a",
+        "landon t"
       ],
-      "is_key_player": true,
-      "viz_file": null
+      "roles": [
+        "Thomas Jr.'s first name",
+        "Part of sender's name",
+        "recipient"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "person:maxwell",
-      "name": "Ghislaine Maxwell",
-      "short_name": "maxwell",
-      "type": "person",
-      "doc_count": 301,
+      "id": "location:dubai",
+      "name": "Dubai",
+      "short_name": "dubai",
+      "type": "location",
+      "mention_count": 71,
+      "doc_count": 71,
       "aliases": [
-        "maxwell",
-        "g. maxwell",
-        "ghislaine maxwell",
-        "ghislaine"
+        "dubai"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/maxwell_network.html"
+      "is_key_player": false
     },
     {
-      "id": "person:clinton",
-      "name": "Bill Clinton",
-      "short_name": "clinton",
+      "id": "person:putin",
+      "name": "Putin",
+      "short_name": "putin",
       "type": "person",
-      "doc_count": 192,
+      "mention_count": 70,
+      "doc_count": 70,
       "aliases": [
-        "bill clinton",
-        "president clinton",
-        "clinton",
-        "bill"
+        "putin",
+        "putin"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/clinton_network.html"
+      "roles": [
+        "referenced",
+        "decorated a television series",
+        "Russian authority"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "person:dershowitz",
-      "name": "Alan Dershowitz",
-      "short_name": "dershowitz",
-      "type": "person",
-      "doc_count": 103,
+      "id": "location:palm_beach_county",
+      "name": "Palm Beach County",
+      "short_name": "palm_beach_county",
+      "type": "location",
+      "mention_count": 70,
+      "doc_count": 70,
       "aliases": [
-        "dershowitz",
-        "alan dershowitz",
-        "alan"
+        "palm beach county"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/dershowitz_network.html"
+      "is_key_player": false
     },
     {
-      "id": "person:wexner",
-      "name": "Les Wexner",
-      "short_name": "wexner",
-      "type": "person",
-      "doc_count": 101,
+      "id": "location:india",
+      "name": "India",
+      "short_name": "india",
+      "type": "location",
+      "mention_count": 70,
+      "doc_count": 70,
       "aliases": [
-        "leslie",
-        "wexner",
-        "les",
-        "les wexner"
+        "india"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/wexner_network.html"
+      "is_key_player": false
     },
     {
-      "id": "person:virginia",
-      "name": "Virginia Giuffre",
-      "short_name": "virginia",
+      "id": "person:robert_lawrence_kuhn",
+      "name": "Robert Lawrence Kuhn",
+      "short_name": "kuhn",
       "type": "person",
-      "doc_count": 94,
+      "mention_count": 69,
+      "doc_count": 69,
       "aliases": [
-        "giuffre",
-        "roberts",
-        "virginia giuffre",
-        "virginia"
+        "robert lawrence kuhn",
+        "robert lawrence kuhn iii",
+        "robert lawrence kuhn"
       ],
-      "is_key_player": true,
-      "viz_file": null
+      "roles": [
+        "Recipient of email",
+        "advisor to the Chinese government and author",
+        "Interviewer"
+      ],
+      "is_key_player": false
     },
     {
-      "id": "person:trump",
-      "name": "Donald Trump",
+      "id": "location:iraq",
+      "name": "Iraq",
+      "short_name": "iraq",
+      "type": "location",
+      "mention_count": 69,
+      "doc_count": 69,
+      "aliases": [
+        "iraq"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:italy",
+      "name": "Italy",
+      "short_name": "italy",
+      "type": "location",
+      "mention_count": 69,
+      "doc_count": 69,
+      "aliases": [
+        "italy"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:eu",
+      "name": "EU",
+      "short_name": "eu",
+      "type": "organization",
+      "mention_count": 68,
+      "doc_count": 68,
+      "aliases": [
+        "eu"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:merrill_lynch",
+      "name": "Merrill Lynch",
+      "short_name": "lynch",
+      "type": "person",
+      "mention_count": 67,
+      "doc_count": 67,
+      "aliases": [
+        "merrill lynch",
+        "merrill ly"
+      ],
+      "roles": [
+        "Subject entity",
+        "not responsible for terms and privacy policies",
+        "financial firm"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:cvra",
+      "name": "CVRA",
+      "short_name": "cvra",
+      "type": "organization",
+      "mention_count": 67,
+      "doc_count": 67,
+      "aliases": [
+        "cvra"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:steven_hoffenberg",
+      "name": "Steven Hoffenberg",
+      "short_name": "hoffenberg",
+      "type": "person",
+      "mention_count": 65,
+      "doc_count": 65,
+      "aliases": [
+        "steven hoffenberg",
+        "steven hoffenberg",
+        "steven hoffenber",
+        "steven hoffenbergw"
+      ],
+      "roles": [
+        "claimed to be Epstein's mentor",
+        "Ponzi scheme operator",
+        "TOWERS VICTIMS"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:brad_edwards",
+      "name": "Brad Edwards",
+      "short_name": "edwards",
+      "type": "person",
+      "mention_count": 65,
+      "doc_count": 65,
+      "aliases": [
+        "brad edwards",
+        "brad edwards",
+        "brad edward",
+        "bradley edwards"
+      ],
+      "roles": [
+        "responded to email",
+        "Attorney",
+        "Florida lawyer"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:god",
+      "name": "God",
+      "short_name": "god",
+      "type": "person",
+      "mention_count": 65,
+      "doc_count": 65,
+      "aliases": [
+        "god",
+        "god"
+      ],
+      "roles": [
+        "creator of the world",
+        "an Invisible Force",
+        "subject mentioned"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:kirkland_&_ellis_llp",
+      "name": "KIRKLAND & ELLIS LLP",
+      "short_name": "kirkland_&_ellis_llp",
+      "type": "organization",
+      "mention_count": 65,
+      "doc_count": 65,
+      "aliases": [
+        "kirkland & ellis llp"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:cnn",
+      "name": "CNN",
+      "short_name": "cnn",
+      "type": "organization",
+      "mention_count": 65,
+      "doc_count": 65,
+      "aliases": [
+        "cnn"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:white_house",
+      "name": "White House",
+      "short_name": "white_house",
+      "type": "location",
+      "mention_count": 65,
+      "doc_count": 65,
+      "aliases": [
+        "white house"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:0510",
+      "name": "0510",
+      "short_name": "0510",
+      "type": "location",
+      "mention_count": 65,
+      "doc_count": 65,
+      "aliases": [
+        "0510"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:palestine",
+      "name": "Palestine",
+      "short_name": "palestine",
+      "type": "location",
+      "mention_count": 64,
+      "doc_count": 64,
+      "aliases": [
+        "palestine"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:chicago",
+      "name": "Chicago",
+      "short_name": "chicago",
+      "type": "location",
+      "mention_count": 64,
+      "doc_count": 64,
+      "aliases": [
+        "chicago"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:fbi",
+      "name": "FBI",
+      "short_name": "fbi",
+      "type": "person",
+      "mention_count": 63,
+      "doc_count": 63,
+      "aliases": [
+        "fbi",
+        "the fbi"
+      ],
+      "roles": [
+        "owner of the document",
+        "processed documents in other cases",
+        "FBI"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:paul_cassell",
+      "name": "Paul Cassell",
+      "short_name": "cassell",
+      "type": "person",
+      "mention_count": 62,
+      "doc_count": 62,
+      "aliases": [
+        "paul cassell",
+        "paul g. cassell",
+        "paul g. cassell",
+        "professor paul cassell"
+      ],
+      "roles": [
+        "former federal judge",
+        "responding to requests for information",
+        "Victim's advocate"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:hillary",
+      "name": "Hillary",
+      "short_name": "hillary",
+      "type": "person",
+      "mention_count": 62,
+      "doc_count": 62,
+      "aliases": [
+        "hillary",
+        "hillary",
+        "hilary",
+        "hillery"
+      ],
+      "roles": [
+        "politician",
+        "loves Kathy",
+        "former president"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:sultan_bin_sulayem",
+      "name": "Sultan Bin Sulayem",
+      "short_name": "sulayem",
+      "type": "person",
+      "mention_count": 62,
+      "doc_count": 62,
+      "aliases": [
+        "sultan bin sulayem",
+        "sultan bin sulayer",
+        "sultan bin sulayerr",
+        "sultan bin sulayern"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Subject",
+        "recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:hamas",
+      "name": "Hamas",
+      "short_name": "hamas",
+      "type": "organization",
+      "mention_count": 62,
+      "doc_count": 62,
+      "aliases": [
+        "hamas"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:sinai",
+      "name": "Sinai",
+      "short_name": "sinai",
+      "type": "location",
+      "mention_count": 62,
+      "doc_count": 62,
+      "aliases": [
+        "sinai"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:investors",
+      "name": "Investors",
+      "short_name": "investors",
+      "type": "person",
+      "mention_count": 61,
+      "doc_count": 61,
+      "aliases": [
+        "investors",
+        "the investor",
+        "investor",
+        "the investors"
+      ],
+      "roles": [
+        "people who own Units",
+        "looking for downside protection",
+        "appointed by the Investors"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:cowen",
+      "name": "COWEN",
+      "short_name": "cowen",
+      "type": "organization",
+      "mention_count": 61,
+      "doc_count": 61,
+      "aliases": [
+        "cowen"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:michael",
+      "name": "Michael",
+      "short_name": "michael",
+      "type": "person",
+      "mention_count": 60,
+      "doc_count": 60,
+      "aliases": [
+        "michael",
+        "michael r.",
+        "michele",
+        "michele"
+      ],
+      "roles": [
+        "Interviewer",
+        "barber",
+        "Almost two year old son"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:the_court",
+      "name": "the court",
+      "short_name": "court",
+      "type": "person",
+      "mention_count": 60,
+      "doc_count": 60,
+      "aliases": [
+        "the court",
+        "the court",
+        "the court",
+        "the court"
+      ],
+      "roles": [
+        "decision-making body",
+        "authority",
+        "judge"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:xi",
+      "name": "Xi",
+      "short_name": "xi",
+      "type": "person",
+      "mention_count": 60,
+      "doc_count": 60,
+      "aliases": [
+        "xi",
+        "xi",
+        "mr. xi"
+      ],
+      "roles": [
+        "General Secretary of the Chinese Communist Party",
+        "person",
+        "President of China"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:uyor",
+      "name": "uyor",
+      "short_name": "uyor",
+      "type": "person",
+      "mention_count": 60,
+      "doc_count": 60,
+      "aliases": [
+        "uyor"
+      ],
+      "roles": [
+        "unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:united_nations",
+      "name": "United Nations",
+      "short_name": "united_nations",
+      "type": "organization",
+      "mention_count": 60,
+      "doc_count": 60,
+      "aliases": [
+        "united nations"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:brazil",
+      "name": "Brazil",
+      "short_name": "brazil",
+      "type": "location",
+      "mention_count": 60,
+      "doc_count": 60,
+      "aliases": [
+        "brazil"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jack_goldberger",
+      "name": "Jack Goldberger",
+      "short_name": "goldberger",
+      "type": "person",
+      "mention_count": 59,
+      "doc_count": 59,
+      "aliases": [
+        "jack goldberger",
+        "jack a. goldberger",
+        "jack goldberger",
+        "jack a. goldbergber"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Attorney",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:us_virgin_islands",
+      "name": "U.S. Virgin Islands",
+      "short_name": "u.s._virgin_islands",
+      "type": "location",
+      "mention_count": 59,
+      "doc_count": 59,
+      "aliases": [
+        "u.s. virgin islands"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:singapore",
+      "name": "Singapore",
+      "short_name": "singapore",
+      "type": "location",
+      "mention_count": 59,
+      "doc_count": 59,
+      "aliases": [
+        "singapore"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:david_schoen",
+      "name": "DAVID SCHOEN",
+      "short_name": "schoen",
+      "type": "person",
+      "mention_count": 58,
+      "doc_count": 58,
+      "aliases": [
+        "david schoen",
+        "david schoen",
+        "david i. schoen"
+      ],
+      "roles": [
+        "Unknown",
+        "Not specified",
+        "recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bradley",
+      "name": "Bradley",
+      "short_name": "bradley",
+      "type": "person",
+      "mention_count": 58,
+      "doc_count": 58,
+      "aliases": [
+        "bradley",
+        "bradley",
+        "bradley e",
+        "bradley j."
+      ],
+      "roles": [
+        "Unknown",
+        "plaintiff",
+        "son of Gloria Cooper"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:norbert_wiener",
+      "name": "Norbert Wiener",
+      "short_name": "wiener",
+      "type": "person",
+      "mention_count": 58,
+      "doc_count": 58,
+      "aliases": [
+        "norbert wiener"
+      ],
+      "roles": [
+        "referenced",
+        "Scientist",
+        "cybernetics theorist"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:kue",
+      "name": "KUE",
+      "short_name": "kue",
+      "type": "person",
+      "mention_count": 58,
+      "doc_count": 58,
+      "aliases": [
+        "kue"
+      ],
+      "roles": [
+        "investment company",
+        "subsidiary",
+        "partner"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:palm_beach_towers_condo",
+      "name": "PALM BEACH TOWERS CONDO",
+      "short_name": "palm_beach_towers_condo",
+      "type": "organization",
+      "mention_count": 58,
+      "doc_count": 58,
+      "aliases": [
+        "palm beach towers condo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:tel_aviv",
+      "name": "Tel Aviv",
+      "short_name": "tel_aviv",
+      "type": "location",
+      "mention_count": 58,
+      "doc_count": 58,
+      "aliases": [
+        "tel aviv"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:america",
+      "name": "America",
+      "short_name": "america",
+      "type": "location",
+      "mention_count": 58,
+      "doc_count": 58,
+      "aliases": [
+        "america"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:president_trump",
+      "name": "President Trump",
       "short_name": "trump",
       "type": "person",
-      "doc_count": 8,
+      "mention_count": 57,
+      "doc_count": 57,
       "aliases": [
-        "trump",
-        "donald trump",
-        "donald"
+        "president trump",
+        "president trum",
+        "president trump",
+        "president trump"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/trump_network.html"
+      "roles": [
+        "President",
+        "witness",
+        "Supreme Court nominee"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:cogprime",
+      "name": "CogPrime",
+      "short_name": "cogprime",
+      "type": "person",
+      "mention_count": 57,
+      "doc_count": 57,
+      "aliases": [
+        "cogprime"
+      ],
+      "roles": [
+        "software/AI system",
+        "AGI architecture",
+        "explicit knowledge representation"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:employees",
+      "name": "employees",
+      "short_name": "employees",
+      "type": "person",
+      "mention_count": 57,
+      "doc_count": 57,
+      "aliases": [
+        "employees",
+        "employee",
+        "employers",
+        "employers"
+      ],
+      "roles": [
+        "represented by unions",
+        "recipients of prescribed notice",
+        "worker"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:university",
+      "name": "University",
+      "short_name": "university",
+      "type": "organization",
+      "mention_count": 57,
+      "doc_count": 57,
+      "aliases": [
+        "university"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:winthrop_house_condo",
+      "name": "WINTHROP HOUSE CONDO",
+      "short_name": "winthrop_house_condo",
+      "type": "organization",
+      "mention_count": 57,
+      "doc_count": 57,
+      "aliases": [
+        "winthrop house condo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:west_palm_beach",
+      "name": "West Palm Beach",
+      "short_name": "west_palm_beach",
+      "type": "location",
+      "mention_count": 57,
+      "doc_count": 57,
+      "aliases": [
+        "west palm beach"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mr_leopold",
+      "name": "Mr. Leopold",
+      "short_name": "leopold",
+      "type": "person",
+      "mention_count": 56,
+      "doc_count": 56,
+      "aliases": [
+        "mr. leopold",
+        "leopold",
+        "leopold",
+        "leopold"
+      ],
+      "roles": [
+        "Attorney",
+        "person having conversations with",
+        "Counsel"
+      ],
+      "is_key_player": false
     },
     {
       "id": "person:brunel",
-      "name": "Jean-Luc Brunel",
+      "name": "Brunel",
       "short_name": "brunel",
       "type": "person",
-      "doc_count": 6,
+      "mention_count": 56,
+      "doc_count": 56,
       "aliases": [
         "brunel",
-        "jean-luc",
-        "jean-luc brunel"
+        "brune!",
+        "mr. brunel",
+        "mr. brune"
       ],
-      "is_key_player": true,
-      "viz_file": "data/viz/players/brunel_network.html"
+      "roles": [
+        "modeling agency manager",
+        "Modek",
+        "Perpetrator"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:a",
+      "name": "A.",
+      "short_name": "a.",
+      "type": "person",
+      "mention_count": 56,
+      "doc_count": 56,
+      "aliases": [
+        "a.",
+        "ms. a.",
+        "a.",
+        "mr. a"
+      ],
+      "roles": [
+        "responding to a question",
+        "sender",
+        "unspecified"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:microsoft",
+      "name": "Microsoft",
+      "short_name": "microsoft",
+      "type": "organization",
+      "mention_count": 56,
+      "doc_count": 56,
+      "aliases": [
+        "microsoft"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:mlpf&s",
+      "name": "MLPF&S",
+      "short_name": "mlpf&s",
+      "type": "organization",
+      "mention_count": 56,
+      "doc_count": 56,
+      "aliases": [
+        "mlpf&s"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:donald",
+      "name": "Donald",
+      "short_name": "donald",
+      "type": "person",
+      "mention_count": 55,
+      "doc_count": 55,
+      "aliases": [
+        "donald",
+        "donald",
+        "donald j.",
+        "donald m"
+      ],
+      "roles": [
+        "recipient of loan agreement",
+        "Mentioned in email",
+        "subject of discussion"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jean_luc_brunel",
+      "name": "Jean Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "mention_count": 55,
+      "doc_count": 55,
+      "aliases": [
+        "jean luc brunel",
+        "jean luc bruner",
+        "jean-luc brunel",
+        "jean-luc burnel"
+      ],
+      "roles": [
+        "Recipient of email",
+        "founder of the agency",
+        "scout for very young girls"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "organization:kue",
+      "name": "KUE",
+      "short_name": "kue",
+      "type": "organization",
+      "mention_count": 55,
+      "doc_count": 55,
+      "aliases": [
+        "kue"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:mexico",
+      "name": "Mexico",
+      "short_name": "mexico",
+      "type": "location",
+      "mention_count": 55,
+      "doc_count": 55,
+      "aliases": [
+        "mexico"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:st_thomas",
+      "name": "St. Thomas",
+      "short_name": "st._thomas",
+      "type": "location",
+      "mention_count": 55,
+      "doc_count": 55,
+      "aliases": [
+        "st. thomas"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:individuals",
+      "name": "individuals",
+      "short_name": "individuals",
+      "type": "person",
+      "mention_count": 54,
+      "doc_count": 54,
+      "aliases": [
+        "individuals",
+        "individuals",
+        "the individual",
+        "individual"
+      ],
+      "roles": [
+        "person",
+        "cohort",
+        "well-suited"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:us_attorney's_office",
+      "name": "U.S. Attorney's Office",
+      "short_name": "u.s._attorney's_office",
+      "type": "organization",
+      "mention_count": 54,
+      "doc_count": 54,
+      "aliases": [
+        "u.s. attorney's office"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:facebook",
+      "name": "Facebook",
+      "short_name": "facebook",
+      "type": "organization",
+      "mention_count": 54,
+      "doc_count": 54,
+      "aliases": [
+        "facebook"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:switzerland",
+      "name": "Switzerland",
+      "short_name": "switzerland",
+      "type": "location",
+      "mention_count": 54,
+      "doc_count": 54,
+      "aliases": [
+        "switzerland"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:los_angeles",
+      "name": "Los Angeles",
+      "short_name": "los_angeles",
+      "type": "location",
+      "mention_count": 54,
+      "doc_count": 54,
+      "aliases": [
+        "los angeles"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:britain",
+      "name": "Britain",
+      "short_name": "britain",
+      "type": "location",
+      "mention_count": 54,
+      "doc_count": 54,
+      "aliases": [
+        "britain"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:ny",
+      "name": "NY",
+      "short_name": "ny",
+      "type": "location",
+      "mention_count": 54,
+      "doc_count": 54,
+      "aliases": [
+        "ny"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mr_epstein",
+      "name": "Mr Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "mr epstein",
+        "mr epstein"
+      ],
+      "roles": [
+        "involved in sexual encounters with Ms Maxwell and her assistant",
+        "subject of investigation",
+        "naked on massage table"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:assad",
+      "name": "Assad",
+      "short_name": "assad",
+      "type": "person",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "assad",
+        "assads",
+        "the assads"
+      ],
+      "roles": [
+        "referenced",
+        "Troops",
+        "Syrian leader"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mueller",
+      "name": "Mueller",
+      "short_name": "mueller",
+      "type": "person",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "mueller",
+        "mr. mueller",
+        "mueller"
+      ],
+      "roles": [
+        "subject of questions",
+        "Mentioned in email",
+        "Giving statement at 11am"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:goldman_sachs",
+      "name": "Goldman Sachs",
+      "short_name": "goldman_sachs",
+      "type": "organization",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "goldman sachs"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:bloomberg",
+      "name": "Bloomberg",
+      "short_name": "bloomberg",
+      "type": "organization",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "bloomberg"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:al_qaeda",
+      "name": "al Qaeda",
+      "short_name": "al_qaeda",
+      "type": "organization",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "al qaeda"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:ackrell_capital",
+      "name": "ACKRELL CAPITAL",
+      "short_name": "ackrell_capital",
+      "type": "organization",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "ackrell capital"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:arizona",
+      "name": "Arizona",
+      "short_name": "arizona",
+      "type": "location",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "arizona"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:hawaii",
+      "name": "Hawaii",
+      "short_name": "hawaii",
+      "type": "location",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "hawaii"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:syria",
+      "name": "Syria",
+      "short_name": "syria",
+      "type": "person",
+      "mention_count": 52,
+      "doc_count": 52,
+      "aliases": [
+        "syria",
+        "syrian"
+      ],
+      "roles": [
+        "efforts to divert water",
+        "location",
+        "seeking to free themselves from US-Israeli hegemony"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:andrew",
+      "name": "Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "mention_count": 52,
+      "doc_count": 52,
+      "aliases": [
+        "andrew",
+        "andre",
+        "andrew",
+        "andrew d."
+      ],
+      "roles": [
+        "Mentioned in email",
+        "receiving a gift",
+        "romantic partner"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:gmailcom",
+      "name": "gmail.com",
+      "short_name": "gmail.com",
+      "type": "organization",
+      "mention_count": 52,
+      "doc_count": 52,
+      "aliases": [
+        "gmail.com"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mr_tein",
+      "name": "MR. TEIN",
+      "short_name": "tein",
+      "type": "person",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "mr. tein",
+        "tein",
+        "mr. tein"
+      ],
+      "roles": [
+        "Attorney",
+        "Interviewer",
+        "Questioning attorney"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:reiter",
+      "name": "Reiter",
+      "short_name": "reiter",
+      "type": "person",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "reiter"
+      ],
+      "roles": [
+        "deposed",
+        "Detective",
+        "deponent"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:sender",
+      "name": "Sender",
+      "short_name": "sender",
+      "type": "person",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "sender",
+        "the sender",
+        "sender"
+      ],
+      "roles": [
+        "email sender",
+        "Sender of email",
+        "Sender of message"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:washington",
+      "name": "Washington",
+      "short_name": "washington",
+      "type": "person",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "washington",
+        "washington",
+        "ms. washington",
+        "washington dc"
+      ],
+      "roles": [
+        "victim",
+        "location",
+        "internal difficulties in responding to the Iranian challenge"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:hamas",
+      "name": "Hamas",
+      "short_name": "hamas",
+      "type": "person",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "hamas"
+      ],
+      "roles": [
+        "Palestinian Islamist political party",
+        "enclave in Gaza",
+        "organization"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:google",
+      "name": "Google",
+      "short_name": "google",
+      "type": "person",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "google",
+        "googl",
+        "googl",
+        "google"
+      ],
+      "roles": [
+        "provider of chat bot service",
+        "employees",
+        "tokenization library provider"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:deepak_chopra",
+      "name": "Deepak Chopra",
+      "short_name": "chopra",
+      "type": "person",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "deepak chopra",
+        "deepak chopr",
+        "deepak chopra"
+      ],
+      "roles": [
+        "Email sender",
+        "Founder, Deepak Chopra LLC",
+        "professor who studies quantum entanglement in brains"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:al-qaeda",
+      "name": "al-Qaeda",
+      "short_name": "al-qaeda",
+      "type": "organization",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "al-qaeda"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:wall_street_journal",
+      "name": "Wall Street Journal",
+      "short_name": "wall_street_journal",
+      "type": "organization",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "wall street journal"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:africa",
+      "name": "Africa",
+      "short_name": "africa",
+      "type": "location",
+      "mention_count": 51,
+      "doc_count": 51,
+      "aliases": [
+        "africa"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jeff",
+      "name": "Jeff",
+      "short_name": "jeff",
+      "type": "person",
+      "mention_count": 50,
+      "doc_count": 50,
+      "aliases": [
+        "jeff",
+        "jeff",
+        "jeffr",
+        "jef"
+      ],
+      "roles": [
+        "Subject",
+        "Epstein's friend",
+        "Someone she would have to provide a massage to"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jay_lefkowitz",
+      "name": "Jay Lefkowitz",
+      "short_name": "lefkowitz",
+      "type": "person",
+      "mention_count": 50,
+      "doc_count": 50,
+      "aliases": [
+        "jay lefkowitz",
+        "jay p. lefkowitz",
+        "jay p. lefkowitz",
+        "jay lefkowt"
+      ],
+      "roles": [
+        "Author of document",
+        "Attorney",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:president_obama",
+      "name": "President Obama",
+      "short_name": "obama",
+      "type": "person",
+      "mention_count": 50,
+      "doc_count": 50,
+      "aliases": [
+        "president obama"
+      ],
+      "roles": [
+        "President",
+        "appointed",
+        "involved in cover-up"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:morgan_stanley",
+      "name": "Morgan Stanley",
+      "short_name": "morgan_stanley",
+      "type": "organization",
+      "mention_count": 50,
+      "doc_count": 50,
+      "aliases": [
+        "morgan stanley"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:bofa_merrill_lynch_global_research",
+      "name": "BofA Merrill Lynch Global Research",
+      "short_name": "bofa_merrill_lynch_global_research",
+      "type": "organization",
+      "mention_count": 50,
+      "doc_count": 50,
+      "aliases": [
+        "bofa merrill lynch global research"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:vanity_fair",
+      "name": "Vanity Fair",
+      "short_name": "vanity_fair",
+      "type": "organization",
+      "mention_count": 50,
+      "doc_count": 50,
+      "aliases": [
+        "vanity fair"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:the_island",
+      "name": "the island",
+      "short_name": "the_island",
+      "type": "location",
+      "mention_count": 50,
+      "doc_count": 50,
+      "aliases": [
+        "the island"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:arik",
+      "name": "Arik",
+      "short_name": "arik",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "arik",
+        "ari"
+      ],
+      "roles": [
+        "politician",
+        "inner circle in the kirya",
+        "failed to bring down the government"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:the_man",
+      "name": "the man",
+      "short_name": "man",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "the man",
+        "the man",
+        "man",
+        "man"
+      ],
+      "roles": [
+        "Dinner Guest",
+        "person",
+        "public and in politics"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:harvard",
+      "name": "Harvard",
+      "short_name": "harvard",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "harvard",
+        "harvardx"
+      ],
+      "roles": [
+        "Recipient of Donation",
+        "organization",
+        "training program"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:president_clinton",
+      "name": "President Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "president clinton",
+        "president bill clinton"
+      ],
+      "roles": [
+        "guest",
+        "traveled with Jeffrey Epstein",
+        "U.S. President"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:morgan_stanley",
+      "name": "Morgan Stanley",
+      "short_name": "stanley",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "morgan stanley",
+        "morgan stanley"
+      ],
+      "roles": [
+        "financial firm",
+        "institution",
+        "research firm"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bradley_j_edwards",
+      "name": "BRADLEY J. EDWARDS",
+      "short_name": "edwards",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "bradley j. edwards",
+        "bradley i edwards",
+        "bradley james edwards",
+        "bradley j. edwards"
+      ],
+      "roles": [
+        "Attorney",
+        "Co-defendant, explained co-conspirators",
+        "Plaintiff"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:the_witness",
+      "name": "THE WITNESS",
+      "short_name": "witness",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "the witness",
+        "witness",
+        "the witness",
+        "witnesses"
+      ],
+      "roles": [
+        "witness",
+        "Witness",
+        "Unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ee",
+      "name": "ee",
+      "short_name": "ee",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "ee",
+        "ee",
+        "ee"
+      ],
+      "roles": [
+        "Email sender",
+        "recipient",
+        "author/owner"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:acosta",
+      "name": "Acosta",
+      "short_name": "acosta",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "acosta",
+        "mr. acosta"
+      ],
+      "roles": [
+        "his role in Epstein plea deal",
+        "Allowed Epstein to plead guilty to prostitution charges",
+        "outside the Justice Department"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:department_of_justice",
+      "name": "Department of Justice",
+      "short_name": "department_of_justice",
+      "type": "organization",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "department of justice"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mary",
+      "name": "Mary",
+      "short_name": "mary",
+      "type": "person",
+      "mention_count": 48,
+      "doc_count": 48,
+      "aliases": [
+        "mary",
+        "marty",
+        "marty",
+        "mary"
+      ],
+      "roles": [
+        "host",
+        "founder",
+        "owner"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:vladimir_putin",
+      "name": "Vladimir Putin",
+      "short_name": "putin",
+      "type": "person",
+      "mention_count": 48,
+      "doc_count": 48,
+      "aliases": [
+        "vladimir putin",
+        "vladimir putin"
+      ],
+      "roles": [
+        "leader of Russian government",
+        "subject of article",
+        "state capitalist of kleptocracy"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ehud_barak",
+      "name": "Ehud Barak",
+      "short_name": "barak",
+      "type": "person",
+      "mention_count": 48,
+      "doc_count": 48,
+      "aliases": [
+        "ehud barak",
+        "ehud bar",
+        "ehud barakh",
+        "ehud barack"
+      ],
+      "roles": [
+        "had sex with several girls arranged by Ms Maxwell and Mr Epstein",
+        "sender",
+        "Sender of email"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:goldberger",
+      "name": "Goldberger",
+      "short_name": "goldberger",
+      "type": "person",
+      "mention_count": 48,
+      "doc_count": 48,
+      "aliases": [
+        "goldberger",
+        "mr. goldberger",
+        "goldberg",
+        "mr. goldberg"
+      ],
+      "roles": [
+        "Interviewer",
+        "Epstein's lead attorney",
+        "Justice"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:flipboard",
+      "name": "Flipboard",
+      "short_name": "flipboard",
+      "type": "organization",
+      "mention_count": 48,
+      "doc_count": 48,
+      "aliases": [
+        "flipboard"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:south_africa",
+      "name": "South Africa",
+      "short_name": "south_africa",
+      "type": "location",
+      "mention_count": 48,
+      "doc_count": 48,
+      "aliases": [
+        "south africa"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:wolfe_von_lenkiewicz",
+      "name": "Wolfe von Lenkiewicz",
+      "short_name": "lenkiewicz",
+      "type": "person",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "wolfe von lenkiewicz"
+      ],
+      "roles": [
+        "curator",
+        "artist",
+        "Curator"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:my_mother",
+      "name": "my mother",
+      "short_name": "mother",
+      "type": "person",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "my mother",
+        "my mother"
+      ],
+      "roles": [
+        "Hindu",
+        "family member",
+        "N/A"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:kushner",
+      "name": "Kushner",
+      "short_name": "kushner",
+      "type": "person",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "kushner",
+        "kushners",
+        "kushner"
+      ],
+      "roles": [
+        "Kissingerism",
+        "Mentioned",
+        "the two most important figures in the White House"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:doj",
+      "name": "DOJ",
+      "short_name": "doj",
+      "type": "person",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "doj"
+      ],
+      "roles": [
+        "recommends",
+        "law enforcement agency",
+        "Department of Justice"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:glenn_greenwald",
+      "name": "Glenn Greenwald",
+      "short_name": "greenwald",
+      "type": "person",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "glenn greenwald"
+      ],
+      "roles": [
+        "commentator",
+        "activist and journalist",
+        "subject of surveillance"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:medicare",
+      "name": "Medicare",
+      "short_name": "medicare",
+      "type": "organization",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "medicare"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:iran",
+      "name": "Iran",
+      "short_name": "iran",
+      "type": "organization",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "iran"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:the_house",
+      "name": "the house",
+      "short_name": "the_house",
+      "type": "location",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "the house"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:las_vegas",
+      "name": "Las Vegas",
+      "short_name": "las_vegas",
+      "type": "location",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "las vegas"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:5043442307",
+      "name": "5043442307",
+      "short_name": "5043442307",
+      "type": "location",
+      "mention_count": 47,
+      "doc_count": 47,
+      "aliases": [
+        "5043442307"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:al-qaeda",
+      "name": "al-Qaeda",
+      "short_name": "al-qaeda",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "al-qaeda",
+        "al-qaeda",
+        "al-qaida"
+      ],
+      "roles": [
+        "front for charities",
+        "terrorist group",
+        "network"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bill",
+      "name": "Bill",
+      "short_name": "bill",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "bill",
+        "bill",
+        "billy",
+        "bil!"
+      ],
+      "roles": [
+        "person discussed",
+        "squeezing me",
+        "recipient of payments"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:greenwald",
+      "name": "Greenwald",
+      "short_name": "greenwald",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "greenwald"
+      ],
+      "roles": [
+        "speculated",
+        "involved in an acrimonious law suit",
+        "recipient of information from anonymous source"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:victoria_golembiovskaya",
+      "name": "Victoria Golembiovskaya",
+      "short_name": "golembiovskaya",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "victoria golembiovskaya"
+      ],
+      "roles": [
+        "curator",
+        "Curator"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:robert_kuhn",
+      "name": "Robert Kuhn",
+      "short_name": "kuhn",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "robert kuhn",
+        "robert kuh"
+      ],
+      "roles": [
+        "recipient",
+        "email sender",
+        "sender of forwarded email"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:company_a",
+      "name": "Company A",
+      "short_name": "a",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "company a",
+        "company",
+        "company b",
+        "the company"
+      ],
+      "roles": [
+        "may be liable under the FCPA",
+        "project owner",
+        "acquiring company"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ken_starr",
+      "name": "Ken Starr",
+      "short_name": "starr",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "ken starr",
+        "ken starr",
+        "ken star"
+      ],
+      "roles": [
+        "investigated Bill Clinton, later defended Epstein",
+        "email sender",
+        "threatening to the Clinton White House"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:cowen",
+      "name": "COWEN",
+      "short_name": "cowen",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "cowen",
+        "cowen"
+      ],
+      "roles": [
+        "Unknown",
+        "Collaborative Insights publisher",
+        "Collaborative Insights publication"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:s_50-43-44-23-15-000-4170-001",
+      "name": "S 50-43-44-23-15-000-4170-001",
+      "short_name": "50-43-44-23-15-000-4170-001",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "s 50-43-44-23-15-000-4170-001",
+        "s 50-43-44-23-16-000-4130-001",
+        "s 50-43-44-35-15-000-0130-001",
+        "s 50-43-44-23-15-000-2060-001"
+      ],
+      "roles": [
+        "residence",
+        "Property",
+        "person"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:eileen",
+      "name": "Eileen",
+      "short_name": "eileen",
+      "type": "person",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "eileen",
+        "eileen",
+        "eileen j",
+        "eilleen"
+      ],
+      "roles": [
+        "sign authority",
+        "gives instructions to Joslin",
+        "ignored instructions"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:merrill_lynch",
+      "name": "Merrill Lynch",
+      "short_name": "merrill_lynch",
+      "type": "organization",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "merrill lynch"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:boston",
+      "name": "Boston",
+      "short_name": "boston",
+      "type": "location",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "boston"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:0400",
+      "name": "0400",
+      "short_name": "0400",
+      "type": "location",
+      "mention_count": 46,
+      "doc_count": 46,
+      "aliases": [
+        "0400"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:barry",
+      "name": "Barry",
+      "short_name": "barry",
+      "type": "person",
+      "mention_count": 45,
+      "doc_count": 45,
+      "aliases": [
+        "barry",
+        "barr",
+        "barry"
+      ],
+      "roles": [
+        "to find and learn from",
+        "host",
+        "orthodontist"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:xi_jinping",
+      "name": "Xi Jinping",
+      "short_name": "jinping",
+      "type": "person",
+      "mention_count": 45,
+      "doc_count": 45,
+      "aliases": [
+        "xi jinping",
+        "xi jinping"
+      ],
+      "roles": [
+        "President",
+        "undisputed, unimpeded leader with singular authority",
+        "President of China and General Secretary of the Chinese Communist Party"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:saudi_arabia",
+      "name": "Saudi Arabia",
+      "short_name": "arabia",
+      "type": "person",
+      "mention_count": 45,
+      "doc_count": 45,
+      "aliases": [
+        "saudi arabia",
+        "saudi arabia"
+      ],
+      "roles": [
+        "location",
+        "led coalition of Gulf states",
+        "kingdom"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:new_york_post",
+      "name": "New York Post",
+      "short_name": "new_york_post",
+      "type": "organization",
+      "mention_count": 45,
+      "doc_count": 45,
+      "aliases": [
+        "new york post"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:justice_department",
+      "name": "Justice Department",
+      "short_name": "justice_department",
+      "type": "organization",
+      "mention_count": 45,
+      "doc_count": 45,
+      "aliases": [
+        "justice department"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:mit",
+      "name": "MIT",
+      "short_name": "mit",
+      "type": "organization",
+      "mention_count": 45,
+      "doc_count": 45,
+      "aliases": [
+        "mit"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:new_mexico",
+      "name": "New Mexico",
+      "short_name": "new_mexico",
+      "type": "location",
+      "mention_count": 45,
+      "doc_count": 45,
+      "aliases": [
+        "new mexico"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:spain",
+      "name": "Spain",
+      "short_name": "spain",
+      "type": "location",
+      "mention_count": 45,
+      "doc_count": 45,
+      "aliases": [
+        "spain"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:nava",
+      "name": "Nava",
+      "short_name": "nava",
+      "type": "person",
+      "mention_count": 44,
+      "doc_count": 44,
+      "aliases": [
+        "nava",
+        "nav"
+      ],
+      "roles": [
+        "standing there with",
+        "host of the dinner",
+        "Epstein's companion"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:advisory_committee",
+      "name": "Advisory Committee",
+      "short_name": "committee",
+      "type": "person",
+      "mention_count": 44,
+      "doc_count": 44,
+      "aliases": [
+        "advisory committee",
+        "the advisory committee",
+        "the advisory committee"
+      ],
+      "roles": [
+        "decision-making body",
+        "Proposed Rule 60(b)(2)",
+        "committee"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:reuters",
+      "name": "Reuters",
+      "short_name": "reuters",
+      "type": "organization",
+      "mention_count": 44,
+      "doc_count": 44,
+      "aliases": [
+        "reuters"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:us_government",
+      "name": "U.S. government",
+      "short_name": "u.s._government",
+      "type": "organization",
+      "mention_count": 44,
+      "doc_count": 44,
+      "aliases": [
+        "u.s. government"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:beijing",
+      "name": "Beijing",
+      "short_name": "beijing",
+      "type": "location",
+      "mention_count": 44,
+      "doc_count": 44,
+      "aliases": [
+        "beijing"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:sec",
+      "name": "SEC",
+      "short_name": "sec",
+      "type": "person",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "sec",
+        "the sec"
+      ],
+      "roles": [
+        "Securities and Exchange Commission",
+        "investigating agency",
+        "US Securities and Exchange Commission"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ivanka",
+      "name": "Ivanka",
+      "short_name": "ivanka",
+      "type": "person",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "ivanka",
+        "ivanka",
+        "ivana"
+      ],
+      "roles": [
+        "Trump's Daughter",
+        "Trump's daughter",
+        "Daughter of Donald Trump"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:woody",
+      "name": "Woody",
+      "short_name": "woody",
+      "type": "person",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "woody",
+        "wood",
+        "woody"
+      ],
+      "roles": [
+        "guest",
+        "person",
+        "subject of discussion"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ada",
+      "name": "Ada",
+      "short_name": "ada",
+      "type": "person",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "ada",
+        "adam",
+        "adam",
+        "ada"
+      ],
+      "roles": [
+        "at the bank",
+        "person mentioned",
+        "stopped"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:american",
+      "name": "American",
+      "short_name": "american",
+      "type": "organization",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "american"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:sun_&_surf_100_&_130_condo",
+      "name": "SUN & SURF 100 & 130 CONDO",
+      "short_name": "sun_&_surf_100_&_130_condo",
+      "type": "organization",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "sun & surf 100 & 130 condo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:gtx_corp",
+      "name": "GTX Corp",
+      "short_name": "gtx_corp",
+      "type": "organization",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "gtx corp"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:england",
+      "name": "England",
+      "short_name": "england",
+      "type": "location",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "england"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:0400_condo",
+      "name": "0400 CONDO",
+      "short_name": "0400_condo",
+      "type": "location",
+      "mention_count": 43,
+      "doc_count": 43,
+      "aliases": [
+        "0400 condo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:joi_ito",
+      "name": "Joi Ito",
+      "short_name": "ito",
+      "type": "person",
+      "mention_count": 42,
+      "doc_count": 42,
+      "aliases": [
+        "joi ito",
+        "joi to"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Former director of MIT Media Lab",
+        "Email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jessica_cadwell",
+      "name": "Jessica Cadwell",
+      "short_name": "cadwell",
+      "type": "person",
+      "mention_count": 42,
+      "doc_count": 42,
+      "aliases": [
+        "jessica cadwell",
+        "jessica cadwe!",
+        "jessica cadwell po"
+      ],
+      "roles": [
+        "Certified Paralegal, Florida Registered Paralegal",
+        "recipient",
+        "recipient of email"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:sarah_kellen",
+      "name": "Sarah Kellen",
+      "short_name": "kellen",
+      "type": "person",
+      "mention_count": 42,
+      "doc_count": 42,
+      "aliases": [
+        "sarah kellen",
+        "sarah keller"
+      ],
+      "roles": [
+        "Asked about Alan",
+        "Epstein's assistant",
+        "Epstein's assistant, visited Epstein in the Stockade"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:freedom_house",
+      "name": "Freedom House",
+      "short_name": "freedom_house",
+      "type": "organization",
+      "mention_count": 42,
+      "doc_count": 42,
+      "aliases": [
+        "freedom house"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:condo",
+      "name": "CONDO",
+      "short_name": "condo",
+      "type": "location",
+      "mention_count": 42,
+      "doc_count": 42,
+      "aliases": [
+        "condo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:poitras",
+      "name": "Poitras",
+      "short_name": "poitras",
+      "type": "person",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "poitras"
+      ],
+      "roles": [
+        "had requested something",
+        "taken a room at the hotel",
+        "rented a room at the Mira"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bank_of_america",
+      "name": "Bank of America",
+      "short_name": "america",
+      "type": "person",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "bank of america",
+        "bank of america, n.a.",
+        "bank of america n.a."
+      ],
+      "roles": [
+        "bank",
+        "company",
+        "Australian Branch"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jonathan_farkas",
+      "name": "Jonathan Farkas",
+      "short_name": "farkas",
+      "type": "person",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "jonathan farkas",
+        "jonathan farkasiiii",
+        "jonathan farka",
+        "jonathan marks"
+      ],
+      "roles": [
+        "recipient",
+        "former student and friend, lawyer appointed to represent Mark Chapman",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:egypt",
+      "name": "Egypt",
+      "short_name": "egypt",
+      "type": "person",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "egypt"
+      ],
+      "roles": [
+        "referenced",
+        "location",
+        "mediator"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:phaidon",
+      "name": "Phaidon",
+      "short_name": "phaidon",
+      "type": "organization",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "phaidon"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:patrician_of_palm_beach_condo",
+      "name": "PATRICIAN OF PALM BEACH CONDO",
+      "short_name": "patrician_of_palm_beach_condo",
+      "type": "organization",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "patrician of palm beach condo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:co-op",
+      "name": "CO-OP",
+      "short_name": "co-op",
+      "type": "organization",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "co-op"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:macintosh_hd",
+      "name": "Macintosh HD",
+      "short_name": "macintosh_hd",
+      "type": "location",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "macintosh hd"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:asia",
+      "name": "Asia",
+      "short_name": "asia",
+      "type": "location",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "asia"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:golan",
+      "name": "Golan",
+      "short_name": "golan",
+      "type": "location",
+      "mention_count": 41,
+      "doc_count": 41,
+      "aliases": [
+        "golan"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:leon",
+      "name": "Leon",
+      "short_name": "leon",
+      "type": "person",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "leon",
+        "mr. leo",
+        "leon",
+        "leo"
+      ],
+      "roles": [
+        "Mentioned",
+        "sender",
+        "Not specified"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mr_scott",
+      "name": "MR. SCOTT",
+      "short_name": "scott",
+      "type": "person",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "mr. scott",
+        "scott",
+        "scott",
+        "mr. scott"
+      ],
+      "roles": [
+        "Attorney",
+        "Objector",
+        "Interviewer"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:faith_kates",
+      "name": "Faith Kates",
+      "short_name": "kates",
+      "type": "person",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "faith kates",
+        "faith kats",
+        "faith kate sis",
+        "faith kate"
+      ],
+      "roles": [
+        "Email sender",
+        "recipient",
+        "recipient of email"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:george_w_bush",
+      "name": "George W. Bush",
+      "short_name": "bush",
+      "type": "person",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "george w. bush",
+        "george h.w. bush",
+        "george h. w. bush",
+        "george bush"
+      ],
+      "roles": [
+        "Republican base",
+        "U.S. President",
+        "former president of the United States"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:wiener",
+      "name": "Wiener",
+      "short_name": "wiener",
+      "type": "person",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "wiener"
+      ],
+      "roles": [
+        "referenced",
+        "social critic",
+        "N/A"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:je_vacation",
+      "name": "Je vacation",
+      "short_name": "vacation",
+      "type": "person",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "je vacation"
+      ],
+      "roles": [
+        "Recipient of email",
+        "recipient",
+        "Email recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:elisa_new",
+      "name": "Elisa New",
+      "short_name": "new",
+      "type": "person",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "elisa new",
+        "elisa new a"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Larry Summers' wife",
+        "Unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:begin",
+      "name": "Begin",
+      "short_name": "begin",
+      "type": "person",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "begin"
+      ],
+      "roles": [
+        "Politician",
+        "politician",
+        "Israeli prime minister"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:asu",
+      "name": "ASU",
+      "short_name": "asu",
+      "type": "organization",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "asu"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:la",
+      "name": "LA",
+      "short_name": "la",
+      "type": "location",
+      "mention_count": 40,
+      "doc_count": 40,
+      "aliases": [
+        "la"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:partner",
+      "name": "Partner",
+      "short_name": "partner",
+      "type": "person",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "partner",
+        "partners",
+        "partners",
+        "the partner"
+      ],
+      "roles": [
+        "recipients of expense allocations",
+        "romantic partner",
+        "person described"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:dan",
+      "name": "Dan",
+      "short_name": "dan",
+      "type": "person",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "dan",
+        "dana",
+        "dan"
+      ],
+      "roles": [
+        "Unclear",
+        "person to call",
+        "natural successor"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:new_york",
+      "name": "New York",
+      "short_name": "york",
+      "type": "person",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "new york",
+        "new yorker",
+        "the new yorker"
+      ],
+      "roles": [
+        "location",
+        "creator of tax-exempt resident trusts",
+        "location of conspiracy claim"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:comey",
+      "name": "Comey",
+      "short_name": "comey",
+      "type": "person",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "comey",
+        "mr. comey"
+      ],
+      "roles": [
+        "former FBI director",
+        "target of case",
+        "fired by the President"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:agi",
+      "name": "AGI",
+      "short_name": "agi",
+      "type": "person",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "agi",
+        "agis"
+      ],
+      "roles": [
+        "future investors and scientists",
+        "project",
+        "subject"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:united_states_district_court",
+      "name": "United States District Court",
+      "short_name": "united_states_district_court",
+      "type": "organization",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "united states district court"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:nlra",
+      "name": "NLRA",
+      "short_name": "nlra",
+      "type": "organization",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "nlra"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:fox_news",
+      "name": "Fox News",
+      "short_name": "fox_news",
+      "type": "organization",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "fox news"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:brazilian_court_hotel_and_condo",
+      "name": "BRAZILIAN COURT HOTEL AND CONDO",
+      "short_name": "brazilian_court_hotel_and_condo",
+      "type": "organization",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "brazilian court hotel and condo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:apple",
+      "name": "Apple",
+      "short_name": "apple",
+      "type": "organization",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "apple"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:taiwan",
+      "name": "Taiwan",
+      "short_name": "taiwan",
+      "type": "location",
+      "mention_count": 39,
+      "doc_count": 39,
+      "aliases": [
+        "taiwan"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:steve",
+      "name": "Steve",
+      "short_name": "steve",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "steve",
+        "steve",
+        "steven",
+        "stev"
+      ],
+      "roles": [
+        "Mentioned in email",
+        "Professor, Debater",
+        "Associate Director, Development"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:attorney_general",
+      "name": "Attorney General",
+      "short_name": "general",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "attorney general",
+        "attorney general reno",
+        "the attorney general",
+        "attorney general"
+      ],
+      "roles": [
+        "authorized to make grants",
+        "called upon by the President to fire McCabe",
+        "civil action authority"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:robert_trivers",
+      "name": "Robert Trivers",
+      "short_name": "trivers",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "robert trivers",
+        "robert triversi"
+      ],
+      "roles": [
+        "Email sender",
+        "recipient of email",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:john_doe",
+      "name": "John Doe",
+      "short_name": "doe",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "john doe",
+        "john doe 5",
+        "john doe 3",
+        "john doe 1"
+      ],
+      "roles": [
+        "another victim of Epstein and Maxwell",
+        "plaintiff",
+        "Plaintiff"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jared_kushner",
+      "name": "Jared Kushner",
+      "short_name": "kushner",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "jared kushner"
+      ],
+      "roles": [
+        "frequent wise-men caller",
+        "Senior Advisor and Son-in-Law",
+        "standard Democratic view in which he was raised, to an acolyte of T"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:kenneth_starr",
+      "name": "Kenneth Starr",
+      "short_name": "starr",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "kenneth starr",
+        "kenneth w. starr"
+      ],
+      "roles": [
+        "Attorney",
+        "Former Whitewater special prosecutor, Epstein's lawyer",
+        "columnist"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:tom",
+      "name": "Tom",
+      "short_name": "tom",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "tom",
+        "tom"
+      ],
+      "roles": [
+        "writer/reviewer",
+        "not really useful",
+        "unnamed individual"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:b6",
+      "name": "b6",
+      "short_name": "b6",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "b6"
+      ],
+      "roles": [
+        "Unclear",
+        "employee",
+        "Unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:amanda_ens",
+      "name": "Amanda Ens",
+      "short_name": "ens",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "amanda ens",
+        "amanda.ens",
+        "amanda.ens",
+        "amand ens"
+      ],
+      "roles": [
+        "recipient",
+        "Director",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:yoni",
+      "name": "Yoni",
+      "short_name": "yoni",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "yoni"
+      ],
+      "roles": [
+        "spent youth in America",
+        "character",
+        "person known to the speaker"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:dado",
+      "name": "Dado",
+      "short_name": "dado",
+      "type": "person",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "dado",
+        "dad",
+        "dad"
+      ],
+      "roles": [
+        "in his usual seat",
+        "father",
+        "filled me in on situation"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:russia",
+      "name": "Russia",
+      "short_name": "russia",
+      "type": "organization",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "russia"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:trump_organization",
+      "name": "Trump Organization",
+      "short_name": "trump_organization",
+      "type": "organization",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "trump organization"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:jordan",
+      "name": "Jordan",
+      "short_name": "jordan",
+      "type": "location",
+      "mention_count": 38,
+      "doc_count": 38,
+      "aliases": [
+        "jordan"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:george",
+      "name": "George",
+      "short_name": "george",
+      "type": "person",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "george",
+        "george w.",
+        "george b.",
+        "george m."
+      ],
+      "roles": [
+        "person",
+        "the person the war on terror is viewed as a religious war by",
+        "character"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:my_father",
+      "name": "my father",
+      "short_name": "father",
+      "type": "person",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "my father",
+        "my father"
+      ],
+      "roles": [
+        "encouraged me to learn piano",
+        "previous wealth holder",
+        "defendant"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jared",
+      "name": "Jared",
+      "short_name": "jared",
+      "type": "person",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "jared",
+        "jarred"
+      ],
+      "roles": [
+        "Possibly a chief of staff",
+        "Shocked by the inaugural",
+        "Mentioned"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:yitzhak",
+      "name": "Yitzhak",
+      "short_name": "yitzhak",
+      "type": "person",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "yitzhak",
+        "yitzhik"
+      ],
+      "roles": [
+        "referenced",
+        "victim",
+        "not broaching politics before I'd left the army"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:rodriguez",
+      "name": "Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "rodriguez",
+        "mr. rodriguez",
+        "rodrigez"
+      ],
+      "roles": [
+        "admitted lying to the FBI",
+        "Detained",
+        "subject"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:avraham",
+      "name": "Avraham",
+      "short_name": "avraham",
+      "type": "person",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "avraham",
+        "avraha"
+      ],
+      "roles": [
+        "Gave the narrator confidence",
+        "military leader",
+        "unspecified"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:universities",
+      "name": "universities",
+      "short_name": "universities",
+      "type": "organization",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "universities"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:fda",
+      "name": "FDA",
+      "short_name": "fda",
+      "type": "organization",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "fda"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:fcpa",
+      "name": "FCPA",
+      "short_name": "fcpa",
+      "type": "organization",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "fcpa"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:doj",
+      "name": "DOJ",
+      "short_name": "doj",
+      "type": "organization",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "doj"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:wikileaks",
+      "name": "WikiLeaks",
+      "short_name": "wikileaks",
+      "type": "organization",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "wikileaks"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:afghanistan",
+      "name": "Afghanistan",
+      "short_name": "afghanistan",
+      "type": "location",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "afghanistan"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:libya",
+      "name": "Libya",
+      "short_name": "libya",
+      "type": "location",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "libya"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:brazilian_court_hotel_and_condo",
+      "name": "BRAZILIAN COURT HOTEL AND CONDO",
+      "short_name": "brazilian_court_hotel_and_condo",
+      "type": "location",
+      "mention_count": 37,
+      "doc_count": 37,
+      "aliases": [
+        "brazilian court hotel and condo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:his",
+      "name": "his",
+      "short_name": "his",
+      "type": "person",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "his",
+        "his",
+        "hiss"
+      ],
+      "roles": [
+        "subject of discussion",
+        "family member",
+        "purported Russian relationships and subterfuges"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:richard",
+      "name": "Richard",
+      "short_name": "richard",
+      "type": "person",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "richard",
+        "richard l",
+        "ricardo",
+        "richard b"
+      ],
+      "roles": [
+        "former trustee",
+        "person described",
+        "acquaintance"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:lawyers",
+      "name": "lawyers",
+      "short_name": "lawyers",
+      "type": "person",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "lawyers",
+        "the lawyers",
+        "lawyers",
+        "the lawyer"
+      ],
+      "roles": [
+        "celebrities",
+        "provide assistance to indigent criminal defendants",
+        "were suing"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:laura_poitras",
+      "name": "Laura Poitras",
+      "short_name": "poitras",
+      "type": "person",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "laura poitras"
+      ],
+      "roles": [
+        "fellow board member of Freedom of the Press Foundation",
+        "Berlin-based documentary filmmaker",
+        "subject of article"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jews",
+      "name": "Jews",
+      "short_name": "jews",
+      "type": "person",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "jews",
+        "the jews",
+        "the jews"
+      ],
+      "roles": [
+        "spiritually mordant",
+        "victims",
+        "group mentioned"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ehud",
+      "name": "Ehud",
+      "short_name": "ehud",
+      "type": "person",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "ehud"
+      ],
+      "roles": [
+        "person asking for advice",
+        "politician",
+        "Addressing the speaker"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:osama_bin_laden",
+      "name": "Osama bin Laden",
+      "short_name": "laden",
+      "type": "person",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "osama bin laden",
+        "osama bin-laden"
+      ],
+      "roles": [
+        "bin Laden's top lieutenants",
+        "al-Qaeda leader",
+        "terrorist leader"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:woman",
+      "name": "woman",
+      "short_name": "woman",
+      "type": "person",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "woman",
+        "woman",
+        "the woman",
+        "the woman"
+      ],
+      "roles": [
+        "alleged victim",
+        "Attempted to bring private prosecution",
+        "date"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:supreme_court",
+      "name": "Supreme Court",
+      "short_name": "supreme_court",
+      "type": "organization",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "supreme court"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:irs",
+      "name": "IRS",
+      "short_name": "irs",
+      "type": "organization",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "irs"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:deutsche_bank",
+      "name": "Deutsche Bank",
+      "short_name": "deutsche_bank",
+      "type": "organization",
+      "mention_count": 36,
+      "doc_count": 36,
+      "aliases": [
+        "deutsche bank"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:their",
+      "name": "their",
+      "short_name": "their",
+      "type": "person",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "their",
+        "their",
+        "thei",
+        "their"
+      ],
+      "roles": [
+        "unspecified",
+        "people in an open society",
+        "not specified"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:john",
+      "name": "John",
+      "short_name": "john",
+      "type": "person",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "john",
+        "johns",
+        "john",
+        "john"
+      ],
+      "roles": [
+        "host",
+        "caller",
+        "Biblical figure"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:roy_black",
+      "name": "Roy Black",
+      "short_name": "black",
+      "type": "person",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "roy black",
+        "roy blac"
+      ],
+      "roles": [
+        "Recipient of email",
+        "criminal attorney",
+        "sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jes_staley",
+      "name": "Jes Staley",
+      "short_name": "staley",
+      "type": "person",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "jes staley"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Barclays CEO",
+        "recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ubs",
+      "name": "UBS",
+      "short_name": "ubs",
+      "type": "person",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "ubs"
+      ],
+      "roles": [
+        "company",
+        "investment bank",
+        "financial organization"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:oecd",
+      "name": "OECD",
+      "short_name": "oecd",
+      "type": "organization",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "oecd"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:imessage",
+      "name": "iMessage",
+      "short_name": "imessage",
+      "type": "organization",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "imessage"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:mar-a-lago",
+      "name": "Mar-a-Lago",
+      "short_name": "mar-a-lago",
+      "type": "organization",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "mar-a-lago"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:nyc",
+      "name": "NYC",
+      "short_name": "nyc",
+      "type": "location",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "nyc"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:san_francisco",
+      "name": "San Francisco",
+      "short_name": "san_francisco",
+      "type": "location",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "san francisco"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:caribbean",
+      "name": "Caribbean",
+      "short_name": "caribbean",
+      "type": "location",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "caribbean"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:greece",
+      "name": "Greece",
+      "short_name": "greece",
+      "type": "location",
+      "mention_count": 35,
+      "doc_count": 35,
+      "aliases": [
+        "greece"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:michael_cohen",
+      "name": "Michael Cohen",
+      "short_name": "cohen",
+      "type": "person",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "michael cohen",
+        "michael cohen",
+        "michael d. cohen",
+        "michael cohen"
+      ],
+      "roles": [
+        "Donald Trump's former lawyer",
+        "Provided information to prosecutors",
+        "Sentenced to 3 years in prison"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:alan",
+      "name": "Alan",
+      "short_name": "alan",
+      "type": "person",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "alan",
+        "alans",
+        "alan",
+        "alan"
+      ],
+      "roles": [
+        "owner/resident",
+        "unspecified",
+        "staff member"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:peter_thiel",
+      "name": "Peter Thiel",
+      "short_name": "thiel",
+      "type": "person",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "peter thiel",
+        "peter theil",
+        "peter thie!",
+        "peter thie]"
+      ],
+      "roles": [
+        "Recipient of email",
+        "mentioned in email subject",
+        "subject of article"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ms_mccawley",
+      "name": "MS. McCAWLEY",
+      "short_name": "mccawley",
+      "type": "person",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "ms. mccawley",
+        "mccawley",
+        "ms. mccawley",
+        "ms. mccawley"
+      ],
+      "roles": [
+        "Attorney",
+        "Objector",
+        "Participant"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:noam_chomsky",
+      "name": "Noam Chomsky",
+      "short_name": "chomsky",
+      "type": "person",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "noam chomsky"
+      ],
+      "roles": [
+        "Recipient of email",
+        "subject of discussion",
+        "cc"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:klc",
+      "name": "KLC",
+      "short_name": "klc",
+      "type": "person",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "klc"
+      ],
+      "roles": [
+        "child care center operator",
+        "real estate company",
+        "entity"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:klc_opco",
+      "name": "KLC OpCo",
+      "short_name": "opco",
+      "type": "person",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "klc opco",
+        "klc propco"
+      ],
+      "roles": [
+        "operator of centers",
+        "rental revenue source",
+        "real estate owner"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:buzzfeed_news",
+      "name": "BuzzFeed News",
+      "short_name": "buzzfeed_news",
+      "type": "organization",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "buzzfeed news"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:bear_stearns",
+      "name": "Bear Stearns",
+      "short_name": "bear_stearns",
+      "type": "organization",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "bear stearns"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:school",
+      "name": "school",
+      "short_name": "school",
+      "type": "organization",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "school"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:nyt",
+      "name": "NYT",
+      "short_name": "nyt",
+      "type": "organization",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "nyt"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:the_country",
+      "name": "the country",
+      "short_name": "the_country",
+      "type": "location",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "the country"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:epstein's_house",
+      "name": "Epstein's house",
+      "short_name": "epstein's_house",
+      "type": "location",
+      "mention_count": 34,
+      "doc_count": 34,
+      "aliases": [
+        "epstein's house"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:professors",
+      "name": "professors",
+      "short_name": "professors",
+      "type": "person",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "professors",
+        "professor",
+        "the professor",
+        "professors"
+      ],
+      "roles": [
+        "educators",
+        "academics",
+        "had specialties"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:my",
+      "name": "my",
+      "short_name": "my",
+      "type": "person",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "my",
+        "my"
+      ],
+      "roles": [
+        "victim",
+        "own",
+        "the author"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:the_judge",
+      "name": "the judge",
+      "short_name": "judge",
+      "type": "person",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "the judge",
+        "judges",
+        "judge",
+        "judge"
+      ],
+      "roles": [
+        "presiding over case",
+        "judge",
+        "officials"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:children",
+      "name": "children",
+      "short_name": "children",
+      "type": "person",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "children",
+        "children",
+        "the children"
+      ],
+      "roles": [
+        "children of parents",
+        "victims",
+        "how we learn"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mr_sloman",
+      "name": "Mr. Sloman",
+      "short_name": "sloman",
+      "type": "person",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "mr. sloman",
+        "sloman",
+        "sloan"
+      ],
+      "roles": [
+        "Attempted to deny work release and/or gain time for Mr. Epstein",
+        "author of May 19 letter",
+        "referring to"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:medicaid",
+      "name": "Medicaid",
+      "short_name": "medicaid",
+      "type": "organization",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "medicaid"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:un",
+      "name": "UN",
+      "short_name": "un",
+      "type": "organization",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "un"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:labor",
+      "name": "Labor",
+      "short_name": "labor",
+      "type": "organization",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "labor"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:kgb",
+      "name": "KGB",
+      "short_name": "kgb",
+      "type": "organization",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "kgb"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:new_zealand",
+      "name": "New Zealand",
+      "short_name": "new_zealand",
+      "type": "location",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "new zealand"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:berlin",
+      "name": "Berlin",
+      "short_name": "berlin",
+      "type": "location",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "berlin"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:little_st_james",
+      "name": "Little St. James",
+      "short_name": "little_st._james",
+      "type": "location",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "little st. james"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:texas",
+      "name": "Texas",
+      "short_name": "texas",
+      "type": "location",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "texas"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:cuba",
+      "name": "Cuba",
+      "short_name": "cuba",
+      "type": "location",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "cuba"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:5043432778",
+      "name": "5043432778",
+      "short_name": "5043432778",
+      "type": "location",
+      "mention_count": 33,
+      "doc_count": 33,
+      "aliases": [
+        "5043432778"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:barbro_ehnbom",
+      "name": "Barbro Ehnbom",
+      "short_name": "ehnbom",
+      "type": "person",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "barbro ehnbom",
+        "barbro c ehnbom",
+        "barbro cc. ehnbom",
+        "barbro ehnbom"
+      ],
+      "roles": [
+        "Unknown",
+        "sender of email",
+        "recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:fund_managers",
+      "name": "Fund Managers",
+      "short_name": "managers",
+      "type": "person",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "fund managers",
+        "the fund managers"
+      ],
+      "roles": [
+        "combination of proven track record, in-depth knowledge of the medical device and diagnostics fields",
+        "managers of the Sprout Funds",
+        "invested in healthcare technology companies"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:scott_rothstein",
+      "name": "Scott Rothstein",
+      "short_name": "rothstein",
+      "type": "person",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "scott rothstein",
+        "scott w. rothstein",
+        "scott rothste]in",
+        "scott rothstein"
+      ],
+      "roles": [
+        "Defendant (individually)",
+        "deponent",
+        "Defendant, individually"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:alfredo_rodriguez",
+      "name": "Alfredo Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "alfredo rodriguez",
+        "alfredo rodriguez",
+        "mr. alfredo rodriguez"
+      ],
+      "roles": [
+        "Epstein's housekeeper",
+        "deponent",
+        "maintaining a"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:miami",
+      "name": "Miami",
+      "short_name": "miami",
+      "type": "person",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "miami",
+        "miami",
+        "miami"
+      ],
+      "roles": [
+        "Receiving office",
+        "location",
+        "Owning Office"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mr_fried",
+      "name": "Mr. Fried",
+      "short_name": "fried",
+      "type": "person",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "mr. fried",
+        "mr. fried",
+        "friend",
+        "the friend"
+      ],
+      "roles": [
+        "witness",
+        "Asked Mr. Randolph a question",
+        "Epstein's friend"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mlpf&s",
+      "name": "MLPF&S",
+      "short_name": "mlpf&s",
+      "type": "person",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "mlpf&s"
+      ],
+      "roles": [
+        "issuer of traded financial instruments",
+        "prepared and issued this research report",
+        "company"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:the_daily_beast",
+      "name": "The Daily Beast",
+      "short_name": "the_daily_beast",
+      "type": "organization",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "the daily beast"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:palm_beach_hotel_cond",
+      "name": "PALM BEACH HOTEL COND",
+      "short_name": "palm_beach_hotel_cond",
+      "type": "organization",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "palm beach hotel cond"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:s&p_500",
+      "name": "S&P 500",
+      "short_name": "s&p_500",
+      "type": "organization",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "s&p 500"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:bofaml",
+      "name": "BofAML",
+      "short_name": "bofaml",
+      "type": "organization",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "bofaml"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:rockefeller_&_co",
+      "name": "Rockefeller & Co.",
+      "short_name": "rockefeller_&_co.",
+      "type": "organization",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "rockefeller & co."
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:twenty_two_ninety_five_co-op",
+      "name": "TWENTY TWO NINETY FIVE CO-OP",
+      "short_name": "twenty_two_ninety_five_co-op",
+      "type": "organization",
+      "mention_count": 32,
+      "doc_count": 32,
+      "aliases": [
+        "twenty two ninety five co-op"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:paul",
+      "name": "Paul",
+      "short_name": "paul",
+      "type": "person",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "paul",
+        "paul",
+        "pau",
+        "paul"
+      ],
+      "roles": [
+        "Recipient of email",
+        "former federal judge",
+        "referenced"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:peter",
+      "name": "Peter",
+      "short_name": "peter",
+      "type": "person",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "peter",
+        "peters",
+        "peter",
+        "pete"
+      ],
+      "roles": [
+        "non-psychiatrist",
+        "husband",
+        "father"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:lhs",
+      "name": "LHS",
+      "short_name": "lhs",
+      "type": "person",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "lhs"
+      ],
+      "roles": [
+        "recipient",
+        "email sender",
+        "recipient of message"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:peres",
+      "name": "Peres",
+      "short_name": "peres",
+      "type": "person",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "peres"
+      ],
+      "roles": [
+        "Israeli politician",
+        "role",
+        "Asker"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:person",
+      "name": "person",
+      "short_name": "person",
+      "type": "person",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "person",
+        "the person",
+        "person_1",
+        "person b"
+      ],
+      "roles": [
+        "Aid and Abet Violations",
+        "accuser",
+        "making decisions"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:cvra",
+      "name": "CVRA",
+      "short_name": "cvra",
+      "type": "person",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "cvra",
+        "the cvra"
+      ],
+      "roles": [
+        "crime victims' rights",
+        "legal entity",
+        "federal criminal justice process"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:bank_of_america_merrill_lynch",
+      "name": "Bank of America Merrill Lynch",
+      "short_name": "bank_of_america_merrill_lynch",
+      "type": "organization",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "bank of america merrill lynch"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:federal",
+      "name": "Federal",
+      "short_name": "federal",
+      "type": "organization",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "federal"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:amazon",
+      "name": "Amazon",
+      "short_name": "amazon",
+      "type": "organization",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "amazon"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:klc",
+      "name": "KLC",
+      "short_name": "klc",
+      "type": "organization",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "klc"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:southern_district_of_florida",
+      "name": "Southern District of Florida",
+      "short_name": "southern_district_of_florida",
+      "type": "location",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "southern district of florida"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:new_jersey",
+      "name": "New Jersey",
+      "short_name": "new_jersey",
+      "type": "location",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "new jersey"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:condominium",
+      "name": "CONDOMINIUM",
+      "short_name": "condominium",
+      "type": "location",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "condominium"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:st_croix",
+      "name": "St. Croix",
+      "short_name": "st._croix",
+      "type": "location",
+      "mention_count": 31,
+      "doc_count": 31,
+      "aliases": [
+        "st. croix"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:prince",
+      "name": "Prince",
+      "short_name": "prince",
+      "type": "person",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "prince",
+        "the prince",
+        "price",
+        "the prince"
+      ],
+      "roles": [
+        "guest",
+        "addressed in a letter",
+        "paedophile"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:thorbjon_jagland",
+      "name": "Thorbjon Jagland",
+      "short_name": "jagland",
+      "type": "person",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "thorbjon jagland",
+        "thorbj\u00f8rn jagland",
+        "thorbj\u00e9n jagland po",
+        "thorbjorn jagland"
+      ],
+      "roles": [
+        "great friend",
+        "head of the Noble Peace Prize Committee",
+        "Norwegian politician"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ms_maxwell",
+      "name": "Ms Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "ms maxwell"
+      ],
+      "roles": [
+        "Epstein's assistant",
+        "introduced Prince Andrew to Epstein",
+        "at the table with Epstein"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:apple",
+      "name": "Apple",
+      "short_name": "apple",
+      "type": "person",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "apple",
+        "apple",
+        "apple"
+      ],
+      "roles": [
+        "news source",
+        "company",
+        "Company"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:recarey",
+      "name": "Recarey",
+      "short_name": "recarey",
+      "type": "person",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "recarey",
+        "recarey"
+      ],
+      "roles": [
+        "met with Dershowitz",
+        "Detective",
+        "Unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:lilly_ann_sanchez",
+      "name": "Lilly Ann Sanchez",
+      "short_name": "sanchez",
+      "type": "person",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "lilly ann sanchez",
+        "lilly ann sanch",
+        "lilly sanchez",
+        "lilly ann sanchez, esq."
+      ],
+      "roles": [
+        "Email sender",
+        "Attorney",
+        "Unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:palm_beach_post",
+      "name": "Palm Beach Post",
+      "short_name": "palm_beach_post",
+      "type": "organization",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "palm beach post"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:hezbollah",
+      "name": "Hezbollah",
+      "short_name": "hezbollah",
+      "type": "organization",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "hezbollah"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:esquire_deposition_solutions",
+      "name": "ESQUIRE DEPOSITION SOLUTIONS",
+      "short_name": "esquire_deposition_solutions",
+      "type": "organization",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "esquire deposition solutions"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:qatar",
+      "name": "Qatar",
+      "short_name": "qatar",
+      "type": "location",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "qatar"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:kuwait",
+      "name": "Kuwait",
+      "short_name": "kuwait",
+      "type": "location",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "kuwait"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:the_teacher",
+      "name": "the teacher",
+      "short_name": "teacher",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "the teacher",
+        "teachers",
+        "teacher",
+        "teachers"
+      ],
+      "roles": [
+        "source of information",
+        "authority figure",
+        "instructor"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:federal_prosecutors",
+      "name": "federal prosecutors",
+      "short_name": "prosecutors",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "federal prosecutors",
+        "federal prosecutors",
+        "federal prosecutor",
+        "the federal prosecutor"
+      ],
+      "roles": [
+        "in the Eastern District of Virginia",
+        "in West Palm Beach, Fla.",
+        "unspecified"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ed",
+      "name": "Ed",
+      "short_name": "ed",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "ed",
+        "ed",
+        "ed",
+        "ed."
+      ],
+      "roles": [
+        "sender",
+        "person mentioned",
+        "employee"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:turing",
+      "name": "Turing",
+      "short_name": "turing",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "turing"
+      ],
+      "roles": [
+        "Computer scientist",
+        "discussed in text",
+        "posed theoretical studies"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:goldman_sachs",
+      "name": "Goldman Sachs",
+      "short_name": "sachs",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "goldman sachs",
+        "goldmansachs"
+      ],
+      "roles": [
+        "investment bankers",
+        "Twitter user",
+        "investment bank"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:lenny",
+      "name": "Lenny",
+      "short_name": "lenny",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "lenny"
+      ],
+      "roles": [
+        "writing an autobiography",
+        "defendant",
+        "stand-up comedian"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:julian_assange",
+      "name": "Julian Assange",
+      "short_name": "assange",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "julian assange"
+      ],
+      "roles": [
+        "Assange's aide",
+        "subject of legal problem in Sweden",
+        "Claimed information about Bradley Manning"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:dr_lynn",
+      "name": "Dr. Lynn",
+      "short_name": "lynn",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "dr. lynn",
+        "lynne",
+        "lynne",
+        "lyn"
+      ],
+      "roles": [
+        "doctor",
+        "veterinarian",
+        "Unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ms_giuffre",
+      "name": "Ms. Giuffre",
+      "short_name": "giuffre",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "ms. giuffre",
+        "ms. giuffer"
+      ],
+      "roles": [
+        "victim",
+        "married mother",
+        "deponent"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:djt_holdings_llc",
+      "name": "DJT Holdings LLC",
+      "short_name": "llc",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "djt holdings llc",
+        "djt holdincs llc",
+        "djt holdings llc",
+        "djt holdings llc"
+      ],
+      "roles": [
+        "Member, Managing Member",
+        "Partner",
+        "Shareholder"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:gmax",
+      "name": "Gmax",
+      "short_name": "gmax",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "gmax",
+        "gmax",
+        "gmax",
+        "gmax1"
+      ],
+      "roles": [
+        "recipient",
+        "email sender",
+        "sender of forwarded email"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ois",
+      "name": "ois",
+      "short_name": "ois",
+      "type": "person",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "ois"
+      ],
+      "roles": [],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:the_new_yorker",
+      "name": "The New Yorker",
+      "short_name": "the_new_yorker",
+      "type": "organization",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "the new yorker"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:social_security",
+      "name": "Social Security",
+      "short_name": "social_security",
+      "type": "organization",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "social security"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:victoria's_secret",
+      "name": "Victoria's Secret",
+      "short_name": "victoria's_secret",
+      "type": "organization",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "victoria's secret"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:brooklyn",
+      "name": "Brooklyn",
+      "short_name": "brooklyn",
+      "type": "location",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "brooklyn"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:cairo",
+      "name": "Cairo",
+      "short_name": "cairo",
+      "type": "location",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "cairo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:yemen",
+      "name": "Yemen",
+      "short_name": "yemen",
+      "type": "location",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "yemen"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:cest",
+      "name": "CEST",
+      "short_name": "cest",
+      "type": "location",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "cest"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:5043432605",
+      "name": "5043432605",
+      "short_name": "5043432605",
+      "type": "location",
+      "mention_count": 29,
+      "doc_count": 29,
+      "aliases": [
+        "5043432605"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:principals",
+      "name": "Principals",
+      "short_name": "principals",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "principals",
+        "the principal",
+        "principal",
+        "principal 1"
+      ],
+      "roles": [
+        "controlled KUE LLC",
+        "undefined",
+        "title"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:alan_turing",
+      "name": "Alan Turing",
+      "short_name": "turing",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "alan turing",
+        "alan m. turing"
+      ],
+      "roles": [
+        "Computer scientist",
+        "designed first chess-playing AI in 1948",
+        "mathematician"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mark_filip",
+      "name": "Mark Filip",
+      "short_name": "filip",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "mark filip"
+      ],
+      "roles": [
+        "Honorable (judge/government official)",
+        "Recipient of letter",
+        "Federal Prosecutor"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:germany",
+      "name": "Germany",
+      "short_name": "germany",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "germany",
+        "the germans",
+        "germany",
+        "germans"
+      ],
+      "roles": [
+        "referenced group",
+        "lender",
+        "new tea party"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:lawrence_summers",
+      "name": "Lawrence Summers",
+      "short_name": "summers",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "lawrence summers",
+        "lawrence h. summers",
+        "lawrence summers ii"
+      ],
+      "roles": [
+        "email forwarder",
+        "recipient",
+        "speaker"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:zubair_khan",
+      "name": "Zubair Khan",
+      "short_name": "khan",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "zubair khan"
+      ],
+      "roles": [
+        "Email sender",
+        "recipient",
+        "90% owner of InsightsPod"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:north_korea",
+      "name": "North Korea",
+      "short_name": "korea",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "north korea"
+      ],
+      "roles": [
+        "dangerous adversary",
+        "monitoring nuclear proliferation",
+        "target of sanctions"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:androids",
+      "name": "Androids",
+      "short_name": "androids",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "androids",
+        "the androids"
+      ],
+      "roles": [
+        "subject of the question",
+        "Subject of the passage",
+        "not specified"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:tonja_haddad_coleman",
+      "name": "Tonja Haddad Coleman",
+      "short_name": "coleman",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "tonja haddad coleman",
+        "tonja haddad colema"
+      ],
+      "roles": [
+        "Recipient of email",
+        "cc'd on email",
+        "Email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:terrorist_attacks_on_september_11,_2001",
+      "name": "TERRORIST ATTACKS ON SEPTEMBER 11, 2001",
+      "short_name": "2001",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "terrorist attacks on september 11, 2001",
+        "terrorist attacks on september 11, 2001",
+        "terrorist attacks on september 11, 2001."
+      ],
+      "roles": [
+        "victims",
+        "Event",
+        "subject of the case"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ron",
+      "name": "Ron",
+      "short_name": "ron",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "ron",
+        "ron",
+        "rona",
+        "rona"
+      ],
+      "roles": [
+        "known by Jeffrey",
+        "client/abuser",
+        "acquaintance"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:medicare",
+      "name": "Medicare",
+      "short_name": "medicare",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "medicare"
+      ],
+      "roles": [
+        "government entitlement program",
+        "health insurance program",
+        "healthcare program"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:medicaid",
+      "name": "Medicaid",
+      "short_name": "medicaid",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "medicaid"
+      ],
+      "roles": [
+        "government entitlement program",
+        "health insurance program",
+        "government program"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:krischer",
+      "name": "Krischer",
+      "short_name": "krischer",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "krischer",
+        "mr. krische",
+        "mr. krischer"
+      ],
+      "roles": [
+        "met with Dershowitz",
+        "Bergeron's employer",
+        "prosecuting attorney"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:2s",
+      "name": "2s",
+      "short_name": "2s",
+      "type": "person",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "2s",
+        "2s"
+      ],
+      "roles": [
+        "unknown"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:gmail",
+      "name": "Gmail",
+      "short_name": "gmail",
+      "type": "organization",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "gmail"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:mc2",
+      "name": "MC2",
+      "short_name": "mc2",
+      "type": "organization",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "mc2"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:bank_of_america",
+      "name": "Bank of America",
+      "short_name": "bank_of_america",
+      "type": "organization",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "bank of america"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:south_florida",
+      "name": "South Florida",
+      "short_name": "south_florida",
+      "type": "location",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "south florida"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:uae",
+      "name": "UAE",
+      "short_name": "uae",
+      "type": "location",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "uae"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:epstein's_home",
+      "name": "Epstein's home",
+      "short_name": "epstein's_home",
+      "type": "location",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "epstein's home"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:property",
+      "name": "property",
+      "short_name": "property",
+      "type": "location",
+      "mention_count": 28,
+      "doc_count": 28,
+      "aliases": [
+        "property"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:usa",
+      "name": "USA",
+      "short_name": "usa",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "usa",
+        "usao",
+        "usam",
+        "the usa"
+      ],
+      "roles": [
+        "party to the Agreement",
+        "party to an agreement with Mr. Epstein",
+        "recipient"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:department",
+      "name": "Department",
+      "short_name": "department",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "department",
+        "departments",
+        "the department",
+        "the department"
+      ],
+      "roles": [
+        "organization",
+        "issuing agency",
+        "responsible for crime victim assistance"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ben-gurion",
+      "name": "Ben-Gurion",
+      "short_name": "ben-gurion",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "ben-gurion",
+        "ben gurion"
+      ],
+      "roles": [
+        "Israeli politician",
+        "politician",
+        "went to war"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ashton",
+      "name": "Ashton",
+      "short_name": "ashton",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "ashton"
+      ],
+      "roles": [
+        "Unknown",
+        "plaintiff",
+        "Plaintiff"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jacquie_johnson",
+      "name": "Jacquie Johnson",
+      "short_name": "johnson",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "jacquie johnson",
+        "jace johnson",
+        "jacquie johnson"
+      ],
+      "roles": [
+        "recipient",
+        "recipient of email",
+        "email sender"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:the_duke",
+      "name": "The Duke",
+      "short_name": "duke",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "the duke",
+        "duke",
+        "the duke",
+        "dukes"
+      ],
+      "roles": [
+        "Recipient of email",
+        "Dr. Lynn's Dog",
+        "admired by the author"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:mill",
+      "name": "Mill",
+      "short_name": "mill",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "mill",
+        "mills",
+        "milla"
+      ],
+      "roles": [
+        "referenced",
+        "their",
+        "girlfriend"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:others",
+      "name": "others",
+      "short_name": "others",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "others",
+        "others",
+        "other",
+        "the others"
+      ],
+      "roles": [
+        "unspecified",
+        "students",
+        "not specified"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:gtx_corp",
+      "name": "GTX Corp",
+      "short_name": "corp",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "gtx corp",
+        "gtx corp."
+      ],
+      "roles": [
+        "company",
+        "company with GPS shoe patents",
+        "corporation"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:djt_holdings_managing_member_llc",
+      "name": "DJT Holdings Managing Member LLC",
+      "short_name": "llc",
+      "type": "person",
+      "mention_count": 27,
+      "doc_count": 27,
+      "aliases": [
+        "djt holdings managing member llc",
+        "djt holdings managing member llc",
+        "djt holdings managing member llc",
+        "djt holdings managing member"
+      ],
+      "roles": [
+        "1.00% Managing Member",
+        "Managing Member",
+        "Member"
+      ],
+      "is_key_player": false
     }
   ],
-  "generated_at": "2025-12-23T15:27:28.161497"
+  "total": 500,
+  "key_players": [
+    {
+      "id": "person:epstein",
+      "name": "Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "mention_count": 4180,
+      "doc_count": 300,
+      "aliases": [
+        "epstein",
+        "dr. epstein",
+        "epsiein",
+        "epsteins"
+      ],
+      "roles": [
+        "host",
+        "employer of Rodgers",
+        "wealthy person offering to set up"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:jeffrey_epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "mention_count": 3991,
+      "doc_count": 300,
+      "aliases": [
+        "jeffrey epstein",
+        "jeffrty epstein",
+        "jeffrey epst",
+        "jeffrey stein"
+      ],
+      "roles": [
+        "Mentioned in email",
+        "owner of the island and villas",
+        "subject of document"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:donald_trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "mention_count": 934,
+      "doc_count": 300,
+      "aliases": [
+        "donald trump",
+        "the donald j, trump",
+        "donald j. trump",
+        "donald trump jr."
+      ],
+      "roles": [
+        "Mentioned in email",
+        "politician",
+        "Mentioned"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:trump",
+      "name": "Trump",
+      "short_name": "trump",
+      "type": "person",
+      "mention_count": 839,
+      "doc_count": 300,
+      "aliases": [
+        "trump",
+        "trump",
+        "trump",
+        "trum"
+      ],
+      "roles": [
+        "Mentioned in email",
+        "politician",
+        "subject of document"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:bill_clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "mention_count": 493,
+      "doc_count": 300,
+      "aliases": [
+        "bill clinton",
+        "bill clinton"
+      ],
+      "roles": [
+        "surprise appearance",
+        "politician",
+        "Seemingly impossible-to-reach person"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "mention_count": 434,
+      "doc_count": 300,
+      "aliases": [
+        "ghislaine maxwell",
+        "ghislaine n. maxwell",
+        "ghislane maxwell",
+        "ghislaine maxwell"
+      ],
+      "roles": [
+        "accused of recruiting Epstein's alleged victims",
+        "second-in-command of Jeffrey Epstein",
+        "daughter of the late British media baron Robert Maxwell"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:alan_dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "mention_count": 384,
+      "doc_count": 300,
+      "aliases": [
+        "alan dershowitz",
+        "alan dershowitz sn",
+        "alan dershovvitz",
+        "alan dershowtiz"
+      ],
+      "roles": [
+        "Accused of having sex with Virginia Roberts when she was underage",
+        "Mentioned in email",
+        "Discussed Israel with President Trump"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:prince_andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "mention_count": 358,
+      "doc_count": 300,
+      "aliases": [
+        "prince andrew",
+        "prince andrew",
+        "prince andrews",
+        "prince andrew"
+      ],
+      "roles": [
+        "social connection",
+        "former boyfriend of Caroline Stanbury",
+        "Attended Heidi Klum's 'Hookers and Pimps' party"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "mention_count": 281,
+      "doc_count": 281,
+      "aliases": [
+        "dershowitz",
+        "dr. dershowitz",
+        "mr. dershowitz",
+        "dershowtiz"
+      ],
+      "roles": [
+        "Argument made",
+        "civil libertarian",
+        "person being questioned"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:clinton",
+      "name": "Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "mention_count": 191,
+      "doc_count": 191,
+      "aliases": [
+        "clinton",
+        "mrs. clinton",
+        "mr. clinton",
+        "clintons"
+      ],
+      "roles": [
+        "politician",
+        "pal of Kevin Spacey",
+        "undisclosed"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "mention_count": 102,
+      "doc_count": 102,
+      "aliases": [
+        "maxwell",
+        "ms. maxwel",
+        "ms. maxwell"
+      ],
+      "roles": [
+        "deposed",
+        "youngest and most favored child",
+        "deponent"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:leslie_wexner",
+      "name": "Leslie Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "mention_count": 86,
+      "doc_count": 86,
+      "aliases": [
+        "leslie wexner",
+        "leslie h. wexner",
+        "leslie wex",
+        "les wexner"
+      ],
+      "roles": [
+        "CEO of The Limited",
+        "Business Associate",
+        "chairman of Limited Brands"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:hillary_clinton",
+      "name": "Hillary Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "mention_count": 80,
+      "doc_count": 80,
+      "aliases": [
+        "hillary clinton",
+        "hilary clinton"
+      ],
+      "roles": [
+        "politician",
+        "Senate bid",
+        "supporter"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:bill_gates",
+      "name": "Bill Gates",
+      "short_name": "gates",
+      "type": "person",
+      "mention_count": 77,
+      "doc_count": 77,
+      "aliases": [
+        "bill gates"
+      ],
+      "roles": [
+        "Acquaintance of Epstein",
+        "prodding Epstein to begin a process of public rehabilitation",
+        "not included in the prize committee"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:president_trump",
+      "name": "President Trump",
+      "short_name": "trump",
+      "type": "person",
+      "mention_count": 57,
+      "doc_count": 57,
+      "aliases": [
+        "president trump",
+        "president trum",
+        "president trump",
+        "president trump"
+      ],
+      "roles": [
+        "President",
+        "witness",
+        "Supreme Court nominee"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:brunel",
+      "name": "Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "mention_count": 56,
+      "doc_count": 56,
+      "aliases": [
+        "brunel",
+        "brune!",
+        "mr. brunel",
+        "mr. brune"
+      ],
+      "roles": [
+        "modeling agency manager",
+        "Modek",
+        "Perpetrator"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:jean_luc_brunel",
+      "name": "Jean Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "mention_count": 55,
+      "doc_count": 55,
+      "aliases": [
+        "jean luc brunel",
+        "jean luc bruner",
+        "jean-luc brunel",
+        "jean-luc burnel"
+      ],
+      "roles": [
+        "Recipient of email",
+        "founder of the agency",
+        "scout for very young girls"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:mr_epstein",
+      "name": "Mr Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "mention_count": 53,
+      "doc_count": 53,
+      "aliases": [
+        "mr epstein",
+        "mr epstein"
+      ],
+      "roles": [
+        "involved in sexual encounters with Ms Maxwell and her assistant",
+        "subject of investigation",
+        "naked on massage table"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:president_clinton",
+      "name": "President Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "mention_count": 49,
+      "doc_count": 49,
+      "aliases": [
+        "president clinton",
+        "president bill clinton"
+      ],
+      "roles": [
+        "guest",
+        "traveled with Jeffrey Epstein",
+        "U.S. President"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:ms_maxwell",
+      "name": "Ms Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "mention_count": 30,
+      "doc_count": 30,
+      "aliases": [
+        "ms maxwell"
+      ],
+      "roles": [
+        "Epstein's assistant",
+        "introduced Prince Andrew to Epstein",
+        "at the table with Epstein"
+      ],
+      "is_key_player": true
+    }
+  ],
+  "by_type": {
+    "person": 266,
+    "location": 117,
+    "organization": 117
+  },
+  "generated_at": "2024-12-23",
+  "source": "Aggregated from 68,798 document chunks"
 }
