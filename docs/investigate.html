@@ -375,6 +375,8 @@
 
             <div id="network-graph"></div>
 
+            <div id="network-status" style="position: absolute; top: 80px; left: 1rem; background: rgba(0,0,0,0.8); color: #0f0; padding: 8px 12px; border-radius: 4px; font-size: 12px; font-family: monospace; z-index: 10; max-width: 300px;"></div>
+
             <div class="network-legend">
                 <div class="legend-item">
                     <div class="legend-dot" style="background: #2c5282;"></div>
@@ -454,6 +456,16 @@
             location: '#48bb78'
         };
 
+        // Status display helper
+        function showStatus(msg, isError = false) {
+            const el = document.getElementById('network-status');
+            if (el) {
+                el.textContent = msg;
+                el.style.color = isError ? '#f66' : '#0f0';
+            }
+            console.log(isError ? 'ERROR:' : 'STATUS:', msg);
+        }
+
         // Initialize
         document.addEventListener('DOMContentLoaded', async () => {
             await loadData();
@@ -470,20 +482,20 @@
 
         async function loadData() {
             try {
-                console.log('Loading entities...');
-                // Load entities
+                showStatus('Loading entities...');
                 const entitiesResp = await fetch('data/entities.json');
+                if (!entitiesResp.ok) throw new Error('Failed to fetch entities.json');
                 const entitiesData = await entitiesResp.json();
                 entities = entitiesData.entities;
-                console.log('Loaded', entities.length, 'entities');
+                showStatus(`Loaded ${entities.length} entities`);
 
-                // Load pre-computed network data
-                console.log('Loading network data...');
+                showStatus('Loading network data...');
                 const networkResp = await fetch('data/network_data.json');
+                if (!networkResp.ok) throw new Error('Failed to fetch network_data.json');
                 networkData = await networkResp.json();
-                console.log('Loaded network data:', networkData.nodes?.length, 'nodes,', networkData.edges?.length, 'edges');
+                showStatus(`Loaded ${networkData.nodes?.length} nodes, ${networkData.edges?.length} edges`);
             } catch (e) {
-                console.error('Failed to load data:', e);
+                showStatus('ERROR: ' + e.message, true);
             }
         }
 
@@ -516,7 +528,7 @@
             const filter = document.getElementById('entity-filter').value;
             const minStrength = parseInt(document.getElementById('strength-filter').value) / 100;
 
-            console.log('buildNetwork called:', { filter, minStrength, entitiesCount: entities.length, networkNodesCount: networkData.nodes?.length });
+            showStatus(`Building graph (filter: ${filter})...`);
 
             // Get the set of node IDs that exist in network_data
             const networkNodeIds = new Set(networkData.nodes.map(n => n.id));
@@ -531,8 +543,6 @@
                 if (filter === 'locations') return e.type === 'location';
                 return true;
             });
-
-            console.log('Filtered entities:', filteredEntities.length, '(from', networkNodeIds.size, 'network nodes)');
 
             // Use entity.id for unique identification (not short_name which has duplicates)
             const filteredIds = new Set(filteredEntities.map(e => e.id));
@@ -576,7 +586,7 @@
                     title: `${e.shared_docs} shared docs (${Math.round(e.strength * 100)}%)`
                 }));
 
-            console.log('Creating network with', nodes.length, 'nodes and', edges.length, 'edges');
+            showStatus(`Creating: ${nodes.length} nodes, ${edges.length} edges`);
 
             // Create network
             const container = document.getElementById('network-graph');
@@ -599,39 +609,28 @@
                     scaling: { min: 1, max: 8 }
                 },
                 physics: {
-                    enabled: true,
-                    stabilization: {
-                        enabled: true,
-                        iterations: 200,
-                        updateInterval: 25,
-                        fit: true
-                    },
-                    barnesHut: {
-                        gravitationalConstant: -2000,
-                        centralGravity: 0.3,
-                        springLength: 120,
-                        springConstant: 0.04,
-                        damping: 0.09
-                    }
+                    enabled: false  // Disable physics - use static layout
+                },
+                layout: {
+                    improvedLayout: true,
+                    randomSeed: 42
                 },
                 interaction: {
                     hover: true,
-                    tooltipDelay: 200
+                    tooltipDelay: 200,
+                    zoomView: true,
+                    dragView: true
                 }
             };
 
             if (network) network.destroy();
             network = new vis.Network(container, data, options);
 
-            // Stabilization events
-            network.on('stabilizationProgress', function(params) {
-                console.log('Stabilizing:', Math.round(params.iterations / params.total * 100) + '%');
-            });
-
-            network.on('stabilizationIterationsDone', function() {
-                console.log('Stabilization complete, fitting view');
+            // Fit the view after render
+            setTimeout(() => {
                 network.fit();
-            });
+                showStatus(`Ready: ${nodes.length} nodes visible`);
+            }, 100);
 
             // Click handler
             network.on('click', async (params) => {
