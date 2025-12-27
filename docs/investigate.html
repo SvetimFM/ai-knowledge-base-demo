@@ -362,10 +362,10 @@
         <div class="network-panel">
             <div class="network-controls">
                 <select id="entity-filter">
+                    <option value="all" selected>All Entities</option>
                     <option value="key_players">Key Players Only</option>
                     <option value="all_people">All People</option>
                     <option value="locations">Locations Only</option>
-                    <option value="all">All Entities</option>
                 </select>
                 <input type="range" id="strength-filter" min="0" max="100" value="10" title="Minimum connection strength">
                 <small style="color: var(--text-muted); background: white; padding: 2px 6px; border-radius: 3px;">
@@ -470,14 +470,18 @@
 
         async function loadData() {
             try {
+                console.log('Loading entities...');
                 // Load entities
                 const entitiesResp = await fetch('data/entities.json');
                 const entitiesData = await entitiesResp.json();
                 entities = entitiesData.entities;
+                console.log('Loaded', entities.length, 'entities');
 
                 // Load pre-computed network data
+                console.log('Loading network data...');
                 const networkResp = await fetch('data/network_data.json');
                 networkData = await networkResp.json();
+                console.log('Loaded network data:', networkData.nodes?.length, 'nodes,', networkData.edges?.length, 'edges');
             } catch (e) {
                 console.error('Failed to load data:', e);
             }
@@ -512,6 +516,8 @@
             const filter = document.getElementById('entity-filter').value;
             const minStrength = parseInt(document.getElementById('strength-filter').value) / 100;
 
+            console.log('buildNetwork called:', { filter, minStrength, entitiesCount: entities.length, networkNodesCount: networkData.nodes?.length });
+
             // Filter entities based on selection
             let filteredEntities = entities.filter(e => {
                 if (filter === 'key_players') return e.is_key_player;
@@ -519,6 +525,8 @@
                 if (filter === 'locations') return e.type === 'location';
                 return true;
             });
+
+            console.log('Filtered entities:', filteredEntities.length);
 
             // Use entity.id for unique identification (not short_name which has duplicates)
             const filteredIds = new Set(filteredEntities.map(e => e.id));
@@ -561,6 +569,8 @@
                     value: e.strength * 5,
                     title: `${e.shared_docs} shared docs (${Math.round(e.strength * 100)}%)`
                 }));
+
+            console.log('Creating network with', nodes.length, 'nodes and', edges.length, 'edges');
 
             // Create network
             const container = document.getElementById('network-graph');
