@@ -1,0 +1,469 @@
+{
+  "entities": [
+    {
+      "id": "location:new_york",
+      "name": "New York",
+      "short_name": "new_york",
+      "type": "location",
+      "doc_count": 701,
+      "mention_count": 4051,
+      "aliases": [
+        "new york"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:mit",
+      "name": "MIT",
+      "short_name": "mit",
+      "type": "organization",
+      "doc_count": 441,
+      "mention_count": 540,
+      "aliases": [
+        "mit"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:palm_beach",
+      "name": "Palm Beach",
+      "short_name": "palm_beach",
+      "type": "location",
+      "doc_count": 417,
+      "mention_count": 1154,
+      "aliases": [
+        "palm beach"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:miami",
+      "name": "Miami",
+      "short_name": "miami",
+      "type": "location",
+      "doc_count": 294,
+      "mention_count": 1835,
+      "aliases": [
+        "miami"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:el_brillo",
+      "name": "El Brillo",
+      "short_name": "el_brillo",
+      "type": "location",
+      "doc_count": 172,
+      "mention_count": 272,
+      "aliases": [
+        "el brillo"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:florida",
+      "name": "Florida",
+      "short_name": "florida",
+      "type": "location",
+      "doc_count": 131,
+      "mention_count": 195,
+      "aliases": [
+        "florida"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jeffrey_epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "doc_count": 109,
+      "mention_count": 121,
+      "aliases": [
+        "jeffrey epstein"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "location:paris",
+      "name": "Paris",
+      "short_name": "paris",
+      "type": "location",
+      "doc_count": 109,
+      "mention_count": 110,
+      "aliases": [
+        "paris"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:london",
+      "name": "London",
+      "short_name": "london",
+      "type": "location",
+      "doc_count": 100,
+      "mention_count": 391,
+      "aliases": [
+        "london"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:fbi",
+      "name": "FBI",
+      "short_name": "fbi",
+      "type": "organization",
+      "doc_count": 99,
+      "mention_count": 131,
+      "aliases": [
+        "fbi"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:southern_district",
+      "name": "Southern District",
+      "short_name": "southern_district",
+      "type": "organization",
+      "doc_count": 48,
+      "mention_count": 108,
+      "aliases": [
+        "southern district"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "doc_count": 36,
+      "mention_count": 71,
+      "aliases": [
+        "ghislaine maxwell"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "location:france",
+      "name": "France",
+      "short_name": "france",
+      "type": "location",
+      "doc_count": 32,
+      "mention_count": 155,
+      "aliases": [
+        "france"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:manhattan",
+      "name": "Manhattan",
+      "short_name": "manhattan",
+      "type": "location",
+      "doc_count": 27,
+      "mention_count": 27,
+      "aliases": [
+        "manhattan"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:palm_beach_police",
+      "name": "Palm Beach Police",
+      "short_name": "palm_beach_police",
+      "type": "organization",
+      "doc_count": 26,
+      "mention_count": 40,
+      "aliases": [
+        "palm beach police"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:department_of_justice",
+      "name": "Department Of Justice",
+      "short_name": "department_of_justice",
+      "type": "organization",
+      "doc_count": 20,
+      "mention_count": 23,
+      "aliases": [
+        "department of justice"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:mexico",
+      "name": "Mexico",
+      "short_name": "mexico",
+      "type": "location",
+      "doc_count": 17,
+      "mention_count": 26,
+      "aliases": [
+        "mexico"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:east_71st",
+      "name": "East 71St",
+      "short_name": "east_71st",
+      "type": "location",
+      "doc_count": 15,
+      "mention_count": 15,
+      "aliases": [
+        "east 71st"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:harvard",
+      "name": "Harvard",
+      "short_name": "harvard",
+      "type": "organization",
+      "doc_count": 15,
+      "mention_count": 15,
+      "aliases": [
+        "harvard"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:virgin_islands",
+      "name": "Virgin Islands",
+      "short_name": "virgin_islands",
+      "type": "location",
+      "doc_count": 12,
+      "mention_count": 18,
+      "aliases": [
+        "virgin islands"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:little_saint_james",
+      "name": "Little Saint James",
+      "short_name": "little_saint_james",
+      "type": "location",
+      "doc_count": 11,
+      "mention_count": 13,
+      "aliases": [
+        "little saint james"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:st_thomas",
+      "name": "St Thomas",
+      "short_name": "st_thomas",
+      "type": "location",
+      "doc_count": 11,
+      "mention_count": 12,
+      "aliases": [
+        "st thomas"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:new_mexico",
+      "name": "New Mexico",
+      "short_name": "new_mexico",
+      "type": "location",
+      "doc_count": 7,
+      "mention_count": 13,
+      "aliases": [
+        "new mexico"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:lilly_ann_sanchez",
+      "name": "Lilly Ann Sanchez",
+      "short_name": "sanchez",
+      "type": "person",
+      "doc_count": 6,
+      "mention_count": 7,
+      "aliases": [
+        "lilly ann sanchez"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:alfredo_rodriguez",
+      "name": "Alfredo Rodriguez",
+      "short_name": "rodriguez",
+      "type": "person",
+      "doc_count": 6,
+      "mention_count": 6,
+      "aliases": [
+        "alfredo rodriguez"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:jane_doe",
+      "name": "Jane Doe",
+      "short_name": "doe",
+      "type": "person",
+      "doc_count": 4,
+      "mention_count": 4,
+      "aliases": [
+        "jane doe"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:ohio",
+      "name": "Ohio",
+      "short_name": "ohio",
+      "type": "location",
+      "doc_count": 2,
+      "mention_count": 2,
+      "aliases": [
+        "ohio"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:caribbean",
+      "name": "Caribbean",
+      "short_name": "caribbean",
+      "type": "location",
+      "doc_count": 2,
+      "mention_count": 3,
+      "aliases": [
+        "caribbean"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:roy_black",
+      "name": "Roy Black",
+      "short_name": "black",
+      "type": "person",
+      "doc_count": 1,
+      "mention_count": 1,
+      "aliases": [
+        "roy black"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:darren_indyke",
+      "name": "Darren Indyke",
+      "short_name": "indyke",
+      "type": "person",
+      "doc_count": 1,
+      "mention_count": 1,
+      "aliases": [
+        "darren indyke"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:richard_kahn",
+      "name": "Richard Kahn",
+      "short_name": "kahn",
+      "type": "person",
+      "doc_count": 1,
+      "mention_count": 1,
+      "aliases": [
+        "richard kahn"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:larry_visoski",
+      "name": "Larry Visoski",
+      "short_name": "visoski",
+      "type": "person",
+      "doc_count": 1,
+      "mention_count": 2,
+      "aliases": [
+        "larry visoski"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "person:bradley_edwards",
+      "name": "Bradley Edwards",
+      "short_name": "edwards",
+      "type": "person",
+      "doc_count": 1,
+      "mention_count": 1,
+      "aliases": [
+        "bradley edwards"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:zorro_ranch",
+      "name": "Zorro Ranch",
+      "short_name": "zorro_ranch",
+      "type": "location",
+      "doc_count": 1,
+      "mention_count": 2,
+      "aliases": [
+        "zorro ranch"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "location:avenue_foch",
+      "name": "Avenue Foch",
+      "short_name": "avenue_foch",
+      "type": "location",
+      "doc_count": 1,
+      "mention_count": 1,
+      "aliases": [
+        "avenue foch"
+      ],
+      "is_key_player": false
+    },
+    {
+      "id": "organization:doj",
+      "name": "DOJ",
+      "short_name": "doj",
+      "type": "organization",
+      "doc_count": 1,
+      "mention_count": 4,
+      "aliases": [
+        "doj"
+      ],
+      "is_key_player": false
+    }
+  ],
+  "total": 36,
+  "key_players": [
+    {
+      "id": "person:jeffrey_epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "doc_count": 109,
+      "mention_count": 121,
+      "aliases": [
+        "jeffrey epstein"
+      ],
+      "is_key_player": true
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "doc_count": 36,
+      "mention_count": 71,
+      "aliases": [
+        "ghislaine maxwell"
+      ],
+      "is_key_player": true
+    }
+  ],
+  "by_type": {
+    "person": 10,
+    "location": 19,
+    "organization": 7
+  },
+  "generated_at": "2024-12-23"
+}

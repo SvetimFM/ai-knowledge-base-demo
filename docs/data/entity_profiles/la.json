@@ -1,0 +1,179 @@
+{
+  "id": "location:la",
+  "name": "LA",
+  "short_name": "la",
+  "type": "location",
+  "doc_count": 40,
+  "mention_count": 40,
+  "is_key_player": false,
+  "aliases": [
+    "la"
+  ],
+  "roles": [],
+  "connected_entities": [
+    {
+      "id": "person:epstein",
+      "name": "Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:jeffrey_epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:donald_trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:trump",
+      "name": "Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:bill_clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:alan_dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:prince_andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:clinton",
+      "name": "Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:leslie_wexner",
+      "name": "Leslie Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:hillary_clinton",
+      "name": "Hillary Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:bill_gates",
+      "name": "Bill Gates",
+      "short_name": "gates",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:president_trump",
+      "name": "President Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:brunel",
+      "name": "Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:jean_luc_brunel",
+      "name": "Jean Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:mr_epstein",
+      "name": "Mr Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:president_clinton",
+      "name": "President Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 10,
+      "strength": 0.25
+    },
+    {
+      "id": "person:ms_maxwell",
+      "name": "Ms Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 7,
+      "strength": 0.175
+    }
+  ],
+  "documents": [],
+  "total_documents": 40,
+  "description": "Generated profile - document snippets may not be available. See entity page for full context.",
+  "generated": true
+}

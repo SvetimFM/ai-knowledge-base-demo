@@ -1,1948 +1,1577 @@
 {
   "nodes": [
     {
-      "id": "epstein",
-      "label": "Jeffrey Epstein",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 619,
-      "viz_file": "data/viz/players/epstein_network.html"
-    },
-    {
-      "id": "andrew",
-      "label": "Prince Andrew",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 317,
-      "viz_file": null
-    },
-    {
-      "id": "maxwell",
-      "label": "Ghislaine Maxwell",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 301,
-      "viz_file": "data/viz/players/maxwell_network.html"
-    },
-    {
-      "id": "clinton",
-      "label": "Bill Clinton",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 192,
-      "viz_file": "data/viz/players/clinton_network.html"
-    },
-    {
-      "id": "dershowitz",
-      "label": "Alan Dershowitz",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 103,
-      "viz_file": "data/viz/players/dershowitz_network.html"
-    },
-    {
-      "id": "wexner",
-      "label": "Les Wexner",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 101,
-      "viz_file": "data/viz/players/wexner_network.html"
-    },
-    {
-      "id": "virginia",
-      "label": "Virginia Giuffre",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 94,
-      "viz_file": null
-    },
-    {
-      "id": "trump",
-      "label": "Donald Trump",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 8,
-      "viz_file": "data/viz/players/trump_network.html"
-    },
-    {
-      "id": "brunel",
-      "label": "Jean-Luc Brunel",
-      "type": "person",
-      "is_key_player": true,
-      "doc_count": 6,
-      "viz_file": "data/viz/players/brunel_network.html"
-    },
-    {
-      "id": "new york",
-      "label": "New York",
-      "type": "location",
-      "is_key_player": false,
-      "doc_count": 1455,
-      "viz_file": null
-    },
-    {
-      "id": "paris",
-      "label": "Paris",
-      "type": "location",
-      "is_key_player": false,
-      "doc_count": 791,
-      "viz_file": null
-    },
-    {
-      "id": "black",
-      "label": "Black",
-      "type": "person",
-      "is_key_player": false,
-      "doc_count": 746,
-      "viz_file": null
-    },
-    {
-      "id": "palm beach",
+      "id": "location:palm_beach",
       "label": "Palm Beach",
       "type": "location",
       "is_key_player": false,
-      "doc_count": 688,
+      "doc_count": 500,
       "viz_file": null
     },
     {
-      "id": "jeffrey",
-      "label": "Jeffrey",
-      "type": "person",
-      "is_key_player": false,
-      "doc_count": 563,
-      "viz_file": null
-    },
-    {
-      "id": "little saint james",
-      "label": "Little Saint James",
+      "id": "location:new_york",
+      "label": "New York",
       "type": "location",
       "is_key_player": false,
-      "doc_count": 429,
+      "doc_count": 500,
       "viz_file": null
     },
     {
-      "id": "london",
+      "id": "location:united_states",
+      "label": "United States",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 491,
+      "viz_file": null
+    },
+    {
+      "id": "organization:nsa",
+      "label": "NSA",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 414,
+      "viz_file": null
+    },
+    {
+      "id": "location:china",
+      "label": "China",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 353,
+      "viz_file": null
+    },
+    {
+      "id": "location:israel",
+      "label": "Israel",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 307,
+      "viz_file": null
+    },
+    {
+      "id": "person:epstein",
+      "label": "Epstein",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 300,
+      "viz_file": "data/viz/players/epstein_network.html"
+    },
+    {
+      "id": "person:jeffrey_epstein",
+      "label": "Jeffrey Epstein",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 300,
+      "viz_file": "data/viz/players/epstein_network.html"
+    },
+    {
+      "id": "person:jeffrey_e",
+      "label": "jeffrey E.",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 300,
+      "viz_file": null
+    },
+    {
+      "id": "person:[victim_-_name_redacted]",
+      "label": "[VICTIM - NAME REDACTED]",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 300,
+      "viz_file": null
+    },
+    {
+      "id": "person:donald_trump",
+      "label": "Donald Trump",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 300,
+      "viz_file": "data/viz/players/trump_network.html"
+    },
+    {
+      "id": "person:trump",
+      "label": "Trump",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 300,
+      "viz_file": "data/viz/players/trump_network.html"
+    },
+    {
+      "id": "person:bill_clinton",
+      "label": "Bill Clinton",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 300,
+      "viz_file": "data/viz/players/clinton_network.html"
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "label": "Ghislaine Maxwell",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 300,
+      "viz_file": "data/viz/players/maxwell_network.html"
+    },
+    {
+      "id": "person:snowden",
+      "label": "Snowden",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 300,
+      "viz_file": null
+    },
+    {
+      "id": "person:alan_dershowitz",
+      "label": "Alan Dershowitz",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 300,
+      "viz_file": "data/viz/players/dershowitz_network.html"
+    },
+    {
+      "id": "person:prince_andrew",
+      "label": "Prince Andrew",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 300,
+      "viz_file": null
+    },
+    {
+      "id": "person:michael_wolff",
+      "label": "Michael Wolff",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 300,
+      "viz_file": null
+    },
+    {
+      "id": "person:richard_kahn",
+      "label": "Richard Kahn",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 300,
+      "viz_file": null
+    },
+    {
+      "id": "person:kathy_ruemmler",
+      "label": "Kathy Ruemmler",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 297,
+      "viz_file": null
+    },
+    {
+      "id": "person:israel",
+      "label": "Israel",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 288,
+      "viz_file": null
+    },
+    {
+      "id": "organization:new_york_times",
+      "label": "New York Times",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 286,
+      "viz_file": null
+    },
+    {
+      "id": "person:edwards",
+      "label": "Edwards",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 283,
+      "viz_file": null
+    },
+    {
+      "id": "person:dershowitz",
+      "label": "Dershowitz",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 281,
+      "viz_file": "data/viz/players/dershowitz_network.html"
+    },
+    {
+      "id": "person:edward_snowden",
+      "label": "Edward Snowden",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 277,
+      "viz_file": null
+    },
+    {
+      "id": "person:darren_indyke",
+      "label": "Darren Indyke",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 269,
+      "viz_file": null
+    },
+    {
+      "id": "person:barak",
+      "label": "Barak",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 268,
+      "viz_file": null
+    },
+    {
+      "id": "location:florida",
+      "label": "Florida",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 257,
+      "viz_file": null
+    },
+    {
+      "id": "person:steve_bannon",
+      "label": "Steve Bannon",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 255,
+      "viz_file": null
+    },
+    {
+      "id": "location:hong_kong",
+      "label": "Hong Kong",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 249,
+      "viz_file": null
+    },
+    {
+      "id": "person:china",
+      "label": "China",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 223,
+      "viz_file": null
+    },
+    {
+      "id": "location:europe",
+      "label": "Europe",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 220,
+      "viz_file": null
+    },
+    {
+      "id": "organization:fbi",
+      "label": "FBI",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 216,
+      "viz_file": null
+    },
+    {
+      "id": "person:united_states",
+      "label": "United States",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 215,
+      "viz_file": null
+    },
+    {
+      "id": "location:syria",
+      "label": "Syria",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 203,
+      "viz_file": null
+    },
+    {
+      "id": "person:clinton",
+      "label": "Clinton",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 191,
+      "viz_file": "data/viz/players/clinton_network.html"
+    },
+    {
+      "id": "person:bannon",
+      "label": "Bannon",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 186,
+      "viz_file": null
+    },
+    {
+      "id": "person:lawrence_krauss",
+      "label": "Lawrence Krauss",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 184,
+      "viz_file": null
+    },
+    {
+      "id": "organization:united_states",
+      "label": "United States",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 184,
+      "viz_file": null
+    },
+    {
+      "id": "person:weingarten,_reid",
+      "label": "Weingarten, Reid",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 179,
+      "viz_file": null
+    },
+    {
+      "id": "location:us",
+      "label": "US",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 175,
+      "viz_file": null
+    },
+    {
+      "id": "person:james_patterson",
+      "label": "James PATTERSON",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 174,
+      "viz_file": null
+    },
+    {
+      "id": "location:london",
       "label": "London",
       "type": "location",
       "is_key_player": false,
-      "doc_count": 356,
+      "doc_count": 173,
       "viz_file": null
     },
     {
-      "id": "ghislaine",
-      "label": "Ghislaine",
+      "id": "person:obama",
+      "label": "Obama",
       "type": "person",
       "is_key_player": false,
-      "doc_count": 265,
+      "doc_count": 163,
       "viz_file": null
     },
     {
-      "id": "alfredo",
-      "label": "Alfredo",
+      "id": "person:larry_summers",
+      "label": "Larry Summers",
       "type": "person",
       "is_key_player": false,
-      "doc_count": 265,
+      "doc_count": 161,
       "viz_file": null
     },
     {
-      "id": "nadia",
-      "label": "Nadia",
-      "type": "person",
-      "is_key_player": false,
-      "doc_count": 194,
-      "viz_file": null
-    },
-    {
-      "id": "rodriguez",
-      "label": "Rodriguez",
-      "type": "person",
-      "is_key_player": false,
-      "doc_count": 170,
-      "viz_file": null
-    },
-    {
-      "id": "zorro ranch",
-      "label": "Zorro Ranch",
+      "id": "location:miami",
+      "label": "Miami",
       "type": "location",
       "is_key_player": false,
       "doc_count": 160,
       "viz_file": null
     },
     {
-      "id": "leon",
-      "label": "Leon",
-      "type": "person",
+      "id": "location:new_york_city",
+      "label": "New York City",
+      "type": "location",
       "is_key_player": false,
-      "doc_count": 101,
+      "doc_count": 155,
       "viz_file": null
     },
     {
-      "id": "virgin islands",
+      "id": "organization:cooperative",
+      "label": "COOPERATIVE",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 154,
+      "viz_file": null
+    },
+    {
+      "id": "person:arafat",
+      "label": "Arafat",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 152,
+      "viz_file": null
+    },
+    {
+      "id": "organization:bofa_merrill_lynch",
+      "label": "BofA Merrill Lynch",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 150,
+      "viz_file": null
+    },
+    {
+      "id": "location:russia",
+      "label": "Russia",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 145,
+      "viz_file": null
+    },
+    {
+      "id": "location:us",
+      "label": "U.S.",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 139,
+      "viz_file": null
+    },
+    {
+      "id": "location:palm_beach,_florida",
+      "label": "Palm Beach, Florida",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 139,
+      "viz_file": null
+    },
+    {
+      "id": "person:martin_weinberg",
+      "label": "Martin Weinberg",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 136,
+      "viz_file": null
+    },
+    {
+      "id": "organization:us_department_of_justice",
+      "label": "U.S. Department of Justice",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 134,
+      "viz_file": null
+    },
+    {
+      "id": "organization:clinton_foundation",
+      "label": "Clinton Foundation",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 131,
+      "viz_file": null
+    },
+    {
+      "id": "person:nicholas_ribis",
+      "label": "Nicholas Ribis",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 130,
+      "viz_file": null
+    },
+    {
+      "id": "organization:cia",
+      "label": "CIA",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 129,
+      "viz_file": null
+    },
+    {
+      "id": "organization:federal_bureau_of_investigation",
+      "label": "Federal Bureau of Investigation",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 128,
+      "viz_file": null
+    },
+    {
+      "id": "location:saudi_arabia",
+      "label": "Saudi Arabia",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 128,
+      "viz_file": null
+    },
+    {
+      "id": "location:moscow",
+      "label": "Moscow",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 127,
+      "viz_file": null
+    },
+    {
+      "id": "organization:white_house",
+      "label": "White House",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 125,
+      "viz_file": null
+    },
+    {
+      "id": "location:united_kingdom",
+      "label": "United Kingdom",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 125,
+      "viz_file": null
+    },
+    {
+      "id": "location:egypt",
+      "label": "Egypt",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 125,
+      "viz_file": null
+    },
+    {
+      "id": "person:cassell",
+      "label": "Cassell",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 124,
+      "viz_file": null
+    },
+    {
+      "id": "location:washington",
+      "label": "Washington",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 124,
+      "viz_file": null
+    },
+    {
+      "id": "organization:palm_beach_police_department",
+      "label": "Palm Beach Police Department",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 123,
+      "viz_file": null
+    },
+    {
+      "id": "person:america",
+      "label": "America",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 121,
+      "viz_file": null
+    },
+    {
+      "id": "person:thomas_jr,_landon",
+      "label": "Thomas Jr., Landon",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 119,
+      "viz_file": null
+    },
+    {
+      "id": "person:brad",
+      "label": "Brad",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 118,
+      "viz_file": null
+    },
+    {
+      "id": "person:barack_obama",
+      "label": "Barack Obama",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 117,
+      "viz_file": null
+    },
+    {
+      "id": "location:virgin_islands",
       "label": "Virgin Islands",
       "type": "location",
       "is_key_player": false,
-      "doc_count": 74,
+      "doc_count": 117,
       "viz_file": null
     },
     {
-      "id": "new mexico",
-      "label": "New Mexico",
+      "id": "location:uk",
+      "label": "UK",
       "type": "location",
       "is_key_player": false,
-      "doc_count": 72,
+      "doc_count": 116,
       "viz_file": null
     },
     {
-      "id": "manhattan",
-      "label": "Manhattan",
+      "id": "person:bibi",
+      "label": "Bibi",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 115,
+      "viz_file": null
+    },
+    {
+      "id": "person:mr_scarola",
+      "label": "MR. SCAROLA",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 115,
+      "viz_file": null
+    },
+    {
+      "id": "organization:usa_inc",
+      "label": "USA Inc.",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 115,
+      "viz_file": null
+    },
+    {
+      "id": "location:iran",
+      "label": "Iran",
       "type": "location",
       "is_key_player": false,
-      "doc_count": 28,
+      "doc_count": 115,
       "viz_file": null
     },
     {
-      "id": "roberts",
-      "label": "Roberts",
-      "type": "person",
+      "id": "location:paris",
+      "label": "Paris",
+      "type": "location",
       "is_key_player": false,
-      "doc_count": 24,
+      "doc_count": 113,
       "viz_file": null
     },
     {
-      "id": "glenn",
-      "label": "Glenn",
-      "type": "person",
+      "id": "location:japan",
+      "label": "Japan",
+      "type": "location",
       "is_key_player": false,
-      "doc_count": 8,
+      "doc_count": 112,
       "viz_file": null
     },
     {
-      "id": "dubin",
-      "label": "Dubin",
+      "id": "person:ghislaine",
+      "label": "Ghislaine",
       "type": "person",
       "is_key_player": false,
-      "doc_count": 7,
+      "doc_count": 110,
       "viz_file": null
     },
     {
-      "id": "mitchell",
-      "label": "Mitchell",
-      "type": "person",
+      "id": "location:usa",
+      "label": "USA",
+      "type": "location",
       "is_key_player": false,
-      "doc_count": 6,
+      "doc_count": 109,
       "viz_file": null
     },
     {
-      "id": "kellen",
-      "label": "Kellen",
+      "id": "person:iran",
+      "label": "Iran",
       "type": "person",
       "is_key_player": false,
-      "doc_count": 5,
+      "doc_count": 108,
+      "viz_file": null
+    },
+    {
+      "id": "person:thomas_jr",
+      "label": "Thomas Jr.",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 108,
+      "viz_file": null
+    },
+    {
+      "id": "person:rabin",
+      "label": "Rabin",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 108,
+      "viz_file": null
+    },
+    {
+      "id": "location:germany",
+      "label": "Germany",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 108,
+      "viz_file": null
+    },
+    {
+      "id": "person:nsa",
+      "label": "NSA",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 107,
+      "viz_file": null
+    },
+    {
+      "id": "location:france",
+      "label": "France",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 107,
+      "viz_file": null
+    },
+    {
+      "id": "organization:china",
+      "label": "China",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 106,
+      "viz_file": null
+    },
+    {
+      "id": "person:palestinians",
+      "label": "Palestinians",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 105,
+      "viz_file": null
+    },
+    {
+      "id": "organization:israel",
+      "label": "Israel",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 104,
+      "viz_file": null
+    },
+    {
+      "id": "person:us",
+      "label": "U.S.",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 103,
+      "viz_file": null
+    },
+    {
+      "id": "person:maxwell",
+      "label": "Maxwell",
+      "type": "person",
+      "is_key_player": true,
+      "doc_count": 102,
+      "viz_file": "data/viz/players/maxwell_network.html"
+    },
+    {
+      "id": "person:lesley_groff",
+      "label": "Lesley Groff",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 100,
+      "viz_file": null
+    },
+    {
+      "id": "location:west_bank",
+      "label": "West Bank",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 100,
+      "viz_file": null
+    },
+    {
+      "id": "person:boris_nikolic",
+      "label": "Boris Nikolic",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 99,
+      "viz_file": null
+    },
+    {
+      "id": "location:australia",
+      "label": "Australia",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 99,
+      "viz_file": null
+    },
+    {
+      "id": "organization:harvard",
+      "label": "Harvard",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 97,
+      "viz_file": null
+    },
+    {
+      "id": "location:middle_east",
+      "label": "Middle East",
+      "type": "location",
+      "is_key_player": false,
+      "doc_count": 96,
+      "viz_file": null
+    },
+    {
+      "id": "person:russia",
+      "label": "Russia",
+      "type": "person",
+      "is_key_player": false,
+      "doc_count": 94,
+      "viz_file": null
+    },
+    {
+      "id": "organization:arizona_state_university",
+      "label": "Arizona State University",
+      "type": "organization",
+      "is_key_player": false,
+      "doc_count": 93,
       "viz_file": null
     }
   ],
   "edges": [
     {
-      "from": "brunel",
-      "to": "maxwell",
+      "from": "person:epstein",
+      "to": "person:jeffrey_epstein",
       "strength": 1.0,
-      "shared_docs": 6,
-      "label": "6 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "brunel",
-      "to": "roberts",
+      "from": "person:epstein",
+      "to": "person:donald_trump",
       "strength": 1.0,
-      "shared_docs": 6,
-      "label": "6 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "maxwell",
+      "from": "person:epstein",
+      "to": "person:trump",
       "strength": 1.0,
-      "shared_docs": 103,
-      "label": "103 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dubin",
-      "to": "maxwell",
+      "from": "person:epstein",
+      "to": "person:bill_clinton",
       "strength": 1.0,
-      "shared_docs": 7,
-      "label": "7 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "kellen",
-      "to": "maxwell",
+      "from": "person:epstein",
+      "to": "person:ghislaine_maxwell",
       "strength": 1.0,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "kellen",
-      "to": "roberts",
+      "from": "person:epstein",
+      "to": "person:alan_dershowitz",
       "strength": 1.0,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "maxwell",
-      "to": "mitchell",
+      "from": "person:epstein",
+      "to": "person:prince_andrew",
       "strength": 1.0,
-      "shared_docs": 6,
-      "label": "6 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "mitchell",
-      "to": "roberts",
+      "from": "person:jeffrey_epstein",
+      "to": "person:donald_trump",
       "strength": 1.0,
-      "shared_docs": 6,
-      "label": "6 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "new mexico",
-      "to": "new york",
+      "from": "person:jeffrey_epstein",
+      "to": "person:trump",
       "strength": 1.0,
-      "shared_docs": 72,
-      "label": "72 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "ghislaine",
-      "to": "jeffrey",
-      "strength": 0.989,
-      "shared_docs": 262,
-      "label": "262 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "person:bill_clinton",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "andrew",
-      "to": "new york",
-      "strength": 0.987,
-      "shared_docs": 313,
-      "label": "313 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "person:ghislaine_maxwell",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "nadia",
-      "to": "new york",
-      "strength": 0.985,
-      "shared_docs": 191,
-      "label": "191 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "person:alan_dershowitz",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "nadia",
-      "to": "paris",
-      "strength": 0.985,
-      "shared_docs": 191,
-      "label": "191 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "person:prince_andrew",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "epstein",
-      "strength": 0.981,
-      "shared_docs": 101,
-      "label": "101 docs"
+      "from": "person:donald_trump",
+      "to": "person:trump",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "jeffrey",
-      "strength": 0.981,
-      "shared_docs": 101,
-      "label": "101 docs"
+      "from": "person:donald_trump",
+      "to": "person:bill_clinton",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "paris",
-      "strength": 0.981,
-      "shared_docs": 101,
-      "label": "101 docs"
+      "from": "person:donald_trump",
+      "to": "person:ghislaine_maxwell",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "leon",
-      "to": "london",
-      "strength": 0.98,
-      "shared_docs": 99,
-      "label": "99 docs"
+      "from": "person:donald_trump",
+      "to": "person:alan_dershowitz",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "alfredo",
-      "to": "black",
-      "strength": 0.977,
-      "shared_docs": 259,
-      "label": "259 docs"
+      "from": "person:donald_trump",
+      "to": "person:prince_andrew",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "alfredo",
-      "to": "new york",
-      "strength": 0.977,
-      "shared_docs": 259,
-      "label": "259 docs"
+      "from": "person:trump",
+      "to": "person:bill_clinton",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "alfredo",
-      "to": "paris",
-      "strength": 0.977,
-      "shared_docs": 259,
-      "label": "259 docs"
+      "from": "person:trump",
+      "to": "person:ghislaine_maxwell",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "wexner",
-      "strength": 0.971,
-      "shared_docs": 100,
-      "label": "100 docs"
+      "from": "person:trump",
+      "to": "person:alan_dershowitz",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "ghislaine",
-      "strength": 0.971,
-      "shared_docs": 100,
-      "label": "100 docs"
+      "from": "person:trump",
+      "to": "person:prince_andrew",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "manhattan",
-      "to": "new york",
-      "strength": 0.964,
-      "shared_docs": 27,
-      "label": "27 docs"
+      "from": "person:bill_clinton",
+      "to": "person:ghislaine_maxwell",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "new mexico",
-      "to": "palm beach",
-      "strength": 0.958,
-      "shared_docs": 69,
-      "label": "69 docs"
+      "from": "person:bill_clinton",
+      "to": "person:alan_dershowitz",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "new york",
-      "strength": 0.951,
-      "shared_docs": 98,
-      "label": "98 docs"
+      "from": "person:bill_clinton",
+      "to": "person:prince_andrew",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "wexner",
-      "to": "zorro ranch",
+      "from": "person:ghislaine_maxwell",
+      "to": "person:alan_dershowitz",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
+    },
+    {
+      "from": "person:ghislaine_maxwell",
+      "to": "person:prince_andrew",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
+    },
+    {
+      "from": "person:alan_dershowitz",
+      "to": "person:prince_andrew",
+      "strength": 1.0,
+      "shared_docs": 300,
+      "label": "300 docs"
+    },
+    {
+      "from": "person:epstein",
+      "to": "location:palm_beach",
       "strength": 0.95,
-      "shared_docs": 96,
-      "label": "96 docs"
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "ghislaine",
-      "to": "new york",
-      "strength": 0.94,
-      "shared_docs": 249,
-      "label": "249 docs"
+      "from": "person:epstein",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "rodriguez",
-      "to": "zorro ranch",
-      "strength": 0.935,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "palm beach",
-      "strength": 0.932,
-      "shared_docs": 96,
-      "label": "96 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "rodriguez",
-      "strength": 0.932,
-      "shared_docs": 96,
-      "label": "96 docs"
+      "from": "person:donald_trump",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "zorro ranch",
-      "strength": 0.932,
-      "shared_docs": 96,
-      "label": "96 docs"
+      "from": "person:donald_trump",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "maxwell",
-      "to": "new york",
-      "strength": 0.93,
-      "shared_docs": 280,
-      "label": "280 docs"
+      "from": "person:trump",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "andrew",
-      "to": "paris",
-      "strength": 0.927,
-      "shared_docs": 294,
-      "label": "294 docs"
+      "from": "person:trump",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "andrew",
-      "to": "black",
-      "strength": 0.924,
-      "shared_docs": 293,
-      "label": "293 docs"
+      "from": "person:bill_clinton",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "new mexico",
-      "to": "paris",
-      "strength": 0.917,
-      "shared_docs": 66,
-      "label": "66 docs"
+      "from": "person:bill_clinton",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "ghislaine",
-      "to": "palm beach",
-      "strength": 0.913,
-      "shared_docs": 242,
-      "label": "242 docs"
+      "from": "person:ghislaine_maxwell",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "maxwell",
-      "to": "palm beach",
-      "strength": 0.907,
-      "shared_docs": 273,
-      "label": "273 docs"
+      "from": "person:ghislaine_maxwell",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "new mexico",
-      "to": "zorro ranch",
-      "strength": 0.889,
-      "shared_docs": 64,
-      "label": "64 docs"
+      "from": "person:alan_dershowitz",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "glenn",
-      "to": "jeffrey",
-      "strength": 0.875,
-      "shared_docs": 7,
-      "label": "7 docs"
+      "from": "person:alan_dershowitz",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "new mexico",
-      "to": "rodriguez",
-      "strength": 0.875,
-      "shared_docs": 63,
-      "label": "63 docs"
+      "from": "person:prince_andrew",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "dubin",
-      "to": "roberts",
-      "strength": 0.857,
-      "shared_docs": 6,
-      "label": "6 docs"
+      "from": "person:prince_andrew",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 300,
+      "label": "300 docs"
     },
     {
-      "from": "maxwell",
-      "to": "paris",
-      "strength": 0.841,
-      "shared_docs": 253,
-      "label": "253 docs"
+      "from": "person:dershowitz",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "brunel",
-      "to": "kellen",
-      "strength": 0.833,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:dershowitz",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "brunel",
-      "to": "dershowitz",
-      "strength": 0.833,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:clinton",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "brunel",
-      "to": "jeffrey",
-      "strength": 0.833,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:clinton",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "brunel",
-      "to": "paris",
-      "strength": 0.833,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:maxwell",
+      "to": "location:palm_beach",
+      "strength": 0.95,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "brunel",
-      "to": "dubin",
-      "strength": 0.833,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:maxwell",
+      "to": "location:new_york",
+      "strength": 0.95,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "mitchell",
-      "to": "trump",
-      "strength": 0.833,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:maxwell",
+      "to": "location:paris",
+      "strength": 0.95,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "jeffrey",
-      "to": "mitchell",
-      "strength": 0.833,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:maxwell",
+      "to": "location:london",
+      "strength": 0.95,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "black",
-      "to": "new york",
-      "strength": 0.807,
-      "shared_docs": 602,
-      "label": "602 docs"
+      "from": "person:maxwell",
+      "to": "location:virgin_islands",
+      "strength": 0.95,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "jeffrey",
-      "to": "palm beach",
-      "strength": 0.801,
-      "shared_docs": 451,
-      "label": "451 docs"
+      "from": "person:epstein",
+      "to": "person:dershowitz",
+      "strength": 0.937,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "epstein",
-      "to": "kellen",
-      "strength": 0.8,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "person:dershowitz",
+      "strength": 0.937,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "black",
-      "to": "kellen",
-      "strength": 0.8,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:donald_trump",
+      "to": "person:dershowitz",
+      "strength": 0.937,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "kellen",
-      "to": "mitchell",
-      "strength": 0.8,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:trump",
+      "to": "person:dershowitz",
+      "strength": 0.937,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "kellen",
-      "to": "wexner",
-      "strength": 0.8,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:bill_clinton",
+      "to": "person:dershowitz",
+      "strength": 0.937,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "kellen",
-      "to": "trump",
-      "strength": 0.8,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:ghislaine_maxwell",
+      "to": "person:dershowitz",
+      "strength": 0.937,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "jeffrey",
-      "to": "kellen",
-      "strength": 0.8,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:alan_dershowitz",
+      "to": "person:dershowitz",
+      "strength": 0.937,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "ghislaine",
-      "to": "kellen",
-      "strength": 0.8,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:prince_andrew",
+      "to": "person:dershowitz",
+      "strength": 0.937,
+      "shared_docs": 281,
+      "label": "281 docs"
     },
     {
-      "from": "kellen",
-      "to": "paris",
-      "strength": 0.8,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:clinton",
+      "to": "location:london",
+      "strength": 0.906,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "epstein",
-      "to": "jeffrey",
-      "strength": 0.774,
-      "shared_docs": 479,
-      "label": "479 docs"
+      "from": "person:dershowitz",
+      "to": "person:clinton",
+      "strength": 0.68,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "ghislaine",
-      "to": "maxwell",
-      "strength": 0.762,
-      "shared_docs": 202,
-      "label": "202 docs"
+      "from": "person:epstein",
+      "to": "person:clinton",
+      "strength": 0.637,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "epstein",
-      "to": "palm beach",
-      "strength": 0.758,
-      "shared_docs": 469,
-      "label": "469 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "person:clinton",
+      "strength": 0.637,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "maxwell",
-      "to": "trump",
-      "strength": 0.75,
-      "shared_docs": 6,
-      "label": "6 docs"
+      "from": "person:donald_trump",
+      "to": "person:clinton",
+      "strength": 0.637,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "black",
-      "to": "paris",
-      "strength": 0.743,
-      "shared_docs": 554,
-      "label": "554 docs"
+      "from": "person:trump",
+      "to": "person:clinton",
+      "strength": 0.637,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "london",
-      "to": "paris",
-      "strength": 0.725,
-      "shared_docs": 258,
-      "label": "258 docs"
+      "from": "person:bill_clinton",
+      "to": "person:clinton",
+      "strength": 0.637,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "london",
-      "to": "new york",
-      "strength": 0.722,
-      "shared_docs": 257,
-      "label": "257 docs"
+      "from": "person:ghislaine_maxwell",
+      "to": "person:clinton",
+      "strength": 0.637,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "dubin",
-      "to": "epstein",
-      "strength": 0.714,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:alan_dershowitz",
+      "to": "person:clinton",
+      "strength": 0.637,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "black",
-      "to": "dubin",
-      "strength": 0.714,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:prince_andrew",
+      "to": "person:clinton",
+      "strength": 0.637,
+      "shared_docs": 191,
+      "label": "191 docs"
     },
     {
-      "from": "dubin",
-      "to": "mitchell",
-      "strength": 0.714,
-      "shared_docs": 5,
-      "label": "5 docs"
+      "from": "person:dershowitz",
+      "to": "location:london",
+      "strength": 0.616,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "dubin",
-      "to": "jeffrey",
-      "strength": 0.714,
-      "shared_docs": 5,
-      "label": "5 docs"
-    },
-    {
-      "from": "dubin",
-      "to": "paris",
-      "strength": 0.714,
-      "shared_docs": 5,
-      "label": "5 docs"
-    },
-    {
-      "from": "new york",
-      "to": "roberts",
-      "strength": 0.708,
-      "shared_docs": 17,
-      "label": "17 docs"
-    },
-    {
-      "from": "brunel",
-      "to": "epstein",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "black",
-      "to": "brunel",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "brunel",
-      "to": "mitchell",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "brunel",
-      "to": "wexner",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "brunel",
-      "to": "trump",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "brunel",
-      "to": "virginia",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "brunel",
-      "to": "ghislaine",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "black",
-      "to": "mitchell",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "mitchell",
-      "to": "wexner",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "mitchell",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "mitchell",
-      "to": "paris",
-      "strength": 0.667,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "glenn",
-      "to": "maxwell",
-      "strength": 0.625,
-      "shared_docs": 5,
-      "label": "5 docs"
-    },
-    {
-      "from": "glenn",
-      "to": "palm beach",
-      "strength": 0.625,
-      "shared_docs": 5,
-      "label": "5 docs"
-    },
-    {
-      "from": "alfredo",
-      "to": "rodriguez",
-      "strength": 0.623,
-      "shared_docs": 165,
-      "label": "165 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "paris",
-      "strength": 0.619,
-      "shared_docs": 164,
-      "label": "164 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "paris",
+      "from": "person:clinton",
+      "to": "location:virgin_islands",
       "strength": 0.613,
-      "shared_docs": 263,
-      "label": "263 docs"
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "alfredo",
-      "to": "palm beach",
-      "strength": 0.611,
-      "shared_docs": 162,
-      "label": "162 docs"
+      "from": "person:clinton",
+      "to": "location:paris",
+      "strength": 0.592,
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "alfredo",
-      "to": "epstein",
-      "strength": 0.604,
-      "shared_docs": 160,
-      "label": "160 docs"
+      "from": "person:epstein",
+      "to": "location:london",
+      "strength": 0.577,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "andrew",
-      "to": "nadia",
-      "strength": 0.603,
-      "shared_docs": 191,
-      "label": "191 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "location:london",
+      "strength": 0.577,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "alfredo",
-      "to": "maxwell",
-      "strength": 0.6,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:donald_trump",
+      "to": "location:london",
+      "strength": 0.577,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "alfredo",
-      "to": "jeffrey",
-      "strength": 0.6,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:trump",
+      "to": "location:london",
+      "strength": 0.577,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "alfredo",
-      "to": "ghislaine",
-      "strength": 0.6,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:bill_clinton",
+      "to": "location:london",
+      "strength": 0.577,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "alfredo",
-      "to": "zorro ranch",
-      "strength": 0.6,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:ghislaine_maxwell",
+      "to": "location:london",
+      "strength": 0.577,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "ghislaine",
-      "to": "rodriguez",
-      "strength": 0.6,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:alan_dershowitz",
+      "to": "location:london",
+      "strength": 0.577,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "ghislaine",
-      "to": "zorro ranch",
-      "strength": 0.6,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:prince_andrew",
+      "to": "location:london",
+      "strength": 0.577,
+      "shared_docs": 173,
+      "label": "173 docs"
     },
     {
-      "from": "kellen",
-      "to": "virginia",
-      "strength": 0.6,
-      "shared_docs": 3,
-      "label": "3 docs"
+      "from": "person:clinton",
+      "to": "person:maxwell",
+      "strength": 0.534,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "dubin",
-      "to": "kellen",
-      "strength": 0.571,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:dershowitz",
+      "to": "location:virgin_islands",
+      "strength": 0.416,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "dubin",
-      "to": "wexner",
-      "strength": 0.571,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:dershowitz",
+      "to": "location:paris",
+      "strength": 0.402,
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "dubin",
-      "to": "trump",
-      "strength": 0.571,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:epstein",
+      "to": "location:virgin_islands",
+      "strength": 0.39,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "dubin",
-      "to": "ghislaine",
-      "strength": 0.571,
-      "shared_docs": 4,
-      "label": "4 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "location:virgin_islands",
+      "strength": 0.39,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "jeffrey",
-      "to": "new york",
-      "strength": 0.57,
-      "shared_docs": 321,
-      "label": "321 docs"
+      "from": "person:donald_trump",
+      "to": "location:virgin_islands",
+      "strength": 0.39,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "rodriguez",
-      "to": "wexner",
-      "strength": 0.565,
-      "shared_docs": 96,
-      "label": "96 docs"
+      "from": "person:trump",
+      "to": "location:virgin_islands",
+      "strength": 0.39,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "maxwell",
-      "to": "rodriguez",
-      "strength": 0.528,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:bill_clinton",
+      "to": "location:virgin_islands",
+      "strength": 0.39,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "maxwell",
-      "to": "zorro ranch",
-      "strength": 0.528,
-      "shared_docs": 159,
-      "label": "159 docs"
+      "from": "person:ghislaine_maxwell",
+      "to": "location:virgin_islands",
+      "strength": 0.39,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "epstein",
-      "to": "new york",
-      "strength": 0.523,
-      "shared_docs": 324,
-      "label": "324 docs"
+      "from": "person:alan_dershowitz",
+      "to": "location:virgin_islands",
+      "strength": 0.39,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "clinton",
-      "to": "london",
-      "strength": 0.51,
-      "shared_docs": 98,
-      "label": "98 docs"
+      "from": "person:prince_andrew",
+      "to": "location:virgin_islands",
+      "strength": 0.39,
+      "shared_docs": 117,
+      "label": "117 docs"
     },
     {
-      "from": "clinton",
-      "to": "leon",
-      "strength": 0.505,
-      "shared_docs": 97,
-      "label": "97 docs"
-    },
-    {
-      "from": "brunel",
-      "to": "clinton",
-      "strength": 0.5,
-      "shared_docs": 3,
-      "label": "3 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "glenn",
-      "strength": 0.5,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "black",
-      "to": "trump",
-      "strength": 0.5,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "trump",
-      "to": "wexner",
-      "strength": 0.5,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "paris",
-      "to": "trump",
-      "strength": 0.5,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "black",
-      "to": "london",
-      "strength": 0.471,
-      "shared_docs": 351,
-      "label": "351 docs"
-    },
-    {
-      "from": "clinton",
-      "to": "little saint james",
-      "strength": 0.464,
-      "shared_docs": 89,
-      "label": "89 docs"
-    },
-    {
-      "from": "manhattan",
-      "to": "palm beach",
-      "strength": 0.464,
-      "shared_docs": 13,
-      "label": "13 docs"
-    },
-    {
-      "from": "nadia",
-      "to": "palm beach",
-      "strength": 0.459,
-      "shared_docs": 89,
-      "label": "89 docs"
-    },
-    {
-      "from": "nadia",
-      "to": "virginia",
-      "strength": 0.459,
-      "shared_docs": 89,
-      "label": "89 docs"
-    },
-    {
-      "from": "london",
-      "to": "palm beach",
-      "strength": 0.433,
-      "shared_docs": 154,
-      "label": "154 docs"
-    },
-    {
-      "from": "london",
-      "to": "maxwell",
-      "strength": 0.433,
-      "shared_docs": 154,
-      "label": "154 docs"
-    },
-    {
-      "from": "dubin",
-      "to": "little saint james",
-      "strength": 0.429,
-      "shared_docs": 3,
-      "label": "3 docs"
-    },
-    {
-      "from": "dubin",
-      "to": "virginia",
-      "strength": 0.429,
-      "shared_docs": 3,
-      "label": "3 docs"
-    },
-    {
-      "from": "dubin",
-      "to": "glenn",
-      "strength": 0.429,
-      "shared_docs": 3,
-      "label": "3 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "ghislaine",
-      "strength": 0.42,
-      "shared_docs": 260,
-      "label": "260 docs"
-    },
-    {
-      "from": "black",
-      "to": "palm beach",
-      "strength": 0.405,
-      "shared_docs": 302,
-      "label": "302 docs"
-    },
-    {
-      "from": "kellen",
-      "to": "little saint james",
-      "strength": 0.4,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "kellen",
-      "to": "new york",
-      "strength": 0.4,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "kellen",
-      "to": "leon",
-      "strength": 0.4,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "wexner",
-      "strength": 0.381,
-      "shared_docs": 101,
-      "label": "101 docs"
-    },
-    {
-      "from": "new york",
-      "to": "paris",
-      "strength": 0.381,
-      "shared_docs": 555,
-      "label": "555 docs"
-    },
-    {
-      "from": "alfredo",
-      "to": "andrew",
+      "from": "person:epstein",
+      "to": "location:paris",
       "strength": 0.377,
-      "shared_docs": 100,
-      "label": "100 docs"
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "alfredo",
-      "to": "nadia",
+      "from": "person:jeffrey_epstein",
+      "to": "location:paris",
       "strength": 0.377,
-      "shared_docs": 100,
-      "label": "100 docs"
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "glenn",
-      "to": "mitchell",
-      "strength": 0.375,
-      "shared_docs": 3,
-      "label": "3 docs"
+      "from": "person:donald_trump",
+      "to": "location:paris",
+      "strength": 0.377,
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "glenn",
-      "to": "roberts",
-      "strength": 0.375,
-      "shared_docs": 3,
-      "label": "3 docs"
+      "from": "person:trump",
+      "to": "location:paris",
+      "strength": 0.377,
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "dershowitz",
-      "to": "glenn",
-      "strength": 0.375,
-      "shared_docs": 3,
-      "label": "3 docs"
+      "from": "person:bill_clinton",
+      "to": "location:paris",
+      "strength": 0.377,
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "palm beach",
-      "to": "paris",
-      "strength": 0.366,
-      "shared_docs": 252,
-      "label": "252 docs"
+      "from": "person:ghislaine_maxwell",
+      "to": "location:paris",
+      "strength": 0.377,
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "alfredo",
-      "to": "wexner",
-      "strength": 0.362,
-      "shared_docs": 96,
-      "label": "96 docs"
+      "from": "person:alan_dershowitz",
+      "to": "location:paris",
+      "strength": 0.377,
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "alfredo",
-      "to": "dershowitz",
-      "strength": 0.362,
-      "shared_docs": 96,
-      "label": "96 docs"
+      "from": "person:prince_andrew",
+      "to": "location:paris",
+      "strength": 0.377,
+      "shared_docs": 113,
+      "label": "113 docs"
     },
     {
-      "from": "jeffrey",
-      "to": "maxwell",
-      "strength": 0.361,
-      "shared_docs": 203,
-      "label": "203 docs"
+      "from": "person:dershowitz",
+      "to": "person:maxwell",
+      "strength": 0.363,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "black",
-      "to": "maxwell",
-      "strength": 0.342,
-      "shared_docs": 255,
-      "label": "255 docs"
+      "from": "person:epstein",
+      "to": "person:maxwell",
+      "strength": 0.34,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "maxwell",
-      "to": "wexner",
-      "strength": 0.336,
-      "shared_docs": 101,
-      "label": "101 docs"
+      "from": "person:jeffrey_epstein",
+      "to": "person:maxwell",
+      "strength": 0.34,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "brunel",
-      "to": "little saint james",
-      "strength": 0.333,
-      "shared_docs": 2,
-      "label": "2 docs"
+      "from": "person:donald_trump",
+      "to": "person:maxwell",
+      "strength": 0.34,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "brunel",
-      "to": "glenn",
-      "strength": 0.333,
-      "shared_docs": 2,
-      "label": "2 docs"
+      "from": "person:trump",
+      "to": "person:maxwell",
+      "strength": 0.34,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "brunel",
-      "to": "new york",
-      "strength": 0.333,
-      "shared_docs": 2,
-      "label": "2 docs"
+      "from": "person:bill_clinton",
+      "to": "person:maxwell",
+      "strength": 0.34,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "brunel",
-      "to": "leon",
-      "strength": 0.333,
-      "shared_docs": 2,
-      "label": "2 docs"
+      "from": "person:ghislaine_maxwell",
+      "to": "person:maxwell",
+      "strength": 0.34,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "mitchell",
-      "to": "virginia",
-      "strength": 0.333,
-      "shared_docs": 2,
-      "label": "2 docs"
+      "from": "person:alan_dershowitz",
+      "to": "person:maxwell",
+      "strength": 0.34,
+      "shared_docs": 102,
+      "label": "102 docs"
     },
     {
-      "from": "mitchell",
-      "to": "new york",
-      "strength": 0.333,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "maxwell",
-      "strength": 0.33,
-      "shared_docs": 204,
-      "label": "204 docs"
-    },
-    {
-      "from": "black",
-      "to": "jeffrey",
-      "strength": 0.327,
-      "shared_docs": 244,
-      "label": "244 docs"
-    },
-    {
-      "from": "maxwell",
-      "to": "virginia",
-      "strength": 0.309,
-      "shared_docs": 93,
-      "label": "93 docs"
-    },
-    {
-      "from": "andrew",
-      "to": "palm beach",
-      "strength": 0.306,
-      "shared_docs": 97,
-      "label": "97 docs"
-    },
-    {
-      "from": "maxwell",
-      "to": "nadia",
-      "strength": 0.302,
-      "shared_docs": 91,
-      "label": "91 docs"
-    },
-    {
-      "from": "andrew",
-      "to": "maxwell",
-      "strength": 0.3,
-      "shared_docs": 95,
-      "label": "95 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "paris",
-      "strength": 0.298,
-      "shared_docs": 168,
-      "label": "168 docs"
-    },
-    {
-      "from": "new york",
-      "to": "palm beach",
-      "strength": 0.292,
-      "shared_docs": 425,
-      "label": "425 docs"
-    },
-    {
-      "from": "andrew",
-      "to": "virginia",
-      "strength": 0.29,
-      "shared_docs": 92,
-      "label": "92 docs"
-    },
-    {
-      "from": "black",
-      "to": "epstein",
-      "strength": 0.29,
-      "shared_docs": 216,
-      "label": "216 docs"
-    },
-    {
-      "from": "andrew",
-      "to": "london",
-      "strength": 0.287,
-      "shared_docs": 91,
-      "label": "91 docs"
-    },
-    {
-      "from": "dubin",
-      "to": "new york",
-      "strength": 0.286,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "dubin",
-      "to": "leon",
-      "strength": 0.286,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "rodriguez",
-      "strength": 0.284,
-      "shared_docs": 160,
-      "label": "160 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "zorro ranch",
-      "strength": 0.282,
-      "shared_docs": 159,
-      "label": "159 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "paris",
-      "strength": 0.27,
-      "shared_docs": 167,
-      "label": "167 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "rodriguez",
-      "strength": 0.26,
-      "shared_docs": 161,
-      "label": "161 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "zorro ranch",
-      "strength": 0.257,
-      "shared_docs": 159,
-      "label": "159 docs"
-    },
-    {
-      "from": "black",
-      "to": "nadia",
-      "strength": 0.256,
-      "shared_docs": 191,
-      "label": "191 docs"
-    },
-    {
-      "from": "london",
-      "to": "nadia",
-      "strength": 0.256,
-      "shared_docs": 91,
-      "label": "91 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "little saint james",
-      "strength": 0.253,
-      "shared_docs": 67,
-      "label": "67 docs"
-    },
-    {
-      "from": "glenn",
-      "to": "little saint james",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "black",
-      "to": "glenn",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "glenn",
-      "to": "kellen",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "glenn",
-      "to": "wexner",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "glenn",
-      "to": "trump",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "glenn",
-      "to": "virginia",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "andrew",
-      "to": "glenn",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "clinton",
-      "to": "glenn",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "glenn",
-      "to": "paris",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "london",
-      "to": "virginia",
-      "strength": 0.25,
-      "shared_docs": 89,
-      "label": "89 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "trump",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "trump",
-      "to": "virginia",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "new york",
-      "to": "trump",
-      "strength": 0.25,
-      "shared_docs": 2,
-      "label": "2 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "new mexico",
-      "strength": 0.245,
-      "shared_docs": 65,
-      "label": "65 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "london",
-      "strength": 0.245,
-      "shared_docs": 65,
-      "label": "65 docs"
-    },
-    {
-      "from": "alfredo",
-      "to": "little saint james",
-      "strength": 0.238,
-      "shared_docs": 63,
-      "label": "63 docs"
-    },
-    {
-      "from": "alfredo",
-      "to": "new mexico",
-      "strength": 0.238,
-      "shared_docs": 63,
-      "label": "63 docs"
-    },
-    {
-      "from": "alfredo",
-      "to": "london",
-      "strength": 0.238,
-      "shared_docs": 63,
-      "label": "63 docs"
-    },
-    {
-      "from": "palm beach",
-      "to": "rodriguez",
-      "strength": 0.237,
-      "shared_docs": 163,
-      "label": "163 docs"
-    },
-    {
-      "from": "palm beach",
-      "to": "zorro ranch",
-      "strength": 0.233,
-      "shared_docs": 160,
-      "label": "160 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "virgin islands",
-      "strength": 0.226,
-      "shared_docs": 60,
-      "label": "60 docs"
-    },
-    {
-      "from": "black",
-      "to": "ghislaine",
-      "strength": 0.22,
-      "shared_docs": 164,
-      "label": "164 docs"
-    },
-    {
-      "from": "maxwell",
-      "to": "new mexico",
-      "strength": 0.216,
-      "shared_docs": 65,
-      "label": "65 docs"
-    },
-    {
-      "from": "black",
-      "to": "rodriguez",
-      "strength": 0.213,
-      "shared_docs": 159,
-      "label": "159 docs"
-    },
-    {
-      "from": "black",
-      "to": "zorro ranch",
-      "strength": 0.213,
-      "shared_docs": 159,
-      "label": "159 docs"
-    },
-    {
-      "from": "roberts",
-      "to": "trump",
-      "strength": 0.208,
-      "shared_docs": 5,
-      "label": "5 docs"
-    },
-    {
-      "from": "paris",
-      "to": "zorro ranch",
-      "strength": 0.202,
-      "shared_docs": 160,
-      "label": "160 docs"
-    },
-    {
-      "from": "paris",
-      "to": "rodriguez",
-      "strength": 0.201,
-      "shared_docs": 159,
-      "label": "159 docs"
-    },
-    {
-      "from": "london",
-      "to": "new mexico",
-      "strength": 0.183,
-      "shared_docs": 65,
-      "label": "65 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "wexner",
-      "strength": 0.179,
-      "shared_docs": 101,
-      "label": "101 docs"
-    },
-    {
-      "from": "manhattan",
-      "to": "new mexico",
-      "strength": 0.179,
-      "shared_docs": 5,
-      "label": "5 docs"
-    },
-    {
-      "from": "london",
-      "to": "rodriguez",
-      "strength": 0.177,
-      "shared_docs": 63,
-      "label": "63 docs"
-    },
-    {
-      "from": "london",
-      "to": "zorro ranch",
-      "strength": 0.177,
-      "shared_docs": 63,
-      "label": "63 docs"
-    },
-    {
-      "from": "black",
-      "to": "roberts",
-      "strength": 0.167,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "roberts",
-      "to": "wexner",
-      "strength": 0.167,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "roberts",
-      "to": "virginia",
-      "strength": 0.167,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "new york",
-      "strength": 0.166,
-      "shared_docs": 71,
-      "label": "71 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "maxwell",
-      "strength": 0.166,
-      "shared_docs": 71,
-      "label": "71 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "wexner",
-      "strength": 0.163,
-      "shared_docs": 101,
-      "label": "101 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "palm beach",
-      "strength": 0.159,
-      "shared_docs": 68,
-      "label": "68 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "rodriguez",
-      "strength": 0.152,
-      "shared_docs": 65,
-      "label": "65 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "new mexico",
-      "strength": 0.149,
-      "shared_docs": 64,
-      "label": "64 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "london",
-      "strength": 0.149,
-      "shared_docs": 64,
-      "label": "64 docs"
-    },
-    {
-      "from": "little saint james",
-      "to": "zorro ranch",
-      "strength": 0.149,
-      "shared_docs": 64,
-      "label": "64 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "manhattan",
-      "strength": 0.143,
-      "shared_docs": 4,
-      "label": "4 docs"
-    },
-    {
-      "from": "palm beach",
-      "to": "wexner",
-      "strength": 0.141,
-      "shared_docs": 97,
-      "label": "97 docs"
-    },
-    {
-      "from": "black",
-      "to": "dershowitz",
-      "strength": 0.135,
-      "shared_docs": 101,
-      "label": "101 docs"
-    },
-    {
-      "from": "black",
-      "to": "clinton",
-      "strength": 0.135,
-      "shared_docs": 101,
-      "label": "101 docs"
-    },
-    {
-      "from": "black",
-      "to": "leon",
-      "strength": 0.135,
-      "shared_docs": 101,
-      "label": "101 docs"
-    },
-    {
-      "from": "black",
-      "to": "wexner",
-      "strength": 0.134,
-      "shared_docs": 100,
-      "label": "100 docs"
-    },
-    {
-      "from": "palm beach",
-      "to": "virginia",
-      "strength": 0.129,
-      "shared_docs": 89,
-      "label": "89 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "little saint james",
-      "strength": 0.126,
-      "shared_docs": 71,
-      "label": "71 docs"
-    },
-    {
-      "from": "paris",
-      "to": "wexner",
-      "strength": 0.126,
-      "shared_docs": 100,
-      "label": "100 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "new mexico",
-      "strength": 0.123,
-      "shared_docs": 69,
-      "label": "69 docs"
-    },
-    {
-      "from": "black",
-      "to": "virginia",
-      "strength": 0.122,
-      "shared_docs": 91,
-      "label": "91 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "london",
-      "strength": 0.119,
-      "shared_docs": 67,
-      "label": "67 docs"
-    },
-    {
-      "from": "paris",
-      "to": "virginia",
-      "strength": 0.116,
-      "shared_docs": 92,
-      "label": "92 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "little saint james",
-      "strength": 0.113,
-      "shared_docs": 70,
-      "label": "70 docs"
-    },
-    {
-      "from": "jeffrey",
-      "to": "virgin islands",
-      "strength": 0.112,
-      "shared_docs": 63,
-      "label": "63 docs"
-    },
-    {
-      "from": "new york",
-      "to": "zorro ranch",
-      "strength": 0.11,
-      "shared_docs": 160,
-      "label": "160 docs"
-    },
-    {
-      "from": "new york",
-      "to": "rodriguez",
-      "strength": 0.109,
-      "shared_docs": 159,
-      "label": "159 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "london",
-      "strength": 0.107,
-      "shared_docs": 66,
-      "label": "66 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "new mexico",
-      "strength": 0.105,
-      "shared_docs": 65,
-      "label": "65 docs"
-    },
-    {
-      "from": "epstein",
-      "to": "virgin islands",
-      "strength": 0.102,
-      "shared_docs": 63,
-      "label": "63 docs"
-    },
-    {
-      "from": "black",
-      "to": "little saint james",
-      "strength": 0.092,
-      "shared_docs": 69,
-      "label": "69 docs"
-    },
-    {
-      "from": "palm beach",
-      "to": "virgin islands",
-      "strength": 0.09,
-      "shared_docs": 62,
-      "label": "62 docs"
-    },
-    {
-      "from": "black",
-      "to": "new mexico",
-      "strength": 0.087,
-      "shared_docs": 65,
-      "label": "65 docs"
-    },
-    {
-      "from": "maxwell",
-      "to": "roberts",
-      "strength": 0.076,
-      "shared_docs": 23,
-      "label": "23 docs"
-    },
-    {
-      "from": "ghislaine",
-      "to": "roberts",
-      "strength": 0.072,
-      "shared_docs": 19,
-      "label": "19 docs"
-    },
-    {
-      "from": "andrew",
-      "to": "manhattan",
-      "strength": 0.069,
-      "shared_docs": 22,
-      "label": "22 docs"
-    },
-    {
-      "from": "dershowitz",
-      "to": "dubin",
-      "strength": 0.068,
-      "shared_docs": 7,
-      "label": "7 docs"
-    },
-    {
-      "from": "new york",
-      "to": "wexner",
-      "strength": 0.067,
-      "shared_docs": 98,
-      "label": "98 docs"
-    },
-    {
-      "from": "new york",
-      "to": "virginia",
-      "strength": 0.062,
-      "shared_docs": 90,
-      "label": "90 docs"
-    },
-    {
-      "from": "dershowitz",
-      "to": "roberts",
-      "strength": 0.058,
-      "shared_docs": 6,
-      "label": "6 docs"
+      "from": "person:prince_andrew",
+      "to": "person:maxwell",
+      "strength": 0.34,
+      "shared_docs": 102,
+      "label": "102 docs"
     }
   ],
-  "generated_at": "2025-12-23T12:59:28.191726"
+  "generated_at": "2025-12-24T18:46:21.973342"
 }

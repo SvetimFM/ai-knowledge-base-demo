@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology | FBI Epstein Files Explorer</title>
+    <meta name="description" content="Technical methodology for processing, analyzing, and presenting FBI Epstein documents.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Methodology | FBI Epstein Files Explorer">
+    <meta property="og:description" content="Technical methodology for processing, analyzing, and presenting FBI Epstein documents.">
+    <meta property="og:image" content="https://svetimfm.github.io/ai-knowledge-base-demo/assets/og-image.png">
+    <meta property="og:url" content="https://svetimfm.github.io/ai-knowledge-base-demo/methodology.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Methodology | FBI Epstein Files Explorer">
+    <meta name="twitter:description" content="Technical methodology for FBI Epstein document analysis.">
+    <meta name="twitter:image" content="https://svetimfm.github.io/ai-knowledge-base-demo/assets/og-image.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .methodology-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .methodology-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .methodology-section h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 1.25rem;
+        }
+        .methodology-section h3 {
+            color: var(--text);
+            margin: 1rem 0 0.5rem;
+            font-size: 1rem;
+        }
+        .methodology-section p,
+        .methodology-section li {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .methodology-section ul {
+            padding-left: 1.5rem;
+            margin: 0.5rem 0;
+        }
+        .methodology-section li {
+            margin-bottom: 0.5rem;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .stat-box {
+            background: var(--bg);
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .stat-box .number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .stat-box .label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        .warning-box {
+            background: #fef3c7;
+            border: 1px solid #fbbf24;
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .warning-box p {
+            color: #92400e;
+            margin: 0;
+        }
+        code {
+            background: var(--bg);
+            padding: 0.125rem 0.375rem;
+            border-radius: 3px;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">FBI Document Explorer</a></h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="entities.html">Entities</a>
+            <a href="browse.html">Browse</a>
+            <a href="search.html">Search</a>
+            <a href="investigate.html">Investigate</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="methodology-content">
+            <h1 style="margin-bottom: 0.5rem;">Methodology</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                Technical documentation describing how FBI Epstein documents were processed, analyzed, and presented in this explorer.
+            </p>
+
+            <section class="methodology-section">
+                <h2>Data Sources</h2>
+                <p>This explorer presents documents from official government FOIA releases:</p>
+                <ul>
+                    <li><strong>FBI FOIA Vault</strong>: 7 volumes of FBI investigative records released under Freedom of Information Act requests</li>
+                    <li><strong>House Oversight Committee</strong>: Documents released by congressional oversight activities</li>
+                    <li><strong>Court Records</strong>: Flight logs, contact books, and other materials released in federal court proceedings (US v. Maxwell)</li>
+                </ul>
+                <p>All source documents are public domain government records. No private or sealed materials are included.</p>
+            </section>
+
+            <section class="methodology-section">
+                <h2>Processing Pipeline</h2>
+
+                <h3>1. OCR Text Extraction</h3>
+                <p>Documents were processed using multiple OCR engines to maximize accuracy:</p>
+                <ul>
+                    <li><strong>Primary</strong>: AWS Textract for structured documents with tables and forms</li>
+                    <li><strong>Fallback</strong>: Surya OCR for handwritten and low-quality scans</li>
+                    <li>Average OCR confidence: 85% (varies by document quality)</li>
+                </ul>
+
+                <h3>2. Entity Extraction</h3>
+                <p>Named entities (people, locations, organizations) were extracted using:</p>
+                <ul>
+                    <li><strong>Model</strong>: Claude 3 Haiku via AWS Bedrock</li>
+                    <li><strong>Prompt Engineering</strong>: Custom prompts optimized for legal/investigative documents</li>
+                    <li><strong>Post-processing</strong>: Deduplication using 85% fuzzy matching with blocking by entity type</li>
+                </ul>
+
+                <h3>3. Vector Embeddings</h3>
+                <p>Semantic search is powered by document embeddings:</p>
+                <ul>
+                    <li><strong>Model</strong>: nomic-embed-text (768 dimensions)</li>
+                    <li><strong>Chunking</strong>: 512 tokens with 50-token overlap</li>
+                    <li><strong>Storage</strong>: Milvus vector database with partition-based optimization</li>
+                </ul>
+
+                <h3>4. Dimensionality Reduction</h3>
+                <p>UMAP (Uniform Manifold Approximation and Projection) is used to visualize high-dimensional embeddings in 2D space, revealing document clusters and thematic groupings.</p>
+            </section>
+
+            <section class="methodology-section">
+                <h2>Victim Protection Policy</h2>
+                <div class="warning-box">
+                    <p><strong>Important:</strong> This project respects the privacy and dignity of victims. Known victim names that appear in source documents are preserved as redacted by the releasing agencies: <code>[VICTIM - NAME REDACTED]</code></p>
+                </div>
+                <p>Our approach to victim protection:</p>
+                <ul>
+                    <li>Source redactions from FBI/DOJ are maintained and not reversed</li>
+                    <li>Entity extraction filters exclude known victim-associated patterns</li>
+                    <li>No victim identification or deanonymization is performed</li>
+                    <li>Victim-related metadata in entity profiles shows redaction placeholder only</li>
+                </ul>
+            </section>
+
+            <section class="methodology-section">
+                <h2>Technical Architecture</h2>
+                <ul>
+                    <li><strong>Frontend</strong>: Static HTML/CSS/JavaScript hosted on GitHub Pages</li>
+                    <li><strong>Data</strong>: JSON files for entities, documents, and profiles</li>
+                    <li><strong>Visualizations</strong>: Plotly.js, vis.js, D3.js, Cosmograph (WebGL)</li>
+                    <li><strong>Network Analysis</strong>: NetworkX with Louvain community detection</li>
+                    <li><strong>Search</strong>: Client-side full-text search with optional RAG API integration</li>
+                    <li><strong>Dataset Hosting</strong>: HuggingFace Datasets for large files</li>
+                </ul>
+            </section>
+
+            <section class="methodology-section">
+                <h2>Limitations & Disclaimers</h2>
+                <ul>
+                    <li><strong>OCR Accuracy</strong>: Text extraction varies by document quality. Handwritten notes, faxes, and degraded copies may contain errors.</li>
+                    <li><strong>Entity Extraction</strong>: AI-based extraction has false positives (incorrectly identified entities) and false negatives (missed entities). Results should be verified against source documents.</li>
+                    <li><strong>Generated Profiles</strong>: Some entity profiles are algorithmically generated and may contain uncertainties or incomplete information.</li>
+                    <li><strong>Connections</strong>: Entity relationship strengths are based on document co-occurrence, not verified real-world relationships.</li>
+                    <li><strong>Not Legal Evidence</strong>: This tool is for research and journalism purposes. Document contents should be independently verified for any legal or formal use.</li>
+                </ul>
+            </section>
+
+            <section class="methodology-section">
+                <h2>Data Statistics</h2>
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <div class="number">9,675</div>
+                        <div class="label">Documents</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">68,798</div>
+                        <div class="label">Text Chunks</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">500</div>
+                        <div class="label">Entities</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">7</div>
+                        <div class="label">Volumes</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">768</div>
+                        <div class="label">Embedding Dims</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">~8GB</div>
+                        <div class="label">Total Data Size</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="methodology-section">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="https://huggingface.co/datasets/svetfm/epstein-fbi-files" target="_blank">HuggingFace Dataset</a> - Full document corpus with embeddings</li>
+                    <li><a href="https://github.com/svetimfm/ai-knowledge-base-demo" target="_blank">GitHub Repository</a> - Source code for this explorer</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>FBI Epstein Files Explorer | Public domain government documents</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

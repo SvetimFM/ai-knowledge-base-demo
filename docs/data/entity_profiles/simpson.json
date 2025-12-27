@@ -1,0 +1,186 @@
+{
+  "id": "person:mr_simpson",
+  "name": "MR. SIMPSON",
+  "short_name": "simpson",
+  "type": "person",
+  "doc_count": 73,
+  "mention_count": 73,
+  "is_key_player": false,
+  "aliases": [
+    "mr. simpson",
+    "mr. simpson",
+    "simpson",
+    "simpson"
+  ],
+  "roles": [
+    "Attorney",
+    "Interviewer",
+    "Interlocutor"
+  ],
+  "connected_entities": [
+    {
+      "id": "person:epstein",
+      "name": "Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:jeffrey_epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:donald_trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:trump",
+      "name": "Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:bill_clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:alan_dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:prince_andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:clinton",
+      "name": "Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:leslie_wexner",
+      "name": "Leslie Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:hillary_clinton",
+      "name": "Hillary Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:bill_gates",
+      "name": "Bill Gates",
+      "short_name": "gates",
+      "type": "person",
+      "shared_docs": 18,
+      "strength": 0.247
+    },
+    {
+      "id": "person:president_trump",
+      "name": "President Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 14,
+      "strength": 0.192
+    },
+    {
+      "id": "person:brunel",
+      "name": "Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 14,
+      "strength": 0.192
+    },
+    {
+      "id": "person:jean_luc_brunel",
+      "name": "Jean Luc Brunel",
+      "short_name": "brunel",
+      "type": "person",
+      "shared_docs": 13,
+      "strength": 0.178
+    },
+    {
+      "id": "person:mr_epstein",
+      "name": "Mr Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 13,
+      "strength": 0.178
+    },
+    {
+      "id": "location:palm_beach",
+      "name": "Palm Beach",
+      "short_name": "palm_beach",
+      "type": "location",
+      "shared_docs": 12,
+      "strength": 0.164
+    },
+    {
+      "id": "location:new_york",
+      "name": "New York",
+      "short_name": "new_york",
+      "type": "location",
+      "shared_docs": 12,
+      "strength": 0.164
+    }
+  ],
+  "documents": [],
+  "total_documents": 73,
+  "description": "Generated profile - document snippets may not be available. See entity page for full context.",
+  "generated": true
+}

@@ -1,0 +1,186 @@
+{
+  "id": "person:reid_weingarten",
+  "name": "Reid Weingarten",
+  "short_name": "weingarten",
+  "type": "person",
+  "doc_count": 90,
+  "mention_count": 90,
+  "is_key_player": false,
+  "aliases": [
+    "reid weingarten",
+    "reid as weingarten",
+    "reid weingarten",
+    "reid i weingarten"
+  ],
+  "roles": [
+    "reviewer of MSNBC",
+    "White Collar Titan",
+    "email sender"
+  ],
+  "connected_entities": [
+    {
+      "id": "person:epstein",
+      "name": "Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:jeffrey_epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:donald_trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:trump",
+      "name": "Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:bill_clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:alan_dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:prince_andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:clinton",
+      "name": "Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:maxwell",
+      "name": "Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 22,
+      "strength": 0.244
+    },
+    {
+      "id": "person:leslie_wexner",
+      "name": "Leslie Wexner",
+      "short_name": "wexner",
+      "type": "person",
+      "shared_docs": 21,
+      "strength": 0.233
+    },
+    {
+      "id": "person:hillary_clinton",
+      "name": "Hillary Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 20,
+      "strength": 0.222
+    },
+    {
+      "id": "person:bill_gates",
+      "name": "Bill Gates",
+      "short_name": "gates",
+      "type": "person",
+      "shared_docs": 19,
+      "strength": 0.211
+    },
+    {
+      "id": "location:palm_beach",
+      "name": "Palm Beach",
+      "short_name": "palm_beach",
+      "type": "location",
+      "shared_docs": 15,
+      "strength": 0.167
+    },
+    {
+      "id": "location:new_york",
+      "name": "New York",
+      "short_name": "new_york",
+      "type": "location",
+      "shared_docs": 15,
+      "strength": 0.167
+    },
+    {
+      "id": "location:united_states",
+      "name": "United States",
+      "short_name": "united_states",
+      "type": "location",
+      "shared_docs": 15,
+      "strength": 0.167
+    },
+    {
+      "id": "location:china",
+      "name": "China",
+      "short_name": "china",
+      "type": "location",
+      "shared_docs": 15,
+      "strength": 0.167
+    },
+    {
+      "id": "location:israel",
+      "name": "Israel",
+      "short_name": "israel",
+      "type": "location",
+      "shared_docs": 15,
+      "strength": 0.167
+    },
+    {
+      "id": "location:florida",
+      "name": "Florida",
+      "short_name": "florida",
+      "type": "location",
+      "shared_docs": 15,
+      "strength": 0.167
+    }
+  ],
+  "documents": [],
+  "total_documents": 90,
+  "description": "Generated profile - document snippets may not be available. See entity page for full context.",
+  "generated": true
+}

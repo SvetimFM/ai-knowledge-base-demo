@@ -1,0 +1,179 @@
+{
+  "id": "organization:new_york_times",
+  "name": "New York Times",
+  "short_name": "new_york_times",
+  "type": "organization",
+  "doc_count": 286,
+  "mention_count": 286,
+  "is_key_player": false,
+  "aliases": [
+    "new york times"
+  ],
+  "roles": [],
+  "connected_entities": [
+    {
+      "id": "person:epstein",
+      "name": "Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 71,
+      "strength": 0.248
+    },
+    {
+      "id": "person:jeffrey_epstein",
+      "name": "Jeffrey Epstein",
+      "short_name": "epstein",
+      "type": "person",
+      "shared_docs": 71,
+      "strength": 0.248
+    },
+    {
+      "id": "person:donald_trump",
+      "name": "Donald Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 71,
+      "strength": 0.248
+    },
+    {
+      "id": "person:trump",
+      "name": "Trump",
+      "short_name": "trump",
+      "type": "person",
+      "shared_docs": 71,
+      "strength": 0.248
+    },
+    {
+      "id": "person:bill_clinton",
+      "name": "Bill Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 71,
+      "strength": 0.248
+    },
+    {
+      "id": "person:ghislaine_maxwell",
+      "name": "Ghislaine Maxwell",
+      "short_name": "maxwell",
+      "type": "person",
+      "shared_docs": 71,
+      "strength": 0.248
+    },
+    {
+      "id": "person:alan_dershowitz",
+      "name": "Alan Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 71,
+      "strength": 0.248
+    },
+    {
+      "id": "person:prince_andrew",
+      "name": "Prince Andrew",
+      "short_name": "andrew",
+      "type": "person",
+      "shared_docs": 71,
+      "strength": 0.248
+    },
+    {
+      "id": "person:dershowitz",
+      "name": "Dershowitz",
+      "short_name": "dershowitz",
+      "type": "person",
+      "shared_docs": 70,
+      "strength": 0.245
+    },
+    {
+      "id": "person:clinton",
+      "name": "Clinton",
+      "short_name": "clinton",
+      "type": "person",
+      "shared_docs": 47,
+      "strength": 0.164
+    },
+    {
+      "id": "person:jeffrey_e",
+      "name": "jeffrey E.",
+      "short_name": "e.",
+      "type": "person",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "person:[victim_-_name_redacted]",
+      "name": "[VICTIM - NAME REDACTED]",
+      "short_name": "redacted]",
+      "type": "person",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "location:palm_beach",
+      "name": "Palm Beach",
+      "short_name": "palm_beach",
+      "type": "location",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "location:new_york",
+      "name": "New York",
+      "short_name": "new_york",
+      "type": "location",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "location:united_states",
+      "name": "United States",
+      "short_name": "united_states",
+      "type": "location",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "person:snowden",
+      "name": "Snowden",
+      "short_name": "snowden",
+      "type": "person",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "organization:nsa",
+      "name": "NSA",
+      "short_name": "nsa",
+      "type": "organization",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "location:china",
+      "name": "China",
+      "short_name": "china",
+      "type": "location",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "person:michael_wolff",
+      "name": "Michael Wolff",
+      "short_name": "wolff",
+      "type": "person",
+      "shared_docs": 28,
+      "strength": 0.098
+    },
+    {
+      "id": "person:richard_kahn",
+      "name": "Richard Kahn",
+      "short_name": "kahn",
+      "type": "person",
+      "shared_docs": 28,
+      "strength": 0.098
+    }
+  ],
+  "documents": [],
+  "total_documents": 286,
+  "description": "Generated profile - document snippets may not be available. See entity page for full context.",
+  "generated": true
+}

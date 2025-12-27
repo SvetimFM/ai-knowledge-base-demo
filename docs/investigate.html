@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investigation Interface - FBI Document Explorer</title>
+    <title>Investigation Interface | FBI Epstein Files Explorer</title>
+    <meta name="description" content="Interactive network graph to investigate entity relationships in FBI Epstein documents.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Investigation Interface | FBI Epstein Files Explorer">
+    <meta property="og:description" content="Interactive network graph to investigate entity relationships in FBI Epstein documents.">
+    <meta property="og:image" content="https://svetimfm.github.io/ai-knowledge-base-demo/assets/og-image.png">
+    <meta property="og:url" content="https://svetimfm.github.io/ai-knowledge-base-demo/investigate.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Investigation Interface | FBI Epstein Files Explorer">
+    <meta name="twitter:description" content="Investigate entity relationships in FBI Epstein documents.">
+    <meta name="twitter:image" content="https://svetimfm.github.io/ai-knowledge-base-demo/assets/og-image.png">
+
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js"></script>
     <style>
@@ -505,11 +520,12 @@
                 return true;
             });
 
-            const filteredIds = new Set(filteredEntities.map(e => e.short_name));
+            // Use entity.id for unique identification (not short_name which has duplicates)
+            const filteredIds = new Set(filteredEntities.map(e => e.id));
 
-            // Create nodes
+            // Create nodes using entity.id as unique identifier
             const nodes = filteredEntities.map(e => ({
-                id: e.short_name,
+                id: e.id,
                 label: e.name,
                 title: `${e.name}\n${e.doc_count} documents`,
                 value: Math.sqrt(e.doc_count) * 2,
@@ -602,38 +618,47 @@
             });
         }
 
-        async function selectEntityByShortName(shortName) {
-            const entity = entities.find(e => e.short_name === shortName);
+        async function selectEntityById(entityId) {
+            // Find by id first, fallback to short_name for backward compatibility
+            let entity = entities.find(e => e.id === entityId);
+            if (!entity) {
+                entity = entities.find(e => e.short_name === entityId);
+            }
             if (!entity) return;
 
             selectedEntity = entity;
 
-            // Update URL
+            // Update URL with entity id
             const url = new URL(window.location);
-            url.searchParams.set('entity', shortName);
+            url.searchParams.set('entity', entity.id);
             window.history.replaceState({}, '', url);
 
             // Update breadcrumb
             updateBreadcrumb(entity);
 
-            // Load profile
-            const profile = await loadEntityProfile(shortName);
+            // Load profile using short_name (profile filenames use short_name)
+            const profile = await loadEntityProfile(entity.short_name);
 
             // Update sidebar
             renderEntityInfo(entity, profile);
             renderConnections(profile);
             renderDocuments(profile);
 
-            // Highlight in network
+            // Highlight in network using entity.id
             if (network) {
-                network.selectNodes([shortName]);
+                network.selectNodes([entity.id]);
             }
         }
 
+        // Backward compatibility alias
+        async function selectEntityByShortName(shortName) {
+            return selectEntityById(shortName);
+        }
+
         function updateBreadcrumb(entity) {
-            // Add to history if not already last item
+            // Add to history if not already last item (use entity.id for unique identification)
             if (breadcrumbHistory.length === 0 ||
-                breadcrumbHistory[breadcrumbHistory.length - 1].short_name !== entity.short_name) {
+                breadcrumbHistory[breadcrumbHistory.length - 1].id !== entity.id) {
                 breadcrumbHistory.push(entity);
             }
 
@@ -649,7 +674,7 @@
                     '<span class="breadcrumb-separator">&#8250;</span>' : '';
 
                 return `<span class="breadcrumb-item ${isLast ? 'current' : ''}"
-                              onclick="${isLast ? '' : `selectEntityByShortName('${e.short_name}')`}">
+                              onclick="${isLast ? '' : `selectEntityById('${e.id}')`}">
                     ${e.name}
                 </span>${separator}`;
             }).join('');

@@ -1,281 +1,283 @@
-# AI-Powered Knowledge Base Demo
+# RAG Knowledge Base with Milvus
 
-**Amazon Q Developer + Amazon Bedrock + AWS CDK**
+**Production-Ready RAG System on AWS**
 
-A production-ready demonstration of scalable AI knowledge retrieval using Amazon Q Developer CLI with dual knowledge bases, automated ticket triage, and infrastructure as code.
-
----
-
-## Executive Summary
-
-This demo showcases a modern AI-powered knowledge management system with two key capabilities:
-
-1. **Natural Language Knowledge Retrieval** - Query technical documentation using Amazon Q Developer CLI
-2. **Automated Ticket Triage** - AI-powered categorization and routing of support tickets
-
-### What Makes This Special
-
-- **Dual Knowledge Base Architecture** - Separate domains (HPC Computing + Presidio IT Solutions) discoverable through a single interface
-- **Model Context Protocol (MCP) Integration** - Amazon Q Developer CLI automatically discovers and queries multiple knowledge bases via tag-based routing
-- **Fully Automated Infrastructure** - Complete deployment in ~5 minutes using AWS CDK
-- **Scalable Design** - Add new knowledge bases without reconfiguring the client
-
-### Technologies Demonstrated
-
-- **Amazon Bedrock Knowledge Base** - Vector-based RAG system with Claude 3 Haiku
-- **Amazon Q Developer CLI** - Natural language interface with MCP integration
-- **OpenSearch Serverless** - Managed vector storage for embeddings
-- **AWS Lambda** - Event-driven ticket processing
-- **AWS CDK (TypeScript)** - Infrastructure as code with cross-stack references
+A scalable, partitioned RAG (Retrieval-Augmented Generation) knowledge base system built on AWS, featuring Milvus vector database, Amazon Bedrock, and secure MCP (Model Context Protocol) integration for Claude Desktop.
 
 ---
 
-## System Architecture
+## Features
 
-```
-┌─────────────────────────────────────────────────────────┐
-│         Amazon Q Developer CLI (User Interface)         │
-│                                                           │
-│  "What cloud migration services does Presidio offer?"   │
-│  "How do I optimize NCCL performance?"                   │
-└────────────────────────┬─────────────────────────────────┘
-                         │
-                         ▼
-        ┌────────────────────────────────┐
-        │  Model Context Protocol (MCP)  │
-        │  Tag-Based KB Discovery        │
-        │  Filter: name=true             │
-        └────────┬───────────────┬───────┘
-                 │               │
-        ┌────────▼──────┐  ┌────▼──────────┐
-        │   HPC KB      │  │  Presidio KB  │
-        │  {HPC_KB_ID}  │  │ {PRESIDIO_KB} │
-        │  22 docs      │  │  25 docs      │
-        │  NCCL/CUDA    │  │  Cloud/AI     │
-        └───────────────┘  └───────────────┘
-             │                    │
-             └────────┬───────────┘
-                      ▼
-         ┌────────────────────────────┐
-         │  OpenSearch Serverless     │
-         │  Vector Storage            │
-         │  Titan Embeddings v2       │
-         └────────────────────────────┘
-
-┌──────────────────────────────────────────────────────┐
-│          Automated Ticket Triage System              │
-│                                                        │
-│  S3 Upload → Lambda Trigger → Bedrock KB Query      │
-│  → AI Analysis → DynamoDB Storage → Email Alert      │
-└──────────────────────────────────────────────────────┘
-```
-
----
-
-## Use Case 1: Amazon Q CLI with Knowledge Base
-
-Query technical documentation using natural language through Amazon Q Developer CLI.
-
-### How It Works
-
-1. **User asks a question** in Q Developer CLI
-2. **MCP server** discovers all knowledge bases tagged with `name=true`
-3. **Bedrock retrieves** relevant chunks from OpenSearch vector store
-4. **Claude 3 Haiku** generates answer with citations
-5. **User receives** contextual response in seconds
-
-### Example Queries
-
-**HPC Knowledge Base:**
-```
-> What is NCCL and how does it work?
-> How do I troubleshoot NCCL bandwidth issues?
-> What are the best practices for GPU collective operations?
-```
-
-**Presidio Knowledge Base:**
-```
-> What cloud migration services does Presidio offer?
-> Tell me about Presidio's AWS partnership
-> What are Presidio's AI and ML capabilities?
-```
-
-### Key Features
-
-- **Multi-KB Discovery** - Single Q CLI session accesses both knowledge bases automatically
-- **Semantic Search** - Vector embeddings enable conceptual matching, not just keywords
-- **Source Citations** - Responses include document references
-- **Fast Retrieval** - Sub-second query response times
-
----
-
-## Use Case 2: Automated Ticket Triage
-
-AI-powered analysis and categorization of support tickets with zero manual intervention.
-
-### How It Works
-
-1. **Ticket submitted** - JSON or text file uploaded to S3 bucket
-2. **Lambda triggered** - S3 event automatically invokes processing function
-3. **AI analysis** - Bedrock queries knowledge base for relevant context
-4. **Smart triage** - System extracts category, priority, and recommended actions
-5. **Results stored** - DynamoDB table maintains triage history
-6. **Notification sent** - SES email with AI-generated analysis
-
-### Ticket Processing Flow
-
-```
-┌─────────────┐     ┌──────────────┐     ┌────────────────┐
-│  S3 Bucket  │────▶│    Lambda    │────▶│  Bedrock KB    │
-│  (Upload)   │     │  (Processor) │     │  (AI Query)    │
-└─────────────┘     └──────┬───────┘     └────────────────┘
-                           │
-                    ┌──────▼───────┐     ┌────────────────┐
-                    │   DynamoDB   │     │   SES Email    │
-                    │   (Storage)  │     │ (Notification) │
-                    └──────────────┘     └────────────────┘
-```
-
-### AI-Powered Features
-
-- **Automatic categorization** (NCCL, RCCL, CUDA, Networking, Performance, etc.)
-- **Priority assignment** (High, Medium, Low) based on keywords and context
-- **Action recommendations** extracted from knowledge base
-- **Full audit trail** in DynamoDB with timestamps
-
----
-
-## Knowledge Base Content
-
-### HPC Computing Knowledge Base (22 documents)
-
-Comprehensive documentation on high-performance computing topics:
-
-- **NCCL** - NVIDIA Collective Communications Library (6 docs)
-  - API reference, collectives, environment variables
-  - Troubleshooting guides, performance tuning
-- **RCCL** - ROCm Collective Communications Library
-- **CUDA Testing** - Testing frameworks and methodologies
-- **HPC Communication Patterns** - AllReduce, AllGather, Broadcast patterns
-- **HPC Networking** - InfiniBand, EFA, topology optimization
-- **HPC Best Practices** - Scaling strategies, profiling techniques
-- **Research Papers** - Networks for High-Performance Computing survey
-
-### Presidio IT Solutions Knowledge Base (25 documents)
-
-Business-focused content covering Presidio's service offerings:
-
-- **Cloud Solutions** (7 docs)
-  - AWS partnership, cloud migration, FinOps
-  - VMware on AWS integration
-- **Case Studies** (9 docs)
-  - Q2 Holdings, NHL, DraftKings, OrthoCarolina
-  - Higher education, healthcare, sports & gaming
-- **Technical Capabilities** (9 docs)
-  - Cybersecurity, AI/ML platforms, DevOps automation
-  - Data center modernization, managed services
-  - Zero trust security, disaster recovery
+- **High-Performance Vector Search**: Milvus on ECS Fargate with partitioned collections (4-5x faster queries)
+- **Automatic Document Ingestion**: S3 upload triggers automatic chunking, embedding, and indexing
+- **Multiple Knowledge Bases**: Support for multiple independent knowledge bases with dynamic partition-based isolation
+- **HyDE Retrieval**: Hypothetical Document Embeddings for improved retrieval accuracy
+- **Enterprise LLM**: Amazon Bedrock Claude 3.5 Sonnet for answer generation
+- **MCP Integration**: Secure Claude Desktop integration via Model Context Protocol
+- **Cognito Authentication**: Secure access with AWS Cognito User Pools
+- **Infrastructure as Code**: Complete AWS CDK deployment with configuration management
 
 ---
 
 ## Quick Start
 
-### Prerequisites
+### Deploy to Your AWS Account
 
-- **AWS Account** with Bedrock access
-- **AWS CLI** configured with appropriate profile
-- **Node.js** 18.x or later
-- **AWS CDK** installed: `npm install -g aws-cdk`
-- **Amazon Q Developer CLI** installed and configured
-
-### Setup Documentation
-
-**Documentation files are not included in the repository.** Download them first:
+**Complete step-by-step deployment guide**: [DEPLOYMENT.md](./DEPLOYMENT.md)
 
 ```bash
-# Download Presidio documentation (26 files)
-bash scripts/download-presidio-docs.sh
-
-# For HPC documentation:
-# - Use your own HPC docs, or
-# - Contact repository owner for GigaIO/NVIDIA documentation
-# See docs/README.md for details
-```
-
-### Deploy Infrastructure
-
-```bash
-# 1. Install dependencies
+# 1. Clone and install dependencies
+git clone https://github.com/yourusername/rag-knowledge-base.git
+cd rag-knowledge-base
 npm install
 
-# 2. Set your AWS profile
-export AWS_PROFILE=your-profile-name
+# 2. Configure deployment (create .env from .env.example)
+cp .env.example .env
+# Edit .env with your settings (DEPLOYMENT_TIER, PROJECT_NAME, KNOWLEDGE_BASES)
 
-# 3. Deploy all three stacks
-npx cdk deploy HpcKnowledgeBaseStack --require-approval never
-npx cdk deploy PresidioKnowledgeBaseStack --require-approval never
-npx cdk deploy TicketTriageStack --require-approval never
+# 3. Bootstrap CDK (first-time only)
+cdk bootstrap
 
-# Deployment completes in ~5 minutes per stack
+# 4. Deploy infrastructure (~10-15 minutes)
+cdk deploy --all
 
-# 4. Upload documentation to S3 and trigger ingestion
-bash scripts/deploy-docs.sh   # HPC docs
-bash scripts/sync-kb.sh        # Trigger ingestion
+# 5. Upload documents
+aws s3 cp your-docs/ s3://kb-documents-YOUR_ACCOUNT_ID/docs/ --recursive
+
+# 6. Query your knowledge base
+curl -X POST https://YOUR_API_ENDPOINT/query \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -d '{"question": "What is X?", "knowledge_base": "docs"}'
 ```
 
-### Configure Amazon Q Developer CLI
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions, troubleshooting, and post-deployment configuration.
 
-The MCP configuration file at `~/.aws/amazonq/mcp.json` enables automatic knowledge base discovery:
+---
+
+## Architecture
+
+### System Components
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     Document Ingestion                       │
+│                                                               │
+│  S3 Upload → SQS Queue → Lambda Ingestor → Embeddings       │
+│  (PDF/MD/TXT)           (Orchestration)     (Titan v2)       │
+│                                ↓                              │
+│                         Milvus Insert                         │
+│                       (Partitioned by KB)                     │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│                       Query Pipeline                          │
+│                                                               │
+│  API Gateway → Lambda RAG Query → Milvus Search (HyDE)      │
+│  (Cognito Auth)                   (Partition-filtered)       │
+│                    ↓                                          │
+│              Bedrock Claude 3.5 Sonnet                        │
+│              (Answer Generation)                              │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│                    MCP Integration (Optional)                 │
+│                                                               │
+│  Claude Desktop → MCP Stream Handler → RAG Query            │
+│  (JWT Auth)        (WebSocket)                               │
+│                                                               │
+│  Provides: Query tool, upload tool, status checking          │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### AWS Resources
+
+| Service | Purpose | Configuration |
+|---------|---------|---------------|
+| **Milvus (ECS)** | Vector database | Fargate tasks with etcd + MinIO |
+| **Lambda** | Document processing, embeddings, RAG queries | Python 3.12, Docker images |
+| **S3** | Document storage with versioning | Versioned bucket with lifecycle policies |
+| **DynamoDB** | Ingestion state tracking | On-demand billing, PITR enabled |
+| **Cognito** | User authentication | Email-based auth with optional SES |
+| **API Gateway** | Public HTTP API | REST API with Cognito authorizer |
+| **Bedrock** | LLM & embeddings | Claude 3.5 Sonnet, Titan Embeddings v2 |
+| **VPC** | Network isolation | Public/private subnets, NAT Gateway |
+
+---
+
+## Key Features
+
+### 1. Partitioned Vector Database
+
+Milvus collections are partitioned by knowledge base, providing:
+- **4-5x faster queries** compared to metadata filtering
+- **Isolated data** per knowledge base
+- **Efficient scaling** as you add more KBs
+- **Partition pruning** for optimized vector search
+
+### 2. Automated Ingestion Pipeline
+
+Documents are automatically processed on S3 upload:
+- **Chunking**: Intelligent text splitting with overlap
+- **Embedding**: Amazon Bedrock Titan Embeddings v2
+- **Indexing**: Inserted into Milvus with partition routing
+- **State Tracking**: DynamoDB tracks processing status
+- **Dead Letter Queue**: Failed documents for manual review
+
+### 3. HyDE-Enhanced Retrieval
+
+Hypothetical Document Embeddings (HyDE) improve retrieval:
+- Generate hypothetical answer from question
+- Embed hypothetical answer
+- Search for semantically similar documents
+- **Results**: Better context retrieval, improved answer quality
+
+### 4. Configurable Deployment Tiers
+
+Three preset tiers for different use cases:
+
+| Tier | Cost | ECS Size | Use Case |
+|------|------|----------|----------|
+| **Dev** | ~$30-40/mo | 0.25 vCPU, 512 MB | Development, testing |
+| **Staging** | ~$65-100/mo | 0.5 vCPU, 1024 MB | Pre-production, demos |
+| **Prod** | ~$350-500/mo | 1 vCPU, 2048 MB | Production workloads |
+
+Configure via `DEPLOYMENT_TIER` in `.env`.
+
+### 5. MCP Integration (Optional)
+
+Claude Desktop integration via Model Context Protocol:
+- **Secure authentication**: JWT-based auth with RSA keys
+- **Tools**: Query knowledge base, upload documents, check ingestion status
+- **Streaming**: Real-time responses via WebSocket
+- **Multi-session**: Support for concurrent users
+
+---
+
+## Configuration
+
+All configuration is centralized in `.env` (created from `.env.example`).
+
+### Required Configuration
+
+```bash
+DEPLOYMENT_TIER=dev              # dev, staging, or prod
+PROJECT_NAME=rag-kb              # Project identifier
+KNOWLEDGE_BASES=docs,manuals     # Comma-separated KB prefixes
+```
+
+### Optional Configuration
+
+```bash
+# AWS
+CDK_DEFAULT_REGION=us-east-1
+
+# Resource Naming
+BUCKET_PREFIX=kb-documents
+STATE_TABLE_NAME=document-ingestion-state
+USER_POOL_NAME=rag-query-users
+
+# Bedrock Models
+CLAUDE_SONNET_MODEL_ID=anthropic.claude-3-5-sonnet-20241022-v2:0
+TITAN_EMBED_MODEL_ID=amazon.titan-embed-text-v2:0
+
+# Email (optional)
+VERIFIED_EMAIL_DOMAIN=example.com  # Requires SES domain verification
+
+# ECS (advanced)
+MILVUS_IMAGE_TAG=milvusdb/milvus:v2.6.5
+MINIO_IMAGE_TAG=minio/minio:latest
+```
+
+See `.env.example` for complete list with descriptions.
+
+---
+
+## Usage
+
+### Upload Documents
+
+Supported formats: PDF, Markdown (.md), Text (.txt)
+
+```bash
+# Upload single document
+aws s3 cp document.pdf s3://kb-documents-YOUR_ACCOUNT_ID/docs/
+
+# Upload directory
+aws s3 cp ./my-docs/ s3://kb-documents-YOUR_ACCOUNT_ID/manuals/ --recursive
+```
+
+Documents are automatically processed within seconds.
+
+### Query via API
+
+```bash
+# Get Cognito token
+TOKEN=$(aws cognito-idp admin-initiate-auth \
+  --user-pool-id YOUR_USER_POOL_ID \
+  --client-id YOUR_CLIENT_ID \
+  --auth-flow ADMIN_NO_SRP_AUTH \
+  --auth-parameters USERNAME=user@example.com,PASSWORD=password \
+  --query 'AuthenticationResult.IdToken' --output text)
+
+# Query knowledge base
+curl -X POST https://YOUR_API_ENDPOINT/query \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "question": "What is the installation process?",
+    "knowledge_base": "docs",
+    "top_k": 5
+  }'
+```
+
+### Query via MCP (Claude Desktop)
+
+If you deployed MCPRemoteStack, configure Claude Desktop:
 
 ```json
 {
   "mcpServers": {
-    "awslabs.bedrock-kb-retrieval-mcp-server": {
-      "command": "uvx",
-      "args": ["awslabs.bedrock-kb-retrieval-mcp-server@latest"],
-      "env": {
-        "AWS_PROFILE": "your-profile-name",
-        "AWS_REGION": "us-east-1",
-        "KB_INCLUSION_TAG_KEY": "name"
+    "rag-kb": {
+      "url": "YOUR_MCP_STREAM_URL",
+      "headers": {
+        "Authorization": "Bearer YOUR_JWT_TOKEN"
       }
     }
   }
 }
 ```
 
-### Test the System
-
-**1. Test Q CLI Knowledge Retrieval:**
-```bash
-q
-
-> what knowledge bases do you have access to?
-# Should list: hpc-computing-knowledge-base and presidio-solutions-knowledge-base
-
-> What cloud services does Presidio offer?
-# AI-generated response with Presidio KB citations
-
-> How do I optimize NCCL performance?
-# AI-generated response with HPC KB citations
+Then query directly in Claude Desktop:
+```
+> Query the docs KB: What is the installation process?
 ```
 
-**2. Test Ticket Triage:**
-```bash
-# Create a test ticket
-cat > test-ticket.json << EOF
-{
-  "title": "NCCL performance degradation",
-  "description": "Experiencing slow all-reduce operations on 8 GPU cluster",
-  "email": "user@example.com"
-}
-EOF
+---
 
-# Upload to trigger processing
-aws s3 cp test-ticket.json s3://hpc-tickets-{ACCOUNT_ID}/test-ticket.json
+## Cost Breakdown
 
-# Check DynamoDB for triage results
-aws dynamodb scan --table-name hpc-ticket-triage
-```
+### Monthly Infrastructure Costs
+
+**Development Tier (~$30-40/month)**:
+- ECS Fargate: ~$10-15
+- NAT Gateway: ~$32 (largest cost)
+- DynamoDB: ~$1-2
+- S3: ~$1
+- Other: ~$1
+
+**Cost Optimization Tips**:
+- Use VPC endpoints to eliminate NAT Gateway ($32/mo savings)
+- Scale down ECS tasks when not in use
+- Use S3 lifecycle policies to archive old versions
+
+### Usage-Based Costs (Bedrock)
+
+- **Embeddings** (Titan v2): ~$0.10 per 1M tokens
+- **Generation** (Claude 3.5 Sonnet):
+  - Input: ~$3.00 per 1M tokens
+  - Output: ~$15.00 per 1M tokens
+
+**Example**: 1,000 documents (500 pages each) + 10,000 queries/month = ~$50-100 in Bedrock costs.
 
 ---
 
@@ -284,101 +286,203 @@ aws dynamodb scan --table-name hpc-ticket-triage
 ```
 .
 ├── README.md                          # This file
-├── ARCHITECTURE.md                    # Technical architecture deep-dive
-├── DATA_INGESTION.md                  # Knowledge base ingestion strategy
+├── DEPLOYMENT.md                      # Complete deployment guide
+├── LICENSE                            # MIT License
 │
 ├── bin/
-│   └── q_ticket_triage.ts             # CDK app entry point (instantiates both stacks)
+│   └── app.ts                         # CDK app entry point
 │
-├── lib/
-│   ├── q_ticket_triage-stack.ts       # HPC KB + Ticket Triage stack
-│   └── presidio-kb-stack.ts           # Presidio KB stack (separate lifecycle)
+├── lib/                               # CDK stack definitions
+│   ├── milvus-stack.ts                # Milvus vector database (ECS)
+│   ├── embeddings-stack.ts            # Bedrock embeddings generation
+│   ├── ingestion-stack.ts             # S3 + SQS + Lambda orchestration
+│   ├── rag-stack.ts                   # RAG query Lambda
+│   ├── auth-stack.ts                  # Cognito authentication
+│   ├── api-stack.ts                   # API Gateway
+│   ├── mcp-remote-stack.ts            # MCP integration (optional)
+│   ├── mcp-api-stack.ts               # MCP API Gateway (optional)
+│   ├── security-stack.ts              # CloudTrail logging
+│   └── waf-stack.ts                   # WAF rate limiting
 │
-├── lambda/
-│   └── ticket-triage-processor/       # Python Lambda for ticket processing
+├── lambda/                            # Lambda function code
+│   ├── document-ingestor/             # S3 event processor
+│   ├── embeddings-generator/          # Bedrock Titan embeddings
+│   ├── rag-query/                     # HyDE + Claude query handler
+│   └── mcp-*/                         # MCP handlers (optional)
 │
-├── docs/
-│   ├── nvidia/                        # NCCL official documentation (6 files)
-│   ├── *.md                           # HPC topic documentation (6 files)
-│   ├── *.pdf                          # Research papers (1 file)
-│   └── presidio/                      # Presidio docs (26 files, gitignored)
+├── config/
+│   └── deployment-config.ts           # Centralized configuration
 │
 ├── scripts/
-│   └── download-presidio-docs.sh      # Automated doc collection script
+│   ├── validate-deployment.sh         # Health check script
+│   └── download-hpc-docs.sh           # Example doc downloader
 │
-└── examples/
-    └── README.md                       # Demo scenarios and sample tickets
+├── .env.example                       # Configuration template
+└── cdk.json                           # CDK configuration
 ```
 
 ---
 
-## Key Design Decisions
+## Monitoring and Troubleshooting
 
-### Why Separate CDK Stacks?
+### Health Checks
 
-- **Independent lifecycle** - Deploy, update, or destroy KBs independently
-- **Resource isolation** - Separate S3 buckets, OpenSearch collections, IAM roles
-- **Cross-stack references** - Ticket triage Lambda can still access both KBs via ARN exports
+Run the validation script to verify deployment:
 
-### Why Tag-Based Discovery?
+```bash
+./scripts/validate-deployment.sh
+```
 
-- **Scalability** - Add new KBs by tagging `name=true`, no MCP config changes needed
-- **Flexibility** - Different teams can manage different KBs independently
-- **Single interface** - Users don't need to know which KB to query
+Checks:
+- All CDK stacks deployed
+- ECS services running
+- Lambda functions responsive
+- S3 buckets accessible
+- DynamoDB tables created
 
-### Why Two Knowledge Bases?
+### View Logs
 
-- **Domain separation** - HPC technical content vs. business/solutions content
-- **Different audiences** - Engineers query HPC KB, sales/executives query Presidio KB
-- **Proof of concept** - Demonstrates multi-KB architecture for enterprise scenarios
+```bash
+# Lambda logs
+aws logs tail /aws/lambda/FUNCTION_NAME --follow
 
----
+# ECS logs
+aws logs tail /aws/ecs/milvus-cluster/milvus-service --follow
 
-## Business Value
+# CloudTrail (API activity)
+aws logs tail /aws/cloudtrail/rag-kb-trail --follow
+```
 
-### For Technical Teams
-- **Instant expertise** - Query complex HPC topics without searching documentation
-- **Reduced resolution time** - Automated ticket triage accelerates support workflows
-- **Knowledge preservation** - Institutional knowledge captured in queryable form
+### Common Issues
 
-### For Business Teams
-- **Sales enablement** - Quick answers to customer questions about Presidio capabilities
-- **Consistent messaging** - AI-generated responses based on official documentation
-- **Competitive intelligence** - Easy access to case studies and solution briefs
-
-### For IT Leadership
-- **Scalable architecture** - Add knowledge bases as organization grows
-- **Cost-effective** - Serverless design scales to zero when not in use
-- **Modern stack** - Demonstrates latest AWS AI/ML capabilities
-
----
-
-## Next Steps
-
-1. **Add More Knowledge Bases** - Follow the Presidio KB pattern (see `DATA_INGESTION.md`)
-2. **Customize Ticket Triage** - Modify Lambda logic for your workflow
-3. **Enhance UI** - Build web interface on top of Bedrock APIs
-4. **Add Feedback Loop** - Track query quality and refine chunking strategy
-5. **Integrate with Tools** - Connect to Jira, ServiceNow, Slack
+See [DEPLOYMENT.md - Troubleshooting](./DEPLOYMENT.md#troubleshooting) for solutions to:
+- Access denied errors
+- Documents not processing
+- Milvus connection failures
+- Lambda timeouts
+- Bedrock throttling
 
 ---
 
-## Technical Details
+## Development
 
-**Embeddings Model:** Amazon Titan Embed Text v2 (1024 dimensions)
-**Generation Model:** Anthropic Claude 3 Haiku
-**Vector Store:** OpenSearch Serverless (auto-managed)
-**Chunking Strategy:** Fixed size, 512 tokens, 20% overlap
-**Region:** us-east-1
-**Cost:** ~$5/month for demo workloads (mostly OpenSearch Serverless)
+### Prerequisites
 
-For detailed architecture information, see [ARCHITECTURE.md](./ARCHITECTURE.md).
-For data ingestion guidelines, see [DATA_INGESTION.md](./DATA_INGESTION.md).
+- Node.js 18.x+
+- AWS CLI configured
+- Docker (for Lambda container builds)
+- Python 3.12+ (for Lambda development)
+
+### Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Build TypeScript
+npm run build
+
+# Run tests
+npm test
+
+# Synthesize CloudFormation
+cdk synth
+
+# Deploy to dev environment
+DEPLOYMENT_TIER=dev cdk deploy --all
+```
+
+### Adding a New Knowledge Base
+
+1. Update `KNOWLEDGE_BASES` in `.env`:
+   ```bash
+   KNOWLEDGE_BASES=docs,manuals,newkb
+   ```
+
+2. Redeploy stacks:
+   ```bash
+   cdk deploy IngestionStack EmbeddingsStack
+   ```
+
+3. Upload documents to new prefix:
+   ```bash
+   aws s3 cp ./newkb-docs/ s3://kb-documents-YOUR_ACCOUNT_ID/newkb/ --recursive
+   ```
+
+Partitions are created automatically on first document upload.
+
+---
+
+## Security
+
+### Authentication
+
+- **API Gateway**: Cognito JWT authorization
+- **MCP**: RSA-signed JWT tokens
+- **S3**: Bucket policies with least-privilege access
+- **Lambda**: IAM roles with scoped permissions
+
+### Network Isolation
+
+- Milvus runs in private subnets (no internet access)
+- Lambda functions use VPC endpoints for AWS services
+- Security groups restrict traffic to necessary ports
+- NACLs provide additional network-level protection
+
+### Data Protection
+
+- S3 buckets: Server-side encryption (SSE-S3)
+- DynamoDB: Encryption at rest (AWS-managed keys)
+- Secrets Manager: RSA keys for JWT signing
+- CloudTrail: API activity logging for audit
+
+### Compliance
+
+- **GDPR**: Document versioning with retention policies
+- **SOC 2**: CloudTrail logging, encryption at rest/in-transit
+- **HIPAA**: Enable HIPAA-eligible services mode (requires BAA)
+
+---
+
+## Roadmap
+
+- [ ] Multi-modal support (images, tables, charts)
+- [ ] Reranking with cross-encoder models
+- [ ] Query caching for frequently asked questions
+- [ ] Admin UI for knowledge base management
+- [ ] Fine-tuning embedding models on domain data
+- [ ] Integration with Slack, Teams, ServiceNow
+
+---
+
+## Contributing
+
+Contributions welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests
+5. Submit a pull request
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
 ## Support
 
-For questions or issues with this demo, please open a GitHub issue.
+- **Documentation**: [DEPLOYMENT.md](./DEPLOYMENT.md)
+- **Issues**: [GitHub Issues](https://github.com/yourusername/rag-knowledge-base/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/yourusername/rag-knowledge-base/discussions)
 
-Built with AWS CDK, Amazon Bedrock, and Amazon Q Developer.
+---
+
+**Built with AWS CDK, Amazon Bedrock, and Milvus**
+
+Milvus partitions provide 4-5x faster queries than metadata filtering, making this system production-ready for large-scale knowledge retrieval workloads.
